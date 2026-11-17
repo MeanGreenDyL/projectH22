@@ -1,0 +1,30 @@
+---
+/** Annotated event card (spec §8): title, metrics, sources, confidence chip, correlation count. */
+import type { Source, VerifiedEvent } from '../schemas';
+import { needsSingleSourceMarker } from '../lib/policy';
+import { DOMAIN_LABEL } from '../lib/labels';
+
+interface Props { event: VerifiedEvent; sources: ReadonlyMap<string, Source>; correlationCount?: number }
+const { event: e, sources, correlationCount = 0 } = Astro.props;
+const single = needsSingleSourceMarker(e, sources);
+const fmt = (v: number) => new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(v);
+---
+<article class="flex min-w-0 flex-col gap-1.5 border-t border-rule pt-3">
+  <p class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-muted">
+    <span class="inline-flex items-center gap-1"><span class="inline-block h-2 w-2 rounded-sm" style={`background:var(--h22-domain-${e.domain})`} aria-hidden="true" />{DOMAIN_LABEL[e.domain]}</span>
+    <span class="num">{e.date.start}</span>
+    <span class="rounded-sm border border-rule px-1">{e.confidence}</span>
+    {single && <span class="rounded-sm border border-status-warning px-1 text-ink-secondary" title="No Tier 1 or Tier 2 source">SINGLE-SOURCE</span>}
+  </p>
+  <h3 class="text-base leading-snug"><a class="text-ink hover:text-accent" href={`/events/${e.id}/`}>{e.title}</a></h3>
+  {e.metrics.length > 0 && (
+    <dl class="flex flex-wrap gap-x-4 text-sm">
+      {e.metrics.slice(0, 3).map((m) => (
+        <div class="flex gap-1"><dt class="text-ink-muted">{m.label}</dt><dd class="num text-ink">{fmt(m.value)}{m.unit !== 'magnitude' && m.unit ? ` ${m.unit}` : ''}</dd></div>
+      ))}
+    </dl>
+  )}
+  <p class="text-xs text-ink-muted">
+    {e.sources.length} source{e.sources.length === 1 ? '' : 's'} · {correlationCount} published correlation{correlationCount === 1 ? '' : 's'}
+  </p>
+</article>

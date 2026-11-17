@@ -22,17 +22,30 @@ const freshness = overallIndicator(FEEDS, readFeedStatuses(), new Date());
   <body class="min-h-screen">
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 bg-surface-raised px-3 py-2">Skip to content</a>
     <header class="border-b border-rule">
-      <nav class="mx-auto flex max-w-5xl items-baseline gap-6 px-4 py-3 text-sm" aria-label="Site">
+      <nav class="mx-auto flex max-w-6xl flex-wrap items-baseline gap-x-5 gap-y-1 px-4 py-3 text-sm" aria-label="Site">
         <a href="/" class="font-heading text-base text-ink no-underline">Project H 2:2</a>
+        <a href="/timeline/" class="text-ink-secondary hover:text-accent">Timeline</a>
+        <a href="/domains/cyber/" class="hidden text-ink-secondary hover:text-accent sm:inline">Cyber</a>
+        <a href="/domains/crypto/" class="hidden text-ink-secondary hover:text-accent sm:inline">Crypto</a>
+        <a href="/domains/us-law/" class="hidden text-ink-secondary hover:text-accent sm:inline">US law</a>
+        <a href="/domains/global/" class="hidden text-ink-secondary hover:text-accent sm:inline">Global</a>
         <a href="/scripture/" class="text-ink-secondary hover:text-accent">Scripture</a>
-        <a href="/sources/" class="text-ink-secondary hover:text-accent">Sources</a>
+        <a href="/sources/" class="hidden text-ink-secondary hover:text-accent md:inline">Sources</a>
         <a href="/data-health/" class="ml-auto text-xs text-ink-secondary no-underline hover:text-accent" title="Freshness of the critical data feeds when this page was built">
           <HealthDot state={freshness} />
         </a>
       </nav>
     </header>
-    <main id="main" class="mx-auto max-w-5xl px-4 py-6">
+    <main id="main" class="mx-auto max-w-6xl px-4 py-6">
       <slot />
     </main>
+    <footer class="mx-auto mt-12 max-w-6xl border-t border-rule px-4 py-6 text-xs text-ink-muted">
+      <nav class="flex flex-wrap gap-x-4 gap-y-1" aria-label="Footer">
+        <a href="/domains/cyber/">Cyber</a><a href="/domains/crypto/">Crypto</a><a href="/domains/us-law/">US law</a><a href="/domains/global/">Global</a>
+        <a href="/sources/">Sources</a><a href="/data-health/">Data health</a>
+      </nav>
+      <p class="mt-2">Facts and interpretation are kept apart: every event cites its sources; every correlation is labelled as a reading, with its counter-reading.</p>
+    </footer>
+    <script>import '../scripts/tooltip';</script>
   </body>
 </html>
