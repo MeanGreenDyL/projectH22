@@ -9,7 +9,7 @@ spec is `PROJECT-H22-BUILD-PROMPT.md`; this file is the short version. Refresh/i
 
 Phases 0 and 1 are approved. Phase 2 (fact-layer ingestion, `docs/PHASE-2-REPORT.md`), Phase 3
 (visual system, `docs/PHASE-3-REPORT.md`) and Phase 5 (scenarios and methodology,
-`docs/PHASE-5-REPORT.md`) are built, and Phase 6 structure is in (`docs/PHASE-6-REPORT.md`); Phase 4 content waits on reference sites being reachable; the owner asked on 2026-11-17 to carry on
+`docs/PHASE-5-REPORT.md`) are built, Phase 6 structure is in (`docs/PHASE-6-REPORT.md`) and Phase 7 hardening is in (`docs/PHASE-7-REPORT.md`); Phase 4 content waits on reference sites being reachable; the owner asked on 2026-11-17 to carry on
 through the phases and receive each phase report.
 **Do not start a later phase without the owner's explicit go-ahead.** Phases are gated (spec §11).
 Owner decisions that changed the spec are recorded in `docs/PHASE-0-PLAN.md` §2.
@@ -51,7 +51,8 @@ pnpm validate               # Zod + ids + referential integrity; exit 1 on error
 pnpm validate:credibility   # tiers, certainty terms, counterReading, no-dates, canon; exit 1 on error
 pnpm gate                   # all three
 pnpm check                  # astro check + tsc --noEmit
-pnpm build                  # static site + Pagefind index
+pnpm build                  # static site + Pagefind index + dist/_headers (CSP by hash)
+pnpm check:dist             # internal links + per-page performance budget
 ```
 
 CI (`.github/workflows/ci.yml`) runs all of these on every PR.

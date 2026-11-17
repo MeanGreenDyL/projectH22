@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   gates:
-    name: Typecheck, tests, validate, validate:credibility
+    name: Typecheck, tests, validate, validate:credibility, build checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,6 +25,8 @@ jobs:
       - run: pnpm validate
       - run: pnpm validate:credibility
       - run: pnpm build
+      - name: Internal links and performance budget
+        run: pnpm check:dist
 
   browser:
     name: Accessibility, layout and visual baselines

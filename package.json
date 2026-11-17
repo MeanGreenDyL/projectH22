@@ -9,7 +9,9 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && pagefind --site dist && tsx scripts/dist/postbuild.ts",
+    "check:dist": "tsx scripts/dist/check.ts",
+    "check:source-links": "tsx scripts/dist/source-links.ts",
     "check": "astro check && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",

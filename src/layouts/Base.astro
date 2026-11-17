@@ -6,12 +6,15 @@ import '../styles/tokens.css';
 import HealthDot from '../components/HealthDot.astro';
 import { FEEDS, overallIndicator } from '../lib/feeds';
 import { readFeedStatuses } from '../lib/feed-status';
+import { jsonLd } from '../lib/structured-data';
 
 interface Props {
   title: string;
   description?: string;
+  /** schema.org object, serialized as JSON-LD in the head. */
+  structuredData?: unknown;
 }
-const { title, description = 'Project H 2:2 — sourced records, made plain.' } = Astro.props;
+const { title, description = 'Project H 2:2 — sourced records, made plain.', structuredData } = Astro.props;
 const freshness = overallIndicator(FEEDS, readFeedStatuses(), new Date());
 ---
 <!doctype html>
@@ -21,6 +24,7 @@ const freshness = overallIndicator(FEEDS, readFeedStatuses(), new Date());
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <title>{title} · Project H 2:2</title>
+    {structuredData !== undefined && <script type="application/ld+json" is:inline set:html={jsonLd(structuredData)} />}
   </head>
   <body class="min-h-screen">
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 bg-surface-raised px-3 py-2">Skip to content</a>

@@ -6,6 +6,7 @@ import StrengthLegend from '../../components/interp/StrengthLegend';
 import { siteData } from '../../lib/site-data';
 import { browserPayload } from '../../lib/correlation-payload';
 import { formatPassage } from '../../schemas';
+import { correlationArticle } from '../../lib/structured-data';
 
 export async function getStaticPaths() {
   const data = await siteData();
@@ -17,7 +18,7 @@ const data = await siteData();
 const { sources } = browserPayload(data);
 const c = item.correlation;
 ---
-<Base title={c.passages.map(formatPassage).join('; ')} description="A proposed reading, with its strength, tradition and the case against it.">
+<Base structuredData={correlationArticle(c)} title={c.passages.map(formatPassage).join('; ')} description="A proposed reading, with its strength, tradition and the case against it.">
   <p class="text-sm"><a class="text-accent" href="/correlations/">← All correlations</a></p>
   <div class="mt-4">
     <InterpretiveFrame title="Proposed reading" muted={c.strength === 'numerical-symbolic' || c.strength === 'speculative'}>

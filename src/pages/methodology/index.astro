@@ -10,8 +10,9 @@ const corrections = CorrectionsLog.parse(JSON.parse(readFileSync('src/data/corre
 const REPO = 'https://github.com/MeanGreenDyL/projectH22';
 const rungs = [...CORRELATION_STRENGTHS];
 const forbidden = ['fulfilled', 'proves', 'confirms', 'exactly as predicted'].filter((t) => (FORBIDDEN_CERTAINTY_TERMS as readonly string[]).includes(t));
+import { methodologyArticle } from '../../lib/structured-data';
 ---
-<Base title="Methodology" description="What this project claims and does not claim, how readings are classified, and its known limits.">
+<Base title="Methodology" structuredData={methodologyArticle()} description="What this project claims and does not claim, how readings are classified, and its known limits.">
   <h1 class="font-heading text-3xl">Methodology</h1>
   <p class="mt-1 max-w-[var(--measure-prose)] text-ink-secondary">How to read this site, and where it can be wrong.</p>
 

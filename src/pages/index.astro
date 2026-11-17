@@ -10,6 +10,7 @@ import { addMonths, correlationMatrix, latestDate, monthlyCounts, monthRange } f
 import { DOMAIN_LABEL } from '../lib/labels';
 import { DOMAIN_ROUTE } from '../lib/policy';
 import { DOMAINS } from '../schemas';
+import { eventsDataset } from '../lib/structured-data';
 
 const data = await siteData();
 const { events } = data;
@@ -26,7 +27,7 @@ const matrix = correlationMatrix(data.correlations, data.eventsById);
 const recent = events.slice(0, 9);
 const total12 = top.reduce((a, b) => a + b.n, 0);
 ---
-<Base title="Dashboard" description="Verified events across cyber, crypto, US law and global domains, each cited to its source.">
+<Base title="Dashboard" structuredData={eventsDataset(events, data.sources)} description="Verified events across cyber, crypto, US law and global domains, each cited to its source.">
   <h1 class="font-heading text-3xl">Project H 2:2</h1>
   <p class="mt-1 max-w-[var(--measure-prose)] text-ink-secondary">Verified events, each cited and archived. Interpretation is kept separate and labelled.</p>
 
