@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sg0y",
+  "domain": "natural",
+  "title": "M 6.2 - 71 km W of Vallenar, Chile",
+  "summary": "A magnitude 6.2 earthquake occurred 71 km W of Vallenar, Chile at a depth of 24 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-03-13",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -71.4786,
+      -28.6929
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-05-26",
+      "sourceId": "usgs-us6000sg0y",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 24,
+      "unit": "km",
+      "asOf": "2026-05-26",
+      "sourceId": "usgs-us6000sg0y",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sg0y"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

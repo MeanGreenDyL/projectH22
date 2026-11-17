@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-69",
+  "domain": "us-law",
+  "title": "Public Law 119-69: Whole Milk for Healthy Kids Act of 2025",
+  "summary": "S. 222, \"Whole Milk for Healthy Kids Act of 2025\", originated in the Senate of the 119th Congress and became Public Law 119-69 on 2026-01-14, according to Congress.gov.",
+  "date": {
+    "start": "2026-01-14",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-222"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000t37a",
+  "domain": "natural",
+  "title": "M 6.0 - 63 km WSW of Sola, Vanuatu",
+  "summary": "A magnitude 6 earthquake occurred 63 km WSW of Sola, Vanuatu at a depth of 15 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-07-24",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      166.9736,
+      -13.9998
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-10-13",
+      "sourceId": "usgs-us7000t37a",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 15,
+      "unit": "km",
+      "asOf": "2026-10-13",
+      "sourceId": "usgs-us7000t37a",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000t37a"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

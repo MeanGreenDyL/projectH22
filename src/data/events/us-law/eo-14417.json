@@ -1,0 +1,22 @@
+{
+  "id": "eo-14417",
+  "domain": "us-law",
+  "title": "Executive Order 14417: Establishing the President's Military Spouse Commission",
+  "summary": "Executive Order 14417, \"Establishing the President's Military Spouse Commission\", was signed on 2026-08-03 and published in the Federal Register on 2026-08-06 (91 FR 51059).",
+  "date": {
+    "start": "2026-08-03",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-16125"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

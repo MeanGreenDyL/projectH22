@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sri7",
+  "domain": "natural",
+  "title": "M 7.4 - 102 km ENE of Miyako, Japan",
+  "summary": "A magnitude 7.4 earthquake occurred 102 km ENE of Miyako, Japan at a depth of 25 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-04-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      143.0592,
+      39.971
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 7.4,
+      "unit": "magnitude",
+      "asOf": "2026-10-22",
+      "sourceId": "usgs-us6000sri7",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 25,
+      "unit": "km",
+      "asOf": "2026-10-22",
+      "sourceId": "usgs-us6000sri7",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sri7"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

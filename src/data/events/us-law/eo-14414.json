@@ -1,0 +1,22 @@
+{
+  "id": "eo-14414",
+  "domain": "us-law",
+  "title": "Executive Order 14414: Advancing Regenerative Agriculture and Strengthening American Farm Resilience",
+  "summary": "Executive Order 14414, \"Advancing Regenerative Agriculture and Strengthening American Farm Resilience\", was signed on 2026-06-25 and published in the Federal Register on 2026-06-30 (91 FR 39841).",
+  "date": {
+    "start": "2026-06-25",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-13254"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

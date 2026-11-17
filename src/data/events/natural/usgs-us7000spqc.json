@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000spqc",
+  "domain": "natural",
+  "title": "M 6.0 - 33 km NW of Valparaíso, Chile",
+  "summary": "A magnitude 6 earthquake occurred 33 km NW of Valparaíso, Chile at a depth of 25 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-05-31",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -71.8897,
+      -32.8292
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-10-31",
+      "sourceId": "usgs-us7000spqc",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 25,
+      "unit": "km",
+      "asOf": "2026-10-31",
+      "sourceId": "usgs-us7000spqc",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000spqc"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

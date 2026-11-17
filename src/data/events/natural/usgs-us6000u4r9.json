@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u4r9",
+  "domain": "natural",
+  "title": "M 6.5 - Bonin Islands, Japan region",
+  "summary": "A magnitude 6.5 earthquake occurred near Bonin Islands, Japan region at a depth of 475 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-10-25",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      139.7102,
+      27.8093
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.5,
+      "unit": "magnitude",
+      "asOf": "2026-11-13",
+      "sourceId": "usgs-us6000u4r9",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 475,
+      "unit": "km",
+      "asOf": "2026-11-13",
+      "sourceId": "usgs-us6000u4r9",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u4r9"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

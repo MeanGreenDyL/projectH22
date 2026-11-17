@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-115",
+  "domain": "us-law",
+  "title": "Public Law 119-115: A bill to designate the General George C. Marshall House, in the Commonwealth of Virginia, as an af…",
+  "summary": "S. 603, \"A bill to designate the General George C. Marshall House, in the Commonwealth of Virginia, as an affiliated area of the National Park System, and for other purposes.\", originated in the Senate of the 119th Congress and became Public Law 119-115 on 2026-09-25, according to Congress.gov.",
+  "date": {
+    "start": "2026-09-25",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-603"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

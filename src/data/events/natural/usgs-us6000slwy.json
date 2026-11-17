@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000slwy",
+  "domain": "natural",
+  "title": "M 6.3 - 109 km WNW of Ternate, Indonesia",
+  "summary": "A magnitude 6.3 earthquake occurred 109 km WNW of Ternate, Indonesia at a depth of 28 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-04-02",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      126.4787,
+      1.1667
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.3,
+      "unit": "magnitude",
+      "asOf": "2026-06-20",
+      "sourceId": "usgs-us6000slwy",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 28,
+      "unit": "km",
+      "asOf": "2026-06-20",
+      "sourceId": "usgs-us6000slwy",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000slwy"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

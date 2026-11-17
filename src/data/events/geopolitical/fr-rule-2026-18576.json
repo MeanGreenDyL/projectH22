@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-18576",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of Iran-Related Web General Licenses CC and DD.",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of Iran-Related Web General Licenses CC and DD.\" in the Federal Register on 2026-09-11 (91 FR 57795).",
+  "date": {
+    "start": "2026-09-11",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18576"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

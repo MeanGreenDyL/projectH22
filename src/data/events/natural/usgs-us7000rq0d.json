@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rq0d",
+  "domain": "natural",
+  "title": "M 6.0 - off the coast of Oregon",
+  "summary": "A magnitude 6 earthquake occurred near off the coast of Oregon at a depth of 10 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-01-16",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -128.0574,
+      43.6857
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-11-13",
+      "sourceId": "usgs-us7000rq0d",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-11-13",
+      "sourceId": "usgs-us7000rq0d",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rq0d"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

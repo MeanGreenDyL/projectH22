@@ -1,0 +1,22 @@
+{
+  "id": "eo-14386",
+  "domain": "us-law",
+  "title": "Executive Order 14386: Strengthening United States National Defense With America's Beautiful Clean Coal Power Generatio…",
+  "summary": "Executive Order 14386, \"Strengthening United States National Defense With America's Beautiful Clean Coal Power Generation Fleet\", was signed on 2026-02-11 and published in the Federal Register on 2026-02-17 (91 FR 7393).",
+  "date": {
+    "start": "2026-02-11",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-03156"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-19678",
+  "domain": "geopolitical",
+  "title": "Federal rule: Sanctions Penalties Regulations",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Sanctions Penalties Regulations\" in the Federal Register on 2026-09-25 (91 FR 60821), effective 2026-09-25.",
+  "date": {
+    "start": "2026-09-25",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-19678"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

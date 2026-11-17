@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-111",
+  "domain": "us-law",
+  "title": "Public Law 119-111: Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
+  "summary": "H.R. 5334, \"Lindsey O. Graham Sanctioning Russia and Iran Act of 2026\", originated in the House of the 119th Congress and became Public Law 119-111 on 2026-09-18, according to Congress.gov.",
+  "date": {
+    "start": "2026-09-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-5334"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

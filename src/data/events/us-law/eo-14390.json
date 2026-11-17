@@ -1,0 +1,22 @@
+{
+  "id": "eo-14390",
+  "domain": "us-law",
+  "title": "Executive Order 14390: Combating Cybercrime, Fraud, and Predatory Schemes Against American Citizens",
+  "summary": "Executive Order 14390, \"Combating Cybercrime, Fraud, and Predatory Schemes Against American Citizens\", was signed on 2026-03-06 and published in the Federal Register on 2026-03-11 (91 FR 12051).",
+  "date": {
+    "start": "2026-03-06",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-04826"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

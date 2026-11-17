@@ -1,0 +1,22 @@
+{
+  "id": "eo-14422",
+  "domain": "us-law",
+  "title": "Executive Order 14422: Honoring the American History of the Great Lakes and Renaming Lake Ontario as Lake America",
+  "summary": "Executive Order 14422, \"Honoring the American History of the Great Lakes and Renaming Lake Ontario as Lake America\", was signed on 2026-08-27 and published in the Federal Register on 2026-09-02 (91 FR 56543).",
+  "date": {
+    "start": "2026-08-27",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18020"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "eo-14437",
+  "domain": "us-law",
+  "title": "Executive Order 14437: Advancing Women's Health To Improve Outcomes in All Phases of Life",
+  "summary": "Executive Order 14437, \"Advancing Women's Health To Improve Outcomes in All Phases of Life\", was signed on 2026-10-19 and published in the Federal Register on 2026-10-22 (91 FR 66779).",
+  "date": {
+    "start": "2026-10-19",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-21666"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

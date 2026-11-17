@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000t01n",
+  "domain": "natural",
+  "title": "M 6.3 - southeast of the Loyalty Islands",
+  "summary": "A magnitude 6.3 earthquake occurred near southeast of the Loyalty Islands at a depth of 16 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-07-13",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      171.5829,
+      -22.8169
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.3,
+      "unit": "magnitude",
+      "asOf": "2026-09-29",
+      "sourceId": "usgs-us7000t01n",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 16,
+      "unit": "km",
+      "asOf": "2026-09-29",
+      "sourceId": "usgs-us7000t01n",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000t01n"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

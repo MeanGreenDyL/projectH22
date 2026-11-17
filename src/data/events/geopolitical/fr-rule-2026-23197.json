@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-23197",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of Iran-Related Web General Licenses EE and FF",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of Iran-Related Web General Licenses EE and FF\" in the Federal Register on 2026-11-13 (91 FR 73140).",
+  "date": {
+    "start": "2026-11-13",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-23197"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

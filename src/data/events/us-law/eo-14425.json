@@ -1,0 +1,22 @@
+{
+  "id": "eo-14425",
+  "domain": "us-law",
+  "title": "Executive Order 14425: Supporting America's Ranchers",
+  "summary": "Executive Order 14425, \"Supporting America's Ranchers\", was signed on 2026-09-04 and published in the Federal Register on 2026-09-10 (91 FR 57765).",
+  "date": {
+    "start": "2026-09-04",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18571"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

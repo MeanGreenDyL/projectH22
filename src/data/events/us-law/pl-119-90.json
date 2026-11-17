@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-90",
+  "domain": "us-law",
+  "title": "Public Law 119-90: A bill to require the Federal Energy Regulatory Commission to extend the time period during which li…",
+  "summary": "S. 1020, \"A bill to require the Federal Energy Regulatory Commission to extend the time period during which licensees are required to commence construction of certain hydropower projects.\", originated in the Senate of the 119th Congress and became Public Law 119-90 on 2026-05-11, according to Congress.gov.",
+  "date": {
+    "start": "2026-05-11",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-1020"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

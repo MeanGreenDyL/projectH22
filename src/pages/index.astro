@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import ChartFrame from '../components/charts/ChartFrame.astro';
+import SmallMultiples from '../components/charts/SmallMultiples.astro';
+import StatTile from '../components/charts/StatTile.astro';
+import CorrelationMatrix from '../components/charts/CorrelationMatrix.astro';
+import EventCard from '../components/EventCard.astro';
+import { siteData } from '../lib/site-data';
+import { addMonths, correlationMatrix, latestDate, monthlyCounts, monthRange } from '../lib/chart-data';
+import { DOMAIN_LABEL } from '../lib/labels';
+import { DOMAIN_ROUTE } from '../lib/policy';
+import { DOMAINS } from '../schemas';
+import { eventsDataset } from '../lib/structured-data';
+
+const data = await siteData();
+const { events } = data;
+const asOf = latestDate(events);
+const end = (asOf ?? new Date().toISOString()).slice(0, 7);
+const months = monthRange(addMonths(end, -23), end);
+const counts = monthlyCounts(events, months);
+const last12 = months.slice(-12);
+const counts12 = monthlyCounts(events, last12);
+const sourceIds = [...new Set(events.flatMap((e) => e.sources))];
+const active = DOMAINS.filter((d) => counts[d].some((v) => v > 0));
+const top = DOMAINS.map((d) => ({ d, n: counts12[d].reduce((a, b) => a + b, 0) })).sort((a, b) => b.n - a.n);
+const matrix = correlationMatrix(data.correlations, data.eventsById);
+const recent = events.slice(0, 9);
+const total12 = top.reduce((a, b) => a + b.n, 0);
+---
+<Base title="Dashboard" structuredData={eventsDataset(events, data.sources)} description="Verified events across cyber, crypto, US law and global domains, each cited to its source.">
+  <h1 class="font-heading text-3xl">Project H 2:2</h1>
+  <p class="mt-1 max-w-[var(--measure-prose)] text-ink-secondary">Verified events, each cited and archived. Interpretation is kept separate and labelled.</p>
+
+  <section class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4" aria-label="Key figures">
+    <StatTile label="Verified events" value={events.length} asOf={asOf} trend={last12.map((_, i) => DOMAINS.reduce((a, d) => a + counts12[d][i]!, 0))} trendLabel="Per month, last 12 months" href="/timeline/" />
+    {top.slice(0, 3).map(({ d, n }) => (
+      <StatTile label={`${DOMAIN_LABEL[d]}, last 12 months`} value={n} asOf={asOf} trend={counts12[d]} trendLabel="Per month" href={`/domains/${DOMAIN_ROUTE[d]}/`} />
+    ))}
+  </section>
+
+  <section class="mt-10">
+    <ChartFrame title="Events per month, by domain" takeaway={`${total12} events in the last 12 months. Panels share one scale, so heights compare directly.`} asOf={asOf} sourceIds={sourceIds}>
+      <SmallMultiples months={months} panels={active.map((d) => ({ key: d, label: DOMAIN_LABEL[d], color: `var(--h22-domain-${d})`, values: counts[d] }))} />
+      <table slot="table" class="w-full text-left">
+        <thead><tr><th scope="col">Month</th>{active.map((d) => <th scope="col" class="text-right">{DOMAIN_LABEL[d]}</th>)}</tr></thead>
+        <tbody>{months.map((m, i) => <tr><th scope="row" class="num font-normal">{m}</th>{active.map((d) => <td class="num text-right">{counts[d][i]}</td>)}</tr>)}</tbody>
+      </table>
+    </ChartFrame>
+    {DOMAINS.filter((d) => !active.includes(d)).length > 0 && (
+      <p class="mt-2 text-xs text-ink-muted">No events yet in: {DOMAINS.filter((d) => !active.includes(d)).map((d) => DOMAIN_LABEL[d]).join(', ')}. That is a gap in coverage, not a quiet period.</p>
+    )}
+  </section>
+
+  <section class="mt-10">
+    <h2 class="font-heading text-2xl">Latest events</h2>
+    <div class="mt-3 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+      {recent.map((e) => <EventCard event={e} sources={data.sources} correlationCount={data.correlationCount(e.id)} />)}
+    </div>
+    <p class="mt-3 text-sm"><a class="text-accent" href="/timeline/">All {events.length} events on the timeline →</a></p>
+  </section>
+
+  <section class="mt-10 rounded-md bg-interp-surface p-4">
+    <p class="text-xs font-semibold uppercase tracking-wide text-interp-chip-ink">Interpretation layer</p>
+    <ChartFrame title="Correlations by domain and book" takeaway="Proposed readings linking events to scripture. Each one is a reading, published only after human review." asOf={null} sourceIds={[]}>
+      <CorrelationMatrix books={matrix.books} cells={matrix.cells} />
+    </ChartFrame>
+  </section>
+</Base>

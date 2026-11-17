@@ -1,0 +1,22 @@
+{
+  "id": "eo-14363",
+  "domain": "us-law",
+  "title": "Executive Order 14363: Launching the Genesis Mission",
+  "summary": "Executive Order 14363, \"Launching the Genesis Mission\", was signed on 2025-11-24 and published in the Federal Register on 2025-11-28 (90 FR 55035).",
+  "date": {
+    "start": "2025-11-24",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-21665"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,34 @@
+---
+/** Stat tile (dataviz figure contract): label, value, optional 12-point sparkline, always an "as of". */
+interface Props {
+  label: string;
+  value: number | undefined;
+  unit?: string | undefined;
+  asOf: string | undefined;
+  trend?: number[];
+  trendLabel?: string;
+  href?: string;
+}
+const { label, value, unit, asOf, trend, trendLabel, href } = Astro.props;
+const fmt = (n: number) => (Math.abs(n) >= 10_000 ? new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(n) : new Intl.NumberFormat('en-US').format(n));
+const W = 120, H = 28;
+const pts = trend && trend.length > 1 ? trend : undefined;
+const max = pts ? Math.max(1, ...pts) : 1;
+const path = pts?.map((v, i) => `${i === 0 ? 'M' : 'L'}${((i / (pts.length - 1)) * (W - 4) + 2).toFixed(1)},${(H - 3 - (v / max) * (H - 6)).toFixed(1)}`).join('');
+const lastX = W - 2, lastY = pts ? H - 3 - ((pts[pts.length - 1] ?? 0) / max) * (H - 6) : 0;
+const Tag = href ? 'a' : 'div';
+const shown = value === undefined ? undefined : fmt(value);
+---
+<Tag href={href} class="block border-t border-rule pt-2 no-underline">
+  <p class="text-sm text-ink-muted">{label}</p>
+  {shown === undefined
+    ? <p class="text-base text-ink-muted">not available</p>
+    : <p class="text-2xl font-semibold text-ink">{shown}{unit && <span class="ml-1 text-sm font-normal text-ink-muted">{unit}</span>}</p>}
+  {path && (
+    <svg class="h22-chart mt-1" width={W} height={H} viewBox={`0 0 ${W} ${H}`} role="img" aria-label={trendLabel ?? `${label} trend`}>
+      <path d={path} fill="none" stroke="var(--h22-ink-muted)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx={lastX} cy={lastY} r="3" fill="var(--h22-accent)" stroke="var(--h22-surface)" stroke-width="2" />
+    </svg>
+  )}
+  <p class="text-xs text-ink-muted">{trendLabel && <span>{trendLabel}. </span>}As of <span class="num">{asOf ?? 'not available'}</span></p>
+</Tag>

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rrbj",
+  "domain": "natural",
+  "title": "M 6.2 - 127 km S of Vilyuchinsk, Russia",
+  "summary": "A magnitude 6.2 earthquake occurred 127 km S of Vilyuchinsk, Russia at a depth of 47 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-01-22",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      158.5253,
+      51.7914
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-04-21",
+      "sourceId": "usgs-us7000rrbj",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 47,
+      "unit": "km",
+      "asOf": "2026-04-21",
+      "sourceId": "usgs-us7000rrbj",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rrbj"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,14 @@
+---
+/** One guidance record: plain-language statement, the source's own words, and the citation. */
+import type { Guidance, Source } from '../../schemas';
+interface Props { g: Guidance; source: Source | undefined }
+const { g, source } = Astro.props;
+---
+<article class:list={['rounded-md p-3 text-sm', g.hazard ? 'border-2 border-ink' : 'border border-rule']}>
+  <h4 class="font-semibold text-ink">{g.hazard && <span class="mr-2 rounded-sm bg-ink px-1.5 py-0.5 text-[11px] uppercase tracking-wide text-surface">Hazard</span>}{g.title}</h4>
+  <p class="mt-1 text-ink">{g.statement}</p>
+  <blockquote class="mt-2 border-l-2 border-rule pl-3 text-ink-secondary">“{g.quote}”</blockquote>
+  <p class="mt-1 text-xs text-ink-muted">
+    {source ? <a class="underline" href={source.url}>{source.title}</a> : g.sourceId}{source?.publisher && `, ${source.publisher}`}{g.locator && `, ${g.locator}`}. Checked <span class="num">{g.lastVerified}</span>.
+  </p>
+</article>

@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import InterpretiveFrame from '../../components/interp/InterpretiveFrame';
+import ScenarioView from '../../components/interp/ScenarioView';
+import { siteData } from '../../lib/site-data';
+import { scenarioSources } from '../../lib/scenario-payload';
+import type { Scenario } from '../../schemas';
+
+export async function getStaticPaths() {
+  const data = await siteData();
+  return data.scenarios.map((s) => ({ params: { id: s.id }, props: { scenario: s } }));
+}
+const { scenario } = Astro.props as { scenario: Scenario };
+const data = await siteData();
+const sources = scenarioSources([scenario], data.sources);
+---
+<Base title="Scenario" description="Derived from scripture text only. Not a forecast. No dates are assigned.">
+  <p class="text-sm"><a class="text-accent" href="/scenarios/">← All scenarios</a></p>
+  <div class="mt-4">
+    <InterpretiveFrame title="Scenario">
+      <ScenarioView scenario={scenario} sources={sources} />
+    </InterpretiveFrame>
+  </div>
+</Base>

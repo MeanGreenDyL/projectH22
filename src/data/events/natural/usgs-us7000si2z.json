@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000si2z",
+  "domain": "natural",
+  "title": "M 6.0 - 10 km WSW of Nena, Philippines",
+  "summary": "A magnitude 6 earthquake occurred 10 km WSW of Nena, Philippines at a depth of 43 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-05-04",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      125.3316,
+      11.7144
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-07-15",
+      "sourceId": "usgs-us7000si2z",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 43,
+      "unit": "km",
+      "asOf": "2026-07-15",
+      "sourceId": "usgs-us7000si2z",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000si2z"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

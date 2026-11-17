@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-119",
+  "domain": "us-law",
+  "title": "Public Law 119-119: Improving Social Security’s Service to Victims of Identity Theft Act",
+  "summary": "H.R. 5345, \"Improving Social Security’s Service to Victims of Identity Theft Act\", originated in the House of the 119th Congress and became Public Law 119-119 on 2026-10-07, according to Congress.gov.",
+  "date": {
+    "start": "2026-10-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-5345"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

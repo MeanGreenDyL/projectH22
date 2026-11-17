@@ -1,0 +1,50 @@
+---
+/**
+ * Small multiples: one panel per series, a shared month axis and a shared y scale, so panels
+ * compare honestly (spec §8: "use liberally").
+ */
+import { columnPath } from './colpath';
+
+export interface Panel { key: string; label: string; color: string; values: number[] }
+interface Props { months: string[]; panels: Panel[]; unit?: string }
+const { months, panels, unit = 'event' } = Astro.props;
+const W = 300, H = 84, PAD_L = 22, PAD_B = 16, PAD_T = 6;
+const max = Math.max(1, ...panels.flatMap((p) => p.values));
+const niceMax = max <= 5 ? max : Math.ceil(max / 5) * 5;
+const band = (W - PAD_L) / months.length;
+const bw = Math.min(24, Math.max(2, band - 2));
+const y = (v: number) => H - PAD_B - (v / niceMax) * (H - PAD_B - PAD_T);
+const monthName = (m: string) => new Date(`${m}-01T00:00:00Z`).toLocaleString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+const tickIdx = months.map((m, i) => (m.endsWith('-01') ? i : -1)).filter((i) => i >= 0);
+const plural = (n: number) => `${n} ${unit}${n === 1 ? '' : 's'}`;
+---
+<div class="grid gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
+  {panels.map((p) => {
+    const total = p.values.reduce((a, b) => a + b, 0);
+    return (
+      <div class="min-w-0">
+        <p class="flex items-center gap-2 text-sm">
+          <span class="inline-block h-2.5 w-2.5 shrink-0 rounded-sm" style={`background:${p.color}`} aria-hidden="true" />
+          <span class="text-ink">{p.label}</span>
+          <span class="num text-ink-muted">{total}</span>
+        </p>
+        <svg class="h22-chart mt-1 w-full" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${p.label}: ${plural(total)} across ${months.length} months`}>
+          <line class="grid" x1={PAD_L} x2={W} y1={y(niceMax)} y2={y(niceMax)} />
+          <text x={PAD_L - 4} y={y(niceMax) + 4} text-anchor="end">{niceMax}</text>
+          <text x={PAD_L - 4} y={H - PAD_B + 4} text-anchor="end">0</text>
+          {p.values.map((v, i) => {
+            const x = PAD_L + i * band + (band - bw) / 2;
+            return (
+              <g>
+                {v > 0 && <path d={columnPath(x, bw, H - PAD_B, y(v))} fill={p.color} />}
+                <rect class="h22-hit" x={PAD_L + i * band} y={PAD_T} width={band} height={H - PAD_B - PAD_T} tabindex="0" data-tip={`${plural(v)}|${p.label}, ${monthName(months[i]!)}`} />
+              </g>
+            );
+          })}
+          <line class="axis" x1={PAD_L} x2={W} y1={H - PAD_B} y2={H - PAD_B} />
+          {tickIdx.map((i) => <text x={PAD_L + i * band + band / 2} y={H - 3} text-anchor="middle">{months[i]!.slice(0, 4)}</text>)}
+        </svg>
+      </div>
+    );
+  })}
+</div>

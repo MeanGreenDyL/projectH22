@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rl2n",
+  "domain": "natural",
+  "title": "M 6.6 - 29 km ESE of Yilan, Taiwan",
+  "summary": "A magnitude 6.6 earthquake occurred 29 km ESE of Yilan, Taiwan at a depth of 63 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2025-12-27",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      122.0354,
+      24.6841
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.6,
+      "unit": "magnitude",
+      "asOf": "2026-04-17",
+      "sourceId": "usgs-us7000rl2n",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 63,
+      "unit": "km",
+      "asOf": "2026-04-17",
+      "sourceId": "usgs-us7000rl2n",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rl2n"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

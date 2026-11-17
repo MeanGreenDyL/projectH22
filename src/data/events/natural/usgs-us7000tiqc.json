@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000tiqc",
+  "domain": "natural",
+  "title": "M 6.4 - 50 km NNE of Kainantu, Papua New Guinea",
+  "summary": "A magnitude 6.4 earthquake occurred 50 km NNE of Kainantu, Papua New Guinea at a depth of 113 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-09-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      146.1073,
+      -5.8986
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.4,
+      "unit": "magnitude",
+      "asOf": "2026-10-12",
+      "sourceId": "usgs-us7000tiqc",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 113,
+      "unit": "km",
+      "asOf": "2026-10-12",
+      "sourceId": "usgs-us7000tiqc",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000tiqc"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

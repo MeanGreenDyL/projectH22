@@ -1,0 +1,70 @@
+---
+import Base from '../../layouts/Base.astro';
+import StatTile from '../../components/charts/StatTile.astro';
+import { siteData } from '../../lib/site-data';
+import { needsSingleSourceMarker, DOMAIN_ROUTE } from '../../lib/policy';
+import { DOMAIN_LABEL } from '../../lib/labels';
+import { TIER_LABELS, type VerifiedEvent } from '../../schemas';
+
+export async function getStaticPaths() {
+  const { events } = await siteData();
+  return events.map((e) => ({ params: { id: e.id }, props: { event: e } }));
+}
+interface Props { event: VerifiedEvent }
+const { event: e } = Astro.props;
+const data = await siteData();
+const cited = e.sources.map((id) => data.sources.get(id)).filter((s) => s !== undefined);
+const single = needsSingleSourceMarker(e, data.sources);
+const correlations = data.correlations.filter((c) => c.eventIds.includes(e.id));
+const dateText = e.date.end && e.date.end !== e.date.start ? `${e.date.start} to ${e.date.end}` : e.date.start;
+const where = e.geography.usStates?.length ? e.geography.usStates.join(', ') : e.geography.countries.length ? e.geography.countries.join(', ') : e.geography.scope;
+---
+<Base title={e.title} description={e.summary}>
+  <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-ink-muted">
+    <a class="inline-flex items-center gap-1 text-ink-secondary" href={`/domains/${DOMAIN_ROUTE[e.domain]}/`}><span class="inline-block h-2.5 w-2.5 rounded-sm" style={`background:var(--h22-domain-${e.domain})`} aria-hidden="true" />{DOMAIN_LABEL[e.domain]}</a>
+    <span class="num">{dateText}</span>
+    <span>{where}</span>
+    <span class="rounded-sm border border-rule px-1">{e.confidence}</span>
+    {single && <span class="rounded-sm border border-status-warning px-1 text-ink-secondary">SINGLE-SOURCE: no Tier 1 or Tier 2 source</span>}
+  </p>
+  <h1 class="mt-2 max-w-[var(--measure-prose)] font-heading text-3xl leading-tight">{e.title}</h1>
+
+  {e.metrics.length > 0 && (
+    <section class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4" aria-label="Figures">
+      {e.metrics.map((m) => <StatTile label={m.label} value={m.value} unit={m.unit === 'magnitude' ? undefined : m.unit} asOf={m.asOf} />)}
+    </section>
+  )}
+
+  <p class="mt-6 max-w-[var(--measure-prose)]">{e.summary}</p>
+
+  <section class="mt-8 grid gap-4 md:grid-cols-2" aria-label="US and global context">
+    <div class="rounded-md border border-rule p-4">
+      <h2 class="text-sm font-semibold">United States</h2>
+      <p class="mt-1 text-sm text-ink-secondary">{e.usImpact ?? 'Not available yet. No sourced US-impact note has been written for this event.'}</p>
+    </div>
+    <div class="rounded-md border border-rule p-4">
+      <h2 class="text-sm font-semibold">Global context</h2>
+      <p class="mt-1 text-sm text-ink-secondary">{e.globalContext ?? 'Not available yet. No sourced global-context note has been written for this event.'}</p>
+    </div>
+  </section>
+
+  <section class="mt-8">
+    <h2 class="font-heading text-xl">Sources</h2>
+    <ul class="mt-2 space-y-2 text-sm">
+      {cited.map((s) => (
+        <li>
+          <a class="text-accent" href={s.url} rel="noopener">{s.title}</a>
+          <span class="block text-xs text-ink-muted">{s.publisher} · {s.kind === 'evidentiary' ? TIER_LABELS[s.tier] : 'Interpretive'} · {s.archiveUrl ? <a class="text-accent" href={s.archiveUrl} rel="noopener">archived copy</a> : 'no archived copy'} · accessed <span class="num">{s.accessedAt.slice(0, 10)}</span></span>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-2 text-xs text-ink-muted">Last verified <span class="num">{e.lastVerified.slice(0, 10)}</span>.</p>
+  </section>
+
+  <section class="mt-8 rounded-md bg-interp-surface p-4">
+    <p class="text-xs font-semibold uppercase tracking-wide text-interp-chip-ink">Interpretation layer</p>
+    {correlations.length === 0
+      ? <p class="mt-1 text-sm text-interp-chip-ink">No published correlations reference this event.</p>
+      : <ul class="mt-1 text-sm">{correlations.map((c) => <li><a class="text-accent" href={`/correlations/${c.id}/`}>{c.passages.map((p) => `${p.book} ${p.chapter}`).join('; ')}</a> <span class="text-interp-chip-ink">({c.strength})</span></li>)}</ul>}
+  </section>
+</Base>

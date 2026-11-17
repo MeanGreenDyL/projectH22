@@ -1,0 +1,46 @@
+{
+  "id": "usgs-aka2026jcufoy",
+  "domain": "natural",
+  "title": "M 6.1 - Rat Islands, Aleutian Islands, Alaska",
+  "summary": "A magnitude 6.1 earthquake occurred near Rat Islands, Aleutian Islands, Alaska at a depth of 16.3 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-05-09",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "AK"
+    ],
+    "coordinates": [
+      179.214,
+      50.981
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (ml)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-11-14",
+      "sourceId": "usgs-aka2026jcufoy",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 16.3,
+      "unit": "km",
+      "asOf": "2026-11-14",
+      "sourceId": "usgs-aka2026jcufoy",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-aka2026jcufoy"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

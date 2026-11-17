@@ -1,0 +1,22 @@
+{
+  "id": "eo-14387",
+  "domain": "us-law",
+  "title": "Executive Order 14387: Promoting the National Defense by Ensuring an Adequate Supply of Elemental Phosphorus and Glypho…",
+  "summary": "Executive Order 14387, \"Promoting the National Defense by Ensuring an Adequate Supply of Elemental Phosphorus and Glyphosate- Based Herbicides\", was signed on 2026-02-18 and published in the Federal Register on 2026-02-23 (91 FR 8703).",
+  "date": {
+    "start": "2026-02-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-03628"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

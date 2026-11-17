@@ -1,0 +1,233 @@
+/*
+ * Project H 2:2 theme tokens (spec §8: "sober instrument", not "doom aesthetic").
+ *
+ * Phase 0 defines tokens only. No component uses them yet. Typefaces are named here but
+ * not loaded; self-hosting and the final choice happen in Phase 3.
+ *
+ * Rules encoded here:
+ *  - Chrome is neutral (warm grays, deep ink) with ONE restrained accent for interaction.
+ *  - Saturated color is reserved for data. Domain hues follow a fixed order and were run
+ *    through the dataviz palette validator in both modes (adjacent pairs: worst CVD ΔE 9.1
+ *    light / 8.4 dark; normal-vision ΔE ≥ 19.3). Light-mode aqua, yellow and magenta sit
+ *    below 3:1 on the surface, so charts using them must carry direct labels or a table view.
+ *  - The interpretation surface is a distinct low-saturation slate tint. Never red, never gold.
+ *  - Light and dark are both selected values, not an automatic inversion.
+ */
+@import 'tailwindcss';
+
+:root {
+  color-scheme: light;
+
+  /* Structure */
+  --h22-page: #f9f9f7;
+  --h22-surface: #fcfcfb;
+  --h22-surface-raised: #ffffff;
+  --h22-ink: #0b0b0b;
+  --h22-ink-secondary: #52514e;
+  --h22-ink-muted: #6b6a65;
+  --h22-rule: #e1e0d9;
+  --h22-axis: #c3c2b7;
+  --h22-border: rgba(11, 11, 11, 0.1);
+
+  /* The one interactive accent */
+  --h22-accent: #24548a;
+  --h22-accent-contrast: #ffffff;
+  --h22-focus: #24548a;
+
+  /* Layer B: interpretation surfaces (InterpretiveFrame, Phase 4) */
+  --h22-interp-surface: #f1f0f6;
+  --h22-interp-rule: #6e6a8e;
+  --h22-interp-chip-ink: #3d3a5c;
+
+  /* Scenario banner (Phase 5) shares the interpretation family */
+  --h22-scenario-surface: #ecebf3;
+
+  /* Domain hues: fixed order, validated. Color follows the domain, never its rank. */
+  --h22-domain-cyber: #2a78d6;
+  --h22-domain-crypto: #eb6834;
+  --h22-domain-us-law: #1baf7a;
+  --h22-domain-geopolitical: #eda100;
+  --h22-domain-economic: #e87ba4;
+  --h22-domain-infrastructure: #008300;
+  --h22-domain-natural: #6250d6;
+
+  /* Status: reserved for freshness and data health; always paired with icon + label */
+  --h22-status-good: #0ca30c;
+  --h22-status-warning: #fab219;
+  --h22-status-serious: #ec835a;
+  --h22-status-critical: #d03b3b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --h22-page: #0d0d0d;
+    --h22-surface: #1a1a19;
+    --h22-surface-raised: #222220;
+    --h22-ink: #f0efec;
+    --h22-ink-secondary: #c3c2b7;
+    --h22-ink-muted: #9a9890;
+    --h22-rule: #2c2c2a;
+    --h22-axis: #383835;
+    --h22-border: rgba(255, 255, 255, 0.1);
+    --h22-accent: #8fb3e0;
+    --h22-accent-contrast: #0b0b0b;
+    --h22-focus: #8fb3e0;
+    --h22-interp-surface: #201f28;
+    --h22-interp-rule: #9a96bd;
+    --h22-interp-chip-ink: #d4d1ea;
+    --h22-scenario-surface: #24232d;
+    --h22-domain-cyber: #3987e5;
+    --h22-domain-crypto: #d95926;
+    --h22-domain-us-law: #199e70;
+    --h22-domain-geopolitical: #c98500;
+    --h22-domain-economic: #d55181;
+    --h22-domain-infrastructure: #0ca30c;
+    --h22-domain-natural: #9085e9;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --h22-page: #0d0d0d;
+  --h22-surface: #1a1a19;
+  --h22-surface-raised: #222220;
+  --h22-ink: #f0efec;
+  --h22-ink-secondary: #c3c2b7;
+  --h22-ink-muted: #9a9890;
+  --h22-rule: #2c2c2a;
+  --h22-axis: #383835;
+  --h22-border: rgba(255, 255, 255, 0.1);
+  --h22-accent: #8fb3e0;
+  --h22-accent-contrast: #0b0b0b;
+  --h22-focus: #8fb3e0;
+  --h22-interp-surface: #201f28;
+  --h22-interp-rule: #9a96bd;
+  --h22-interp-chip-ink: #d4d1ea;
+  --h22-scenario-surface: #24232d;
+  --h22-domain-cyber: #3987e5;
+  --h22-domain-crypto: #d95926;
+  --h22-domain-us-law: #199e70;
+  --h22-domain-geopolitical: #c98500;
+  --h22-domain-economic: #d55181;
+  --h22-domain-infrastructure: #0ca30c;
+  --h22-domain-natural: #9085e9;
+}
+
+/* Expose tokens as Tailwind utilities (bg-surface, text-ink, border-interp-rule, …). */
+@theme inline {
+  --color-page: var(--h22-page);
+  --color-surface: var(--h22-surface);
+  --color-surface-raised: var(--h22-surface-raised);
+  --color-ink: var(--h22-ink);
+  --color-ink-secondary: var(--h22-ink-secondary);
+  --color-ink-muted: var(--h22-ink-muted);
+  --color-rule: var(--h22-rule);
+  --color-axis: var(--h22-axis);
+  --color-border: var(--h22-border);
+  --color-accent: var(--h22-accent);
+  --color-accent-contrast: var(--h22-accent-contrast);
+  --color-focus: var(--h22-focus);
+  --color-interp-surface: var(--h22-interp-surface);
+  --color-interp-rule: var(--h22-interp-rule);
+  --color-interp-chip-ink: var(--h22-interp-chip-ink);
+  --color-scenario-surface: var(--h22-scenario-surface);
+  --color-domain-cyber: var(--h22-domain-cyber);
+  --color-domain-crypto: var(--h22-domain-crypto);
+  --color-domain-us-law: var(--h22-domain-us-law);
+  --color-domain-geopolitical: var(--h22-domain-geopolitical);
+  --color-domain-economic: var(--h22-domain-economic);
+  --color-domain-infrastructure: var(--h22-domain-infrastructure);
+  --color-domain-natural: var(--h22-domain-natural);
+  --color-status-good: var(--h22-status-good);
+  --color-status-warning: var(--h22-status-warning);
+  --color-status-serious: var(--h22-status-serious);
+  --color-status-critical: var(--h22-status-critical);
+}
+
+@theme {
+  /* Self-hosted (Fontsource, SIL OFL 1.1). Spec §8: transitional serif headings, Inter for body and data, a distinct serif for scripture. */
+  --font-heading: 'Source Serif 4 Variable', 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-data: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-scripture: 'Newsreader Variable', 'Newsreader', 'Iowan Old Style', Georgia, serif;
+
+  --text-body: 1.0625rem; /* 17px, inside the 16–18px reading band */
+  --leading-body: 1.6;
+  --measure-prose: 68ch;
+  --measure-scripture: 60ch;
+
+  /* Motion clarifies state change only; under 200ms. */
+  --duration-state: 160ms;
+}
+
+@layer base {
+  body {
+    background: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+  }
+  /* Data: tabular lining figures, always. */
+  .num,
+  table,
+  [data-numeric] {
+    font-family: var(--font-data);
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0ms !important;
+      animation-duration: 0ms !important;
+    }
+  }
+}
+
+/* ---------- Charts (Phase 3) ---------- */
+.h22-tooltip {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  max-width: 18rem;
+  padding: 0.375rem 0.625rem;
+  border: 1px solid var(--h22-border);
+  border-radius: 6px;
+  background: var(--h22-surface-raised);
+  color: var(--h22-ink);
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.12);
+}
+.h22-tooltip span { color: var(--h22-ink-secondary); }
+.h22-chart text { fill: var(--h22-ink-muted); font-family: var(--font-data); font-size: 11px; font-variant-numeric: tabular-nums; }
+.h22-chart .grid { stroke: var(--h22-rule); stroke-width: 1; shape-rendering: crispEdges; }
+.h22-chart .axis { stroke: var(--h22-axis); stroke-width: 1; shape-rendering: crispEdges; }
+.h22-chart [data-tip] { cursor: default; outline: none; }
+.h22-chart [data-tip]:hover, .h22-chart [data-tip]:focus-visible { filter: brightness(1.15); }
+.h22-chart [data-tip]:focus-visible { stroke: var(--h22-focus); stroke-width: 2; }
+.h22-hit { fill: transparent; stroke: none; }
+.h22-tooltip[hidden] { display: none; }
+
+/* Print (spec §9 printable one-pagers): black on white, chrome hidden, colour never carries meaning. */
+@media print {
+  :root, :root[data-theme='dark'] {
+    --h22-ink: #000 !important; --h22-ink-secondary: #000 !important; --h22-ink-muted: #222 !important;
+    --h22-surface: #fff !important; --h22-surface-raised: #fff !important; --h22-rule: #000 !important; --h22-border: #000 !important; --h22-accent: #000 !important;
+    --h22-interp-surface: #fff !important; --h22-interp-rule: #000 !important; --h22-interp-chip-ink: #000 !important;
+  }
+  body { background: #fff !important; color: #000 !important; }
+  body > header, body > footer, .no-print, .h22-tooltip { display: none !important; }
+  a { color: #000 !important; }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u1cf",
+  "domain": "natural",
+  "title": "M 6.0 - 4 km NNE of La Tronosa, Panama",
+  "summary": "A magnitude 6 earthquake occurred 4 km NNE of La Tronosa, Panama at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-10",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -80.5728,
+      7.4777
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-10-30",
+      "sourceId": "usgs-us6000u1cf",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-10-30",
+      "sourceId": "usgs-us6000u1cf",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u1cf"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u0xi",
+  "domain": "natural",
+  "title": "M 6.3 - 117 km NE of Norsup, Vanuatu",
+  "summary": "A magnitude 6.3 earthquake occurred 117 km NE of Norsup, Vanuatu at a depth of 19 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-08",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      168.2783,
+      -15.4332
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.3,
+      "unit": "magnitude",
+      "asOf": "2026-11-03",
+      "sourceId": "usgs-us6000u0xi",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 19,
+      "unit": "km",
+      "asOf": "2026-11-03",
+      "sourceId": "usgs-us6000u0xi",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u0xi"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

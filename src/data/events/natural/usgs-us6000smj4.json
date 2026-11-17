@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000smj4",
+  "domain": "natural",
+  "title": "M 6.0 - 95 km SE of Sarangani, Philippines",
+  "summary": "A magnitude 6 earthquake occurred 95 km SE of Sarangani, Philippines at a depth of 67 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-04-04",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      126.1392,
+      4.8733
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-06-20",
+      "sourceId": "usgs-us6000smj4",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 67,
+      "unit": "km",
+      "asOf": "2026-06-20",
+      "sourceId": "usgs-us6000smj4",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000smj4"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

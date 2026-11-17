@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000tmz6",
+  "domain": "natural",
+  "title": "M 6.0 - 32 km SSW of Honchō, Japan",
+  "summary": "A magnitude 6 earthquake occurred 32 km SSW of Honchō, Japan at a depth of 41 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-08-23",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      142.802,
+      41.8495
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-11-03",
+      "sourceId": "usgs-us6000tmz6",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 41,
+      "unit": "km",
+      "asOf": "2026-11-03",
+      "sourceId": "usgs-us6000tmz6",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000tmz6"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

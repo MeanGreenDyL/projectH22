@@ -1,0 +1,40 @@
+{
+  "note": "SYNTHETIC",
+  "results": [
+    {
+      "id": "ocd-bill/00000000-0000-0000-0000-000000000001",
+      "session": "2026",
+      "jurisdiction": { "id": "ocd-jurisdiction/country:us/state:tx/government", "name": "Texas", "classification": "state" },
+      "identifier": "HB 9901",
+      "title": "Relating to cybersecurity standards for example state agencies",
+      "openstates_url": "https://openstates.org/tx/bills/2026/HB9901/",
+      "sources": [{ "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=00R&Bill=HB9901", "note": "" }],
+      "actions": [
+        { "description": "Filed", "date": "2026-02-01", "classification": ["introduction"], "order": 1 },
+        { "description": "Signed by the Governor", "date": "2026-06-10", "classification": ["executive-signature"], "order": 2 },
+        { "description": "Effective on 9/1/26", "date": "2026-06-11", "classification": ["became-law"], "order": 3 }
+      ]
+    },
+    {
+      "id": "ocd-bill/00000000-0000-0000-0000-000000000002",
+      "session": "2026",
+      "jurisdiction": { "id": "ocd-jurisdiction/country:us/state:ca/government", "name": "California", "classification": "state" },
+      "identifier": "AB 99",
+      "title": "Example cybersecurity study",
+      "openstates_url": "https://openstates.org/ca/bills/2026/AB99/",
+      "sources": [],
+      "actions": [{ "description": "Introduced", "date": "2026-03-01", "classification": ["introduction"], "order": 1 }]
+    },
+    {
+      "id": "ocd-bill/00000000-0000-0000-0000-000000000003",
+      "session": "2026",
+      "jurisdiction": { "id": "ocd-jurisdiction/country:us/state:ny/government", "name": "New York", "classification": "state" },
+      "identifier": "S 1234",
+      "title": "Relating to example highway naming",
+      "openstates_url": "https://openstates.org/ny/bills/2026/S1234/",
+      "sources": [],
+      "actions": [{ "description": "Signed by governor", "date": "2026-05-01", "classification": ["executive-signature"], "order": 1 }]
+    }
+  ],
+  "pagination": { "per_page": 20, "page": 1, "max_page": 1, "total_items": 3 }
+}

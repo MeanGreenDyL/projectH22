@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000szzy",
+  "domain": "natural",
+  "title": "M 6.4 - 196 km SE of Lorengau, Papua New Guinea",
+  "summary": "A magnitude 6.4 earthquake occurred 196 km SE of Lorengau, Papua New Guinea at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-07-13",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      148.5991,
+      -3.2114
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.4,
+      "unit": "magnitude",
+      "asOf": "2026-09-29",
+      "sourceId": "usgs-us7000szzy",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-09-29",
+      "sourceId": "usgs-us7000szzy",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000szzy"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

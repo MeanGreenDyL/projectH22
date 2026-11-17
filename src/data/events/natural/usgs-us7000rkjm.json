@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rkjm",
+  "domain": "natural",
+  "title": "M 6.0 - 2025 Taitung, Taiwan Earthquake",
+  "summary": "A magnitude 6 earthquake occurred near 2025 Taitung, Taiwan Earthquake at a depth of 8 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2025-12-24",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      121.2494,
+      22.8982
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-04-01",
+      "sourceId": "usgs-us7000rkjm",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 8,
+      "unit": "km",
+      "asOf": "2026-04-01",
+      "sourceId": "usgs-us7000rkjm",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rkjm"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fema-dr-4941",
+  "domain": "natural",
+  "title": "Major disaster declaration DR-4941-SD: Severe Storm",
+  "summary": "FEMA records a major disaster declaration (DR-4941-SD, \"SEVERE STORMS, STRAIGHT-LINE WINDS, AND FLOODING\") for SD, dated 2026-09-01, for an incident of type \"Severe Storm\". The incident period began on 2026-06-02 and ended on 2026-06-04. The declaration lists 1 designated area.",
+  "date": {
+    "start": "2026-09-01",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "SD"
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Designated areas",
+      "value": 1,
+      "unit": "areas",
+      "asOf": "2026-11-17",
+      "sourceId": "fema-dr-4941",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "fema-dr-4941"
+  ],
+  "lastVerified": "2026-11-17T06:38:29Z",
+  "confidence": "confirmed"
+}

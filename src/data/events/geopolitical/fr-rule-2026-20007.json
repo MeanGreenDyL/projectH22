@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-20007",
+  "domain": "geopolitical",
+  "title": "Federal rule: Removing Duplicative Penalties Information and Reorganizing Certain Parts",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Removing Duplicative Penalties Information and Reorganizing Certain Parts\" in the Federal Register on 2026-09-30 (91 FR 61727), effective 2026-09-30.",
+  "date": {
+    "start": "2026-09-30",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-20007"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

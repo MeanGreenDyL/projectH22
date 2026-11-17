@@ -1,0 +1,46 @@
+{
+  "id": "usgs-us7000tdvt",
+  "domain": "natural",
+  "title": "M 6.3 - 92 km SSW of Nikolski, Alaska",
+  "summary": "A magnitude 6.3 earthquake occurred 92 km SSW of Nikolski, Alaska at a depth of 21 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-09-03",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "AK"
+    ],
+    "coordinates": [
+      -169.3438,
+      52.1627
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.3,
+      "unit": "magnitude",
+      "asOf": "2026-11-12",
+      "sourceId": "usgs-us7000tdvt",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 21,
+      "unit": "km",
+      "asOf": "2026-11-12",
+      "sourceId": "usgs-us7000tdvt",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000tdvt"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

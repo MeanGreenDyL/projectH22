@@ -1,0 +1,9 @@
+{
+  "note": "SYNTHETIC",
+  "bills": [
+    { "congress": 119, "latestAction": { "actionDate": "2026-10-20", "text": "Became Public Law No: 119-901." }, "laws": [{ "number": "119-901", "type": "Public Law" }], "number": "9901", "originChamber": "House", "originChamberCode": "H", "title": "Example Infrastructure Act", "type": "HR", "updateDate": "2026-10-22", "url": "https://api.congress.gov/v3/bill/119/hr/9901?format=json" },
+    { "congress": 119, "latestAction": { "actionDate": "2026-09-01", "text": "Became Private Law No: 119-902." }, "laws": [{ "number": "119-902", "type": "Private Law" }], "number": "9902", "originChamber": "Senate", "originChamberCode": "S", "title": "For the relief of Example Person", "type": "S", "updateDate": "2026-09-03", "url": "https://api.congress.gov/v3/bill/119/s/9902?format=json" },
+    { "congress": 119, "latestAction": { "actionDate": "2026-08-15", "text": "Committee filed written report." }, "laws": [{ "number": "119-903", "type": "Public Law" }], "number": "99", "originChamber": "House", "originChamberCode": "H", "title": "Example Joint Resolution", "type": "HJRES", "updateDate": "2026-08-20", "url": "https://api.congress.gov/v3/bill/119/hjres/99?format=json" },
+    { "congress": 119, "latestAction": { "actionDate": "2025-02-01", "text": "Became Public Law No: 119-904." }, "laws": [{ "number": "119-904", "type": "Public Law" }], "number": "9904", "originChamber": "House", "originChamberCode": "H", "title": "Old Example Act", "type": "HR", "updateDate": "2025-02-03", "url": "https://api.congress.gov/v3/bill/119/hr/9904?format=json" }
+  ]
+}

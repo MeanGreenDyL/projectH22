@@ -1,0 +1,34 @@
+{
+  "id": "fema-em-3637",
+  "domain": "natural",
+  "title": "Emergency declaration EM-3637-NC: Winter Storm",
+  "summary": "FEMA records a emergency declaration (EM-3637-NC, \"SEVERE WINTER STORM\") for NC, dated 2026-01-24, for an incident of type \"Winter Storm\". The incident period began on 2026-01-21 and ended on 2026-01-27. The declaration lists 102 designated areas.",
+  "date": {
+    "start": "2026-01-24",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "NC"
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Designated areas",
+      "value": 102,
+      "unit": "areas",
+      "asOf": "2026-11-17",
+      "sourceId": "fema-em-3637",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "fema-em-3637"
+  ],
+  "lastVerified": "2026-11-17T06:38:29Z",
+  "confidence": "confirmed"
+}

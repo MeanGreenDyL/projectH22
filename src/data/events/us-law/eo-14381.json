@@ -1,0 +1,22 @@
+{
+  "id": "eo-14381",
+  "domain": "us-law",
+  "title": "Executive Order 14381: Celebrating American Greatness With American Motor Racing",
+  "summary": "Executive Order 14381, \"Celebrating American Greatness With American Motor Racing\", was signed on 2026-01-30 and published in the Federal Register on 2026-02-04 (91 FR 5211).",
+  "date": {
+    "start": "2026-01-30",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-02292"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000srb1",
+  "domain": "natural",
+  "title": "M 7.8 - 25 km SW of Kablalan, Philippines",
+  "summary": "A magnitude 7.8 earthquake occurred 25 km SW of Kablalan, Philippines at a depth of 56.991 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      125.056,
+      5.5994
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 7.8,
+      "unit": "magnitude",
+      "asOf": "2026-11-14",
+      "sourceId": "usgs-us7000srb1",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 56.991,
+      "unit": "km",
+      "asOf": "2026-11-14",
+      "sourceId": "usgs-us7000srb1",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000srb1"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

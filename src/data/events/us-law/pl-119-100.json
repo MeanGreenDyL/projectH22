@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-100",
+  "domain": "us-law",
+  "title": "Public Law 119-100: Lulu’s Law",
+  "summary": "S. 1003, \"Lulu’s Law\", originated in the Senate of the 119th Congress and became Public Law 119-100 on 2026-06-26, according to Congress.gov.",
+  "date": {
+    "start": "2026-06-26",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-1003"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000tgb9",
+  "domain": "natural",
+  "title": "M 6.8 - The 2026 Kumamoto Region, Japan Earthquake",
+  "summary": "A magnitude 6.8 earthquake occurred near The 2026 Kumamoto Region, Japan Earthquake at a depth of 8 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-07-28",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      130.6601,
+      32.6177
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.8,
+      "unit": "magnitude",
+      "asOf": "2026-11-07",
+      "sourceId": "usgs-us6000tgb9",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 8,
+      "unit": "km",
+      "asOf": "2026-11-07",
+      "sourceId": "usgs-us6000tgb9",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000tgb9"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-18569",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of Venezuela Sanctions Regulations Web General Licenses 30B and 51.",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of Venezuela Sanctions Regulations Web General Licenses 30B and 51.\" in the Federal Register on 2026-09-11 (91 FR 57793).",
+  "date": {
+    "start": "2026-09-11",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18569"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

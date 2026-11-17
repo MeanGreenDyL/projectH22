@@ -1,0 +1,84 @@
+---
+import Base from '../../layouts/Base.astro';
+import CanonBadge from '../../components/CanonBadge.astro';
+import { booksFor, bookSlug, translations } from '../../lib/scripture';
+import { BOOKS, CANONS, DEFAULT_TRANSLATION } from '../../schemas';
+
+const tx = translations();
+const coverage = new Map(tx.map((t) => [t.id, new Set(t.books)]));
+const webBooks = new Set(booksFor(DEFAULT_TRANSLATION).map((b) => b.code));
+const kjvBooks = new Set(booksFor('kjv').map((b) => b.code));
+const rows = BOOKS.map((b) => ({ ...b, chapterCount: b.chapters[1] - b.chapters[0] + 1 }));
+const counts = Object.fromEntries(CANONS.map((c) => [c, rows.filter((r) => r.canon === c).length]));
+---
+<Base title="Scripture" description="Public-domain scripture with the Apocrypha: every book, its canon, and which translations carry it.">
+  <h1 class="font-heading text-3xl">Scripture</h1>
+  <p class="mt-2 max-w-[var(--measure-prose)] text-ink-secondary">
+    Public-domain text only. Read in the World English Bible by default, or the King James Version.
+  </p>
+
+  <div id="search" class="mt-6" data-pagefind-ignore></div>
+
+  <fieldset class="mt-6 flex flex-wrap gap-4 text-sm" data-pagefind-ignore>
+    <legend class="mb-2 font-semibold">Show canon</legend>
+    {CANONS.filter((c) => counts[c]! > 0).map((c) => (
+      <label class="flex items-center gap-2">
+        <input type="checkbox" checked data-canon-filter={c} />
+        <CanonBadge canon={c} /> <span class="num text-ink-muted">{counts[c]} books</span>
+      </label>
+    ))}
+  </fieldset>
+
+  <div class="mt-4 overflow-x-auto" data-pagefind-ignore tabindex="0" role="region" aria-label="Scrollable table">
+  <table class="w-full border-collapse text-sm">
+    <caption class="sr-only">Books, canon classification, chapters, and translation coverage</caption>
+    <thead>
+      <tr class="border-b border-axis text-left">
+        <th scope="col" class="py-2 pr-3">Book</th>
+        <th scope="col" class="py-2 pr-3">Canon</th>
+        <th scope="col" class="py-2 pr-3 text-right">Chapters</th>
+        {tx.map((t) => <th scope="col" class="py-2 px-1 text-center uppercase" title={t.name}>{t.id}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((b) => (
+        <tr class="border-b border-rule" data-canon-row={b.canon}>
+          <th scope="row" class="py-1.5 pr-3 text-left font-normal">
+            {webBooks.has(b.code) ? (
+              <a href={`/scripture/web/${bookSlug(b.code)}/${b.chapters[0]}/`} class="text-accent">{b.name}</a>
+            ) : kjvBooks.has(b.code) ? (
+              <a href={`/scripture/kjv/${bookSlug(b.code)}/${b.chapters[0]}/`} class="text-accent">{b.name}</a>
+            ) : (
+              <span>{b.name} <span class="text-ink-muted">(no text bundled yet)</span></span>
+            )}
+          </th>
+          <td class="py-1.5 pr-3"><CanonBadge canon={b.canon} /></td>
+          <td class="num py-1.5 pr-3 text-right">{b.chapterCount}</td>
+          {tx.map((t) => (
+            <td class="py-1.5 px-1 text-center">
+              {coverage.get(t.id)?.has(b.code) ? <span aria-label="included">●</span> : <span class="text-ink-muted" aria-label="not included">·</span>}
+            </td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  </div>
+
+  <p class="mt-6 text-xs text-ink-muted">
+    Cross-references: OpenBible.info (CC BY). Translation sources and licences: see the project's licensing record.
+  </p>
+
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    if (window.PagefindUI) new PagefindUI({ element: '#search', showSubResults: true, resetStyles: false });
+    document.querySelectorAll('[data-canon-filter]').forEach((box) => {
+      box.addEventListener('change', () => {
+        document.querySelectorAll(`[data-canon-row="${box.dataset.canonFilter}"]`).forEach((row) => {
+          row.hidden = !box.checked;
+        });
+      });
+    });
+  </script>
+</Base>

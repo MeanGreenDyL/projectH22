@@ -1,0 +1,22 @@
+{
+  "id": "eo-14435",
+  "domain": "us-law",
+  "title": "Executive Order 14435: Emergency Tax Relief on Diesel Fuel",
+  "summary": "Executive Order 14435, \"Emergency Tax Relief on Diesel Fuel\", was signed on 2026-10-05 and published in the Federal Register on 2026-10-09 (91 FR 64747).",
+  "date": {
+    "start": "2026-10-05",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-20855"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

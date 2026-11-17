@@ -1,0 +1,9 @@
+{
+  "source": "congress-laws",
+  "lastAttempt": "2026-11-17T06:44:25Z",
+  "lastSuccess": "2026-11-17T06:44:25Z",
+  "ok": true,
+  "eventsWritten": 100,
+  "eventsPending": 7,
+  "slaHours": 48
+}

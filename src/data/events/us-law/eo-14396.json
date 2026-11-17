@@ -1,0 +1,22 @@
+{
+  "id": "eo-14396",
+  "domain": "us-law",
+  "title": "Executive Order 14396: Preserving America's Game",
+  "summary": "Executive Order 14396, \"Preserving America's Game\", was signed on 2026-03-20 and published in the Federal Register on 2026-03-25 (91 FR 14639).",
+  "date": {
+    "start": "2026-03-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-05867"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

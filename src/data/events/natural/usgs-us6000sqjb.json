@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sqjb",
+  "domain": "natural",
+  "title": "M 6.0 - south of the Kermadec Islands",
+  "summary": "A magnitude 6 earthquake occurred near south of the Kermadec Islands at a depth of 12 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-04-16",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -178.3174,
+      -32.1443
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-07-03",
+      "sourceId": "usgs-us6000sqjb",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 12,
+      "unit": "km",
+      "asOf": "2026-07-03",
+      "sourceId": "usgs-us6000sqjb",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sqjb"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

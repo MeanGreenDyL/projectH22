@@ -1,0 +1,22 @@
+{
+  "id": "eo-14418",
+  "domain": "us-law",
+  "title": "Executive Order 14418: Continuing To Protect the Meaning and Value of American Citizenship",
+  "summary": "Executive Order 14418, \"Continuing To Protect the Meaning and Value of American Citizenship\", was signed on 2026-08-06 and published in the Federal Register on 2026-08-11 (91 FR 51991).",
+  "date": {
+    "start": "2026-08-06",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-16403"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

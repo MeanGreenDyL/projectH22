@@ -1,0 +1,85 @@
+---
+import Base from '../../layouts/Base.astro';
+import GuidanceItem from '../../components/prep/GuidanceItem.astro';
+import PrepResources from '../../components/prep/PrepResources.astro';
+import StageRail from '../../components/prep/StageRail.astro';
+import SupplyCalculator from '../../components/prep/SupplyCalculator';
+import { siteData } from '../../lib/site-data';
+import { hazardFirst } from '../../lib/supply-calc';
+import { GUIDANCE_TOPICS, PREPAREDNESS_STAGES, STAGE_LABEL, type GuidanceTopic, type Source } from '../../schemas';
+
+const data = await siteData();
+const all = data.guidance;
+const src = (id: string) => data.sources.get(id);
+const counts = Object.fromEntries(PREPAREDNESS_STAGES.map((s) => [s, all.filter((g) => g.stages.includes(s)).length])) as Record<(typeof PREPAREDNESS_STAGES)[number], number>;
+const TOPIC_LABEL: Record<GuidanceTopic, string> = {
+  'carbon-monoxide': 'Carbon monoxide', generator: 'Generators', heating: 'Heating without power', water: 'Water', food: 'Food safety',
+  power: 'Power and devices', communication: 'Staying in touch', sanitation: 'Sanitation', 'first-aid-referral': 'First aid', kit: 'Supply kit',
+};
+const byTopic = (t: GuidanceTopic) => hazardFirst(all.filter((g) => g.topic === t));
+const otherTopics = GUIDANCE_TOPICS.filter((t) => t !== 'carbon-monoxide');
+const calcSources: Record<string, Pick<Source, 'id' | 'title' | 'publisher' | 'url'>> = {};
+for (const g of all) { const s = src(g.sourceId); if (s && g.quantity) calcSources[s.id] = { id: s.id, title: s.title, publisher: s.publisher, url: s.url }; }
+const wanted = [{ key: 'drinking-water', title: 'Drinking water' }];
+---
+<Base title="Preparedness" description="How to be ready for a power or infrastructure outage, from official and professional guidance.">
+  <h1 class="font-heading text-3xl">Preparedness</h1>
+  <p class="mt-1 max-w-[var(--measure-prose)] text-ink-secondary">How to be ready for a power or infrastructure outage, from official guidance.</p>
+
+  <section class="mt-6"><StageRail counts={counts} /></section>
+
+  <div class="mt-6"><PrepResources /></div>
+
+  <section class="mt-8" id="carbon-monoxide" aria-labelledby="co-h">
+    <h2 id="co-h" class="font-heading text-2xl">Carbon monoxide comes first</h2>
+    <p class="mt-1 max-w-[var(--measure-prose)] text-sm text-ink-secondary">The carbon monoxide hazard is stated before any generator, heating or fuel instructions on this page.</p>
+    <div class="mt-3 grid gap-3 md:grid-cols-2">
+      {byTopic('carbon-monoxide').length === 0
+        ? <p class="rounded-md border-2 border-dashed border-ink p-4 text-sm text-ink">The carbon monoxide guidance is being sourced from official agencies and is not published yet. Until it is, do not use any of the generator or heating content here; follow your local fire department and emergency management office.</p>
+        : byTopic('carbon-monoxide').map((g) => <GuidanceItem g={g} source={src(g.sourceId)} />)}
+    </div>
+  </section>
+
+  <section class="mt-10" aria-labelledby="calc-h">
+    <h2 id="calc-h" class="font-heading text-2xl">Household supply calculator</h2>
+    <p class="mt-1 max-w-[var(--measure-prose)] text-sm text-ink-secondary">Every amount comes from cited official guidance. Where there is no cited figure yet, the calculator says so rather than guessing.</p>
+    <div class="mt-3"><SupplyCalculator client:visible records={all.filter((g) => g.quantity)} sources={calcSources} wanted={wanted} /></div>
+  </section>
+
+  <section class="mt-10" aria-labelledby="stages-h">
+    <h2 id="stages-h" class="font-heading text-2xl">What changes at each stage</h2>
+    <div class="mt-3 space-y-6">
+      {PREPAREDNESS_STAGES.map((s) => {
+        const items = hazardFirst(all.filter((g) => g.stages.includes(s)));
+        return (
+          <section id={`stage-${s}`} aria-labelledby={`stage-${s}-h`}>
+            <h3 id={`stage-${s}-h`} class="text-lg font-semibold text-ink">{STAGE_LABEL[s]}</h3>
+            {items.length === 0
+              ? <p class="mt-1 text-sm text-ink-muted">Not available yet.</p>
+              : <div class="mt-2 grid gap-3 md:grid-cols-2">{items.map((g) => <GuidanceItem g={g} source={src(g.sourceId)} />)}</div>}
+          </section>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="mt-10" aria-labelledby="topics-h">
+    <h2 id="topics-h" class="font-heading text-2xl">By topic</h2>
+    <div class="mt-3 space-y-6">
+      {otherTopics.map((t) => (
+        <section id={`topic-${t}`}>
+          <h3 class="text-lg font-semibold text-ink">{TOPIC_LABEL[t]}</h3>
+          {byTopic(t).length === 0
+            ? <p class="mt-1 text-sm text-ink-muted">Not available yet.</p>
+            : <div class="mt-2 grid gap-3 md:grid-cols-2">{byTopic(t).map((g) => <GuidanceItem g={g} source={src(g.sourceId)} />)}</div>}
+        </section>
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-10 text-sm text-ink-secondary">
+    <h2 class="font-heading text-2xl text-ink">Print a copy</h2>
+    <p class="mt-1 max-w-[var(--measure-prose)]">Information that needs power to read is no use in an outage. The <a class="text-accent underline" href="/preparedness/print/">one-page version</a> prints in black and white.</p>
+    <p class="mt-3 max-w-[var(--measure-prose)]">First aid on this site stays at the level of certified courses. For training, take an in-person first aid course; for medicines, ask a clinician or pharmacist.</p>
+  </section>
+</Base>

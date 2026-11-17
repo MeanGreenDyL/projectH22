@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-18461",
+  "domain": "geopolitical",
+  "title": "Federal rule: Iranian Transactions and Sanctions Regulations",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Iranian Transactions and Sanctions Regulations\" in the Federal Register on 2026-09-10 (91 FR 57511), effective 2026-09-08.",
+  "date": {
+    "start": "2026-09-10",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18461"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

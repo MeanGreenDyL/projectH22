@@ -1,0 +1,42 @@
+---
+/** Printable one-pager (spec §9): high contrast, works in black and white, no colour carries meaning. */
+import Base from '../../layouts/Base.astro';
+import PrepResources from '../../components/prep/PrepResources.astro';
+import { siteData } from '../../lib/site-data';
+import { hazardFirst } from '../../lib/supply-calc';
+import { PREPAREDNESS_STAGES, STAGE_LABEL } from '../../schemas';
+
+const data = await siteData();
+const all = hazardFirst(data.guidance);
+const co = all.filter((g) => g.topic === 'carbon-monoxide');
+---
+<Base title="Preparedness one-pager" description="A printable, black-and-white summary of the preparedness guidance.">
+  <div class="print-page mx-auto max-w-3xl text-ink">
+    <h1 class="font-heading text-2xl">Outage readiness: one page</h1>
+    <p class="mt-1 text-sm">Print this before you need it. Every line cites its official source.</p>
+    <div class="mt-4"><PrepResources /></div>
+    <table class="mt-4 w-full border-collapse text-sm">
+      <caption class="text-left font-semibold">Carbon monoxide first</caption>
+      <tbody>
+        {co.length === 0
+          ? <tr><td class="border border-ink p-2">Not available yet. Follow your local fire department and emergency management office.</td></tr>
+          : co.map((g) => <tr><td class="border border-ink p-2"><strong>{g.title}.</strong> {g.statement} <span class="text-xs">({data.sources.get(g.sourceId)?.title ?? g.sourceId})</span></td></tr>)}
+      </tbody>
+    </table>
+    <table class="mt-4 w-full border-collapse text-sm">
+      <caption class="text-left font-semibold">By stage</caption>
+      <tbody>
+        {PREPAREDNESS_STAGES.map((s) => {
+          const items = all.filter((g) => g.stages.includes(s) && g.topic !== 'carbon-monoxide');
+          return (
+            <tr>
+              <th scope="row" class="w-32 border border-ink p-2 text-left align-top">{STAGE_LABEL[s]}</th>
+              <td class="border border-ink p-2">{items.length === 0 ? 'Not available yet.' : <ul class="list-disc pl-4">{items.map((g) => <li>{g.statement} <span class="text-xs">({data.sources.get(g.sourceId)?.title ?? g.sourceId})</span></li>)}</ul>}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+    <p class="mt-4 text-xs no-print"><a class="underline" href="/preparedness/">Back to the full guide</a></p>
+  </div>
+</Base>

@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-42",
+  "domain": "us-law",
+  "title": "Public Law 119-42: Veterans’ Compensation Cost-of-Living Adjustment Act of 2025",
+  "summary": "S. 2392, \"Veterans’ Compensation Cost-of-Living Adjustment Act of 2025\", originated in the Senate of the 119th Congress and became Public Law 119-42 on 2025-11-25, according to Congress.gov.",
+  "date": {
+    "start": "2025-11-25",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-2392"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

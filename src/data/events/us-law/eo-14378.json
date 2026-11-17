@@ -1,0 +1,22 @@
+{
+  "id": "eo-14378",
+  "domain": "us-law",
+  "title": "Executive Order 14378: Continuance of the Federal Emergency Management Agency Review Council",
+  "summary": "Executive Order 14378, \"Continuance of the Federal Emergency Management Agency Review Council\", was signed on 2026-01-23 and published in the Federal Register on 2026-01-29 (91 FR 3993).",
+  "date": {
+    "start": "2026-01-23",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-01872"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

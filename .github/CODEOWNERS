@@ -1,0 +1,7 @@
+# Interpretation-layer records and the rules that guard them need a human reviewer.
+# Takes effect once branch protection on main requires code-owner review.
+/src/data/correlations/   @MeanGreenDyL
+/src/data/scenarios/      @MeanGreenDyL
+/src/schemas/             @MeanGreenDyL
+/src/validation/          @MeanGreenDyL
+/docs/licensing.md        @MeanGreenDyL

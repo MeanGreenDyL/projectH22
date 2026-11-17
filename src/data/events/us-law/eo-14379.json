@@ -1,0 +1,22 @@
+{
+  "id": "eo-14379",
+  "domain": "us-law",
+  "title": "Executive Order 14379: Addressing Addiction Through the Great American Recovery Initiative",
+  "summary": "Executive Order 14379, \"Addressing Addiction Through the Great American Recovery Initiative\", was signed on 2026-01-29 and published in the Federal Register on 2026-02-03 (91 FR 5081).",
+  "date": {
+    "start": "2026-01-29",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-02249"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rn2z",
+  "domain": "natural",
+  "title": "M 6.4 - 35 km E of Santiago, Philippines",
+  "summary": "A magnitude 6.4 earthquake occurred 35 km E of Santiago, Philippines at a depth of 22 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-01-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      126.8953,
+      7.2449
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.4,
+      "unit": "magnitude",
+      "asOf": "2026-06-27",
+      "sourceId": "usgs-us7000rn2z",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 22,
+      "unit": "km",
+      "asOf": "2026-06-27",
+      "sourceId": "usgs-us7000rn2z",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rn2z"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

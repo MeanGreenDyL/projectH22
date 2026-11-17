@@ -1,0 +1,22 @@
+{
+  "id": "pvtl-119-2",
+  "domain": "us-law",
+  "title": "Private Law 119-2: Nicholas Dockery Medal of Honor Act",
+  "summary": "H.R. 7194, \"Nicholas Dockery Medal of Honor Act\", originated in the House of the 119th Congress and became Private Law 119-2 on 2026-03-26, according to Congress.gov.",
+  "date": {
+    "start": "2026-03-26",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-7194"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

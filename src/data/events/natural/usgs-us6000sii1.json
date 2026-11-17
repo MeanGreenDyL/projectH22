@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sii1",
+  "domain": "natural",
+  "title": "M 6.3 - 140 km ENE of Hihifo, Tonga",
+  "summary": "A magnitude 6.3 earthquake occurred 140 km ENE of Hihifo, Tonga at a depth of 12 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-03-22",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -172.652,
+      -15.3376
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.3,
+      "unit": "magnitude",
+      "asOf": "2026-06-04",
+      "sourceId": "usgs-us6000sii1",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 12,
+      "unit": "km",
+      "asOf": "2026-06-04",
+      "sourceId": "usgs-us6000sii1",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sii1"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

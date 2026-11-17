@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-62",
+  "domain": "us-law",
+  "title": "Public Law 119-62: MAPWaters Act of 2025",
+  "summary": "H.R. 187, \"MAPWaters Act of 2025\", originated in the House of the 119th Congress and became Public Law 119-62 on 2025-12-26, according to Congress.gov.",
+  "date": {
+    "start": "2025-12-26",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-187"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

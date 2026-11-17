@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-15601",
+  "domain": "cyber",
+  "title": "Federal rule: Modernization of the Nation's Alerting Systems; Protecting the Nation's Communications Systems From Cyber…",
+  "summary": "Federal Communications Commission published the rule \"Modernization of the Nation's Alerting Systems; Protecting the Nation's Communications Systems From Cybersecurity Threats\" in the Federal Register on 2026-07-31 (91 FR 48289), effective 2026-09-29.",
+  "date": {
+    "start": "2026-07-31",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-15601"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

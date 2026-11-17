@@ -1,0 +1,16 @@
+{
+  "name": "OpenBible.info Cross References",
+  "license": "CC BY (attribution: OpenBible.info)",
+  "homepage": "https://www.openbible.info/labs/cross-references/",
+  "file": {
+    "url": "https://raw.githubusercontent.com/scrollmapper/bible_databases/2025/sources/extras/cross_references.txt",
+    "name": "cross_references.txt"
+  },
+  "notes": [
+    "Seeded from the Treasury of Scripture Knowledge and ranked by reader votes. Votes are a crowd relevance signal, not scholarship; some are negative.",
+    "Covers the 66-book Protestant canon only. Uses modern versification: 3 John has 15 verses (KJV 1:14 is split in two), so five references point at 3 John 1:15, which the KJV does not number."
+  ],
+  "sha256": "452b263f657d3e721d20341b6b82f1196fc98882d685bd4ef9050ae17f033f82",
+  "retrievedAt": "2026-11-17",
+  "count": 344799
+}

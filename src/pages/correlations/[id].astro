@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import CorrelationView from '../../components/interp/CorrelationView';
+import InterpretiveFrame from '../../components/interp/InterpretiveFrame';
+import StrengthLegend from '../../components/interp/StrengthLegend';
+import { siteData } from '../../lib/site-data';
+import { browserPayload } from '../../lib/correlation-payload';
+import { formatPassage } from '../../schemas';
+import { correlationArticle } from '../../lib/structured-data';
+
+export async function getStaticPaths() {
+  const data = await siteData();
+  const { items } = browserPayload(data);
+  return items.map((item) => ({ params: { id: item.correlation.id }, props: { item } }));
+}
+const { item } = Astro.props as { item: ReturnType<typeof browserPayload>['items'][number] };
+const data = await siteData();
+const { sources } = browserPayload(data);
+const c = item.correlation;
+---
+<Base structuredData={correlationArticle(c)} title={c.passages.map(formatPassage).join('; ')} description="A proposed reading, with its strength, tradition and the case against it.">
+  <p class="text-sm"><a class="text-accent" href="/correlations/">← All correlations</a></p>
+  <div class="mt-4">
+    <InterpretiveFrame title="Proposed reading" muted={c.strength === 'numerical-symbolic' || c.strength === 'speculative'}>
+      <CorrelationView correlation={c} events={item.events} sources={sources} counterOpen />
+    </InterpretiveFrame>
+  </div>
+  <section class="mt-8">
+    <h2 class="font-heading text-xl">Strength legend</h2>
+    <div class="mt-3"><StrengthLegend /></div>
+  </section>
+  <p class="mt-6 text-xs text-ink-muted">Reviewed by {c.review.status === 'approved' ? c.review.reviewedBy : 'not reviewed'}{c.review.status === 'approved' ? ` on ${c.review.reviewedAt.slice(0, 10)}` : ''}.</p>
+</Base>

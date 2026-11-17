@@ -1,0 +1,61 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/source-serif-4';
+import '@fontsource-variable/newsreader';
+import '../styles/tokens.css';
+import HealthDot from '../components/HealthDot.astro';
+import { FEEDS, overallIndicator } from '../lib/feeds';
+import { readFeedStatuses } from '../lib/feed-status';
+import { jsonLd } from '../lib/structured-data';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** schema.org object, serialized as JSON-LD in the head. */
+  structuredData?: unknown;
+}
+const { title, description = 'Project H 2:2 — sourced records, made plain.', structuredData } = Astro.props;
+const freshness = overallIndicator(FEEDS, readFeedStatuses(), new Date());
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} · Project H 2:2</title>
+    {structuredData !== undefined && <script type="application/ld+json" is:inline set:html={jsonLd(structuredData)} />}
+  </head>
+  <body class="min-h-screen">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 bg-surface-raised px-3 py-2">Skip to content</a>
+    <header class="border-b border-rule">
+      <nav class="mx-auto flex max-w-6xl flex-wrap items-baseline gap-x-5 gap-y-2 px-4 py-3 text-sm" aria-label="Site">
+        <a href="/" class="font-heading text-base text-ink no-underline">Project H 2:2</a>
+        <a href="/timeline/" class="py-0.5 text-ink-secondary hover:text-accent">Timeline</a>
+        <a href="/domains/cyber/" class="hidden py-0.5 text-ink-secondary hover:text-accent sm:inline">Cyber</a>
+        <a href="/domains/crypto/" class="hidden py-0.5 text-ink-secondary hover:text-accent sm:inline">Crypto</a>
+        <a href="/domains/us-law/" class="hidden py-0.5 text-ink-secondary hover:text-accent sm:inline">US law</a>
+        <a href="/domains/global/" class="hidden py-0.5 text-ink-secondary hover:text-accent sm:inline">Global</a>
+        <a href="/correlations/" class="py-0.5 text-ink-secondary hover:text-accent">Correlations</a>
+        <a href="/scenarios/" class="hidden py-0.5 text-ink-secondary hover:text-accent md:inline">Scenarios</a>
+        <a href="/preparedness/" class="hidden py-0.5 text-ink-secondary hover:text-accent lg:inline">Preparedness</a>
+        <a href="/scripture/" class="py-0.5 text-ink-secondary hover:text-accent">Scripture</a>
+        <a href="/sources/" class="hidden py-0.5 text-ink-secondary hover:text-accent md:inline">Sources</a>
+        <a href="/data-health/" class="ml-auto py-1 text-xs text-ink-secondary no-underline hover:text-accent" title="Freshness of the critical data feeds when this page was built">
+          <HealthDot state={freshness} />
+        </a>
+      </nav>
+    </header>
+    <main id="main" class="mx-auto max-w-6xl px-4 py-6">
+      <slot />
+    </main>
+    <footer class="mx-auto mt-12 max-w-6xl border-t border-rule px-4 py-6 text-xs text-ink-muted">
+      <nav class="flex flex-wrap gap-x-4 gap-y-2 [&>a]:inline-flex [&>a]:min-h-6 [&>a]:items-center" aria-label="Footer">
+        <a href="/domains/cyber/">Cyber</a><a href="/domains/crypto/">Crypto</a><a href="/domains/us-law/">US law</a><a href="/domains/global/">Global</a>
+        <a href="/sources/">Sources</a><a href="/data-health/">Data health</a><a href="/scenarios/">Scenarios</a><a href="/preparedness/">Preparedness</a><a href="/methodology/">Methodology</a>
+      </nav>
+      <p class="mt-2">Facts and interpretation are kept apart: every event cites its sources; every correlation is labelled as a reading, with its counter-reading.</p>
+    </footer>
+    <script>import '../scripts/tooltip';</script>
+  </body>
+</html>

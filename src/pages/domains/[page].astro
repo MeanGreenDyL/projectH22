@@ -1,0 +1,160 @@
+---
+import Base from '../../layouts/Base.astro';
+import BoxPlot from '../../components/charts/BoxPlot.astro';
+import ChartFrame from '../../components/charts/ChartFrame.astro';
+import LineChart from '../../components/charts/LineChart.astro';
+import SmallMultiples from '../../components/charts/SmallMultiples.astro';
+import StatTile from '../../components/charts/StatTile.astro';
+import StateTileMap from '../../components/charts/StateTileMap.astro';
+import EventCard from '../../components/EventCard.astro';
+import { siteData } from '../../lib/site-data';
+import { addMonths, latestDate, metricValues, monthlyCounts, monthRange } from '../../lib/chart-data';
+import { EVENT_KINDS, kindOf, type EventKind } from '../../lib/event-kind';
+import { DOMAIN_PAGES, DOMAIN_ROUTE, type DomainPage } from '../../lib/policy';
+import { DOMAINS, type Series, type VerifiedEvent } from '../../schemas';
+
+export function getStaticPaths() {
+  return DOMAIN_PAGES.map((page) => ({ params: { page }, props: { page } }));
+}
+interface Props { page: DomainPage }
+const { page } = Astro.props;
+
+const INTRO: Record<DomainPage, { title: string; lede: string; series: string[] }> = {
+  cyber: { title: 'Cyber', lede: 'Vulnerabilities confirmed as exploited in the wild, and the federal rules that govern cyber incidents.', series: ['wb-it-net-user-zs-us', 'wb-it-net-user-zs-wld'] },
+  crypto: { title: 'Crypto', lede: 'Federal rules on digital assets, state crypto laws, and market data shown as measurements, not events.', series: ['cg-bitcoin-price-usd', 'cg-ethereum-price-usd', 'cg-bitcoin-market-cap-usd', 'cg-ethereum-market-cap-usd'] },
+  'us-law': { title: 'US law', lede: 'Executive orders, acts of Congress, and state laws, dated on signing or enactment.', series: [] },
+  global: { title: 'Global', lede: 'Earthquakes, disaster declarations, sanctions and monetary rules, with the US in focus and the world alongside.', series: ['wb-ny-gdp-mktp-kd-zg-us', 'wb-ny-gdp-mktp-kd-zg-wld', 'wb-fp-cpi-totl-zg-us', 'wb-fp-cpi-totl-zg-wld', 'wb-sl-uem-totl-zs-us', 'wb-sl-uem-totl-zs-wld', 'wb-ms-mil-xpnd-gd-zs-us', 'wb-ms-mil-xpnd-gd-zs-wld', 'wb-sm-pop-refg-wld', 'wb-eg-elc-accs-zs-wld'] },
+};
+const intro = INTRO[page];
+const data = await siteData();
+const domains = DOMAINS.filter((d) => DOMAIN_ROUTE[d] === page);
+const events = data.events.filter((e) => domains.includes(e.domain));
+const asOf = latestDate(events);
+const end = (asOf ?? new Date().toISOString()).slice(0, 7);
+const months = monthRange(addMonths(end, -23), end);
+const last12 = months.slice(-12);
+
+// Families present on this page, as small multiples on a shared scale.
+const kinds = EVENT_KINDS.filter((k) => events.some((e) => kindOf(e) === k.id));
+const kindCounts = Object.fromEntries(kinds.map((k) => [k.id, monthlyCounts(events.filter((e) => kindOf(e) === k.id), months)])) as Record<EventKind, ReturnType<typeof monthlyCounts>>;
+const monthly12 = monthlyCounts(events, last12);
+const byKind = (id: EventKind) => events.filter((e) => kindOf(e) === id);
+const sum = (xs: number[]) => xs.reduce((a, b) => a + b, 0);
+const familyMonthly = (id: EventKind) => months.map((_, i) => domains.reduce((a, d) => a + kindCounts[id][d][i]!, 0));
+
+const stateCounts = (evs: VerifiedEvent[]) => {
+  const out: Record<string, number> = {};
+  for (const e of evs) for (const s of e.geography.usStates ?? []) out[s] = (out[s] ?? 0) + 1;
+  return out;
+};
+const series = intro.series.map((id) => data.series.get(id)).filter((s): s is Series => !!s);
+const srcIds = (evs: VerifiedEvent[]) => [...new Set(evs.flatMap((e) => e.sources))];
+
+const kev = byKind('kev');
+const cvss = metricValues(kev, 'CVSS');
+const remediation = metricValues(kev, 'Remediation window');
+const quakes = byKind('quake');
+const mags = metricValues(quakes, 'Magnitude');
+const usQuakes = quakes.filter((e) => e.geography.countries.includes('US'));
+const fema = byKind('fema');
+const stateLaws = byKind('state-law');
+const recent = events.slice(0, 12);
+---
+<Base title={intro.title} description={intro.lede}>
+  <h1 class="font-heading text-3xl">{intro.title}</h1>
+  <p class="mt-1 max-w-[var(--measure-prose)] text-ink-secondary">{intro.lede}</p>
+
+  <section class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4" aria-label="Key figures">
+    <StatTile label="Verified events" value={events.length} asOf={asOf} trend={last12.map((_, i) => domains.reduce((a, d) => a + monthly12[d][i]!, 0))} trendLabel="Per month, last 12 months" />
+    {kinds.slice(0, 3).map((k) => <StatTile label={k.label} value={byKind(k.id).length} asOf={latestDate(byKind(k.id))} trend={familyMonthly(k.id).slice(-12)} trendLabel="Per month" />)}
+  </section>
+
+  {events.length === 0 ? (
+    <p class="mt-8 rounded-md border border-dashed border-rule p-6 text-sm text-ink-secondary">No verified events in this domain yet. That is a gap in coverage, not a quiet period. See <a class="text-accent" href="/data-health/">data health</a>.</p>
+  ) : (
+    <section class="mt-10">
+      <ChartFrame title="Events per month, by type" takeaway={`${sum(kinds.map((k) => sum(familyMonthly(k.id).slice(-12))))} events in the last 12 months. Panels share one scale.`} asOf={asOf} sourceIds={srcIds(events)}>
+        <SmallMultiples months={months} panels={kinds.map((k) => ({ key: k.id, label: k.label, color: `var(--h22-domain-${byKind(k.id)[0]!.domain})`, values: familyMonthly(k.id) }))} />
+        <table slot="table" class="w-full text-left">
+          <thead><tr><th scope="col">Month</th>{kinds.map((k) => <th scope="col" class="text-right">{k.label}</th>)}</tr></thead>
+          <tbody>{months.map((m, i) => <tr><th scope="row" class="num font-normal">{m}</th>{kinds.map((k) => <td class="num text-right">{familyMonthly(k.id)[i]}</td>)}</tr>)}</tbody>
+        </table>
+      </ChartFrame>
+    </section>
+  )}
+
+  {page === 'cyber' && cvss.length > 0 && (
+    <section class="mt-10 grid gap-8 lg:grid-cols-2">
+      <ChartFrame title="Severity of exploited vulnerabilities (CVSS)" takeaway={`Most vulnerabilities CISA confirms as exploited score high: the median is ${[...cvss].sort((a, b) => a - b)[Math.floor(cvss.length / 2)]} of 10.`} asOf={latestDate(kev)} sourceIds={[...new Set(kev.flatMap((e) => e.metrics.filter((m) => m.label.startsWith('CVSS')).map((m) => m.sourceId)))]} note="Scores come from NVD. Vulnerabilities NVD has not scored are left out, not estimated.">
+        <BoxPlot groups={[{ label: 'CVSS base score', values: cvss, color: 'var(--h22-domain-cyber)' }]} domain={[0, 10]} ticks={[0, 2, 4, 6, 8, 10]} unit="CVSS" />
+        <table slot="table" class="text-left"><thead><tr><th scope="col">Event</th><th scope="col" class="text-right">CVSS</th></tr></thead><tbody>{kev.flatMap((e) => e.metrics.filter((m) => m.label.startsWith('CVSS')).map((m) => <tr><td class="pr-3"><a class="text-accent" href={`/events/${e.id}/`}>{e.id}</a></td><td class="num text-right">{m.value}</td></tr>))}</tbody></table>
+      </ChartFrame>
+      {remediation.length > 0 && (
+        <ChartFrame title="Days agencies were given to fix them" takeaway="The federal remediation deadline set in the catalog, from the date each vulnerability was added." asOf={latestDate(kev)} sourceIds={['cisa-kev-catalog']}>
+          <BoxPlot groups={[{ label: 'Remediation window', values: remediation, color: 'var(--h22-domain-cyber)' }]} domain={[0, Math.max(30, Math.ceil(Math.max(...remediation) / 7) * 7)]} ticks={[0, 7, 14, 21, 28].filter((t) => t <= Math.max(30, Math.max(...remediation)))} unit="days" />
+        </ChartFrame>
+      )}
+    </section>
+  )}
+
+  {page === 'us-law' && stateLaws.length > 0 && (
+    <section class="mt-10">
+      <ChartFrame title="State laws by state" takeaway="Enacted state bills on the tracked cyber and crypto topics." asOf={latestDate(stateLaws)} sourceIds={srcIds(stateLaws)}>
+        <StateTileMap values={stateCounts(stateLaws)} label="State laws by state" hue="var(--h22-domain-us-law)" />
+      </ChartFrame>
+    </section>
+  )}
+
+  {page === 'global' && (
+    <section class="mt-10 grid gap-8 lg:grid-cols-2">
+      {fema.length > 0 && (
+        <ChartFrame title="Federal disaster declarations by state" takeaway={`${fema.length} declarations published with an archived source. Darker tiles had more.`} asOf={latestDate(fema)} sourceIds={srcIds(fema)}>
+          <StateTileMap values={stateCounts(fema)} label="FEMA declarations by state" hue="var(--h22-domain-natural)" />
+        </ChartFrame>
+      )}
+      {mags.length > 0 && (
+        <ChartFrame title="Earthquake magnitudes, M6 and above" takeaway={`${quakes.length} earthquakes worldwide, ${usQuakes.length} in the US. Each dot is one earthquake.`} asOf={latestDate(quakes)} sourceIds={srcIds(quakes)}>
+          <BoxPlot groups={[
+            { label: 'Worldwide', values: mags, color: 'var(--h22-domain-natural)' },
+            ...(usQuakes.length ? [{ label: 'United States', values: metricValues(usQuakes, 'Magnitude'), color: 'var(--h22-domain-natural)' }] : []),
+          ]} domain={[6, Math.max(8, Math.ceil(Math.max(...mags)))]} ticks={[6, 6.5, 7, 7.5, 8, 8.5, 9].filter((t) => t <= Math.max(8, Math.ceil(Math.max(...mags))))} unit="magnitude" />
+        </ChartFrame>
+      )}
+    </section>
+  )}
+
+  {series.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-heading text-2xl">Measurements</h2>
+      <p class="mt-1 text-sm text-ink-secondary">Indicators over time. These are measurements, not events, and are never counted as events.</p>
+      <div class="mt-4 grid gap-8 lg:grid-cols-2">
+        {series.map((s) => {
+          const last = s.points[s.points.length - 1]!;
+          const first = s.points[0]!;
+          return (
+            <ChartFrame title={s.title} takeaway={`Latest ${last[0]}: ${new Intl.NumberFormat('en-US', { notation: Math.abs(last[1]) >= 1e6 ? 'compact' : 'standard', maximumFractionDigits: 2 }).format(last[1])} ${s.unit}, from ${new Intl.NumberFormat('en-US', { notation: Math.abs(first[1]) >= 1e6 ? 'compact' : 'standard', maximumFractionDigits: 2 }).format(first[1])} in ${first[0]}.`} asOf={s.asOf} sourceIds={[s.sourceId]} note={s.notes?.[0]}>
+              <LineChart series={s} />
+              <table slot="table" class="text-left"><tbody>{s.points.map((p) => <tr><td class="num pr-4">{p[0]}</td><td class="num text-right">{p[1]}</td></tr>)}</tbody></table>
+            </ChartFrame>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  {recent.length > 0 && (
+    <section class="mt-10">
+      <h2 class="font-heading text-2xl">Latest events</h2>
+      <div class="mt-3 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+        {recent.map((e) => <EventCard event={e} sources={data.sources} correlationCount={data.correlationCount(e.id)} />)}
+      </div>
+      <details class="mt-4 text-sm">
+        <summary class="cursor-pointer text-accent">All {events.length} events</summary>
+        <table class="mt-2 w-full text-left text-sm">
+          <thead><tr class="border-b border-axis"><th scope="col" class="py-1 pr-3">Date</th><th scope="col" class="py-1">Event</th></tr></thead>
+          <tbody>{events.map((e) => <tr class="border-b border-rule"><td class="num whitespace-nowrap py-1 pr-3">{e.date.start}</td><td class="py-1"><a class="text-accent" href={`/events/${e.id}/`}>{e.title}</a></td></tr>)}</tbody>
+        </table>
+      </details>
+    </section>
+  )}
+</Base>

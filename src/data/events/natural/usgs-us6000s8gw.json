@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000s8gw",
+  "domain": "natural",
+  "title": "M 6.1 - 28 km SW of Ovalle, Chile",
+  "summary": "A magnitude 6.1 earthquake occurred 28 km SW of Ovalle, Chile at a depth of 46 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-02-12",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -71.4228,
+      -30.7682
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-10-09",
+      "sourceId": "usgs-us6000s8gw",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 46,
+      "unit": "km",
+      "asOf": "2026-10-09",
+      "sourceId": "usgs-us6000s8gw",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000s8gw"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

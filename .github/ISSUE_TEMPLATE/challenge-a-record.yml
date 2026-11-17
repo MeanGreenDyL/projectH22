@@ -1,0 +1,33 @@
+name: Challenge a record
+description: Argue against an event, a correlation, a scenario or a source. Substantive challenges are published alongside the record.
+title: "Challenge: <record id>"
+labels: [challenge]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record id or page URL
+      description: The id is at the end of the page address, e.g. /events/kev-cve-2026-12345/
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you challenging?
+      options: [A fact in an event, A correlation or its counter-reading, A scenario, A source or its tier, Something else]
+    validations:
+      required: true
+  - type: textarea
+    id: argument
+    attributes:
+      label: Your argument
+      description: What is wrong, and what should it say instead?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links or full citations that support your argument. Primary and peer-reviewed sources carry the most weight.
+    validations:
+      required: true

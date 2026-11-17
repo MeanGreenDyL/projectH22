@@ -1,0 +1,45 @@
+---
+/**
+ * The signature visual (spec §8): event domains × scripture books. Cell intensity = number of
+ * approved, summary-eligible correlations; border style = the dominant strength class.
+ * Interpretation surfaces use the interpretation tint, never a domain colour.
+ */
+import { DOMAINS, type CorrelationStrength } from '../../schemas';
+import type { MatrixCell } from '../../lib/chart-data';
+import { DOMAIN_LABEL } from '../../lib/labels';
+
+interface Props { books: string[]; cells: MatrixCell[] }
+const { books, cells } = Astro.props;
+const max = Math.max(1, ...cells.map((c) => c.count));
+const CELL = 30, PAD_L = 116, PAD_T = 96;
+const W = PAD_L + books.length * CELL + 8, H = PAD_T + DOMAINS.length * CELL + 8;
+const DASH: Partial<Record<CorrelationStrength, string>> = { 'direct-textual': '', typological: '6 3', 'thematic-parallel': '2 2' };
+const at = (d: string, b: string) => cells.find((c) => c.domain === d && c.book === b);
+---
+{books.length === 0 ? (
+  <div class="rounded-md border border-dashed border-interp-rule bg-interp-surface p-6 text-sm text-interp-chip-ink">
+    <p class="font-semibold">No published correlations yet.</p>
+    <p class="mt-1">The matrix fills in as reviewed correlations are approved. Drafts, numerical-symbolic and speculative readings are never counted here.</p>
+  </div>
+) : (
+  <div class="overflow-x-auto" tabindex="0" role="region" aria-label="Scrollable chart">
+    <svg class="h22-chart" width={W} height={H} viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Correlation counts by event domain and scripture book">
+      {books.map((b, j) => <text transform={`translate(${PAD_L + j * CELL + CELL / 2},${PAD_T - 6}) rotate(-55)`}>{b}</text>)}
+      {DOMAINS.map((d, i) => (
+        <g>
+          <text x={PAD_L - 8} y={PAD_T + i * CELL + CELL / 2 + 4} text-anchor="end">{DOMAIN_LABEL[d]}</text>
+          {books.map((b, j) => {
+            const c = at(d, b);
+            const n = c?.count ?? 0;
+            return (
+              <rect x={PAD_L + j * CELL + 1} y={PAD_T + i * CELL + 1} width={CELL - 2} height={CELL - 2} rx="3"
+                fill="var(--h22-interp-rule)" fill-opacity={n ? 0.15 + 0.85 * (n / max) : 0.04}
+                stroke={n ? 'var(--h22-interp-chip-ink)' : 'none'} stroke-width="1.5" stroke-dasharray={c?.dominant ? DASH[c.dominant] ?? '' : ''}
+                tabindex="0" data-tip={`${n} correlation${n === 1 ? '' : 's'}|${DOMAIN_LABEL[d]} × ${b}${c?.dominant ? `, mostly ${c.dominant}` : ''}`} />
+            );
+          })}
+        </g>
+      ))}
+    </svg>
+  </div>
+)}

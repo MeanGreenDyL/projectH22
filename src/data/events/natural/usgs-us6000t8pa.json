@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000t8pa",
+  "domain": "natural",
+  "title": "M 6.1 - 47 km S of Jurm, Afghanistan",
+  "summary": "A magnitude 6.1 earthquake occurred 47 km S of Jurm, Afghanistan at a depth of 199 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-27",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      70.7843,
+      36.4428
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-09-15",
+      "sourceId": "usgs-us6000t8pa",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 199,
+      "unit": "km",
+      "asOf": "2026-09-15",
+      "sourceId": "usgs-us6000t8pa",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000t8pa"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

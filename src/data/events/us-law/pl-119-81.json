@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-81",
+  "domain": "us-law",
+  "title": "Public Law 119-81: To authorize the President to award the Medal of Honor to John W. Ripley for acts of valor during th…",
+  "summary": "H.R. 7211, \"To authorize the President to award the Medal of Honor to John W. Ripley for acts of valor during the Vietnam War, and for other purposes.\", originated in the House of the 119th Congress and became Public Law 119-81 on 2026-03-26, according to Congress.gov.",
+  "date": {
+    "start": "2026-03-26",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-7211"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

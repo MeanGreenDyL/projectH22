@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-114",
+  "domain": "us-law",
+  "title": "Public Law 119-114: A bill to provide for the equitable settlement of certain Indian land disputes regarding land in Il…",
+  "summary": "S. 550, \"A bill to provide for the equitable settlement of certain Indian land disputes regarding land in Illinois, and for other purposes.\", originated in the Senate of the 119th Congress and became Public Law 119-114 on 2026-09-25, according to Congress.gov.",
+  "date": {
+    "start": "2026-09-25",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-550"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

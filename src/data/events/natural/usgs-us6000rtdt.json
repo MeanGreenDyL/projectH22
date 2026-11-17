@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000rtdt",
+  "domain": "natural",
+  "title": "M 7.6 - 2025 Aomori Prefecture, Japan Earthquake",
+  "summary": "A magnitude 7.6 earthquake occurred near 2025 Aomori Prefecture, Japan Earthquake at a depth of 40.72 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2025-12-08",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      142.1836,
+      40.9984
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 7.6,
+      "unit": "magnitude",
+      "asOf": "2026-06-16",
+      "sourceId": "usgs-us6000rtdt",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 40.72,
+      "unit": "km",
+      "asOf": "2026-06-16",
+      "sourceId": "usgs-us6000rtdt",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000rtdt"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

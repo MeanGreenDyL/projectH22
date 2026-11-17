@@ -1,0 +1,22 @@
+{
+  "id": "eo-14400",
+  "domain": "us-law",
+  "title": "Executive Order 14400: Urgent National Action To Save College Sports",
+  "summary": "Executive Order 14400, \"Urgent National Action To Save College Sports\", was signed on 2026-04-03 and published in the Federal Register on 2026-04-09 (91 FR 18267).",
+  "date": {
+    "start": "2026-04-03",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-06961"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

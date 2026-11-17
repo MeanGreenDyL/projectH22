@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-129",
+  "domain": "us-law",
+  "title": "Public Law 119-129: Romance Scam Prevention Act",
+  "summary": "H.R. 2481, \"Romance Scam Prevention Act\", originated in the House of the 119th Congress and became Public Law 119-129 on 2026-10-20, according to Congress.gov.",
+  "date": {
+    "start": "2026-10-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-2481"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

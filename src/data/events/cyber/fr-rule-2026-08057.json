@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-08057",
+  "domain": "cyber",
+  "title": "Federal rule: Pipeline Safety: Clarification of Incident Reporting Requirements for Gas Pipeline Facilities",
+  "summary": "Transportation Department / Pipeline and Hazardous Materials Safety Administration published the rule \"Pipeline Safety: Clarification of Incident Reporting Requirements for Gas Pipeline Facilities\" in the Federal Register on 2026-04-24 (91 FR 21979), effective 2026-08-03.",
+  "date": {
+    "start": "2026-04-24",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-08057"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fema-fm-5627",
+  "domain": "natural",
+  "title": "Fire management assistance declaration FM-5627-OK: Fire",
+  "summary": "FEMA records a fire management assistance declaration (FM-5627-OK, \"DIBBLE CREEK FIRE\") for OK, dated 2026-03-22, for an incident of type \"Fire\". The incident period began on 2026-03-22. The declaration lists 1 designated area.",
+  "date": {
+    "start": "2026-03-22",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "OK"
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Designated areas",
+      "value": 1,
+      "unit": "areas",
+      "asOf": "2026-11-17",
+      "sourceId": "fema-fm-5627",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "fema-fm-5627"
+  ],
+  "lastVerified": "2026-11-17T06:38:29Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "eo-14415",
+  "domain": "us-law",
+  "title": "Executive Order 14415: Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials",
+  "summary": "Executive Order 14415, \"Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials\", was signed on 2026-07-20 and published in the Federal Register on 2026-07-23 (91 FR 46693).",
+  "date": {
+    "start": "2026-07-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-15003"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

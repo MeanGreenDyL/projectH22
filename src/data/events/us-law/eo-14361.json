@@ -1,0 +1,22 @@
+{
+  "id": "eo-14361",
+  "domain": "us-law",
+  "title": "Executive Order 14361: Modifying the Scope of Tariffs on the Government of Brazil",
+  "summary": "Executive Order 14361, \"Modifying the Scope of Tariffs on the Government of Brazil\", was signed on 2025-11-20 and published in the Federal Register on 2025-11-26 (90 FR 54467).",
+  "date": {
+    "start": "2025-11-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-21417"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

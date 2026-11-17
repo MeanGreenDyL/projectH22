@@ -1,0 +1,22 @@
+{
+  "id": "eo-14408",
+  "domain": "us-law",
+  "title": "Executive Order 14408: Removing Unnecessary and Counterproductive Restrictions on Access to Federal Lands",
+  "summary": "Executive Order 14408, \"Removing Unnecessary and Counterproductive Restrictions on Access to Federal Lands\", was signed on 2026-05-29 and published in the Federal Register on 2026-06-03 (91 FR 33577).",
+  "date": {
+    "start": "2026-05-29",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-11181"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

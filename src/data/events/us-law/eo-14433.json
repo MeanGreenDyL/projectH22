@@ -1,0 +1,22 @@
+{
+  "id": "eo-14433",
+  "domain": "us-law",
+  "title": "Executive Order 14433: Eliminating Disease-Carrying Pests and Restoring Enjoyment of the Great Outdoors",
+  "summary": "Executive Order 14433, \"Eliminating Disease-Carrying Pests and Restoring Enjoyment of the Great Outdoors\", was signed on 2026-09-29 and published in the Federal Register on 2026-10-02 (91 FR 63125).",
+  "date": {
+    "start": "2026-09-29",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-20320"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

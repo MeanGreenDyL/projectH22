@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000sui3",
+  "domain": "natural",
+  "title": "M 6.6 - 141 km ESE of Petropavlovsk-Kamchatsky, Russia",
+  "summary": "A magnitude 6.6 earthquake occurred 141 km ESE of Petropavlovsk-Kamchatsky, Russia at a depth of 14 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-19",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      160.6867,
+      52.7969
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.6,
+      "unit": "magnitude",
+      "asOf": "2026-09-04",
+      "sourceId": "usgs-us7000sui3",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 14,
+      "unit": "km",
+      "asOf": "2026-09-04",
+      "sourceId": "usgs-us7000sui3",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000sui3"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

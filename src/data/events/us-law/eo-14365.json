@@ -1,0 +1,22 @@
+{
+  "id": "eo-14365",
+  "domain": "us-law",
+  "title": "Executive Order 14365: Ensuring a National Policy Framework for Artificial Intelligence",
+  "summary": "Executive Order 14365, \"Ensuring a National Policy Framework for Artificial Intelligence\", was signed on 2025-12-11 and published in the Federal Register on 2025-12-16 (90 FR 58499).",
+  "date": {
+    "start": "2025-12-11",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-23092"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-09092",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of Venezuela Sanctions Regulations Web General Licenses 46, 46A, and 46B",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of Venezuela Sanctions Regulations Web General Licenses 46, 46A, and 46B\" in the Federal Register on 2026-05-07 (91 FR 24719).",
+  "date": {
+    "start": "2026-05-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-09092"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

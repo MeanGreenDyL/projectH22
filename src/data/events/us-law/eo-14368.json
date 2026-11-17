@@ -1,0 +1,22 @@
+{
+  "id": "eo-14368",
+  "domain": "us-law",
+  "title": "Executive Order 14368: Adjustments of Certain Rates of Pay",
+  "summary": "Executive Order 14368, \"Adjustments of Certain Rates of Pay\", was signed on 2025-12-18 and published in the Federal Register on 2025-12-23 (90 FR 60521).",
+  "date": {
+    "start": "2025-12-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-23844"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+---
+/** Horizontal box plots with every value drawn as a dot behind the box (n is small enough to show). */
+import { fiveNumber } from '../../lib/chart-data';
+
+interface Group { label: string; values: number[]; color: string }
+interface Props { groups: Group[]; domain: [number, number]; ticks: number[]; unit: string }
+const { groups, domain, ticks, unit } = Astro.props;
+const W = 640, ROW = 56, PAD_L = 12, PAD_R = 16, PAD_T = 4, AXIS = 22, LABEL = 16;
+const H = PAD_T + groups.length * ROW + AXIS;
+const x = (v: number) => PAD_L + ((v - domain[0]) / (domain[1] - domain[0])) * (W - PAD_L - PAD_R);
+const f = (n: number) => (Math.round(n * 10) / 10).toString();
+---
+<svg class="h22-chart w-full" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Distribution of ${unit} by group`}>
+  {ticks.map((t) => (
+    <g>
+      <line class="grid" x1={x(t)} x2={x(t)} y1={PAD_T} y2={H - AXIS} />
+      <text x={x(t)} y={H - 6} text-anchor="middle">{t}</text>
+    </g>
+  ))}
+  {groups.map((g, i) => {
+    const s = fiveNumber(g.values);
+    const cy = PAD_T + i * ROW + LABEL + (ROW - LABEL) / 2;
+    return (
+      <g>
+        <text x={PAD_L} y={PAD_T + i * ROW + 12} style="fill:var(--h22-ink-secondary);font-size:12px">{g.label} (n={g.values.length})</text>
+        {g.values.map((v, j) => <circle cx={x(v)} cy={cy + ((j % 5) - 2) * 3} r="2.5" fill={g.color} fill-opacity="0.35" />)}
+        {s && (
+          <g>
+            <line x1={x(s.min)} x2={x(s.q1)} y1={cy} y2={cy} stroke="var(--h22-ink-secondary)" stroke-width="1.5" />
+            <line x1={x(s.q3)} x2={x(s.max)} y1={cy} y2={cy} stroke="var(--h22-ink-secondary)" stroke-width="1.5" />
+            <rect x={x(s.q1)} y={cy - 9} width={Math.max(1, x(s.q3) - x(s.q1))} height="18" rx="4" fill={g.color} fill-opacity="0.18" stroke={g.color} stroke-width="1.5" />
+            <line x1={x(s.median)} x2={x(s.median)} y1={cy - 9} y2={cy + 9} stroke="var(--h22-ink)" stroke-width="2" />
+            <rect class="h22-hit" x={PAD_L} y={PAD_T + i * ROW} width={W - PAD_L - PAD_R} height={ROW} tabindex="0"
+              data-tip={`median ${f(s.median)} ${unit}|${g.label}: range ${f(s.min)}–${f(s.max)}, middle half ${f(s.q1)}–${f(s.q3)}, n=${s.n}`} />
+          </g>
+        )}
+      </g>
+    );
+  })}
+  <line class="axis" x1={PAD_L} x2={W - PAD_R} y1={H - AXIS} y2={H - AXIS} />
+</svg>

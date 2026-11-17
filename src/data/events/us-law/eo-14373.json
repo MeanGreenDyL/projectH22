@@ -1,0 +1,22 @@
+{
+  "id": "eo-14373",
+  "domain": "us-law",
+  "title": "Executive Order 14373: Safeguarding Venezuelan Oil Revenue for the Good of the American and Venezuelan People",
+  "summary": "Executive Order 14373, \"Safeguarding Venezuelan Oil Revenue for the Good of the American and Venezuelan People\", was signed on 2026-01-09 and published in the Federal Register on 2026-01-15 (91 FR 2045).",
+  "date": {
+    "start": "2026-01-09",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-00831"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

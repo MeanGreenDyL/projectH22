@@ -1,0 +1,24 @@
+---
+/**
+ * Canon badge (spec §1). Every scripture citation carries one. The hover/tap explainer copy is
+ * written from cited reference works in a later step; until then the badge states only the
+ * classification, so nothing is asserted without a source.
+ */
+import type { Canon } from '../schemas';
+
+interface Props {
+  canon: Canon;
+}
+const { canon } = Astro.props;
+const LABEL: Record<Canon, string> = {
+  'PROTESTANT-CANON': 'Protestant canon',
+  DEUTEROCANON: 'Deuterocanon',
+  'APOCRYPHA-WIDER': 'Wider apocrypha',
+  PSEUDEPIGRAPHA: 'Pseudepigrapha',
+};
+---
+<span
+  class="inline-block rounded-sm border border-border px-1.5 py-0.5 align-middle text-[0.7rem] font-semibold uppercase tracking-wide text-ink-secondary"
+  data-canon={canon}
+  title={`Canon classification: ${LABEL[canon]}`}
+>{canon}</span>

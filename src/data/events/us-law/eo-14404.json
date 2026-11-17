@@ -1,0 +1,22 @@
+{
+  "id": "eo-14404",
+  "domain": "us-law",
+  "title": "Executive Order 14404: Imposing Sanctions on Those Responsible for Repression in Cuba and for Threats to United States…",
+  "summary": "Executive Order 14404, \"Imposing Sanctions on Those Responsible for Repression in Cuba and for Threats to United States National Security and Foreign Policy\", was signed on 2026-05-01 and published in the Federal Register on 2026-05-07 (91 FR 25061).",
+  "date": {
+    "start": "2026-05-01",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-09173"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

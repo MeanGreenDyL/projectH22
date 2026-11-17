@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2025-22655",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of International Criminal Court-Related Sanctions Regulations Web General License 9",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of International Criminal Court-Related Sanctions Regulations Web General License 9\" in the Federal Register on 2025-12-12 (90 FR 57696).",
+  "date": {
+    "start": "2025-12-12",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-22655"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-00945",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13O",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13O\" in the Federal Register on 2026-01-20 (91 FR 2302).",
+  "date": {
+    "start": "2026-01-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-00945"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

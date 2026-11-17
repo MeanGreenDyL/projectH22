@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000tgrk",
+  "domain": "natural",
+  "title": "M 6.5 - 121 km NNE of Teluknaga, Indonesia",
+  "summary": "A magnitude 6.5 earthquake occurred 121 km NNE of Teluknaga, Indonesia at a depth of 372 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-09-11",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      106.8889,
+      -5.0312
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.5,
+      "unit": "magnitude",
+      "asOf": "2026-11-15",
+      "sourceId": "usgs-us7000tgrk",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 372,
+      "unit": "km",
+      "asOf": "2026-11-15",
+      "sourceId": "usgs-us7000tgrk",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000tgrk"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

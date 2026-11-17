@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000s8q0",
+  "domain": "natural",
+  "title": "M 7.3 - 51 km ENE of Luganville, Vanuatu",
+  "summary": "A magnitude 7.3 earthquake occurred 51 km ENE of Luganville, Vanuatu at a depth of 120.628 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-03-30",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      167.5825,
+      -15.2865
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 7.3,
+      "unit": "magnitude",
+      "asOf": "2026-06-10",
+      "sourceId": "usgs-us7000s8q0",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 120.628,
+      "unit": "km",
+      "asOf": "2026-06-10",
+      "sourceId": "usgs-us7000s8q0",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000s8q0"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

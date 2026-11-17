@@ -1,0 +1,22 @@
+{
+  "id": "eo-14383",
+  "domain": "us-law",
+  "title": "Executive Order 14383: Establishing an America First Arms Transfer Strategy",
+  "summary": "Executive Order 14383, \"Establishing an America First Arms Transfer Strategy\", was signed on 2026-02-06 and published in the Federal Register on 2026-02-11 (91 FR 6497).",
+  "date": {
+    "start": "2026-02-06",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-02814"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

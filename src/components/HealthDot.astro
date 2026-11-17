@@ -1,0 +1,17 @@
+---
+/** Status shown as a dot plus a word, so it never depends on colour alone. */
+import type { Health, Indicator } from '../lib/feeds';
+interface Props { state: Health | Indicator }
+const { state } = Astro.props;
+const look: Record<Health | Indicator, { cls: string; label: string }> = {
+  fresh: { cls: 'bg-status-good', label: 'Fresh' },
+  green: { cls: 'bg-status-good', label: 'All critical feeds fresh' },
+  stale: { cls: 'bg-status-warning', label: 'Stale' },
+  amber: { cls: 'bg-status-warning', label: 'Some feeds need attention' },
+  failing: { cls: 'bg-status-critical', label: 'Failing' },
+  red: { cls: 'bg-status-critical', label: 'Feeds failing' },
+  'never-run': { cls: 'bg-axis', label: 'Not running yet' },
+};
+const { cls, label } = look[state];
+---
+<span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class={`inline-block h-2 w-2 rounded-full ${cls}`} aria-hidden="true"></span>{label}</span>

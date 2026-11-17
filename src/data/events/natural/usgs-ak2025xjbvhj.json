@@ -1,0 +1,46 @@
+{
+  "id": "usgs-ak2025xjbvhj",
+  "domain": "natural",
+  "title": "M 6.0 - 12 km WNW of Susitna, Alaska",
+  "summary": "A magnitude 6 earthquake occurred 12 km WNW of Susitna, Alaska at a depth of 69.43339538574219 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2025-11-27",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "AK"
+    ],
+    "coordinates": [
+      -150.75079345703125,
+      61.56951904296875
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-11-12",
+      "sourceId": "usgs-ak2025xjbvhj",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 69.43339538574219,
+      "unit": "km",
+      "asOf": "2026-11-12",
+      "sourceId": "usgs-ak2025xjbvhj",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-ak2025xjbvhj"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

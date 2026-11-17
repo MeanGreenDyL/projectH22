@@ -1,0 +1,22 @@
+{
+  "id": "eo-14362",
+  "domain": "us-law",
+  "title": "Executive Order 14362: Designation of Certain Muslim Brotherhood Chapters as Foreign Terrorist Organizations and Specia…",
+  "summary": "Executive Order 14362, \"Designation of Certain Muslim Brotherhood Chapters as Foreign Terrorist Organizations and Specially Designated Global Terrorists\", was signed on 2025-11-24 and published in the Federal Register on 2025-11-28 (90 FR 55033).",
+  "date": {
+    "start": "2025-11-24",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-21664"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

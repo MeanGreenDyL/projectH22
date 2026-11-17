@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000s2i2",
+  "domain": "natural",
+  "title": "M 6.2 - 170 km SE of Kirakira, Solomon Islands",
+  "summary": "A magnitude 6.2 earthquake occurred 170 km SE of Kirakira, Solomon Islands at a depth of 10 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-03-06",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      163.0974,
+      -11.47
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-05-22",
+      "sourceId": "usgs-us7000s2i2",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-05-22",
+      "sourceId": "usgs-us7000s2i2",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000s2i2"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

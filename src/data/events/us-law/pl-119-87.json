@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-87",
+  "domain": "us-law",
+  "title": "Public Law 119-87: A bill to amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreig…",
+  "summary": "S. 4465, \"A bill to amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978, and for other purposes.\", originated in the Senate of the 119th Congress and became Public Law 119-87 on 2026-04-30, according to Congress.gov.",
+  "date": {
+    "start": "2026-04-30",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-4465"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

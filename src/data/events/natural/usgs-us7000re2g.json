@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000re2g",
+  "domain": "natural",
+  "title": "M 6.4 - 54 km WNW of Sinabang, Indonesia",
+  "summary": "A magnitude 6.4 earthquake occurred 54 km WNW of Sinabang, Indonesia at a depth of 17 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2025-11-27",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      95.9543,
+      2.7191
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.4,
+      "unit": "magnitude",
+      "asOf": "2026-02-25",
+      "sourceId": "usgs-us7000re2g",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 17,
+      "unit": "km",
+      "asOf": "2026-02-25",
+      "sourceId": "usgs-us7000re2g",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000re2g"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

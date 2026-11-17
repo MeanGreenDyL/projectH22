@@ -1,0 +1,22 @@
+{
+  "id": "eo-14377",
+  "domain": "us-law",
+  "title": "Executive Order 14377: Addressing State and Local Failures To Rebuild Los Angeles After Wildfire Disasters",
+  "summary": "Executive Order 14377, \"Addressing State and Local Failures To Rebuild Los Angeles After Wildfire Disasters\", was signed on 2026-01-23 and published in the Federal Register on 2026-01-29 (91 FR 3989).",
+  "date": {
+    "start": "2026-01-23",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-01871"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

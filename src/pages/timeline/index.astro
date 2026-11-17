@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import ChartFrame from '../../components/charts/ChartFrame.astro';
+import MasterTimeline from '../../components/islands/MasterTimeline';
+import { siteData } from '../../lib/site-data';
+import { latestDate } from '../../lib/chart-data';
+import { DOMAIN_LABEL } from '../../lib/labels';
+import { DOMAINS } from '../../schemas';
+
+const data = await siteData();
+const present = DOMAINS.filter((d) => data.events.some((e) => e.domain === d));
+const events = data.events.map((e) => ({ id: e.id, domain: e.domain, date: e.date.start, title: e.title }));
+const markers = data.correlations.flatMap((c) => {
+  const dates = c.eventIds.map((id) => data.eventsById.get(id)?.date.start).filter((d): d is string => !!d).sort();
+  return dates.length ? [{ id: c.id, date: dates[dates.length - 1]!, title: c.passages.map((p) => `${p.book} ${p.chapter}`).join('; '), strength: c.strength }] : [];
+});
+const colors = Object.fromEntries(DOMAINS.map((d) => [d, `var(--h22-domain-${d})`]));
+---
+<Base title="Timeline" description="Every verified event on one timeline, one rail per domain, with interpretation kept on its own rail below.">
+  <h1 class="font-heading text-3xl">Timeline</h1>
+  <p class="mt-1 text-ink-secondary">One rail per domain. Interpretation sits on its own rail below the line.</p>
+  <ChartFrame class="mt-4" title={`${events.length} verified events`} takeaway="Drag or use the arrow buttons to move; zoom from years down to days. Select a dot to open the event." asOf={latestDate(data.events)} sourceIds={[...new Set(data.events.flatMap((e) => e.sources))]}>
+    <MasterTimeline client:visible events={events} markers={markers} domains={present.map((d) => ({ id: d, label: DOMAIN_LABEL[d] }))} colors={colors} />
+    <table slot="table" class="w-full text-left">
+      <thead><tr><th scope="col">Date</th><th scope="col">Domain</th><th scope="col">Event</th></tr></thead>
+      <tbody>{data.events.map((e) => <tr><td class="num whitespace-nowrap pr-3">{e.date.start}</td><td class="pr-3">{DOMAIN_LABEL[e.domain]}</td><td><a class="text-accent" href={`/events/${e.id}/`}>{e.title}</a></td></tr>)}</tbody>
+    </table>
+  </ChartFrame>
+</Base>

@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-19977",
+  "domain": "geopolitical",
+  "title": "Federal rule: Cuba Sanctions Regulations",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Cuba Sanctions Regulations\" in the Federal Register on 2026-09-30 (91 FR 61748), effective 2026-09-30.",
+  "date": {
+    "start": "2026-09-30",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-19977"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

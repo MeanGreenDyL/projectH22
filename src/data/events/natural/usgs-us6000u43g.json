@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u43g",
+  "domain": "natural",
+  "title": "M 7.0 - 189 km ENE of Nagqu, China",
+  "summary": "A magnitude 7 earthquake occurred 189 km ENE of Nagqu, China at a depth of 18 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-22",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      93.7837,
+      32.3376
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 7,
+      "unit": "magnitude",
+      "asOf": "2026-11-10",
+      "sourceId": "usgs-us6000u43g",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 18,
+      "unit": "km",
+      "asOf": "2026-11-10",
+      "sourceId": "usgs-us6000u43g",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u43g"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

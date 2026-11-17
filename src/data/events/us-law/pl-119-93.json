@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-93",
+  "domain": "us-law",
+  "title": "Public Law 119-93: Cape Fox Land Entitlement Finalization Act of 2025",
+  "summary": "H.R. 2815, \"Cape Fox Land Entitlement Finalization Act of 2025\", originated in the House of the 119th Congress and became Public Law 119-93 on 2026-05-19, according to Congress.gov.",
+  "date": {
+    "start": "2026-05-19",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-2815"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

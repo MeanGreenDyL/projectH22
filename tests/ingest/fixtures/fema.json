@@ -1,0 +1,10 @@
+{
+  "metadata": { "entityname": "DisasterDeclarationsSummaries", "note": "SYNTHETIC" },
+  "DisasterDeclarationsSummaries": [
+    { "femaDeclarationString": "DR-9901-CA", "disasterNumber": 9901, "state": "CA", "declarationType": "DR", "declarationDate": "2026-08-02T00:00:00.000Z", "incidentType": "Flood", "declarationTitle": "SEVERE STORMS AND FLOODING", "incidentBeginDate": "2026-07-20T00:00:00.000Z", "incidentEndDate": "2026-07-25T00:00:00.000Z", "designatedArea": "Example (County)" },
+    { "femaDeclarationString": "DR-9901-CA", "disasterNumber": 9901, "state": "CA", "declarationType": "DR", "declarationDate": "2026-08-02T00:00:00.000Z", "incidentType": "Flood", "declarationTitle": "SEVERE STORMS AND FLOODING", "incidentBeginDate": "2026-07-20T00:00:00.000Z", "incidentEndDate": "2026-07-25T00:00:00.000Z", "designatedArea": "Sample (County)" },
+    { "femaDeclarationString": "FM-9902-NV", "disasterNumber": 9902, "state": "NV", "declarationType": "FM", "declarationDate": "2026-09-10T00:00:00.000Z", "incidentType": "Fire", "declarationTitle": "EXAMPLE FIRE", "incidentBeginDate": "2026-09-10T00:00:00.000Z", "incidentEndDate": null, "designatedArea": "Example (County)" },
+    { "femaDeclarationString": "EM-9903-TX", "disasterNumber": 9903, "state": "TX", "declarationType": "EM", "declarationDate": "2026-10-01T00:00:00.000Z", "incidentType": "Chemical", "declarationTitle": "EXAMPLE CHEMICAL RELEASE", "incidentBeginDate": "2026-09-29T00:00:00.000Z", "incidentEndDate": null, "designatedArea": "Statewide" },
+    { "femaDeclarationString": "DR-9904-FM", "disasterNumber": 9904, "state": "FM", "declarationType": "DR", "declarationDate": "2026-10-05T00:00:00.000Z", "incidentType": "Typhoon", "declarationTitle": "TYPHOON EXAMPLE", "incidentBeginDate": "2026-09-30T00:00:00.000Z", "incidentEndDate": "2026-10-02T00:00:00.000Z", "designatedArea": "Example State" }
+  ]
+}

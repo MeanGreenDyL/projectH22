@@ -1,0 +1,102 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import CanonBadge from '../../../../components/CanonBadge.astro';
+import { booksFor, bookSlug, crossRefs, loadBook, type CrossRef } from '../../../../lib/scripture';
+import { BOOK_BY_CODE, DEFAULT_TRANSLATION, type BookInfo, type TranslationId } from '../../../../schemas';
+
+/** Pages are built for the default translation and the KJV opt-in (owner decision 2026-11-17). */
+const PAGE_TRANSLATIONS: TranslationId[] = [DEFAULT_TRANSLATION, 'kjv'];
+const XREFS_PER_VERSE = 5;
+
+export function getStaticPaths() {
+  return [DEFAULT_TRANSLATION, 'kjv' as const].flatMap((translation) =>
+    booksFor(translation).flatMap((info) =>
+      loadBook(translation, info.code).chapters.map((c) => ({
+        params: { translation, book: bookSlug(info.code), chapter: String(c.chapter) },
+        props: { translation, code: info.code, chapter: c.chapter },
+      })),
+    ),
+  );
+}
+
+interface Props {
+  translation: TranslationId;
+  code: string;
+  chapter: number;
+}
+const { translation, code, chapter } = Astro.props;
+const info = BOOK_BY_CODE.get(code) as BookInfo;
+const book = loadBook(translation, code);
+const idx = book.chapters.findIndex((c) => c.chapter === chapter);
+const ch = book.chapters[idx]!;
+const prev = book.chapters[idx - 1];
+const next = book.chapters[idx + 1];
+const xrefs = crossRefs(code);
+const other = PAGE_TRANSLATIONS.find((t) => t !== translation)!;
+const otherHas = booksFor(other).some((b) => b.code === code);
+const label = translation === 'web' ? 'World English Bible' : 'King James Version';
+const otherHasRefTarget = (t: string) => booksFor(translation).some((b) => b.code === t);
+
+function refLabel([t, c, v, c2, v2, , tEnd]: CrossRef): string {
+  const name = BOOK_BY_CODE.get(t)?.name ?? t;
+  if (tEnd && tEnd !== t) return `${name} ${c}:${v}–${BOOK_BY_CODE.get(tEnd)?.name ?? tEnd} ${c2}:${v2}`;
+  if (c2 !== c) return `${name} ${c}:${v}–${c2}:${v2}`;
+  return v2 !== v ? `${name} ${c}:${v}–${v2}` : `${name} ${c}:${v}`;
+}
+function topRefs(v: number): CrossRef[] {
+  return [...(xrefs[`${chapter}:${v}`] ?? [])]
+    .filter((r) => otherHasRefTarget(r[0]))
+    .sort((a, b) => b[5] - a[5])
+    .slice(0, XREFS_PER_VERSE);
+}
+---
+<Base title={`${info.name} ${chapter} (${translation.toUpperCase()})`}>
+  <article {...(translation === DEFAULT_TRANSLATION ? { 'data-pagefind-body': '' } : {})}>
+    <header class="flex flex-wrap items-baseline gap-3">
+      <h1 class="font-heading text-3xl" data-pagefind-meta="title">{info.name} {chapter}</h1>
+      <CanonBadge canon={info.canon} />
+      <span class="text-sm text-ink-muted" data-pagefind-ignore>{label}</span>
+      {otherHas && (
+        <a class="text-sm text-accent" href={`/scripture/${other}/${bookSlug(code)}/${chapter}/`} data-pagefind-ignore>
+          Read in {other.toUpperCase()}
+        </a>
+      )}
+    </header>
+
+    {ch.title && <p class="mt-4 font-scripture italic text-ink-secondary">{ch.title}</p>}
+
+    <ol class="mt-4 max-w-[var(--measure-scripture)] space-y-2 font-scripture text-lg leading-relaxed">
+      {ch.verses.map(([n, text]) => {
+        const refs = topRefs(n);
+        return (
+          <li id={`v${n}`} class="list-none">
+            <sup class="num mr-1 text-xs text-ink-muted">{n}</sup>{text}
+            {refs.length > 0 && (
+              <details class="mt-1 font-body text-sm" data-pagefind-ignore>
+                <summary class="cursor-pointer text-ink-muted">Cross-references</summary>
+                <ul class="mt-1 flex flex-wrap gap-x-3">
+                  {refs.map((r) => (
+                    <li>
+                      <a class="text-accent" href={`/scripture/${translation}/${bookSlug(r[0])}/${r[1]}/#v${r[2]}`}>{refLabel(r)}</a>
+                      <span class="num text-ink-muted"> ({r[5]})</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+          </li>
+        );
+      })}
+    </ol>
+
+    <nav class="mt-8 flex justify-between text-sm" aria-label="Chapters" data-pagefind-ignore>
+      {prev ? <a class="text-accent" href={`/scripture/${translation}/${bookSlug(code)}/${prev.chapter}/`}>← {info.name} {prev.chapter}</a> : <span />}
+      <a class="text-accent" href="/scripture/">All books</a>
+      {next ? <a class="text-accent" href={`/scripture/${translation}/${bookSlug(code)}/${next.chapter}/`}>{info.name} {next.chapter} →</a> : <span />}
+    </nav>
+    <p class="mt-6 text-xs text-ink-muted" data-pagefind-ignore>
+      Text: {label}, public domain. Cross-references: OpenBible.info (CC BY), the top {XREFS_PER_VERSE} per verse by
+      reader votes (vote count in brackets). Votes measure reader agreement, not scholarship.
+    </p>
+  </article>
+</Base>

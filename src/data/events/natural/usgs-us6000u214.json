@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u214",
+  "domain": "natural",
+  "title": "M 6.8 - central Mid-Atlantic Ridge",
+  "summary": "A magnitude 6.8 earthquake occurred near central Mid-Atlantic Ridge at a depth of 10 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-10-13",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -19.3913,
+      -0.346
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.8,
+      "unit": "magnitude",
+      "asOf": "2026-11-05",
+      "sourceId": "usgs-us6000u214",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-11-05",
+      "sourceId": "usgs-us6000u214",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u214"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}
