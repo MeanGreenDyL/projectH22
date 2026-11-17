@@ -83,7 +83,7 @@ out. Every `metrics[]` entry needs the `sourceId` it came from and an `asOf` dat
 | Code | Severity | Meaning |
 | --- | --- | --- |
 | `SRC-ARCHIVE-TIER45` | error | Tier 4/5 source without `archiveUrl` |
-| `EVT-QUALIFYING-TIER` | error | event has no Tier 1 or Tier 2 source |
+| `EVT-QUALIFYING-TIER` | error | event has no Tier 1–4 source (Tier 5 is never the sole source); events without a Tier 1/2 source show the SINGLE-SOURCE marker |
 | `EVT-INTERPRETIVE-SOURCE` | error | event cites an interpretive source as evidence |
 | `EVT-ARCHIVE` | error | none of the event's sources has an `archiveUrl` |
 | `EVT-METRIC-SOURCE-CITED` | error | a metric's `sourceId` is not one of the event's `sources` |
@@ -94,11 +94,12 @@ out. Every `metrics[]` entry needs the `sourceId` it came from and an `asOf` dat
 | `EVT-LENS` | warning | `usImpact` or `globalContext` missing |
 | `COR-COUNTER-READING` | error | `counterReading` missing or under 80 non-whitespace characters |
 | `COR-CERTAINTY-TERMS` | error | forbidden certainty language in any prose field (bibliographic `citation` strings are exempt) |
-| `COR-DIRECT-TEXTUAL-SUPPORT` | error | `direct-textual` without two distinct supporting Tier 1 citations |
+| `COR-DIRECT-TEXTUAL-SUPPORT` | error | `direct-textual` without two distinct supporting Tier 1 or Tier 2 citations |
 | `COR-TYPOLOGICAL-COMMENTATOR` | error | `typological` without a supporting commentator (interpretive source) |
 | `PASSAGE-UNKNOWN-BOOK` | error | book name not in `src/schemas/books.ts` |
 | `PASSAGE-CANON` | error | canon badge disagrees with the book registry |
-| `SCN-NO-DATES` | error | a date, year, duration, countdown or time window in a scenario |
+| `SCN-NO-DATES` | error | a date, year, duration, countdown or time window in a scenario (strings declared in `textualFigures` are exempt) |
+| `SCN-TEXTUAL-FIGURE` | error | a `textualFigures` entry is a calendar year or date rather than the passage's own figure |
 | `SCN-CERTAINTY-TERMS` | error | forbidden certainty language in a scenario |
 | `SCN-NAMED-ENTITY` | error | a titled official or company name in a scenario (partial screen; review still required) |
 | `SCN-CANON-NOTE` | error | non-Protestant-canon passage without `canonNote` |

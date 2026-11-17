@@ -7,15 +7,16 @@ spec is `PROJECT-H22-BUILD-PROMPT.md`; this file is the short version. Refresh/i
 
 ## Current phase
 
-Phase 0 (scaffold & contracts) is done and awaiting owner approval. **Do not start a later phase
-without the owner's explicit go-ahead.** Phases are gated (spec §11).
+Phase 0 (scaffold & contracts) is approved. Phase 1 (scripture layer) is approved and in progress.
+**Do not start a later phase without the owner's explicit go-ahead.** Phases are gated (spec §11).
+Owner decisions that changed the spec are recorded in `docs/PHASE-0-PLAN.md` §2.
 
 ## The rule that outranks every other rule
 
 Fact and interpretation are separate data models, types, validators and visual treatments.
 
-- **Layer A — `VerifiedEvent`** (`src/schemas/event.ts`): observable facts. Needs a Tier 1/2
-  source, a bounded date, an archived citation, `lastVerified`. Neutral language only: scriptural
+- **Layer A — `VerifiedEvent`** (`src/schemas/event.ts`): observable facts. Needs a Tier 1–4
+  source (no Tier 1/2 source → SINGLE-SOURCE marker), a bounded date, an archived citation, `lastVerified`. Neutral language only: scriptural
   or prophetic vocabulary in an event fails the build.
 - **Layer B — `ScripturalCorrelation`** (`src/schemas/correlation.ts`): always
   `isInterpretation: true`, always a non-empty `counterReading` (≥ 80 chars), a declared
@@ -23,7 +24,8 @@ Fact and interpretation are separate data models, types, validators and visual t
   (`FORBIDDEN_CERTAINTY_TERMS` in `src/validation/credibility/terms.ts`).
 - **Scenarios** (`src/schemas/scenario.ts`, route `/scenarios`): derived from scripture text only.
   Title begins "If …". **No dates, years, durations, countdowns or time windows** — regex-enforced
-  (`src/validation/credibility/temporal.ts`). No living people, officials or companies.
+  (`src/validation/credibility/temporal.ts`); the passage's own figures may be declared in
+  `textualFigures` and are exempt. No living people, officials or companies.
 - When a credibility rule and a feature conflict, the credibility rule wins.
 
 ## Never
