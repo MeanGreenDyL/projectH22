@@ -74,7 +74,7 @@ on `/data-health`.
 | World Bank WDI | CC BY 4.0 | "The World Bank" on every chart that uses it |
 | CoinGecko | CoinGecko API terms, attribution required | "Data provided by CoinGecko" on every chart that uses it |
 | GDELT | Free and open, attribution requested | "The GDELT Project", plus the media-attention label |
-| Open States (not yet running) | see openstates.org terms | Plural Policy / Open States |
+| Open States (runs in the refresh workflow; key is a GitHub secret) | see openstates.org terms | Open States (Plural Policy), plus the legislature record |
 
 Wayback Machine snapshots are linked, not copied.
 

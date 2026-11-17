@@ -18,6 +18,7 @@ import { WB_API, WB_INDICATORS, normalizeWorldBank } from './sources/world-bank'
 import { KEV_FEED, KEV_PAGE, NVD_API, normalizeKev, parseNvd, type NvdScore } from './sources/cisa-kev';
 import { CONGRESS_API, currentCongress, normalizeCongressLaws } from './sources/congress';
 import { FEMA_API, normalizeFema } from './sources/fema';
+import { OPENSTATES_API, STATE_TOPICS, normalizeOpenStates } from './sources/openstates';
 import { FR_API, normalizeFederalRegister } from './sources/federal-register';
 import { USGS_API, normalizeUsgs } from './sources/usgs';
 
@@ -132,6 +133,32 @@ const INGESTERS: Ingester[] = [
       }
       const raw = { bills };
       return { raw, result: normalizeCongressLaws(raw, { since, now }) };
+    },
+  },
+  {
+    id: 'open-states',
+    async run(now, since) {
+      const key = process.env.OPENSTATES_API_KEY;
+      if (!key) throw new Error('OPENSTATES_API_KEY is not set');
+      const raw: Record<string, unknown> = {};
+      const result: NormalizeResult = { events: [], sources: [] };
+      const seen = new Set<string>();
+      for (const t of STATE_TOPICS) {
+        for (let page = 1; page <= 10; page++) {
+          const q = new URLSearchParams({ q: t.query, action_since: since, per_page: '20', page: String(page) });
+          q.append('include', 'actions');
+          q.append('include', 'sources');
+          const url = `${OPENSTATES_API}/bills?${q}`;
+          // Free tier is about 30 requests a minute.
+          const json = await fetchJson<{ pagination: { max_page: number } }>(url, { minDelayMs: 2200, headers: { 'X-API-KEY': key } });
+          raw[url] = json;
+          const r = normalizeOpenStates(json, { topic: t, since, now });
+          for (const e of r.events) if (!seen.has(e.id)) { seen.add(e.id); result.events.push(e); }
+          result.sources.push(...r.sources.filter((s) => !result.sources.some((x) => x.id === s.id)));
+          if (page >= json.pagination.max_page) break;
+        }
+      }
+      return { raw, result };
     },
   },
   {
