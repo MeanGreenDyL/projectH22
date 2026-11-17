@@ -27,9 +27,9 @@ for (const path of ['/', '/timeline/', '/correlations/', '/preparedness/', '/dom
     expect(violations).toEqual([]);
     expect(state.tooltip).toBe(true);
     if (path === '/timeline/' || path === '/preparedness/') {
-      await page.mouse.wheel(0, 4000);
-      await page.waitForTimeout(500);
-      expect(await page.evaluate(() => document.querySelectorAll('astro-island[ssr]').length)).toBe(0);
+      // client:visible islands hydrate once on screen; scroll each into view (works with touch emulation too).
+      for (const island of await page.locator('astro-island').all()) await island.scrollIntoViewIfNeeded();
+      await expect.poll(() => page.evaluate(() => document.querySelectorAll('astro-island[ssr]').length), { timeout: 5000 }).toBe(0);
     }
   });
 }
