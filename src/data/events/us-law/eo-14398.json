@@ -1,0 +1,22 @@
+{
+  "id": "eo-14398",
+  "domain": "us-law",
+  "title": "Executive Order 14398: Addressing DEI Discrimination by Federal Contractors",
+  "summary": "Executive Order 14398, \"Addressing DEI Discrimination by Federal Contractors\", was signed on 2026-03-26 and published in the Federal Register on 2026-03-31 (91 FR 16147).",
+  "date": {
+    "start": "2026-03-26",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-06286"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

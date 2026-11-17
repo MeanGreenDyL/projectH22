@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000s1ln",
+  "domain": "natural",
+  "title": "M 6.2 - 62 km SE of Sinabang, Indonesia",
+  "summary": "A magnitude 6.2 earthquake occurred 62 km SE of Sinabang, Indonesia at a depth of 18 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-03-03",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      96.695,
+      2.0076
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-05-15",
+      "sourceId": "usgs-us7000s1ln",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 18,
+      "unit": "km",
+      "asOf": "2026-05-15",
+      "sourceId": "usgs-us7000s1ln",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000s1ln"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

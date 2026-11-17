@@ -1,0 +1,22 @@
+{
+  "id": "eo-14428",
+  "domain": "us-law",
+  "title": "Executive Order 14428: Providing Meaningful Water Quality Improvements Through Collaboration and Oversight of Federal S…",
+  "summary": "Executive Order 14428, \"Providing Meaningful Water Quality Improvements Through Collaboration and Oversight of Federal Support\", was signed on 2026-09-16 and published in the Federal Register on 2026-09-21 (91 FR 59975).",
+  "date": {
+    "start": "2026-09-16",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-19335"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

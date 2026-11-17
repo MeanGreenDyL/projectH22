@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000t9ej",
+  "domain": "natural",
+  "title": "M 6.0 - 54 km ENE of Noda, Japan",
+  "summary": "A magnitude 6 earthquake occurred 54 km ENE of Noda, Japan at a depth of 35 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-07-01",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      142.4411,
+      40.2085
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-09-15",
+      "sourceId": "usgs-us6000t9ej",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 35,
+      "unit": "km",
+      "asOf": "2026-09-15",
+      "sourceId": "usgs-us6000t9ej",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000t9ej"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-132",
+  "domain": "us-law",
+  "title": "Public Law 119-132: Vicksburg National Military Park Boundary Modification Act",
+  "summary": "H.R. 4467, \"Vicksburg National Military Park Boundary Modification Act\", originated in the House of the 119th Congress and became Public Law 119-132 on 2026-10-20, according to Congress.gov.",
+  "date": {
+    "start": "2026-10-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-4467"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

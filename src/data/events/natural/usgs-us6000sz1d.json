@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sz1d",
+  "domain": "natural",
+  "title": "M 6.6 - southern East Pacific Rise",
+  "summary": "A magnitude 6.6 earthquake occurred near southern East Pacific Rise at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-05-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -122.2979,
+      -55.9978
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.6,
+      "unit": "magnitude",
+      "asOf": "2026-07-25",
+      "sourceId": "usgs-us6000sz1d",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-07-25",
+      "sourceId": "usgs-us6000sz1d",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sz1d"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

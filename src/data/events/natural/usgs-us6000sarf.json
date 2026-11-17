@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sarf",
+  "domain": "natural",
+  "title": "M 6.0 - south of the Fiji Islands",
+  "summary": "A magnitude 6 earthquake occurred near south of the Fiji Islands at a depth of 636.265 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-02-22",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      179.6322,
+      -21.7912
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-05-12",
+      "sourceId": "usgs-us6000sarf",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 636.265,
+      "unit": "km",
+      "asOf": "2026-05-12",
+      "sourceId": "usgs-us6000sarf",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sarf"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

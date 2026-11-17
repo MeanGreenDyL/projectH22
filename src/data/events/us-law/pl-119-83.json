@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-83",
+  "domain": "us-law",
+  "title": "Public Law 119-83: Small Business Innovation and Economic Security Act",
+  "summary": "S. 3971, \"Small Business Innovation and Economic Security Act\", originated in the Senate of the 119th Congress and became Public Law 119-83 on 2026-04-13, according to Congress.gov.",
+  "date": {
+    "start": "2026-04-13",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-3971"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

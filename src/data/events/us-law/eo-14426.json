@@ -1,0 +1,22 @@
+{
+  "id": "eo-14426",
+  "domain": "us-law",
+  "title": "Executive Order 14426: Accelerating Access to Veterans' Benefits and Employment Opportunities",
+  "summary": "Executive Order 14426, \"Accelerating Access to Veterans' Benefits and Employment Opportunities\", was signed on 2026-09-08 and published in the Federal Register on 2026-09-11 (91 FR 58003).",
+  "date": {
+    "start": "2026-09-08",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18738"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

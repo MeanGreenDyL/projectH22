@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000t1bu",
+  "domain": "natural",
+  "title": "M 7.3 - 60 km WSW of Puerto Madero, Mexico",
+  "summary": "A magnitude 7.3 earthquake occurred 60 km WSW of Puerto Madero, Mexico at a depth of 22 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-07-17",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -92.9624,
+      14.571
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 7.3,
+      "unit": "magnitude",
+      "asOf": "2026-10-08",
+      "sourceId": "usgs-us7000t1bu",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 22,
+      "unit": "km",
+      "asOf": "2026-10-08",
+      "sourceId": "usgs-us7000t1bu",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000t1bu"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

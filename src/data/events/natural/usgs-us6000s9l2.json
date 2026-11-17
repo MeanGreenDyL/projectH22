@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000s9l2",
+  "domain": "natural",
+  "title": "M 6.0 - 87 km ESE of Ozernovskiy, Russia",
+  "summary": "A magnitude 6 earthquake occurred 87 km ESE of Ozernovskiy, Russia at a depth of 43 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-02-16",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      157.7013,
+      51.254
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-05-06",
+      "sourceId": "usgs-us6000s9l2",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 43,
+      "unit": "km",
+      "asOf": "2026-05-06",
+      "sourceId": "usgs-us6000s9l2",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000s9l2"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

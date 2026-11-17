@@ -1,0 +1,22 @@
+{
+  "id": "eo-14420",
+  "domain": "us-law",
+  "title": "Executive Order 14420: Delivering Gold Standard Childhood Vaccine Recommendations for Americans",
+  "summary": "Executive Order 14420, \"Delivering Gold Standard Childhood Vaccine Recommendations for Americans\", was signed on 2026-08-10 and published in the Federal Register on 2026-08-14 (91 FR 53173).",
+  "date": {
+    "start": "2026-08-10",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-16730"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

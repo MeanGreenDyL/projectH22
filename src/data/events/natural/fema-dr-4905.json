@@ -1,0 +1,34 @@
+{
+  "id": "fema-dr-4905",
+  "domain": "natural",
+  "title": "Major disaster declaration DR-4905-ID: Straight-Line Winds",
+  "summary": "FEMA records a major disaster declaration (DR-4905-ID, \"STRAIGHT-LINE WINDS\") for ID, dated 2026-04-07, for an incident of type \"Straight-Line Winds\". The incident period began on 2025-12-16 and ended on 2025-12-18. The declaration lists 10 designated areas.",
+  "date": {
+    "start": "2026-04-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "ID"
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Designated areas",
+      "value": 10,
+      "unit": "areas",
+      "asOf": "2026-11-17",
+      "sourceId": "fema-dr-4905",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "fema-dr-4905"
+  ],
+  "lastVerified": "2026-11-17T06:38:29Z",
+  "confidence": "confirmed"
+}

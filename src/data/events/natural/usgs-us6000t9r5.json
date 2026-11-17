@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000t9r5",
+  "domain": "natural",
+  "title": "M 6.2 - 61 km W of Tobelo, Indonesia",
+  "summary": "A magnitude 6.2 earthquake occurred 61 km W of Tobelo, Indonesia at a depth of 107 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-07-03",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      127.4596,
+      1.7826
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-09-19",
+      "sourceId": "usgs-us6000t9r5",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 107,
+      "unit": "km",
+      "asOf": "2026-09-19",
+      "sourceId": "usgs-us6000t9r5",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000t9r5"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

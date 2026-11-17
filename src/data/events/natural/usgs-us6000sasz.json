@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sasz",
+  "domain": "natural",
+  "title": "M 7.1 - 57 km NNW of Kota Belud, Malaysia",
+  "summary": "A magnitude 7.1 earthquake occurred 57 km NNW of Kota Belud, Malaysia at a depth of 629 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-02-22",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      116.2942,
+      6.8541
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 7.1,
+      "unit": "magnitude",
+      "asOf": "2026-05-12",
+      "sourceId": "usgs-us6000sasz",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 629,
+      "unit": "km",
+      "asOf": "2026-05-12",
+      "sourceId": "usgs-us6000sasz",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sasz"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

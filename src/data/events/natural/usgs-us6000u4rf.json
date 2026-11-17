@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u4rf",
+  "domain": "natural",
+  "title": "M 6.1 - 22 km ENE of Port-Olry, Vanuatu",
+  "summary": "A magnitude 6.1 earthquake occurred 22 km ENE of Port-Olry, Vanuatu at a depth of 116 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-25",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      167.2727,
+      -14.9726
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-11-14",
+      "sourceId": "usgs-us6000u4rf",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 116,
+      "unit": "km",
+      "asOf": "2026-11-14",
+      "sourceId": "usgs-us6000u4rf",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u4rf"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000t04s",
+  "domain": "natural",
+  "title": "M 6.9 - 34 km ENE of Calama, Chile",
+  "summary": "A magnitude 6.9 earthquake occurred 34 km ENE of Calama, Chile at a depth of 109 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-05-25",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -68.6013,
+      -22.3667
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.9,
+      "unit": "magnitude",
+      "asOf": "2026-08-05",
+      "sourceId": "usgs-us6000t04s",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 109,
+      "unit": "km",
+      "asOf": "2026-08-05",
+      "sourceId": "usgs-us6000t04s",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000t04s"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u18k",
+  "domain": "natural",
+  "title": "M 7.7 - 10 km WSW of Pitaloza Arriba, Panama",
+  "summary": "A magnitude 7.7 earthquake occurred 10 km WSW of Pitaloza Arriba, Panama at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-09",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -80.7566,
+      7.6069
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 7.7,
+      "unit": "magnitude",
+      "asOf": "2026-11-16",
+      "sourceId": "usgs-us6000u18k",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-11-16",
+      "sourceId": "usgs-us6000u18k",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u18k"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

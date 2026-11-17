@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sy84",
+  "domain": "natural",
+  "title": "M 6.0 - 61 km ESE of Codrington, Antigua and Barbuda",
+  "summary": "A magnitude 6 earthquake occurred 61 km ESE of Codrington, Antigua and Barbuda at a depth of 47 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-05-16",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -61.2882,
+      17.4228
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-07-25",
+      "sourceId": "usgs-us6000sy84",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 47,
+      "unit": "km",
+      "asOf": "2026-07-25",
+      "sourceId": "usgs-us6000sy84",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sy84"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

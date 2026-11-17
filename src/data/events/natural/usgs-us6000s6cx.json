@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000s6cx",
+  "domain": "natural",
+  "title": "M 6.1 - Kermadec Islands, New Zealand",
+  "summary": "A magnitude 6.1 earthquake occurred near Kermadec Islands, New Zealand at a depth of 167 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-02-04",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -178.597,
+      -29.526
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-04-23",
+      "sourceId": "usgs-us6000s6cx",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 167,
+      "unit": "km",
+      "asOf": "2026-04-23",
+      "sourceId": "usgs-us6000s6cx",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000s6cx"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

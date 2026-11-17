@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-138",
+  "domain": "us-law",
+  "title": "Public Law 119-138: Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026",
+  "summary": "H.R. 8205, \"Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026\", originated in the House of the 119th Congress and became Public Law 119-138 on 2026-11-03, according to Congress.gov.",
+  "date": {
+    "start": "2026-11-03",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-8205"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

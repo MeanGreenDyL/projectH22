@@ -1,0 +1,22 @@
+{
+  "id": "eo-14402",
+  "domain": "us-law",
+  "title": "Executive Order 14402: Promoting Efficiency, Accountability, and Performance in Federal Contracting",
+  "summary": "Executive Order 14402, \"Promoting Efficiency, Accountability, and Performance in Federal Contracting\", was signed on 2026-04-30 and published in the Federal Register on 2026-05-05 (91 FR 24325).",
+  "date": {
+    "start": "2026-04-30",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-08900"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

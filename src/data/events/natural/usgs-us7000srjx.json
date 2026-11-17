@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000srjx",
+  "domain": "natural",
+  "title": "M 6.1 - 99 km WNW of Mantua, Cuba",
+  "summary": "A magnitude 6.1 earthquake occurred 99 km WNW of Mantua, Cuba at a depth of 26 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-08",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -85.0919,
+      22.791
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-11-16",
+      "sourceId": "usgs-us7000srjx",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 26,
+      "unit": "km",
+      "asOf": "2026-11-16",
+      "sourceId": "usgs-us7000srjx",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000srjx"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

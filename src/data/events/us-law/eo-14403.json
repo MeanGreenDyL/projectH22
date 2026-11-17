@@ -1,0 +1,22 @@
+{
+  "id": "eo-14403",
+  "domain": "us-law",
+  "title": "Executive Order 14403: Promoting Retirement-Savings Access for American Workers by Establishing TrumpIRA.gov",
+  "summary": "Executive Order 14403, \"Promoting Retirement-Savings Access for American Workers by Establishing TrumpIRA.gov\", was signed on 2026-04-30 and published in the Federal Register on 2026-05-05 (91 FR 24329).",
+  "date": {
+    "start": "2026-04-30",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-08908"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

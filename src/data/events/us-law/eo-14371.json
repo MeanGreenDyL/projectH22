@@ -1,0 +1,22 @@
+{
+  "id": "eo-14371",
+  "domain": "us-law",
+  "title": "Executive Order 14371: Providing for the Closing of Executive Departments and Agencies of the Federal Government on Dec…",
+  "summary": "Executive Order 14371, \"Providing for the Closing of Executive Departments and Agencies of the Federal Government on December 24, 2025, and December 26, 2025\", was signed on 2025-12-18 and published in the Federal Register on 2025-12-23 (90 FR 60545).",
+  "date": {
+    "start": "2025-12-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-23847"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

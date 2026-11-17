@@ -1,0 +1,22 @@
+{
+  "id": "eo-14385",
+  "domain": "us-law",
+  "title": "Executive Order 14385: Protecting the National Security and Welfare of the United States and Its Citizens From Criminal…",
+  "summary": "Executive Order 14385, \"Protecting the National Security and Welfare of the United States and Its Citizens From Criminal Actors and Other Public Safety Threats\", was signed on 2026-02-06 and published in the Federal Register on 2026-02-11 (91 FR 6505).",
+  "date": {
+    "start": "2026-02-06",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-02819"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

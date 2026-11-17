@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-95",
+  "domain": "us-law",
+  "title": "Public Law 119-95: A bill to amend chapters 83 and 84 of title 5, United States Code, to authorize an increase of the r…",
+  "summary": "S. 4530, \"A bill to amend chapters 83 and 84 of title 5, United States Code, to authorize an increase of the retirement age for members of the Capitol Police.\", originated in the Senate of the 119th Congress and became Public Law 119-95 on 2026-05-29, according to Congress.gov.",
+  "date": {
+    "start": "2026-05-29",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-4530"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

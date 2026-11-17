@@ -1,0 +1,22 @@
+{
+  "id": "eo-14406",
+  "domain": "us-law",
+  "title": "Executive Order 14406: Restoring Integrity to America's Financial System",
+  "summary": "Executive Order 14406, \"Restoring Integrity to America's Financial System\", was signed on 2026-05-19 and published in the Federal Register on 2026-05-22 (91 FR 30479).",
+  "date": {
+    "start": "2026-05-19",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-10400"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

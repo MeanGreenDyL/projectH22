@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u1kv",
+  "domain": "natural",
+  "title": "M 6.2 - 86 km SSE of Panguna, Papua New Guinea",
+  "summary": "A magnitude 6.2 earthquake occurred 86 km SSE of Panguna, Papua New Guinea at a depth of 31 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-11",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      155.7498,
+      -7.0483
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-10-22",
+      "sourceId": "usgs-us6000u1kv",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 31,
+      "unit": "km",
+      "asOf": "2026-10-22",
+      "sourceId": "usgs-us6000u1kv",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u1kv"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

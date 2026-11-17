@@ -1,0 +1,22 @@
+{
+  "id": "eo-14431",
+  "domain": "us-law",
+  "title": "Executive Order 14431: Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonim…",
+  "summary": "Executive Order 14431, \"Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program\", was signed on 2026-09-18 and published in the Federal Register on 2026-09-23 (91 FR 60501).",
+  "date": {
+    "start": "2026-09-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-19555"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

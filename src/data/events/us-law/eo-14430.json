@@ -1,0 +1,22 @@
+{
+  "id": "eo-14430",
+  "domain": "us-law",
+  "title": "Executive Order 14430: Restoring American Saltwater Angling and Recreation",
+  "summary": "Executive Order 14430, \"Restoring American Saltwater Angling and Recreation\", was signed on 2026-09-17 and published in the Federal Register on 2026-09-22 (91 FR 60293).",
+  "date": {
+    "start": "2026-09-17",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-19417"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

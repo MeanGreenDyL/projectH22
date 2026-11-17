@@ -1,0 +1,22 @@
+{
+  "id": "eo-14370",
+  "domain": "us-law",
+  "title": "Executive Order 14370: Increasing Medical Marijuana and Cannabidiol Research",
+  "summary": "Executive Order 14370, \"Increasing Medical Marijuana and Cannabidiol Research\", was signed on 2025-12-18 and published in the Federal Register on 2025-12-23 (90 FR 60541).",
+  "date": {
+    "start": "2025-12-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-23846"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

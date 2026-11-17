@@ -1,0 +1,22 @@
+{
+  "id": "eo-14369",
+  "domain": "us-law",
+  "title": "Executive Order 14369: Ensuring American Space Superiority",
+  "summary": "Executive Order 14369, \"Ensuring American Space Superiority\", was signed on 2025-12-18 and published in the Federal Register on 2025-12-23 (90 FR 60537).",
+  "date": {
+    "start": "2025-12-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-23845"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

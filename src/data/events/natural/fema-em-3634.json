@@ -1,0 +1,34 @@
+{
+  "id": "fema-em-3634",
+  "domain": "natural",
+  "title": "Emergency declaration EM-3634-MD: Winter Storm",
+  "summary": "FEMA records a emergency declaration (EM-3634-MD, \"SEVERE WINTER STORM\") for MD, dated 2026-01-24, for an incident of type \"Winter Storm\". The incident period began on 2026-01-23 and ended on 2026-01-27. The declaration lists 24 designated areas.",
+  "date": {
+    "start": "2026-01-24",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "MD"
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Designated areas",
+      "value": 24,
+      "unit": "areas",
+      "asOf": "2026-11-17",
+      "sourceId": "fema-em-3634",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "fema-em-3634"
+  ],
+  "lastVerified": "2026-11-17T06:38:29Z",
+  "confidence": "confirmed"
+}

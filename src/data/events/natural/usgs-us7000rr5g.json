@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rr5g",
+  "domain": "natural",
+  "title": "M 6.1 - Volcano Islands, Japan region",
+  "summary": "A magnitude 6.1 earthquake occurred near Volcano Islands, Japan region at a depth of 8 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-01-21",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      142.6037,
+      23.2002
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-04-18",
+      "sourceId": "usgs-us7000rr5g",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 8,
+      "unit": "km",
+      "asOf": "2026-04-18",
+      "sourceId": "usgs-us7000rr5g",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rr5g"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

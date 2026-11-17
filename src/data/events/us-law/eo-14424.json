@@ -1,0 +1,22 @@
+{
+  "id": "eo-14424",
+  "domain": "us-law",
+  "title": "Executive Order 14424: Promoting Fair Competition in Livestock Markets and Expanding Market Access for American Meat Pr…",
+  "summary": "Executive Order 14424, \"Promoting Fair Competition in Livestock Markets and Expanding Market Access for American Meat Producers\", was signed on 2026-09-04 and published in the Federal Register on 2026-09-10 (91 FR 57761).",
+  "date": {
+    "start": "2026-09-04",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18567"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

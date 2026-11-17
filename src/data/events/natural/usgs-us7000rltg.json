@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rltg",
+  "domain": "natural",
+  "title": "M 6.0 - southeast Indian Ridge",
+  "summary": "A magnitude 6 earthquake occurred near southeast Indian Ridge at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-01-01",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      96.3592,
+      -45.6117
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-04-07",
+      "sourceId": "usgs-us7000rltg",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-04-07",
+      "sourceId": "usgs-us7000rltg",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rltg"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

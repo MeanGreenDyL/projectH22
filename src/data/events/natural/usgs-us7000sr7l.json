@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000sr7l",
+  "domain": "natural",
+  "title": "M 6.0 - 111 km SE of Severo-Kuril’sk, Russia",
+  "summary": "A magnitude 6 earthquake occurred 111 km SE of Severo-Kuril’sk, Russia at a depth of 18 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      157.2497,
+      49.9805
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-08-15",
+      "sourceId": "usgs-us7000sr7l",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 18,
+      "unit": "km",
+      "asOf": "2026-08-15",
+      "sourceId": "usgs-us7000sr7l",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000sr7l"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

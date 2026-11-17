@@ -1,0 +1,34 @@
+{
+  "id": "fema-dr-4932",
+  "domain": "natural",
+  "title": "Major disaster declaration DR-4932-WV: Flood",
+  "summary": "FEMA records a major disaster declaration (DR-4932-WV, \"SEVERE STORM, STRAIGHT-LINE WINDS, TORNADOES, FLOODING, LANDSLIDES, AND MUDSLIDES\") for WV, dated 2026-08-03, for an incident of type \"Flood\". The incident period began on 2026-07-21 and ended on 2026-07-22. The declaration lists 11 designated areas.",
+  "date": {
+    "start": "2026-08-03",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "WV"
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Designated areas",
+      "value": 11,
+      "unit": "areas",
+      "asOf": "2026-11-17",
+      "sourceId": "fema-dr-4932",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "fema-dr-4932"
+  ],
+  "lastVerified": "2026-11-17T06:38:29Z",
+  "confidence": "confirmed"
+}

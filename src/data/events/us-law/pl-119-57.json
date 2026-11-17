@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-57",
+  "domain": "us-law",
+  "title": "Public Law 119-57: Foundation of the Federal Bar Association Charter Amendments Act of 2025",
+  "summary": "S. 616, \"Foundation of the Federal Bar Association Charter Amendments Act of 2025\", originated in the Senate of the 119th Congress and became Public Law 119-57 on 2025-12-12, according to Congress.gov.",
+  "date": {
+    "start": "2025-12-12",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-616"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

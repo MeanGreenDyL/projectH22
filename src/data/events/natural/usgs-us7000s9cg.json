@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000s9cg",
+  "domain": "natural",
+  "title": "M 6.0 - 19 km SE of Picota, Peru",
+  "summary": "A magnitude 6 earthquake occurred 19 km SE of Picota, Peru at a depth of 126 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-04-01",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -76.2192,
+      -7.0529
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-08-17",
+      "sourceId": "usgs-us7000s9cg",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 126,
+      "unit": "km",
+      "asOf": "2026-08-17",
+      "sourceId": "usgs-us7000s9cg",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000s9cg"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

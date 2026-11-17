@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000tk74",
+  "domain": "natural",
+  "title": "M 6.0 - South Sandwich Islands region",
+  "summary": "A magnitude 6 earthquake occurred near South Sandwich Islands region at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-08-12",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -29.0187,
+      -60.2393
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-10-30",
+      "sourceId": "usgs-us6000tk74",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-10-30",
+      "sourceId": "usgs-us6000tk74",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000tk74"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

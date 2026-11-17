@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u1wn",
+  "domain": "natural",
+  "title": "M 6.1 - 15 km W of Río Grande, Panama",
+  "summary": "A magnitude 6.1 earthquake occurred 15 km W of Río Grande, Panama at a depth of 11 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-12",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -81.4715,
+      7.7098
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-10-22",
+      "sourceId": "usgs-us6000u1wn",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 11,
+      "unit": "km",
+      "asOf": "2026-10-22",
+      "sourceId": "usgs-us6000u1wn",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u1wn"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

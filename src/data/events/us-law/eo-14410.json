@@ -1,0 +1,22 @@
+{
+  "id": "eo-14410",
+  "domain": "us-law",
+  "title": "Executive Order 14410: Implementing Schedule Policy/Career in the Excepted Service",
+  "summary": "Executive Order 14410, \"Implementing Schedule Policy/Career in the Excepted Service\", was signed on 2026-06-03 and published in the Federal Register on 2026-06-10 (91 FR 34893).",
+  "date": {
+    "start": "2026-06-03",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-11594"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

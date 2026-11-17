@@ -1,0 +1,22 @@
+{
+  "id": "eo-14364",
+  "domain": "us-law",
+  "title": "Executive Order 14364: Addressing Security Risks From Price Fixing and Anti-Competitive Behavior in the Food Supply Cha…",
+  "summary": "Executive Order 14364, \"Addressing Security Risks From Price Fixing and Anti-Competitive Behavior in the Food Supply Chain\", was signed on 2025-12-06 and published in the Federal Register on 2025-12-10 (90 FR 57349).",
+  "date": {
+    "start": "2025-12-06",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2025-22537"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

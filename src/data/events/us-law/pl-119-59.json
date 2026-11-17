@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-59",
+  "domain": "us-law",
+  "title": "Public Law 119-59: A bill to designate the facility of the United States Postal Service located at 201 West Oklahoma Av…",
+  "summary": "S. 2283, \"A bill to designate the facility of the United States Postal Service located at 201 West Oklahoma Avenue in Guthrie, Oklahoma, as the \"Oscar J. Upham Post Office\".\", originated in the Senate of the 119th Congress and became Public Law 119-59 on 2025-12-18, according to Congress.gov.",
+  "date": {
+    "start": "2025-12-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-2283"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

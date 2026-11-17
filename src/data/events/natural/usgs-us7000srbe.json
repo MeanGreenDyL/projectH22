@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000srbe",
+  "domain": "natural",
+  "title": "M 6.1 - 19 km SW of Balangonan, Philippines",
+  "summary": "A magnitude 6.1 earthquake occurred 19 km SW of Balangonan, Philippines at a depth of 44.674 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      125.2171,
+      5.4579
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mb)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-08-21",
+      "sourceId": "usgs-us7000srbe",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 44.674,
+      "unit": "km",
+      "asOf": "2026-08-21",
+      "sourceId": "usgs-us7000srbe",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000srbe"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

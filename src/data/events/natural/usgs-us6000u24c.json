@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u24c",
+  "domain": "natural",
+  "title": "M 6.0 - 128 km S of Kokopo, Papua New Guinea",
+  "summary": "A magnitude 6 earthquake occurred 128 km S of Kokopo, Papua New Guinea at a depth of 21.758 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-13",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      152.1501,
+      -5.4965
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-10-26",
+      "sourceId": "usgs-us6000u24c",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 21.758,
+      "unit": "km",
+      "asOf": "2026-10-26",
+      "sourceId": "usgs-us6000u24c",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u24c"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

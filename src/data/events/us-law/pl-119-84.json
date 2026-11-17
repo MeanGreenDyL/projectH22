@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-84",
+  "domain": "us-law",
+  "title": "Public Law 119-84: To amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intel…",
+  "summary": "H.R. 8322, \"To amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978 through April 30, 2026, and for other purposes.\", originated in the House of the 119th Congress and became Public Law 119-84 on 2026-04-18, according to Congress.gov.",
+  "date": {
+    "start": "2026-04-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-8322"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

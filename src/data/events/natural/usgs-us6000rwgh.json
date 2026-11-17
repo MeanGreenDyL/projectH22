@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000rwgh",
+  "domain": "natural",
+  "title": "M 6.5 - 45 km NNE of Goroka, Papua New Guinea",
+  "summary": "A magnitude 6.5 earthquake occurred 45 km NNE of Goroka, Papua New Guinea at a depth of 107 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2025-12-22",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      145.5368,
+      -5.7036
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.5,
+      "unit": "magnitude",
+      "asOf": "2026-03-19",
+      "sourceId": "usgs-us6000rwgh",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 107,
+      "unit": "km",
+      "asOf": "2026-03-19",
+      "sourceId": "usgs-us6000rwgh",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000rwgh"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

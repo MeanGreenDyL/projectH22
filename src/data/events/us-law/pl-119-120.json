@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-120",
+  "domain": "us-law",
+  "title": "Public Law 119-120: Billion Dollar Boondoggle Act of 2025",
+  "summary": "S. 766, \"Billion Dollar Boondoggle Act of 2025\", originated in the Senate of the 119th Congress and became Public Law 119-120 on 2026-10-07, according to Congress.gov.",
+  "date": {
+    "start": "2026-10-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-766"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

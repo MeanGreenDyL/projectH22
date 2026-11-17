@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000srxn",
+  "domain": "natural",
+  "title": "M 6.0 - Auckland Islands, New Zealand region",
+  "summary": "A magnitude 6 earthquake occurred near Auckland Islands, New Zealand region at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-10",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      164.0868,
+      -49.6503
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-08-15",
+      "sourceId": "usgs-us7000srxn",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-08-15",
+      "sourceId": "usgs-us7000srxn",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000srxn"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

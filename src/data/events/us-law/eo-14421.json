@@ -1,0 +1,22 @@
+{
+  "id": "eo-14421",
+  "domain": "us-law",
+  "title": "Executive Order 14421: Declaring a National Emergency To Secure the United States Bulk-Power System",
+  "summary": "Executive Order 14421, \"Declaring a National Emergency To Secure the United States Bulk-Power System\", was signed on 2026-08-26 and published in the Federal Register on 2026-08-31 (91 FR 55995).",
+  "date": {
+    "start": "2026-08-26",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-17843"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

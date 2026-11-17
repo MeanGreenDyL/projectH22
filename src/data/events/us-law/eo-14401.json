@@ -1,0 +1,22 @@
+{
+  "id": "eo-14401",
+  "domain": "us-law",
+  "title": "Executive Order 14401: Accelerating Medical Treatments for Serious Mental Illness",
+  "summary": "Executive Order 14401, \"Accelerating Medical Treatments for Serious Mental Illness\", was signed on 2026-04-18 and published in the Federal Register on 2026-04-22 (91 FR 21709).",
+  "date": {
+    "start": "2026-04-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-07907"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

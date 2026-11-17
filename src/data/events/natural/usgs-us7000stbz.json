@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000stbz",
+  "domain": "natural",
+  "title": "M 6.3 - 262 km SSE of Dunhuang, China",
+  "summary": "A magnitude 6.3 earthquake occurred 262 km SSE of Dunhuang, China at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-16",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      95.4919,
+      37.888
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.3,
+      "unit": "magnitude",
+      "asOf": "2026-08-31",
+      "sourceId": "usgs-us7000stbz",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-08-31",
+      "sourceId": "usgs-us7000stbz",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000stbz"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

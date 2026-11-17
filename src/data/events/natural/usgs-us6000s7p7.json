@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000s7p7",
+  "domain": "natural",
+  "title": "M 6.2 - Fiji region",
+  "summary": "A magnitude 6.2 earthquake occurred near Fiji region at a depth of 513 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-02-10",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -178.3783,
+      -21.0263
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-05-01",
+      "sourceId": "usgs-us6000s7p7",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 513,
+      "unit": "km",
+      "asOf": "2026-05-01",
+      "sourceId": "usgs-us6000s7p7",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000s7p7"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

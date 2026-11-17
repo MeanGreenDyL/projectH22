@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000st1c",
+  "domain": "natural",
+  "title": "M 6.2 - 76 km ESE of Pondaguitan, Philippines",
+  "summary": "A magnitude 6.2 earthquake occurred 76 km ESE of Pondaguitan, Philippines at a depth of 92.76 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-06-15",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      126.8492,
+      6.2033
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-08-31",
+      "sourceId": "usgs-us7000st1c",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 92.76,
+      "unit": "km",
+      "asOf": "2026-08-31",
+      "sourceId": "usgs-us7000st1c",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000st1c"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

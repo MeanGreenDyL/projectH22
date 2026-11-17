@@ -1,0 +1,9 @@
+{
+  "source": "usgs-earthquakes",
+  "lastAttempt": "2026-11-17T06:35:51Z",
+  "lastSuccess": "2026-11-17T06:35:51Z",
+  "ok": true,
+  "eventsWritten": 112,
+  "eventsPending": 28,
+  "slaHours": 48
+}

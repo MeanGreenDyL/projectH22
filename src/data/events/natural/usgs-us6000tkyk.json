@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000tkyk",
+  "domain": "natural",
+  "title": "M 6.9 - 9 km WNW of Pematangsiantar, Indonesia",
+  "summary": "A magnitude 6.9 earthquake occurred 9 km WNW of Pematangsiantar, Indonesia at a depth of 175 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-08-15",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      98.9853,
+      2.9863
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.9,
+      "unit": "magnitude",
+      "asOf": "2026-10-31",
+      "sourceId": "usgs-us6000tkyk",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 175,
+      "unit": "km",
+      "asOf": "2026-10-31",
+      "sourceId": "usgs-us6000tkyk",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000tkyk"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

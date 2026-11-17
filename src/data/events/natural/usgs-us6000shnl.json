@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000shnl",
+  "domain": "natural",
+  "title": "M 6.1 - 98 km WNW of Isangel, Vanuatu",
+  "summary": "A magnitude 6.1 earthquake occurred 98 km WNW of Isangel, Vanuatu at a depth of 21 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-03-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      168.3806,
+      -19.2794
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.1,
+      "unit": "magnitude",
+      "asOf": "2026-06-04",
+      "sourceId": "usgs-us6000shnl",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 21,
+      "unit": "km",
+      "asOf": "2026-06-04",
+      "sourceId": "usgs-us6000shnl",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000shnl"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

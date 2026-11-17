@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000u3jl",
+  "domain": "natural",
+  "title": "M 6.3 - 202 km NW of Port-Olry, Vanuatu",
+  "summary": "A magnitude 6.3 earthquake occurred 202 km NW of Port-Olry, Vanuatu at a depth of 16 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-10-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      165.5746,
+      -13.9347
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.3,
+      "unit": "magnitude",
+      "asOf": "2026-11-10",
+      "sourceId": "usgs-us6000u3jl",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 16,
+      "unit": "km",
+      "asOf": "2026-11-10",
+      "sourceId": "usgs-us6000u3jl",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000u3jl"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

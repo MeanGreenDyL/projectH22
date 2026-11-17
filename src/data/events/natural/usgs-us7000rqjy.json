@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rqjy",
+  "domain": "natural",
+  "title": "M 6.0 - 277 km ESE of Tadine, New Caledonia",
+  "summary": "A magnitude 6 earthquake occurred 277 km ESE of Tadine, New Caledonia at a depth of 11 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-01-19",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      170.3939,
+      -22.4395
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-04-18",
+      "sourceId": "usgs-us7000rqjy",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 11,
+      "unit": "km",
+      "asOf": "2026-04-18",
+      "sourceId": "usgs-us7000rqjy",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rqjy"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

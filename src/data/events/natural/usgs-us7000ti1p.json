@@ -1,0 +1,46 @@
+{
+  "id": "usgs-us7000ti1p",
+  "domain": "natural",
+  "title": "M 6.5 - 170 km W of Nikolski, Alaska",
+  "summary": "A magnitude 6.5 earthquake occurred 170 km W of Nikolski, Alaska at a depth of 98 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-09-17",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-state",
+    "countries": [
+      "US"
+    ],
+    "usStates": [
+      "AK"
+    ],
+    "coordinates": [
+      -171.3965,
+      52.8796
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.5,
+      "unit": "magnitude",
+      "asOf": "2026-11-12",
+      "sourceId": "usgs-us7000ti1p",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 98,
+      "unit": "km",
+      "asOf": "2026-11-12",
+      "sourceId": "usgs-us7000ti1p",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000ti1p"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

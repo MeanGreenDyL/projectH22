@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000tx16",
+  "domain": "natural",
+  "title": "M 6.4 - 30 km WSW of Lata, Solomon Islands",
+  "summary": "A magnitude 6.4 earthquake occurred 30 km WSW of Lata, Solomon Islands at a depth of 17 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-11-09",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      165.5616,
+      -10.8669
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.4,
+      "unit": "magnitude",
+      "asOf": "2026-11-13",
+      "sourceId": "usgs-us7000tx16",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 17,
+      "unit": "km",
+      "asOf": "2026-11-13",
+      "sourceId": "usgs-us7000tx16",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000tx16"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

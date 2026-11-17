@@ -1,0 +1,22 @@
+{
+  "id": "eo-14382",
+  "domain": "us-law",
+  "title": "Executive Order 14382: Addressing Threats to the United States by the Government of Iran",
+  "summary": "Executive Order 14382, \"Addressing Threats to the United States by the Government of Iran\", was signed on 2026-02-06 and published in the Federal Register on 2026-02-11 (91 FR 6493).",
+  "date": {
+    "start": "2026-02-06",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-02813"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

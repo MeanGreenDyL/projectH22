@@ -1,0 +1,22 @@
+{
+  "id": "eo-14409",
+  "domain": "us-law",
+  "title": "Executive Order 14409: Promoting Advanced Artificial Intelligence Innovation and Security",
+  "summary": "Executive Order 14409, \"Promoting Advanced Artificial Intelligence Innovation and Security\", was signed on 2026-06-02 and published in the Federal Register on 2026-06-05 (91 FR 34565).",
+  "date": {
+    "start": "2026-06-02",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-11415"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

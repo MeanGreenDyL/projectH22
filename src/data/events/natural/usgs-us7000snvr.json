@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000snvr",
+  "domain": "natural",
+  "title": "M 6.0 - western Indian-Antarctic Ridge",
+  "summary": "A magnitude 6 earthquake occurred near western Indian-Antarctic Ridge at a depth of 10 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-05-27",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      139.4873,
+      -50.5072
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-08-05",
+      "sourceId": "usgs-us7000snvr",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 10,
+      "unit": "km",
+      "asOf": "2026-08-05",
+      "sourceId": "usgs-us7000snvr",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000snvr"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

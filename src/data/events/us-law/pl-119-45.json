@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-45",
+  "domain": "us-law",
+  "title": "Public Law 119-45: Taiwan Assurance Implementation Act",
+  "summary": "H.R. 1512, \"Taiwan Assurance Implementation Act\", originated in the House of the 119th Congress and became Public Law 119-45 on 2025-12-02, according to Congress.gov.",
+  "date": {
+    "start": "2025-12-02",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-1512"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

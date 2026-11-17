@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rpcg",
+  "domain": "natural",
+  "title": "M 6.2 - 135 km SE of Kuril’sk, Russia",
+  "summary": "A magnitude 6.2 earthquake occurred 135 km SE of Kuril’sk, Russia at a depth of 29 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-01-13",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      149.3153,
+      44.554
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-04-10",
+      "sourceId": "usgs-us7000rpcg",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 29,
+      "unit": "km",
+      "asOf": "2026-04-10",
+      "sourceId": "usgs-us7000rpcg",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rpcg"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

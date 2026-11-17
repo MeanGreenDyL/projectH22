@@ -1,0 +1,22 @@
+{
+  "id": "eo-14375",
+  "domain": "us-law",
+  "title": "Executive Order 14375: Designating the Board of Peace as a Public International Organization Entitled To Enjoy Certain…",
+  "summary": "Executive Order 14375, \"Designating the Board of Peace as a Public International Organization Entitled To Enjoy Certain Privileges, Exemptions, and Immunities\", was signed on 2026-01-16 and published in the Federal Register on 2026-01-22 (91 FR 2837).",
+  "date": {
+    "start": "2026-01-16",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-01271"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

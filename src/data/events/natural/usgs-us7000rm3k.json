@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000rm3k",
+  "domain": "natural",
+  "title": "M 6.5 - 0 km W of San Marcos, Mexico",
+  "summary": "A magnitude 6.5 earthquake occurred 0 km W of San Marcos, Mexico at a depth of 18 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2026-01-02",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      -99.3939,
+      16.798
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.5,
+      "unit": "magnitude",
+      "asOf": "2026-04-07",
+      "sourceId": "usgs-us7000rm3k",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 18,
+      "unit": "km",
+      "asOf": "2026-04-07",
+      "sourceId": "usgs-us7000rm3k",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000rm3k"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000sxqf",
+  "domain": "natural",
+  "title": "M 6.2 - 268 km WSW of Tual, Indonesia",
+  "summary": "A magnitude 6.2 earthquake occurred 268 km WSW of Tual, Indonesia at a depth of 137 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-05-14",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      130.3809,
+      -6.1497
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.2,
+      "unit": "magnitude",
+      "asOf": "2026-07-25",
+      "sourceId": "usgs-us6000sxqf",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 137,
+      "unit": "km",
+      "asOf": "2026-07-25",
+      "sourceId": "usgs-us6000sxqf",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000sxqf"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

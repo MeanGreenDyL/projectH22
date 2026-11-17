@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us6000ruc4",
+  "domain": "natural",
+  "title": "M 6.7 - 117 km NE of Kuji, Japan",
+  "summary": "A magnitude 6.7 earthquake occurred 117 km NE of Kuji, Japan at a depth of 19 km, according to the U.S. Geological Survey. The USGS flagged the event for possible tsunami impact.",
+  "date": {
+    "start": "2025-12-12",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      142.8131,
+      40.8899
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6.7,
+      "unit": "magnitude",
+      "asOf": "2026-03-10",
+      "sourceId": "usgs-us6000ruc4",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 19,
+      "unit": "km",
+      "asOf": "2026-03-10",
+      "sourceId": "usgs-us6000ruc4",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us6000ruc4"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

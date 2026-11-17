@@ -1,0 +1,22 @@
+{
+  "id": "pvtl-119-1",
+  "domain": "us-law",
+  "title": "Private Law 119-1: To authorize the President to award the Medal of Honor to James Capers, Jr., for acts of valor as a…",
+  "summary": "H.R. 3377, \"To authorize the President to award the Medal of Honor to James Capers, Jr., for acts of valor as a member of the Marine Corps during the Vietnam War.\", originated in the House of the 119th Congress and became Private Law 119-1 on 2026-03-26, according to Congress.gov.",
+  "date": {
+    "start": "2026-03-26",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-hr-3377"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

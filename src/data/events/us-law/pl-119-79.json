@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-79",
+  "domain": "us-law",
+  "title": "Public Law 119-79: Semiquincentennial Congressional Time Capsule Act",
+  "summary": "S. 3705, \"Semiquincentennial Congressional Time Capsule Act\", originated in the Senate of the 119th Congress and became Public Law 119-79 on 2026-02-18, according to Congress.gov.",
+  "date": {
+    "start": "2026-02-18",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-3705"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

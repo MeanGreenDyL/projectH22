@@ -1,0 +1,41 @@
+{
+  "id": "usgs-us7000tuku",
+  "domain": "natural",
+  "title": "M 6.0 - 64 km SSE of Shima, Japan",
+  "summary": "A magnitude 6 earthquake occurred 64 km SSE of Shima, Japan at a depth of 348 km, according to the U.S. Geological Survey.",
+  "date": {
+    "start": "2026-10-31",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "regional",
+    "countries": [],
+    "coordinates": [
+      137.0372,
+      33.7792
+    ]
+  },
+  "metrics": [
+    {
+      "label": "Magnitude (mww)",
+      "value": 6,
+      "unit": "magnitude",
+      "asOf": "2026-11-17",
+      "sourceId": "usgs-us7000tuku",
+      "isEstimate": false
+    },
+    {
+      "label": "Depth",
+      "value": 348,
+      "unit": "km",
+      "asOf": "2026-11-17",
+      "sourceId": "usgs-us7000tuku",
+      "isEstimate": false
+    }
+  ],
+  "sources": [
+    "usgs-us7000tuku"
+  ],
+  "lastVerified": "2026-11-17T06:35:51Z",
+  "confidence": "confirmed"
+}

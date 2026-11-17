@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-110",
+  "domain": "us-law",
+  "title": "Public Law 119-110: Prison Staff Safety Enhancement Act",
+  "summary": "S. 307, \"Prison Staff Safety Enhancement Act\", originated in the Senate of the 119th Congress and became Public Law 119-110 on 2026-09-16, according to Congress.gov.",
+  "date": {
+    "start": "2026-09-16",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-307"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "eo-14423",
+  "domain": "us-law",
+  "title": "Executive Order 14423: Establishing the United States Space Academy",
+  "summary": "Executive Order 14423, \"Establishing the United States Space Academy\", was signed on 2026-08-28 and published in the Federal Register on 2026-09-03 (91 FR 56737).",
+  "date": {
+    "start": "2026-08-28",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18141"
+  ],
+  "lastVerified": "2026-11-17T06:51:48Z",
+  "confidence": "confirmed"
+}

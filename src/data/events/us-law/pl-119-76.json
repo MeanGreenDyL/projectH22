@@ -1,0 +1,22 @@
+{
+  "id": "pl-119-76",
+  "domain": "us-law",
+  "title": "Public Law 119-76: Bankruptcy Administration Improvement Act of 2025",
+  "summary": "S. 3424, \"Bankruptcy Administration Improvement Act of 2025\", originated in the Senate of the 119th Congress and became Public Law 119-76 on 2026-02-06, according to Congress.gov.",
+  "date": {
+    "start": "2026-02-06",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "congress-119-s-3424"
+  ],
+  "lastVerified": "2026-11-17T06:44:25Z",
+  "confidence": "confirmed"
+}
