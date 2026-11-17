@@ -1,7 +1,7 @@
 /** Phase 7 post-build helpers: CSP hashing, internal link resolution, sitemap. */
 import { createHash } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
-import { candidates, contentSecurityPolicy, cspHash, headersFile, inlineScripts, internalTargets, sitemapXml } from '../scripts/dist/lib';
+import { candidates, contentSecurityPolicy, cspHash, headersFile, inlineScripts, internalTargets, sitemapXml } from '../scripts/build-checks/lib';
 
 describe('inline scripts and CSP', () => {
   it('collects executable inline scripts only', () => {
@@ -42,7 +42,7 @@ describe('sitemap', () => {
 });
 
 describe('source link targets', async () => {
-  const { linkTargets } = await import('../scripts/dist/source-links');
+  const { linkTargets } = await import('../scripts/build-checks/source-links');
   it('checks the live URL and, when present, the archive copy', () => {
     expect(linkTargets([{ id: 'a', url: 'https://a.gov/', archiveUrl: 'https://web.archive.org/x' }, { id: 'b', url: 'https://b.org/' }]).map((t) => `${t.id}:${t.kind}`)).toEqual(['a:live', 'a:archive', 'b:live']);
   });

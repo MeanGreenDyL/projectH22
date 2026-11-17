@@ -8,9 +8,9 @@ reporting, corrections log, sitemap, structured data, security headers, deploy.
 
 | Item | Where | Notes |
 | --- | --- | --- |
-| Security headers | `scripts/dist/postbuild.ts` → `dist/_headers` | Strict CSP: scripts only from the site plus the exact hashes of the inline scripts the build emits; no framing, no plugins; nosniff, referrer and permissions policies, HSTS, long cache for hashed assets. One file format works on both Netlify and Cloudflare Pages |
+| Security headers | `scripts/build-checks/postbuild.ts` → `dist/_headers` | Strict CSP: scripts only from the site plus the exact hashes of the inline scripts the build emits; no framing, no plugins; nosniff, referrer and permissions policies, HSTS, long cache for hashed assets. One file format works on both Netlify and Cloudflare Pages |
 | CSP proof | `tests/e2e/headers.spec.ts` | Five pages load under the generated policy with islands hydrated and no violations; the test fails if the hashes are removed (checked) |
-| Sitemap and robots | `scripts/dist/postbuild.ts` | Written when `SITE_URL` is set at build time; skipped until the address is known |
+| Sitemap and robots | `scripts/build-checks/postbuild.ts` | Written when `SITE_URL` is set at build time; skipped until the address is known |
 | Internal link check | `pnpm check:dist`, CI | 3,470 pages, 0 broken links |
 | Performance budget | `pnpm check:dist`, CI | Per page, gzipped: HTML ≤ 120 KB, JavaScript ≤ 150 KB. Every page is within budget |
 | Source link check | `pnpm check:source-links`, `.github/workflows/links.yml` | Weekly; checks every cited URL and its archive copy; reports in the job summary, never edits data |
