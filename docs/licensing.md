@@ -41,7 +41,7 @@ translation in the table that also covers the Deuterocanon / Apocrypha. KJV stay
 reader-selected toggle. The project's name verse (Habakkuk 2:2) is quoted in KJV wording; whether a
 single-verse quotation needs the same treatment in the UK is an open question for the owner.
 
-**Owner decision:** _pending_ (record the decision and date here).
+**Owner decision (Dylan, 2026-11-17): (a).** WEB is the default display translation; KJV is a reader-selected opt-in. ESV and NLT are not bundled; they appear only as outbound links to the publishers.
 
 ## 3. Data sources
 

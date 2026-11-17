@@ -33,7 +33,7 @@ No UI, no content, no scripture text. The guardrails exist before anything can v
 | F3 | allow events without a Tier 1/2 source, with the marker | `FACT_LAYER_QUALIFYING_TIERS` = Tiers 1–4 (Tier 5 never alone, spec §5); `needsSingleSourceMarker` fires when no Tier 1/2 source |
 | F5 | domain roll-up left to Claude | `DOMAIN_ROUTE` in `src/lib/policy.ts`: geopolitical, economic, infrastructure, natural → `/domains/global`; seven colors kept |
 | F7 | "an exception is always fine for scripture" | `Scenario.textualFigures`: the passage's own figures, quoted exactly, are exempt from the no-dates scan; a declared figure may never be a calendar year or date (`SCN-TEXTUAL-FIGURE`) |
-| F10 | "ESV as a default with KJV, WEB or NLT as an opt-in" | **Not implemented — conflicts with the spec's licensing rules; see `docs/licensing.md` §2 and the open question to the owner** |
+| F10 | First asked for ESV default; after the licensing note, chose **WEB default, KJV opt-in** | `docs/licensing.md` §2; ESV / NLT as outbound links only |
 | — | create `main`, start Phase 1 | approved |
 
 ## 2b. Spec flags (original report)
