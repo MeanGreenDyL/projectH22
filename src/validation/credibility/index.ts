@@ -15,7 +15,7 @@ import {
 } from '../../schemas';
 import type { GateContext, Issue, ParsedDataset } from '../types';
 import { findNamedEntities } from './named-entities';
-import { findTemporalReferences } from './temporal';
+import { CALENDAR_PATTERN_NAMES, findTemporalReferences } from './temporal';
 import {
   FACT_LAYER_INTERPRETIVE_TERMS,
   FORBIDDEN_CERTAINTY_TERMS,
@@ -28,8 +28,11 @@ const BIBLIOGRAPHIC_KEYS = new Set(['citation']);
 /** Structured fields that are not prose: ids, enums, passage refs, review metadata. */
 const NON_PROSE_KEYS = new Set(['id', 'eventIds', 'sourceId', 'passages', 'review', 'strength', 'hermeneuticTradition', 'tradition', 'position']);
 
-/** Direct-textual support must come from these tiers (spec §1 hard rule 1: "two Tier 1 citations"). */
-export const DIRECT_TEXTUAL_SUPPORT_TIERS: readonly string[] = ['1-primary'];
+/**
+ * Direct-textual support must come from these tiers. Spec §1 says "two Tier 1 citations"; the
+ * owner widened it to Tier 1 or 2 on 2026-11-17 (scholarly agreement lives in peer-reviewed work).
+ */
+export const DIRECT_TEXTUAL_SUPPORT_TIERS: readonly string[] = ['1-primary', '2-peer-reviewed'];
 export const DIRECT_TEXTUAL_MIN_SUPPORTS = 2;
 
 type Push = (issue: Omit<Issue, 'severity'> & { severity?: Issue['severity'] }) => void;
@@ -71,7 +74,7 @@ export function runCredibilityGate(data: ParsedDataset, ctx: GateContext): Issue
       });
     }
     if (!cited.some((s) => s.kind === 'evidentiary' && FACT_LAYER_QUALIFYING_TIERS.includes(s.tier))) {
-      push({ rule: 'EVT-QUALIFYING-TIER', file, recordId: e.id, message: 'a VerifiedEvent needs at least one Tier 1 or Tier 2 source' });
+      push({ rule: 'EVT-QUALIFYING-TIER', file, recordId: e.id, message: 'a VerifiedEvent needs at least one Tier 1–4 source; Tier 5 specialist press is never the sole source' });
     }
     if (!cited.some((s) => s.archiveUrl !== undefined)) {
       push({ rule: 'EVT-ARCHIVE', file, recordId: e.id, message: 'at least one cited source must have an archiveUrl' });
@@ -140,8 +143,17 @@ export function runCredibilityGate(data: ParsedDataset, ctx: GateContext): Issue
 
   // ---------- Scenarios ----------
   for (const { file, record: s } of data.scenarios) {
-    for (const field of collectStrings(s, NON_PROSE_KEYS)) {
-      for (const hit of findTemporalReferences(field.value)) {
+    // Owner decision 2026-11-17: the passage's own figures are allowed when declared in textualFigures.
+    const figures = (s.textualFigures ?? []).map((f) => f.figure);
+    for (const f of s.textualFigures ?? []) {
+      const hits = findTemporalReferences(f.figure).filter((h) => CALENDAR_PATTERN_NAMES.has(h.name));
+      if (hits.length > 0) {
+        push({ rule: 'SCN-TEXTUAL-FIGURE', file, recordId: s.id, message: `textualFigures "${f.figure}" is a calendar date or year (${hits[0]!.name}); only the passage's own figures may be declared` });
+      }
+    }
+    for (const field of collectStrings(s, new Set([...NON_PROSE_KEYS, 'textualFigures']))) {
+      const scanned = figures.reduce((text, fig) => text.split(fig).join(' '), field.value);
+      for (const hit of findTemporalReferences(scanned)) {
         push({ rule: 'SCN-NO-DATES', file, recordId: s.id, message: `${field.path} contains a ${hit.name} ("${hit.match}"); scenarios may not contain dates, years, countdowns or time windows` });
       }
       const terms = findTerms(field.value, FORBIDDEN_CERTAINTY_TERMS);

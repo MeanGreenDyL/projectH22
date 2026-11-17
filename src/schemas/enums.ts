@@ -43,8 +43,20 @@ export const EVIDENTIARY_TIERS = [
 export const EvidentiaryTier = z.enum(EVIDENTIARY_TIERS);
 export type EvidentiaryTier = z.infer<typeof EvidentiaryTier>;
 
-/** Tiers that qualify a record for the fact layer (spec §1, Layer A). */
-export const FACT_LAYER_QUALIFYING_TIERS: readonly EvidentiaryTier[] = ['1-primary', '2-peer-reviewed'];
+/**
+ * Tiers that qualify a record for the fact layer. Spec §1 asked for Tier 1/2 only; the owner
+ * decided on 2026-11-17 to admit Tier 3/4-sourced events, which then carry the SINGLE-SOURCE
+ * marker (src/lib/policy.ts). Tier 5 is never the sole source (spec §5).
+ */
+export const FACT_LAYER_QUALIFYING_TIERS: readonly EvidentiaryTier[] = [
+  '1-primary',
+  '2-peer-reviewed',
+  '3-institutional',
+  '4-quality-press',
+];
+
+/** Events without at least one of these show the SINGLE-SOURCE marker. */
+export const STRONG_EVIDENCE_TIERS: readonly EvidentiaryTier[] = ['1-primary', '2-peer-reviewed'];
 
 /** Tiers that must always carry an archiveUrl (spec §5 Source schema comment). */
 export const ARCHIVE_REQUIRED_TIERS: readonly EvidentiaryTier[] = ['4-quality-press', '5-specialist-press'];

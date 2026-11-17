@@ -36,12 +36,25 @@ export const Scenario = z
     describedSequence: z.array(ScenarioStep).min(1),
     whatThisDoesNotClaim: NonBlank(40),
     majorScholarlyObjections: z.array(MajorObjection).min(1),
+    /**
+     * The passage's own figures, quoted exactly ("seventy weeks", "1,260 days"). These strings
+     * are exempt from the no-dates scan and render labelled "the text's figure, not a calendar
+     * window". Never a calendar year or date. Phase 1 verifies each against the passage text.
+     */
+    textualFigures: z
+      .array(z.strictObject({ passageIndex: z.number().int().min(0), figure: NonBlank() }))
+      .optional(),
     /** Required when any passage is outside the Protestant canon (enforced at the credibility gate). */
     canonNote: NonBlank().optional(),
     review: Review,
     isInterpretation: z.literal(true),
   })
   .superRefine((s, ctx) => {
+    s.textualFigures?.forEach((f, i) => {
+      if (f.passageIndex >= s.passages.length) {
+        ctx.addIssue({ code: 'custom', path: ['textualFigures', i, 'passageIndex'], message: `passage index ${f.passageIndex} does not exist in passages` });
+      }
+    });
     s.describedSequence.forEach((step, i) => {
       if (step.order !== i + 1) {
         ctx.addIssue({

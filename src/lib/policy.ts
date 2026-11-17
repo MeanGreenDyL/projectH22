@@ -3,7 +3,9 @@
  * rather than re-deriving the rules.
  */
 import {
+  STRONG_EVIDENCE_TIERS,
   type CorrelationStrength,
+  type Domain,
   type Source,
   type ScripturalCorrelation,
   type VerifiedEvent,
@@ -26,8 +28,31 @@ export function summaryEligible(c: ScripturalCorrelation): boolean {
   return isVisibleByDefault(c);
 }
 
-/** Spec §5 rule 1: an event whose only sources are Tier 4/5 shows a SINGLE-SOURCE marker. */
+/**
+ * Spec §5 rule 1, widened by the owner's 2026-11-17 decision: any event without a Tier 1 or
+ * Tier 2 source shows the SINGLE-SOURCE marker.
+ */
 export function needsSingleSourceMarker(e: VerifiedEvent, sources: ReadonlyMap<string, Source>): boolean {
-  const cited = e.sources.map((id) => sources.get(id));
-  return cited.every((s) => s?.kind === 'evidentiary' && (s.tier === '4-quality-press' || s.tier === '5-specialist-press'));
+  return !e.sources.some((id) => {
+    const s = sources.get(id);
+    return s?.kind === 'evidentiary' && STRONG_EVIDENCE_TIERS.includes(s.tier);
+  });
 }
+
+/** The four /domains/* pages (spec §7). */
+export const DOMAIN_PAGES = ['cyber', 'crypto', 'us-law', 'global'] as const;
+export type DomainPage = (typeof DOMAIN_PAGES)[number];
+
+/**
+ * Which page each data domain appears on (owner left this to Claude, 2026-11-17). Domain colors
+ * stay per-domain, so global-page charts can still tell geopolitical from economic events.
+ */
+export const DOMAIN_ROUTE: Record<Domain, DomainPage> = {
+  cyber: 'cyber',
+  crypto: 'crypto',
+  'us-law': 'us-law',
+  geopolitical: 'global',
+  economic: 'global',
+  infrastructure: 'global',
+  natural: 'global',
+};

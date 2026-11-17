@@ -2,16 +2,15 @@
  * The no-dates bright line for /scenarios (spec §1): "No scenario may contain a date, a year,
  * a countdown, or a time window."
  *
- * Deliberately strict. It blocks the passages' own durations too ("1,260 days", "a thousand
- * years", "seventy weeks"), because in authored scenario prose those read as time windows.
- * The scripture text itself is rendered from the scripture layer and is not scanned. See
- * docs/PHASE-0-PLAN.md for this trade-off.
+ * Deliberately strict. The one exception (owner decision 2026-11-17): a scenario may declare
+ * the passage's own figures ("1,260 days", "seventy weeks") in `textualFigures`, and those exact
+ * strings are removed before scanning. A declared figure may never be a calendar year or date.
  *
  * Verse references like "13:18" or "9:24-27" are not dates and are not matched.
  */
 
 const NUMBER_WORD =
-  '(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|a\\s+few|several|many)';
+  '(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|(?:two|three|four|five|six|seven)?score|a\\s+few|several|many)';
 const QUANTITY = `(?:\\d[\\d,]*|${NUMBER_WORD})(?:[\\s-]+(?:and[\\s-]+)?(?:a[\\s-]+half|${NUMBER_WORD}))*`;
 
 const GREGORIAN_MONTHS =
@@ -51,6 +50,16 @@ export const TEMPORAL_PATTERNS: readonly TemporalPattern[] = [
       /\b(?:countdown|count\s+down|deadline|imminent(?:ly)?|impending|any\s+day\s+now|in\s+our\s+lifetime|from\s+now|before\s+long|soon|shortly|near\s+future|at\s+hand|today|tomorrow|tonight|yesterday)\b/i,
   },
 ];
+
+/** Patterns that denote a calendar position. A declared scripture figure may never match these. */
+export const CALENDAR_PATTERN_NAMES: ReadonlySet<string> = new Set([
+  'four-digit year',
+  'decade',
+  'era-suffixed year',
+  'era-prefixed year',
+  'numeric date',
+  'month name with day',
+]);
 
 export function findTemporalReferences(text: string): { name: string; match: string }[] {
   const hits: { name: string; match: string }[] = [];
