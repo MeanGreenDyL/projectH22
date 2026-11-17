@@ -7,7 +7,8 @@ spec is `PROJECT-H22-BUILD-PROMPT.md`; this file is the short version. Refresh/i
 
 ## Current phase
 
-Phase 0 (scaffold & contracts) is approved. Phase 1 (scripture layer) is approved and in progress.
+Phase 0 (scaffold & contracts) is approved. Phase 1 (scripture layer) is built and awaiting owner approval
+(see `docs/PHASE-1-REPORT.md`).
 **Do not start a later phase without the owner's explicit go-ahead.** Phases are gated (spec §11).
 Owner decisions that changed the spec are recorded in `docs/PHASE-0-PLAN.md` §2.
 
