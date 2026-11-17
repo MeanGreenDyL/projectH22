@@ -116,6 +116,11 @@ out. Every `metrics[]` entry needs the `sourceId` it came from and an `asOf` dat
 | `PASSAGE-UNKNOWN-BOOK` | error | book name not in `src/schemas/books.ts` |
 | `PASSAGE-CANON` | error | canon badge disagrees with the book registry |
 | `SER-SOURCE` | error | a series cites a source that is not Tier 1–4 evidentiary |
+| `GUI-SOURCE` | error | preparedness guidance cites a source that is not Tier 1 official or Tier 3 professional body |
+| `GUI-ARCHIVE` | error | guidance source has no archiveUrl |
+| `GUI-SAFETY-TERMS` | error | guidance uses medication-dosing, weapons/tactical or dread wording |
+| `GUI-HAZARD-FIRST` | error | carbon monoxide, generator or heating guidance exists without a hazard statement |
+| `GUI-QUANTITY-DUPLICATE` | error | two guidance records define the same calculator quantity and condition |
 | `SCN-NO-DATES` | error | a date, year, duration, countdown or time window in a scenario (strings declared in `textualFigures` are exempt) |
 | `SCN-TEXTUAL-FIGURE` | error | a `textualFigures` entry is a calendar year or date rather than the passage's own figure |
 | `SCN-CERTAINTY-TERMS` | error | forbidden certainty language in a scenario |

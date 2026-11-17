@@ -9,6 +9,7 @@ import type {
   ScripturalCorrelation,
   Scenario,
   Series,
+  Guidance,
   VerifiedEvent,
 } from '../src/schemas';
 import type { ParsedDataset } from '../src/validation/types';
@@ -132,6 +133,23 @@ export function series(over: Partial<Series> = {}): Series {
   };
 }
 
+/** SYNTHETIC guidance record. The quote is placeholder text, not a real agency's words. */
+export function guidance(over: Partial<Guidance> = {}): Guidance {
+  return {
+    id: 'test-guidance',
+    topic: 'water',
+    title: 'Synthetic water guidance',
+    statement: 'Store a synthetic amount of water for each person for each day.',
+    quote: 'Synthetic placeholder quotation for tests only.',
+    sourceId: 'test-primary-source',
+    hazard: false,
+    stages: ['first-72-hours'],
+    quantity: { key: 'drinking-water', value: 2, unit: 'units', per: 'person-day' },
+    lastVerified: '2026-11-01',
+    ...over,
+  };
+}
+
 export function validDataset(): ParsedDataset {
   return {
     sources: [
@@ -142,6 +160,7 @@ export function validDataset(): ParsedDataset {
     correlations: [{ file: 'correlations/test-correlation.yaml', record: correlation() }],
     scenarios: [{ file: 'scenarios/test-scenario.yaml', record: scenario() }],
     series: [{ file: 'series/test-series.json', record: series() }],
+    guidance: [{ file: 'guidance/test-guidance.json', record: guidance() }],
   };
 }
 

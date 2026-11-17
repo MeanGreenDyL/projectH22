@@ -16,7 +16,7 @@ describe('credibility gate baseline', () => {
     expect(run(validDataset())).toEqual([]);
   });
   it('passes an empty dataset', () => {
-    expect(run({ sources: [], events: [], correlations: [], scenarios: [], series: [] })).toEqual([]);
+    expect(run({ sources: [], events: [], correlations: [], scenarios: [], series: [], guidance: [] })).toEqual([]);
   });
 });
 

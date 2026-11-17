@@ -61,6 +61,15 @@ function escape(term: string): string {
   return term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/[\s-]+/g, '[\\s-]+');
 }
 
+/**
+ * Preparedness safety wording (spec §9 safety rules 1, 3 and 6). Any guidance record that uses
+ * these fails the build: no medication dosing, no weapons or tactical content, no dread framing.
+ * Kit lists may still name "prescription medications"; dosing language is what is barred.
+ */
+export const PREPAREDNESS_DOSING_TERMS: readonly string[] = ['dosage', 'dosing', 'dose', 'doses', 'milligram', 'milligrams', 'antibiotic', 'antibiotics', 'opioid', 'opioids', 'painkiller', 'painkillers', 'suture', 'sutures'];
+export const PREPAREDNESS_WEAPONS_TERMS: readonly string[] = ['firearm', 'firearms', 'gun', 'guns', 'ammunition', 'ammo', 'rifle', 'rifles', 'pistol', 'pistols', 'shotgun', 'shotguns', 'weapon', 'weapons', 'tactical', 'self-defense', 'self-defence', 'armed'];
+export const PREPAREDNESS_DREAD_TERMS: readonly string[] = ['shtf', 'teotwawki', 'doomsday', 'apocalypse', 'apocalyptic', 'societal collapse', 'collapse of society', 'end of the world', 'bug out', 'bug-out', 'prepper', 'preppers', 'when it all falls apart'];
+
 export function findTerms(text: string, terms: readonly string[]): string[] {
   const hits: string[] = [];
   for (const term of terms) {

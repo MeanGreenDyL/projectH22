@@ -113,6 +113,7 @@ describe('archive partition', () => {
         sources: sources.map((record) => ({ file: 'sources.json', record })),
         events: ready.map((record) => ({ file: `events/${record.domain}/${record.id}.json`, record })),
         correlations: [],
+        guidance: [],
         scenarios: [],
         series: [],
       },

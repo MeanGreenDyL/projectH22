@@ -10,3 +10,4 @@ export * from './books';
 export * from './scripture';
 export * from './series';
 export * from './correction';
+export * from './guidance';

@@ -8,6 +8,7 @@ import {
   ARCHIVE_REQUIRED_TIERS,
   COUNTER_READING_MIN_CHARS,
   FACT_LAYER_QUALIFYING_TIERS,
+  HAZARD_FIRST_TOPICS,
   canonOf,
   formatPassage,
   type PassageRef,
@@ -19,6 +20,9 @@ import { CALENDAR_PATTERN_NAMES, findTemporalReferences } from './temporal';
 import {
   FACT_LAYER_INTERPRETIVE_TERMS,
   FORBIDDEN_CERTAINTY_TERMS,
+  PREPAREDNESS_DOSING_TERMS,
+  PREPAREDNESS_DREAD_TERMS,
+  PREPAREDNESS_WEAPONS_TERMS,
   collectStrings,
   findTerms,
 } from './terms';
@@ -34,6 +38,8 @@ const NON_PROSE_KEYS = new Set(['id', 'eventIds', 'sourceId', 'passages', 'revie
  */
 export const DIRECT_TEXTUAL_SUPPORT_TIERS: readonly string[] = ['1-primary', '2-peer-reviewed'];
 export const DIRECT_TEXTUAL_MIN_SUPPORTS = 2;
+/** Preparedness guidance: official agencies (Tier 1) and professional bodies such as NFPA or the Red Cross (Tier 3). */
+export const GUIDANCE_SOURCE_TIERS: readonly string[] = ['1-primary', '3-institutional'];
 
 type Push = (issue: Omit<Issue, 'severity'> & { severity?: Issue['severity'] }) => void;
 
@@ -114,6 +120,39 @@ export function runCredibilityGate(data: ParsedDataset, ctx: GateContext): Issue
     const src = sources.get(s.sourceId);
     if (src && !(src.kind === 'evidentiary' && FACT_LAYER_QUALIFYING_TIERS.includes(src.tier))) {
       push({ rule: 'SER-SOURCE', file, recordId: s.id, message: `series must cite a Tier 1–4 evidentiary source; "${s.sourceId}" is not` });
+    }
+  }
+
+  // ---------- Preparedness guidance (spec §9) ----------
+  const quantityKeys = new Map<string, string>();
+  const topicsWithRecords = new Set<string>();
+  const topicsWithHazard = new Set<string>();
+  for (const { file, record: g } of data.guidance) {
+    const src = sources.get(g.sourceId);
+    if (src && !(src.kind === 'evidentiary' && GUIDANCE_SOURCE_TIERS.includes(src.tier))) {
+      push({ rule: 'GUI-SOURCE', file, recordId: g.id, message: `guidance must cite an official (Tier 1) or professional-body (Tier 3) source; "${g.sourceId}" is not` });
+    }
+    if (src && src.archiveUrl === undefined) {
+      push({ rule: 'GUI-ARCHIVE', file, recordId: g.id, message: `source "${g.sourceId}" must have an archiveUrl so the quoted guidance can be checked` });
+    }
+    for (const [field, value] of [['title', g.title], ['statement', g.statement], ['quote', g.quote]] as const) {
+      for (const [kind, terms] of [['medication dosing', PREPAREDNESS_DOSING_TERMS], ['weapons or tactical', PREPAREDNESS_WEAPONS_TERMS], ['dread framing', PREPAREDNESS_DREAD_TERMS]] as const) {
+        const hits = findTerms(value, terms);
+        if (hits.length > 0) push({ rule: 'GUI-SAFETY-TERMS', file, recordId: g.id, message: `${field} uses ${kind} language: ${hits.join(', ')}` });
+      }
+    }
+    if (g.quantity) {
+      const k = `${g.quantity.key}|${g.quantity.condition ?? ''}`;
+      const prior = quantityKeys.get(k);
+      if (prior) push({ rule: 'GUI-QUANTITY-DUPLICATE', file, recordId: g.id, message: `quantity "${g.quantity.key}"${g.quantity.condition ? ` (${g.quantity.condition})` : ''} is already defined by "${prior}"` });
+      else quantityKeys.set(k, g.id);
+    }
+    topicsWithRecords.add(g.topic);
+    if (g.hazard) topicsWithHazard.add(g.topic);
+  }
+  for (const topic of HAZARD_FIRST_TOPICS) {
+    if (topicsWithRecords.has(topic) && !topicsWithHazard.has(topic)) {
+      push({ rule: 'GUI-HAZARD-FIRST', file: 'src/data/guidance', recordId: topic, message: `topic "${topic}" has guidance but no hazard statement; hazard comes before instructions` });
     }
   }
 

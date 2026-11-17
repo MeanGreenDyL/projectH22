@@ -5,12 +5,13 @@
  */
 import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
-import { ScripturalCorrelation, Scenario, Series, Source, VerifiedEvent } from './schemas';
+import { Guidance, ScripturalCorrelation, Scenario, Series, Source, VerifiedEvent } from './schemas';
 
 export const collections = {
   sources: defineCollection({ loader: file('src/data/sources.json'), schema: Source }),
   events: defineCollection({ loader: glob({ pattern: '**/*.json', base: 'src/data/events' }), schema: VerifiedEvent }),
   correlations: defineCollection({ loader: glob({ pattern: '*.{yaml,yml}', base: 'src/data/correlations' }), schema: ScripturalCorrelation }),
   series: defineCollection({ loader: glob({ pattern: '*.json', base: 'src/data/series' }), schema: Series }),
+  guidance: defineCollection({ loader: glob({ pattern: '*.json', base: 'src/data/guidance' }), schema: Guidance }),
   scenarios: defineCollection({ loader: glob({ pattern: '*.{yaml,yml}', base: 'src/data/scenarios' }), schema: Scenario }),
 };

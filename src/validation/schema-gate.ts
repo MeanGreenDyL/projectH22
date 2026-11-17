@@ -5,7 +5,7 @@
  */
 import { basename, dirname, extname } from 'node:path';
 import type { z } from 'zod';
-import { ScripturalCorrelation, Scenario, Series, Source, VerifiedEvent } from '../schemas';
+import { Guidance, ScripturalCorrelation, Scenario, Series, Source, VerifiedEvent } from '../schemas';
 import type { Issue, Located, ParsedDataset, RawDataset, RawFile } from './types';
 
 function formatZodError(error: z.ZodError): string {
@@ -67,7 +67,7 @@ function checkDuplicates(kind: string, records: Located<{ id: string }>[], issue
 
 export function runSchemaGate(raw: RawDataset): { issues: Issue[]; parsed: ParsedDataset } {
   const issues: Issue[] = [];
-  const parsed: ParsedDataset = { sources: [], events: [], correlations: [], scenarios: [], series: [] };
+  const parsed: ParsedDataset = { sources: [], events: [], correlations: [], scenarios: [], series: [], guidance: [] };
 
   // ---- source registry ----
   if (raw.sources === undefined) {
@@ -121,11 +121,19 @@ export function runSchemaGate(raw: RawDataset): { issues: Issue[]; parsed: Parse
     parsed.series.push(loc);
   }
 
+  for (const f of raw.guidance) {
+    const loc = parseRecord(f, Guidance, issues);
+    if (!loc) continue;
+    checkFileName(loc, issues);
+    parsed.guidance.push(loc);
+  }
+
   checkDuplicates('source', parsed.sources, issues);
   checkDuplicates('event', parsed.events, issues);
   checkDuplicates('correlation', parsed.correlations, issues);
   checkDuplicates('scenario', parsed.scenarios, issues);
   checkDuplicates('series', parsed.series, issues);
+  checkDuplicates('guidance', parsed.guidance, issues);
 
   // ---- referential integrity ----
   const sourceIds = new Set(parsed.sources.map((s) => s.record.id));
@@ -168,6 +176,7 @@ export function runSchemaGate(raw: RawDataset): { issues: Issue[]; parsed: Parse
   }
 
   for (const { file, record: s } of parsed.series) refSource(file, s.id, 'sourceId', s.sourceId);
+  for (const { file, record: g } of parsed.guidance) refSource(file, g.id, 'sourceId', g.sourceId);
 
   return { issues, parsed };
 }

@@ -219,3 +219,15 @@
 .h22-chart [data-tip]:focus-visible { stroke: var(--h22-focus); stroke-width: 2; }
 .h22-hit { fill: transparent; stroke: none; }
 .h22-tooltip[hidden] { display: none; }
+
+/* Print (spec §9 printable one-pagers): black on white, chrome hidden, colour never carries meaning. */
+@media print {
+  :root, :root[data-theme='dark'] {
+    --h22-ink: #000 !important; --h22-ink-secondary: #000 !important; --h22-ink-muted: #222 !important;
+    --h22-surface: #fff !important; --h22-surface-raised: #fff !important; --h22-rule: #000 !important; --h22-border: #000 !important; --h22-accent: #000 !important;
+    --h22-interp-surface: #fff !important; --h22-interp-rule: #000 !important; --h22-interp-chip-ink: #000 !important;
+  }
+  body { background: #fff !important; color: #000 !important; }
+  body > header, body > footer, .no-print, .h22-tooltip { display: none !important; }
+  a { color: #000 !important; }
+}

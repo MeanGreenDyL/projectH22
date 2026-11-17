@@ -2,7 +2,7 @@ import { temporalHitsInPageText } from '../../src/lib/scenario-layout';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-const PAGES = ['/', '/timeline/', '/correlations/', '/domains/cyber/', '/domains/crypto/', '/domains/us-law/', '/domains/global/', '/sources/', '/data-health/', '/scripture/', '/methodology/', '/scenarios/'];
+const PAGES = ['/', '/timeline/', '/correlations/', '/domains/cyber/', '/domains/crypto/', '/domains/us-law/', '/domains/global/', '/sources/', '/data-health/', '/scripture/', '/methodology/', '/scenarios/', '/preparedness/', '/preparedness/print/'];
 
 for (const path of PAGES) {
   test.describe(path, () => {

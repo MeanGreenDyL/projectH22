@@ -59,5 +59,6 @@ export function loadDataset(dataDir: string = DEFAULT_DATA_DIR, displayRoot: str
     correlations: readCollection(join(dataDir, 'correlations'), /\.ya?ml$/i, displayRoot),
     scenarios: readCollection(join(dataDir, 'scenarios'), /\.ya?ml$/i, displayRoot),
     series: readCollection(join(dataDir, 'series'), /\.json$/i, displayRoot),
+    guidance: readCollection(join(dataDir, 'guidance'), /\.json$/i, displayRoot),
   };
 }
