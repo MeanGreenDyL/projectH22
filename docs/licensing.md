@@ -43,6 +43,21 @@ single-verse quotation needs the same treatment in the UK is an open question fo
 
 **Owner decision (Dylan, 2026-11-17): (a).** WEB is the default display translation; KJV is a reader-selected opt-in. ESV and NLT are not bundled; they appear only as outbound links to the publishers.
 
+## 2b. What is bundled (Phase 1, 2026-11-17)
+
+`src/data/scripture/translations.json` is the authoritative list, with the upstream sha256 of
+every file used. Bundled: WEB (default), KJV 1769 with Apocrypha, KJV 1611 with Apocrypha, ASV,
+BSB, Douay-Rheims. Not bundled yet: Brenton's Septuagint and R. H. Charles' 1 Enoch and
+Jubilees, because their hosts are not reachable from the build environment.
+
+**Cross-references** come from OpenBible.info (CC BY), which starts from the Treasury of
+Scripture Knowledge and ranks references by reader votes. Every page that shows them credits
+OpenBible.info. A pure public-domain TSK file was not reachable.
+
+**Strong's numbers** are not bundled. The tagged texts reachable from here either carry a GPL
+licence on their markup or show unreliable word alignment, so the field stays empty rather
+than shipping doubtful data.
+
 ## 3. Data sources
 
 Each ingested feed keeps its own licence. Known so far (spec §6a): CISA KEV is CC0 1.0; World Bank
