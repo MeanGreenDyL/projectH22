@@ -107,3 +107,22 @@ export const UPSTREAM: readonly UpstreamSource[] = [
     ],
   },
 ];
+
+/**
+ * Cross-references. The spec names the Treasury of Scripture Knowledge (public domain); the
+ * reachable machine-readable set is OpenBible.info's, which starts from the TSK and adds reader
+ * votes. It is CC BY, so every page that shows it must credit OpenBible.info.
+ */
+export const CROSS_REFERENCES = {
+  name: 'OpenBible.info Cross References',
+  license: 'CC BY (attribution: OpenBible.info)',
+  homepage: 'https://www.openbible.info/labs/cross-references/',
+  file: {
+    url: 'https://raw.githubusercontent.com/scrollmapper/bible_databases/2025/sources/extras/cross_references.txt',
+    name: 'cross_references.txt',
+  },
+  notes: [
+    'Seeded from the Treasury of Scripture Knowledge and ranked by reader votes. Votes are a crowd relevance signal, not scholarship; some are negative.',
+    'Covers the 66-book Protestant canon only. Uses modern versification: 3 John has 15 verses (KJV 1:14 is split in two), so five references point at 3 John 1:15, which the KJV does not number.',
+  ],
+} as const;

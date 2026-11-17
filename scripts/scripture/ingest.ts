@@ -7,7 +7,8 @@ import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ScriptureBook, Translation } from '../../src/schemas/scripture';
 import { parseOsis, parseSaorsaBook, parseUsfx, parseZefania, type ParsedBook } from './parsers';
-import { UPSTREAM } from './sources';
+import { parseCrossReferences } from './crossrefs';
+import { CROSS_REFERENCES, UPSTREAM } from './sources';
 
 const CACHE_DIR = '.cache/scripture-src';
 const OUT_DIR = 'src/data/scripture';
@@ -54,3 +55,19 @@ for (const src of UPSTREAM) {
   console.log(`${src.translation}: ${books.length} books, ${verseCount} verses`);
 }
 writeFileSync(join(OUT_DIR, 'translations.json'), `${JSON.stringify(manifest, null, 2)}\n`);
+
+// ---- cross-references ----
+const xrefText = readFileSync(join(CACHE_DIR, 'crossrefs', CROSS_REFERENCES.file.name), 'utf8');
+const xrefDir = join(OUT_DIR, 'crossrefs');
+rmSync(xrefDir, { recursive: true, force: true });
+mkdirSync(xrefDir, { recursive: true });
+let xrefCount = 0;
+for (const [code, refs] of parseCrossReferences(xrefText)) {
+  xrefCount += Object.values(refs).reduce((n, r) => n + r.length, 0);
+  writeFileSync(join(xrefDir, `${code}.json`), `${JSON.stringify({ code, refs })}\n`);
+}
+writeFileSync(
+  join(xrefDir, 'source.json'),
+  `${JSON.stringify({ ...CROSS_REFERENCES, sha256: createHash('sha256').update(xrefText).digest('hex'), retrievedAt, count: xrefCount }, null, 2)}\n`,
+);
+console.log(`crossrefs: ${xrefCount}`);
