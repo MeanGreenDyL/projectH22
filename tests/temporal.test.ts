@@ -42,6 +42,8 @@ const blocked = [
   'before long',
   '1,260 days',
   'seventy weeks',
+  'a thousand two hundred and threescore days',
+  'fourscore days',
   'forty-two months',
   'a thousand years',
   'three and a half years',

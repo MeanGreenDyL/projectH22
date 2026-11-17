@@ -28,13 +28,15 @@ describe('sources', () => {
 });
 
 describe('fact layer (Layer A)', () => {
-  it('requires at least one Tier 1 or Tier 2 source', () => {
-    const d = withSources(validDataset(), evidentiary({ tier: '3-institutional' }), interpretive());
-    expect(rules(run(d))).toContain('EVT-QUALIFYING-TIER');
+  it('accepts Tier 1 to Tier 4 sources (Tier 3/4-only events carry the SINGLE-SOURCE marker in the UI)', () => {
+    for (const tier of ['1-primary', '2-peer-reviewed', '3-institutional', '4-quality-press'] as const) {
+      const d = withSources(validDataset(), evidentiary({ tier }), interpretive());
+      expect(rules(run(d))).not.toContain('EVT-QUALIFYING-TIER');
+    }
   });
-  it('accepts a Tier 2 source', () => {
-    const d = withSources(validDataset(), evidentiary({ tier: '2-peer-reviewed' }), interpretive());
-    expect(rules(run(d))).not.toContain('EVT-QUALIFYING-TIER');
+  it('never lets Tier 5 specialist press be the only source (spec §5)', () => {
+    const d = withSources(validDataset(), evidentiary({ tier: '5-specialist-press' }), interpretive());
+    expect(rules(run(d))).toContain('EVT-QUALIFYING-TIER');
   });
   it('never accepts an interpretive source as evidence for an event', () => {
     const d = validDataset();
@@ -133,16 +135,18 @@ describe('interpretation layer (Layer B)', () => {
   it('matches whole words only', () => {
     expect(findTerms('waterproof, approves, reconfirmsx', FORBIDDEN_CERTAINTY_TERMS)).toEqual([]);
   });
-  it('direct-textual needs two supporting Tier 1 citations', () => {
-    const d = withSources(validDataset(), evidentiary(), evidentiary({ id: 'critical-edition' }), evidentiary({ id: 'journal', tier: '2-peer-reviewed' }), interpretive());
+  it('direct-textual needs two supporting Tier 1 or Tier 2 citations', () => {
+    const d = withSources(validDataset(), evidentiary(), evidentiary({ id: 'journal', tier: '2-peer-reviewed' }), evidentiary({ id: 'think-tank', tier: '3-institutional' }), interpretive());
     const support = (sourceId: string, position: 'supports' | 'opposes' = 'supports') => ({ citation: 'Synthetic citation', sourceId, position });
     d.correlations[0]!.record = correlation({ strength: 'direct-textual', scholarlySupport: [support('test-primary-source')] });
     expect(rules(run(d))).toContain('COR-DIRECT-TEXTUAL-SUPPORT');
+    d.correlations[0]!.record = correlation({ strength: 'direct-textual', scholarlySupport: [support('test-primary-source'), support('think-tank')] });
+    expect(rules(run(d))).toContain('COR-DIRECT-TEXTUAL-SUPPORT');
+    d.correlations[0]!.record = correlation({ strength: 'direct-textual', scholarlySupport: [support('test-primary-source'), support('journal', 'opposes')] });
+    expect(rules(run(d))).toContain('COR-DIRECT-TEXTUAL-SUPPORT');
+    d.correlations[0]!.record = correlation({ strength: 'direct-textual', scholarlySupport: [support('test-primary-source'), support('test-commentary')] });
+    expect(rules(run(d))).toContain('COR-DIRECT-TEXTUAL-SUPPORT');
     d.correlations[0]!.record = correlation({ strength: 'direct-textual', scholarlySupport: [support('test-primary-source'), support('journal')] });
-    expect(rules(run(d))).toContain('COR-DIRECT-TEXTUAL-SUPPORT');
-    d.correlations[0]!.record = correlation({ strength: 'direct-textual', scholarlySupport: [support('test-primary-source'), support('critical-edition', 'opposes')] });
-    expect(rules(run(d))).toContain('COR-DIRECT-TEXTUAL-SUPPORT');
-    d.correlations[0]!.record = correlation({ strength: 'direct-textual', scholarlySupport: [support('test-primary-source'), support('critical-edition')] });
     expect(rules(run(d))).not.toContain('COR-DIRECT-TEXTUAL-SUPPORT');
   });
   it('typological must cite a supporting commentator', () => {
@@ -183,6 +187,36 @@ describe('scenarios', () => {
     expect(rules(run(d))).toContain('SCN-NO-DATES');
     d.scenarios[0]!.record = scenario({ whatThisDoesNotClaim: 'This does not claim anything will happen before 2030 or after it.' });
     expect(rules(run(d))).toContain('SCN-NO-DATES');
+  });
+  it('allows the passage\'s own figures when declared in textualFigures', () => {
+    const d = validDataset();
+    const passages = [{ book: 'Revelation', chapter: 12, verseStart: 6, canon: 'PROTESTANT-CANON' as const }];
+    const describedSequence = [{ order: 1, description: 'The woman is fed in the wilderness for "a thousand two hundred and threescore days".', passageIndexes: [0] }];
+    d.scenarios[0]!.record = scenario({ passages, describedSequence });
+    expect(rules(run(d))).toContain('SCN-NO-DATES');
+    d.scenarios[0]!.record = scenario({
+      passages,
+      describedSequence,
+      textualFigures: [{ passageIndex: 0, figure: 'a thousand two hundred and threescore days' }],
+    });
+    expect(rules(run(d))).not.toContain('SCN-NO-DATES');
+  });
+  it('the exception covers only the declared figure, not other dates in the same field', () => {
+    const d = validDataset();
+    d.scenarios[0]!.record = scenario({
+      passages: [{ book: 'Revelation', chapter: 12, verseStart: 6, canon: 'PROTESTANT-CANON' }],
+      describedSequence: [{ order: 1, description: 'For "a thousand two hundred and threescore days", ending in 2031.', passageIndexes: [0] }],
+      textualFigures: [{ passageIndex: 0, figure: 'a thousand two hundred and threescore days' }],
+    });
+    expect(rules(run(d))).toContain('SCN-NO-DATES');
+  });
+  it('a declared figure may not itself be a calendar year or era date', () => {
+    const d = validDataset();
+    d.scenarios[0]!.record = scenario({
+      describedSequence: [{ order: 1, description: 'The temple falls in "AD 70".', passageIndexes: [0] }],
+      textualFigures: [{ passageIndex: 0, figure: 'AD 70' }],
+    });
+    expect(rules(run(d))).toContain('SCN-TEXTUAL-FIGURE');
   });
   it('fails on certainty language', () => {
     const d = validDataset();

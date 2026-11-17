@@ -40,3 +40,12 @@ describe('SINGLE-SOURCE marker (spec §5 rule 1)', () => {
     expect(needsSingleSourceMarker(event({ sources: ['a', 'c'] }), sources)).toBe(false);
   });
 });
+
+describe('domain routes (spec §7, owner decision 2026-11-17)', async () => {
+  const { DOMAIN_ROUTE, DOMAIN_PAGES } = await import('../src/lib/policy');
+  const { DOMAINS } = await import('../src/schemas');
+  it('maps every domain to exactly one of the four /domains pages', () => {
+    expect([...DOMAIN_PAGES].sort()).toEqual(['crypto', 'cyber', 'global', 'us-law']);
+    for (const d of DOMAINS) expect(DOMAIN_PAGES).toContain(DOMAIN_ROUTE[d]);
+  });
+});

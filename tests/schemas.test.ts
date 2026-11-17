@@ -167,6 +167,11 @@ describe('Scenario', () => {
       ok(Scenario, scenario({ describedSequence: [{ order: 1, description: 'x', passageIndexes: [3] }] })),
     ).toBe(false);
   });
+  it('textualFigures must point at a real passage', () => {
+    expect(ok(Scenario, scenario({ textualFigures: [{ passageIndex: 0, figure: 'seventy weeks' }] }))).toBe(true);
+    expect(ok(Scenario, scenario({ textualFigures: [{ passageIndex: 4, figure: 'seventy weeks' }] }))).toBe(false);
+    expect(ok(Scenario, scenario({ textualFigures: [{ passageIndex: 0, figure: '' }] }))).toBe(false);
+  });
   it('takes exactly one tradition', () => {
     expect(ok(Scenario, { ...scenario(), tradition: ['idealist'] })).toBe(false);
   });
