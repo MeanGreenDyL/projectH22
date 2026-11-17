@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-18766",
+  "domain": "economic",
+  "title": "Federal rule: Expanded Examination Cycle for Certain Small Insured Depository Institutions and U.S. Branches and Agenci…",
+  "summary": "Treasury Department / Comptroller of the Currency / Federal Reserve System / Federal Deposit Insurance Corporation published the rule \"Expanded Examination Cycle for Certain Small Insured Depository Institutions and U.S. Branches and Agencies of Foreign Banks\" in the Federal Register on 2026-09-14 (91 FR 58009), effective 2026-09-14.",
+  "date": {
+    "start": "2026-09-14",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18766"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

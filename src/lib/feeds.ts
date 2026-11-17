@@ -21,6 +21,7 @@ export interface Feed {
 export const FEEDS: readonly Feed[] = [
   { id: 'cisa-kev', name: 'CISA Known Exploited Vulnerabilities, with NVD scores', publisher: 'CISA / NIST', license: 'CC0 1.0 (KEV); US government work (NVD)', produces: 'events', slaHours: 48, critical: true, keyEnv: 'NVD_API_KEY' },
   { id: 'federal-register-eo', name: 'Federal Register: executive orders', publisher: 'Office of the Federal Register', license: 'US government work', produces: 'events', slaHours: 48, critical: true },
+  { id: 'federal-register-rules', name: 'Federal Register: rules on crypto, cybersecurity, sanctions and the Federal Reserve', publisher: 'Office of the Federal Register', license: 'US government work', produces: 'events', slaHours: 48, critical: false },
   { id: 'congress-laws', name: 'Congress.gov: bills that became law', publisher: 'Library of Congress', license: 'US government work', produces: 'events', slaHours: 48, critical: true, keyEnv: 'CONGRESS_API_KEY' },
   { id: 'open-states', name: 'Open States: state legislation', publisher: 'Plural Policy (Open States)', license: 'CC BY 4.0 (data); see openstates.org', produces: 'events', slaHours: 48, critical: false, keyEnv: 'OPENSTATES_API_KEY', keyRequired: true },
   { id: 'usgs-earthquakes', name: 'USGS earthquakes, magnitude 6 and above', publisher: 'U.S. Geological Survey', license: 'US government work', produces: 'events', slaHours: 48, critical: true },

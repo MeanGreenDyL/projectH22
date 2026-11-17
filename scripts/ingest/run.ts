@@ -20,6 +20,7 @@ import { CONGRESS_API, currentCongress, normalizeCongressLaws } from './sources/
 import { FEMA_API, normalizeFema } from './sources/fema';
 import { OPENSTATES_API, STATE_TOPICS, normalizeOpenStates } from './sources/openstates';
 import { FR_API, normalizeFederalRegister } from './sources/federal-register';
+import { RULE_TOPICS, normalizeFrRules } from './sources/federal-register-rules';
 import { USGS_API, normalizeUsgs } from './sources/usgs';
 
 const WINDOW_DAYS = Number(process.env.INGEST_WINDOW_DAYS ?? 365);
@@ -157,6 +158,26 @@ const INGESTERS: Ingester[] = [
           result.sources.push(...r.sources.filter((s) => !result.sources.some((x) => x.id === s.id)));
           if (page >= json.pagination.max_page) break;
         }
+      }
+      return { raw, result };
+    },
+  },
+  {
+    id: 'federal-register-rules',
+    async run(now, since) {
+      const raw: Record<string, unknown> = {};
+      const result: NormalizeResult = { events: [], sources: [] };
+      const seen = new Set<string>();
+      for (const t of RULE_TOPICS) {
+        const q = new URLSearchParams({ ...t.conditions, 'conditions[type][]': 'RULE', 'conditions[publication_date][gte]': since, per_page: '1000', order: 'newest' });
+        for (const f of ['document_number', 'title', 'publication_date', 'effective_on', 'citation', 'html_url', 'agencies']) q.append('fields[]', f);
+        const url = `${FR_API}?${q}`;
+        const json = await fetchJson(url, { minDelayMs: 500 });
+        raw[t.slug] = json;
+        const r = normalizeFrRules(json, { topic: t, now });
+        // A rule matching two topics keeps the first topic's domain.
+        for (const e of r.events) if (!seen.has(e.id)) { seen.add(e.id); result.events.push(e); }
+        for (const s of r.sources) if (!result.sources.some((x) => x.id === s.id)) result.sources.push(s);
       }
       return { raw, result };
     },

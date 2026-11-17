@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-05544",
+  "domain": "economic",
+  "title": "Federal rule: Rules of Procedure; Correction",
+  "summary": "Federal Reserve System published the rule \"Rules of Procedure; Correction\" in the Federal Register on 2026-03-20 (91 FR 13491), effective 2026-03-20.",
+  "date": {
+    "start": "2026-03-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-05544"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-05711",
+  "domain": "cyber",
+  "title": "Federal rule: Order No. 918; Critical Infrastructure Protection Reliability Standard CIP-003-11-Cyber Security-Security…",
+  "summary": "Energy Department / Federal Energy Regulatory Commission published the rule \"Order No. 918; Critical Infrastructure Protection Reliability Standard CIP-003-11-Cyber Security-Security Management Controls\" in the Federal Register on 2026-03-24 (91 FR 13952), effective 2026-05-26.",
+  "date": {
+    "start": "2026-03-24",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-05711"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

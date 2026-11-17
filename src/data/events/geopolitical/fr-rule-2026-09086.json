@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-09086",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of a Democratic Republic of the Congo Sanctions Regulations Web General License",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of a Democratic Republic of the Congo Sanctions Regulations Web General License\" in the Federal Register on 2026-05-07 (91 FR 24714).",
+  "date": {
+    "start": "2026-05-07",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-09086"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

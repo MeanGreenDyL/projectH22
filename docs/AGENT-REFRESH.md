@@ -14,7 +14,7 @@ Status: everything below is live (Phase 2). Feeds and their refresh targets are 
 | `pnpm validate:credibility` | live | Runs `validate` first, then the credibility rules in §5. Exit 1 on any error; warnings print but pass. |
 | `pnpm test` | live | Unit tests for schemas, gates, policy and CLI exit codes. |
 | `pnpm refresh:all` | live | Run every ingester. A failing feed records its error and the others still run; exit 1 if any failed. |
-| `pnpm refresh:source <feed-id>` | live | Run one ingester. Feed ids: `cisa-kev`, `usgs-earthquakes`, `fema-declarations`, `congress-laws`, `open-states`, `federal-register-eo`, `world-bank`, `coingecko`, `gdelt`. |
+| `pnpm refresh:source <feed-id>` | live | Run one ingester. Feed ids: `cisa-kev`, `usgs-earthquakes`, `fema-declarations`, `congress-laws`, `open-states`, `federal-register-rules`, `federal-register-eo`, `world-bank`, `coingecko`, `gdelt`. |
 | `pnpm report:staleness` | live | JSON: each feed's health against its SLA, plus events whose `lastVerified` is older than `RECORD_SLA_DAYS` (default 90). Exit 1 if a critical feed is failing or has never run. |
 | `pnpm report:coverage` | live | JSON: events per domain per month over `COVERAGE_MONTHS` (default 24), months under `THIN_THRESHOLD` (default 2), empty domains. |
 
@@ -51,7 +51,7 @@ work from a copy in prose. All records are strict: unknown keys fail validation.
   events. Never rename a published id; add a new record and link it from the corrections log.
 - Source ids: `<publisher>-<short-title>[-<yyyy>]`, e.g. `cisa-kev-catalog`.
 - Feed-derived ids in use: `kev-<cve>`, `usgs-<event id>`, `fema-<dr|em|fm>-<number>`,
-  `pl-<congress>-<n>` / `pvtl-<congress>-<n>`, `eo-<number>`, `os-<state>-<session>-<bill>`; series `wb-<indicator>-<country>`,
+  `pl-<congress>-<n>` / `pvtl-<congress>-<n>`, `eo-<number>`, `fr-rule-<document number>`, `os-<state>-<session>-<bill>`; series `wb-<indicator>-<country>`,
   `cg-<coin>-<measure>-usd`, `gdelt-<topic>`.
 - A series with `measure: media-attention` (GDELT) counts news coverage. It is never evidence that
   an event happened, its title must say "coverage" or "media attention", and every chart of it

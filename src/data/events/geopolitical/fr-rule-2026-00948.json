@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-00948",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of Transnational Criminal Organizations Sanctions Regulations Web General License 1",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of Transnational Criminal Organizations Sanctions Regulations Web General License 1\" in the Federal Register on 2026-01-20 (91 FR 2303).",
+  "date": {
+    "start": "2026-01-20",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-00948"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

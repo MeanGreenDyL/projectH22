@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-11592",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of Cyber-Related Sanctions Regulations Web General License 2",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of Cyber-Related Sanctions Regulations Web General License 2\" in the Federal Register on 2026-06-10 (91 FR 35142).",
+  "date": {
+    "start": "2026-06-10",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-11592"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

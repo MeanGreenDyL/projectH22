@@ -1,0 +1,22 @@
+{
+  "id": "fr-rule-2026-18563",
+  "domain": "geopolitical",
+  "title": "Federal rule: Publication of Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web Ge…",
+  "summary": "Treasury Department / Foreign Assets Control Office published the rule \"Publication of Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web General License 35\" in the Federal Register on 2026-09-11 (91 FR 57794).",
+  "date": {
+    "start": "2026-09-11",
+    "precision": "day"
+  },
+  "geography": {
+    "scope": "us-federal",
+    "countries": [
+      "US"
+    ]
+  },
+  "metrics": [],
+  "sources": [
+    "fr-2026-18563"
+  ],
+  "lastVerified": "2026-11-17T07:26:54Z",
+  "confidence": "confirmed"
+}

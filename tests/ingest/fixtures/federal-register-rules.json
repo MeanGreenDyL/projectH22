@@ -1,0 +1,9 @@
+{
+  "count": 3,
+  "note": "SYNTHETIC",
+  "results": [
+    { "document_number": "0000-10001", "title": "Example Stablecoin Reserve Requirements", "type": "Rule", "publication_date": "2026-10-23", "effective_on": "2027-01-18", "citation": "00 FR 10001", "html_url": "https://www.federalregister.gov/documents/2026/10/23/0000-10001/example-stablecoin", "agencies": [{ "raw_name": "DEPARTMENT OF THE TREASURY", "name": "Treasury Department" }, { "raw_name": "Office of the Comptroller of the Currency", "name": "Comptroller of the Currency" }] },
+    { "document_number": "0000-10002", "title": "Example Airline Delay Categories", "type": "Rule", "publication_date": "2026-09-03", "effective_on": null, "citation": "00 FR 10002", "html_url": "https://www.federalregister.gov/documents/2026/09/03/0000-10002/example-airline", "agencies": [{ "raw_name": "DEPARTMENT OF TRANSPORTATION", "name": "Transportation Department" }] },
+    { "document_number": "0000-10003", "title": "Example Digital Asset Custody Rule", "type": "Rule", "publication_date": "2026-08-01", "effective_on": null, "citation": null, "html_url": "https://www.federalregister.gov/documents/2026/08/01/0000-10003/example-custody", "agencies": [] }
+  ]
+}
