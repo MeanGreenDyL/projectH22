@@ -7,3 +7,4 @@ export * from './review';
 export * from './correlation';
 export * from './scenario';
 export * from './books';
+export * from './scripture';
