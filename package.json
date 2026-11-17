@@ -17,7 +17,9 @@
     "validate:credibility": "tsx scripts/validate-credibility.ts",
     "gate": "pnpm validate && pnpm validate:credibility && pnpm test",
     "scripture:fetch": "tsx scripts/scripture/fetch.ts",
-    "scripture:ingest": "tsx scripts/scripture/ingest.ts"
+    "scripture:ingest": "tsx scripts/scripture/ingest.ts",
+    "refresh:all": "tsx scripts/ingest/run.ts all",
+    "refresh:source": "tsx scripts/ingest/run.ts source"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.9",
