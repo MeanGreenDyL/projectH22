@@ -1,6 +1,16 @@
 [
   {
     "kind": "evidentiary",
+    "id": "cisa-kev-catalog",
+    "tier": "1-primary",
+    "title": "Known Exploited Vulnerabilities Catalog",
+    "publisher": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261116193754/https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+    "kind": "evidentiary",
     "tier": "3-institutional",
     "id": "coingecko-bitcoin",
     "title": "Bitcoin historical market data",
@@ -1481,25 +1491,25 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-20472",
     "tier": "1-primary",
+    "id": "fr-2025-20472",
     "title": "Federal Reserve Bank Capital Stock",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/11/20/2025-20472/federal-reserve-bank-capital-stock",
+    "archiveUrl": "https://web.archive.org/web/20251123205342/https://www.federalregister.gov/documents/2025/11/20/2025-20472/federal-reserve-bank-capital-stock",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-11-20",
-    "archiveUrl": "https://web.archive.org/web/20251123205342/https://www.federalregister.gov/documents/2025/11/20/2025-20472/federal-reserve-bank-capital-stock"
+    "publishedAt": "2025-11-20"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-20744",
     "tier": "1-primary",
+    "id": "fr-2025-20744",
     "title": "Regulation D: Reserve Requirements of Depository Institutions",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/11/24/2025-20744/regulation-d-reserve-requirements-of-depository-institutions",
+    "archiveUrl": "https://web.archive.org/web/20251229073818/https://www.federalregister.gov/documents/2025/11/24/2025-20744/regulation-d-reserve-requirements-of-depository-institutions",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-11-24",
-    "archiveUrl": "https://web.archive.org/web/20251229073818/https://www.federalregister.gov/documents/2025/11/24/2025-20744/regulation-d-reserve-requirements-of-depository-institutions"
+    "publishedAt": "2025-11-24"
   },
   {
     "kind": "evidentiary",
@@ -1514,14 +1524,14 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-21626",
     "tier": "1-primary",
+    "id": "fr-2025-21626",
     "title": "Regulatory Capital Rule: Modifications to the Enhanced Supplementary Leverage Ratio Standards for U.S. Global Systemically Important Bank Holding Companies and Their Subsidiary Depository Institutions; Total Loss-Absorbing Capacity and Long-Term Debt Requirements for U.S. Global Systemically Important Bank Holding Companies",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/12/01/2025-21626/regulatory-capital-rule-modifications-to-the-enhanced-supplementary-leverage-ratio-standards-for-us",
+    "archiveUrl": "https://web.archive.org/web/20260423013906/https://www.federalregister.gov/documents/2025/12/01/2025-21626/regulatory-capital-rule-modifications-to-the-enhanced-supplementary-leverage-ratio-standards-for-us",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-12-01",
-    "archiveUrl": "https://web.archive.org/web/20260423013906/https://www.federalregister.gov/documents/2025/12/01/2025-21626/regulatory-capital-rule-modifications-to-the-enhanced-supplementary-leverage-ratio-standards-for-us"
+    "publishedAt": "2025-12-01"
   },
   {
     "kind": "evidentiary",
@@ -1558,58 +1568,58 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-22655",
     "tier": "1-primary",
+    "id": "fr-2025-22655",
     "title": "Publication of International Criminal Court-Related Sanctions Regulations Web General License 9",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/12/12/2025-22655/publication-of-international-criminal-court-related-sanctions-regulations-web-general-license-9",
+    "archiveUrl": "https://web.archive.org/web/20251217012350/https://www.federalregister.gov/documents/2025/12/12/2025-22655/publication-of-international-criminal-court-related-sanctions-regulations-web-general-license-9",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-12-12",
-    "archiveUrl": "https://web.archive.org/web/20251217012350/https://www.federalregister.gov/documents/2025/12/12/2025-22655/publication-of-international-criminal-court-related-sanctions-regulations-web-general-license-9"
+    "publishedAt": "2025-12-12"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-22813",
     "tier": "1-primary",
+    "id": "fr-2025-22813",
     "title": "Consumer Leasing (Regulation M)",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/12/15/2025-22813/consumer-leasing-regulation-m",
+    "archiveUrl": "https://web.archive.org/web/20260614220357/https://www.federalregister.gov/documents/2025/12/15/2025-22813/consumer-leasing-regulation-m",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-12-15",
-    "archiveUrl": "https://web.archive.org/web/20260614220357/https://www.federalregister.gov/documents/2025/12/15/2025-22813/consumer-leasing-regulation-m"
+    "publishedAt": "2025-12-15"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-22814",
     "tier": "1-primary",
+    "id": "fr-2025-22814",
     "title": "Truth in Lending (Regulation Z)",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/12/15/2025-22814/truth-in-lending-regulation-z",
+    "archiveUrl": "https://web.archive.org/web/20251229022131/https://www.federalregister.gov/documents/2025/12/15/2025-22814/truth-in-lending-regulation-z",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-12-15",
-    "archiveUrl": "https://web.archive.org/web/20251229022131/https://www.federalregister.gov/documents/2025/12/15/2025-22814/truth-in-lending-regulation-z"
+    "publishedAt": "2025-12-15"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-22872",
     "tier": "1-primary",
+    "id": "fr-2025-22872",
     "title": "Withdrawal of Interpretive Guidance: Retail Commodity Transactions Involving Certain Digital Assets",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/12/16/2025-22872/withdrawal-of-interpretive-guidance-retail-commodity-transactions-involving-certain-digital-assets",
+    "archiveUrl": "https://web.archive.org/web/20260313084934/https://www.federalregister.gov/documents/2025/12/16/2025-22872/withdrawal-of-interpretive-guidance-retail-commodity-transactions-involving-certain-digital-assets",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-12-16",
-    "archiveUrl": "https://web.archive.org/web/20260313084934/https://www.federalregister.gov/documents/2025/12/16/2025-22872/withdrawal-of-interpretive-guidance-retail-commodity-transactions-involving-certain-digital-assets"
+    "publishedAt": "2025-12-16"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-22875",
     "tier": "1-primary",
+    "id": "fr-2025-22875",
     "title": "Appraisals for Higher-Priced Mortgage Loans Exemption Threshold",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/12/16/2025-22875/appraisals-for-higher-priced-mortgage-loans-exemption-threshold",
+    "archiveUrl": "https://web.archive.org/web/20260416035847/https://www.federalregister.gov/documents/2025/12/16/2025-22875/appraisals-for-higher-priced-mortgage-loans-exemption-threshold",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-12-16",
-    "archiveUrl": "https://web.archive.org/web/20260416035847/https://www.federalregister.gov/documents/2025/12/16/2025-22875/appraisals-for-higher-priced-mortgage-loans-exemption-threshold"
+    "publishedAt": "2025-12-16"
   },
   {
     "kind": "evidentiary",
@@ -1646,14 +1656,14 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2025-23548",
     "tier": "1-primary",
+    "id": "fr-2025-23548",
     "title": "Policy Statement on Section 9(13) of the Federal Reserve Act",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2025/12/22/2025-23548/policy-statement-on-section-913-of-the-federal-reserve-act",
+    "archiveUrl": "https://web.archive.org/web/20251231130516/https://www.federalregister.gov/documents/2025/12/22/2025-23548/policy-statement-on-section-913-of-the-federal-reserve-act",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2025-12-22",
-    "archiveUrl": "https://web.archive.org/web/20251231130516/https://www.federalregister.gov/documents/2025/12/22/2025-23548/policy-statement-on-section-913-of-the-federal-reserve-act"
+    "publishedAt": "2025-12-22"
   },
   {
     "kind": "evidentiary",
@@ -1723,47 +1733,47 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-00945",
     "tier": "1-primary",
+    "id": "fr-2026-00945",
     "title": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13O",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/01/20/2026-00945/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-13o",
+    "archiveUrl": "https://web.archive.org/web/20260716165139/https://www.federalregister.gov/documents/2026/01/20/2026-00945/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-13o",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-01-20",
-    "archiveUrl": "https://web.archive.org/web/20260716165139/https://www.federalregister.gov/documents/2026/01/20/2026-00945/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-13o"
+    "publishedAt": "2026-01-20"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-00947",
     "tier": "1-primary",
+    "id": "fr-2026-00947",
     "title": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 129",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/01/20/2026-00947/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-129",
+    "archiveUrl": "https://web.archive.org/web/20260712220133/https://www.federalregister.gov/documents/2026/01/20/2026-00947/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-129",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-01-20",
-    "archiveUrl": "https://web.archive.org/web/20260712220133/https://www.federalregister.gov/documents/2026/01/20/2026-00947/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-129"
+    "publishedAt": "2026-01-20"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-00948",
     "tier": "1-primary",
+    "id": "fr-2026-00948",
     "title": "Publication of Transnational Criminal Organizations Sanctions Regulations Web General License 1",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/01/20/2026-00948/publication-of-transnational-criminal-organizations-sanctions-regulations-web-general-license-1",
+    "archiveUrl": "https://web.archive.org/web/20260721110731/https://www.federalregister.gov/documents/2026/01/20/2026-00948/publication-of-transnational-criminal-organizations-sanctions-regulations-web-general-license-1",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-01-20",
-    "archiveUrl": "https://web.archive.org/web/20260721110731/https://www.federalregister.gov/documents/2026/01/20/2026-00948/publication-of-transnational-criminal-organizations-sanctions-regulations-web-general-license-1"
+    "publishedAt": "2026-01-20"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-00952",
     "tier": "1-primary",
+    "id": "fr-2026-00952",
     "title": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 132",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/01/20/2026-00952/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-132",
+    "archiveUrl": "https://web.archive.org/web/20260721111418/https://www.federalregister.gov/documents/2026/01/20/2026-00952/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-132",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-01-20",
-    "archiveUrl": "https://web.archive.org/web/20260721111418/https://www.federalregister.gov/documents/2026/01/20/2026-00952/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-132"
+    "publishedAt": "2026-01-20"
   },
   {
     "kind": "evidentiary",
@@ -1943,25 +1953,25 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-04086",
     "tier": "1-primary",
+    "id": "fr-2026-04086",
     "title": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 128B",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04086/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-128b",
+    "archiveUrl": "https://web.archive.org/web/20260302054051/https://www.federalregister.gov/documents/2026/03/02/2026-04086/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-128b",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-03-02",
-    "archiveUrl": "https://web.archive.org/web/20260302054051/https://www.federalregister.gov/documents/2026/03/02/2026-04086/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-license-128b"
+    "publishedAt": "2026-03-02"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-04373",
     "tier": "1-primary",
+    "id": "fr-2026-04373",
     "title": "Rules Regarding Delegation of Authority; Correction",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04373/rules-regarding-delegation-of-authority-correction",
+    "archiveUrl": "https://web.archive.org/web/20260811135412/https://www.federalregister.gov/documents/2026/03/05/2026-04373/rules-regarding-delegation-of-authority-correction",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-03-05",
-    "archiveUrl": "https://web.archive.org/web/20260811135412/https://www.federalregister.gov/documents/2026/03/05/2026-04373/rules-regarding-delegation-of-authority-correction"
+    "publishedAt": "2026-03-05"
   },
   {
     "kind": "evidentiary",
@@ -2031,36 +2041,36 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-05544",
     "tier": "1-primary",
+    "id": "fr-2026-05544",
     "title": "Rules of Procedure; Correction",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/03/20/2026-05544/rules-of-procedure-correction",
+    "archiveUrl": "https://web.archive.org/web/20260321053704/https://www.federalregister.gov/documents/2026/03/20/2026-05544/rules-of-procedure-correction",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-03-20",
-    "archiveUrl": "https://web.archive.org/web/20260321053704/https://www.federalregister.gov/documents/2026/03/20/2026-05544/rules-of-procedure-correction"
+    "publishedAt": "2026-03-20"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-05635",
     "tier": "1-primary",
+    "id": "fr-2026-05635",
     "title": "Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/03/23/2026-05635/application-of-the-federal-securities-laws-to-certain-types-of-crypto-assets-and-certain",
+    "archiveUrl": "https://web.archive.org/web/20261016152559/https://www.federalregister.gov/documents/2026/03/23/2026-05635/application-of-the-federal-securities-laws-to-certain-types-of-crypto-assets-and-certain",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-03-23",
-    "archiveUrl": "https://web.archive.org/web/20261016152559/https://www.federalregister.gov/documents/2026/03/23/2026-05635/application-of-the-federal-securities-laws-to-certain-types-of-crypto-assets-and-certain"
+    "publishedAt": "2026-03-23"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-05711",
     "tier": "1-primary",
+    "id": "fr-2026-05711",
     "title": "Order No. 918; Critical Infrastructure Protection Reliability Standard CIP-003-11-Cyber Security-Security Management Controls",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/03/24/2026-05711/order-no-918-critical-infrastructure-protection-reliability-standard-cip-003-11-cyber",
+    "archiveUrl": "https://web.archive.org/web/20260401215618/https://www.federalregister.gov/documents/2026/03/24/2026-05711/order-no-918-critical-infrastructure-protection-reliability-standard-cip-003-11-cyber",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-03-24",
-    "archiveUrl": "https://web.archive.org/web/20260401215618/https://www.federalregister.gov/documents/2026/03/24/2026-05711/order-no-918-critical-infrastructure-protection-reliability-standard-cip-003-11-cyber"
+    "publishedAt": "2026-03-24"
   },
   {
     "kind": "evidentiary",
@@ -2130,25 +2140,25 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-08057",
     "tier": "1-primary",
+    "id": "fr-2026-08057",
     "title": "Pipeline Safety: Clarification of Incident Reporting Requirements for Gas Pipeline Facilities",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/04/24/2026-08057/pipeline-safety-clarification-of-incident-reporting-requirements-for-gas-pipeline-facilities",
+    "archiveUrl": "https://web.archive.org/web/20260424064902/https://www.federalregister.gov/documents/2026/04/24/2026-08057/pipeline-safety-clarification-of-incident-reporting-requirements-for-gas-pipeline-facilities",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-04-24",
-    "archiveUrl": "https://web.archive.org/web/20260424064902/https://www.federalregister.gov/documents/2026/04/24/2026-08057/pipeline-safety-clarification-of-incident-reporting-requirements-for-gas-pipeline-facilities"
+    "publishedAt": "2026-04-24"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-08298",
     "tier": "1-primary",
+    "id": "fr-2026-08298",
     "title": "Regulatory Capital Rule: Community Bank Leverage Ratio Framework",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/04/29/2026-08298/regulatory-capital-rule-community-bank-leverage-ratio-framework",
+    "archiveUrl": "https://web.archive.org/web/20260507202801/https://www.federalregister.gov/documents/2026/04/29/2026-08298/regulatory-capital-rule-community-bank-leverage-ratio-framework",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-04-29",
-    "archiveUrl": "https://web.archive.org/web/20260507202801/https://www.federalregister.gov/documents/2026/04/29/2026-08298/regulatory-capital-rule-community-bank-leverage-ratio-framework"
+    "publishedAt": "2026-04-29"
   },
   {
     "kind": "evidentiary",
@@ -2174,80 +2184,80 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-09084",
     "tier": "1-primary",
+    "id": "fr-2026-09084",
     "title": "Publication of a Belarus Sanctions Regulations Web General License",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/05/07/2026-09084/publication-of-a-belarus-sanctions-regulations-web-general-license",
+    "archiveUrl": "https://web.archive.org/web/20260507080742/https://www.federalregister.gov/documents/2026/05/07/2026-09084/publication-of-a-belarus-sanctions-regulations-web-general-license",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-05-07",
-    "archiveUrl": "https://web.archive.org/web/20260507080742/https://www.federalregister.gov/documents/2026/05/07/2026-09084/publication-of-a-belarus-sanctions-regulations-web-general-license"
+    "publishedAt": "2026-05-07"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-09085",
     "tier": "1-primary",
+    "id": "fr-2026-09085",
     "title": "Publication of a Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web General License",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/05/07/2026-09085/publication-of-a-global-terrorism-sanctions-regulations-and-illicit-drug-trade-sanctions-regulations",
+    "archiveUrl": "https://web.archive.org/web/20260712161450/https://www.federalregister.gov/documents/2026/05/07/2026-09085/publication-of-a-global-terrorism-sanctions-regulations-and-illicit-drug-trade-sanctions-regulations",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-05-07",
-    "archiveUrl": "https://web.archive.org/web/20260712161450/https://www.federalregister.gov/documents/2026/05/07/2026-09085/publication-of-a-global-terrorism-sanctions-regulations-and-illicit-drug-trade-sanctions-regulations"
+    "publishedAt": "2026-05-07"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-09086",
     "tier": "1-primary",
+    "id": "fr-2026-09086",
     "title": "Publication of a Democratic Republic of the Congo Sanctions Regulations Web General License",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/05/07/2026-09086/publication-of-a-democratic-republic-of-the-congo-sanctions-regulations-web-general-license",
+    "archiveUrl": "https://web.archive.org/web/20260514075324/https://www.federalregister.gov/documents/2026/05/07/2026-09086/publication-of-a-democratic-republic-of-the-congo-sanctions-regulations-web-general-license",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-05-07",
-    "archiveUrl": "https://web.archive.org/web/20260514075324/https://www.federalregister.gov/documents/2026/05/07/2026-09086/publication-of-a-democratic-republic-of-the-congo-sanctions-regulations-web-general-license"
+    "publishedAt": "2026-05-07"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-09088",
     "tier": "1-primary",
+    "id": "fr-2026-09088",
     "title": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 55E, 115C, 13P, and 131C",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/05/07/2026-09088/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-licenses-55e",
+    "archiveUrl": "https://web.archive.org/web/20260507073443/https://www.federalregister.gov/documents/2026/05/07/2026-09088/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-licenses-55e",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-05-07",
-    "archiveUrl": "https://web.archive.org/web/20260507073443/https://www.federalregister.gov/documents/2026/05/07/2026-09088/publication-of-russian-harmful-foreign-activities-sanctions-regulations-web-general-licenses-55e"
+    "publishedAt": "2026-05-07"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-09090",
     "tier": "1-primary",
+    "id": "fr-2026-09090",
     "title": "Publication of Venezuela Sanctions Regulations Web General Licenses 47, 48, 49, and 50",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/05/07/2026-09090/publication-of-venezuela-sanctions-regulations-web-general-licenses-47-48-49-and-50",
+    "archiveUrl": "https://web.archive.org/web/20260507073727/https://www.federalregister.gov/documents/2026/05/07/2026-09090/publication-of-venezuela-sanctions-regulations-web-general-licenses-47-48-49-and-50",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-05-07",
-    "archiveUrl": "https://web.archive.org/web/20260507073727/https://www.federalregister.gov/documents/2026/05/07/2026-09090/publication-of-venezuela-sanctions-regulations-web-general-licenses-47-48-49-and-50"
+    "publishedAt": "2026-05-07"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-09092",
     "tier": "1-primary",
+    "id": "fr-2026-09092",
     "title": "Publication of Venezuela Sanctions Regulations Web General Licenses 46, 46A, and 46B",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/05/07/2026-09092/publication-of-venezuela-sanctions-regulations-web-general-licenses-46-46a-and-46b",
+    "archiveUrl": "https://web.archive.org/web/20260507072633/https://www.federalregister.gov/documents/2026/05/07/2026-09092/publication-of-venezuela-sanctions-regulations-web-general-licenses-46-46a-and-46b",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-05-07",
-    "archiveUrl": "https://web.archive.org/web/20260507072633/https://www.federalregister.gov/documents/2026/05/07/2026-09092/publication-of-venezuela-sanctions-regulations-web-general-licenses-46-46a-and-46b"
+    "publishedAt": "2026-05-07"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-09094",
     "tier": "1-primary",
+    "id": "fr-2026-09094",
     "title": "Publication of Iranian Transactions and Sanctions Regulations Web General Licenses",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/05/07/2026-09094/publication-of-iranian-transactions-and-sanctions-regulations-web-general-licenses",
+    "archiveUrl": "https://web.archive.org/web/20260507085022/https://www.federalregister.gov/documents/2026/05/07/2026-09094/publication-of-iranian-transactions-and-sanctions-regulations-web-general-licenses",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-05-07",
-    "archiveUrl": "https://web.archive.org/web/20260507085022/https://www.federalregister.gov/documents/2026/05/07/2026-09094/publication-of-iranian-transactions-and-sanctions-regulations-web-general-licenses"
+    "publishedAt": "2026-05-07"
   },
   {
     "kind": "evidentiary",
@@ -2317,14 +2327,14 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-11592",
     "tier": "1-primary",
+    "id": "fr-2026-11592",
     "title": "Publication of Cyber-Related Sanctions Regulations Web General License 2",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11592/publication-of-cyber-related-sanctions-regulations-web-general-license-2",
+    "archiveUrl": "https://web.archive.org/web/20260812130419/https://www.federalregister.gov/documents/2026/06/10/2026-11592/publication-of-cyber-related-sanctions-regulations-web-general-license-2",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-06-10",
-    "archiveUrl": "https://web.archive.org/web/20260812130419/https://www.federalregister.gov/documents/2026/06/10/2026-11592/publication-of-cyber-related-sanctions-regulations-web-general-license-2"
+    "publishedAt": "2026-06-10"
   },
   {
     "kind": "evidentiary",
@@ -2350,36 +2360,36 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-11614",
     "tier": "1-primary",
+    "id": "fr-2026-11614",
     "title": "Publication of Iran-Related Web General Licenses U and V",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11614/publication-of-iran-related-web-general-licenses-u-and-v",
+    "archiveUrl": "https://web.archive.org/web/20260808094548/https://www.federalregister.gov/documents/2026/06/10/2026-11614/publication-of-iran-related-web-general-licenses-u-and-v",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-06-10",
-    "archiveUrl": "https://web.archive.org/web/20260808094548/https://www.federalregister.gov/documents/2026/06/10/2026-11614/publication-of-iran-related-web-general-licenses-u-and-v"
+    "publishedAt": "2026-06-10"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-11615",
     "tier": "1-primary",
+    "id": "fr-2026-11615",
     "title": "Publication of Venezuela Sanctions Regulations Web General Licenses 5U and 5V",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11615/publication-of-venezuela-sanctions-regulations-web-general-licenses-5u-and-5v",
+    "archiveUrl": "https://web.archive.org/web/20260611061644/https://www.federalregister.gov/documents/2026/06/10/2026-11615/publication-of-venezuela-sanctions-regulations-web-general-licenses-5u-and-5v",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-06-10",
-    "archiveUrl": "https://web.archive.org/web/20260611061644/https://www.federalregister.gov/documents/2026/06/10/2026-11615/publication-of-venezuela-sanctions-regulations-web-general-licenses-5u-and-5v"
+    "publishedAt": "2026-06-10"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-12787",
     "tier": "1-primary",
+    "id": "fr-2026-12787",
     "title": "Financial Data Transparency Act Joint Data Standards",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/06/25/2026-12787/financial-data-transparency-act-joint-data-standards",
+    "archiveUrl": "https://web.archive.org/web/20261013190415/https://www.federalregister.gov/documents/2026/06/25/2026-12787/financial-data-transparency-act-joint-data-standards",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-06-25",
-    "archiveUrl": "https://web.archive.org/web/20261013190415/https://www.federalregister.gov/documents/2026/06/25/2026-12787/financial-data-transparency-act-joint-data-standards"
+    "publishedAt": "2026-06-25"
   },
   {
     "kind": "evidentiary",
@@ -2438,14 +2448,14 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-15601",
     "tier": "1-primary",
+    "id": "fr-2026-15601",
     "title": "Modernization of the Nation's Alerting Systems; Protecting the Nation's Communications Systems From Cybersecurity Threats",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/07/31/2026-15601/modernization-of-the-nations-alerting-systems-protecting-the-nations-communications-systems-from",
+    "archiveUrl": "https://web.archive.org/web/20260812125337/https://www.federalregister.gov/documents/2026/07/31/2026-15601/modernization-of-the-nations-alerting-systems-protecting-the-nations-communications-systems-from",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-07-31",
-    "archiveUrl": "https://web.archive.org/web/20260812125337/https://www.federalregister.gov/documents/2026/07/31/2026-15601/modernization-of-the-nations-alerting-systems-protecting-the-nations-communications-systems-from"
+    "publishedAt": "2026-07-31"
   },
   {
     "kind": "evidentiary",
@@ -2526,25 +2536,25 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-18461",
     "tier": "1-primary",
+    "id": "fr-2026-18461",
     "title": "Iranian Transactions and Sanctions Regulations",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18461/iranian-transactions-and-sanctions-regulations",
+    "archiveUrl": "https://web.archive.org/web/20260929081553/https://www.federalregister.gov/documents/2026/09/10/2026-18461/iranian-transactions-and-sanctions-regulations",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-10",
-    "archiveUrl": "https://web.archive.org/web/20260929081553/https://www.federalregister.gov/documents/2026/09/10/2026-18461/iranian-transactions-and-sanctions-regulations"
+    "publishedAt": "2026-09-10"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-18563",
     "tier": "1-primary",
+    "id": "fr-2026-18563",
     "title": "Publication of Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web General License 35",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18563/publication-of-global-terrorism-sanctions-regulations-and-illicit-drug-trade-sanctions-regulations",
+    "archiveUrl": "https://web.archive.org/web/20260911083038/https://www.federalregister.gov/documents/2026/09/11/2026-18563/publication-of-global-terrorism-sanctions-regulations-and-illicit-drug-trade-sanctions-regulations",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-11",
-    "archiveUrl": "https://web.archive.org/web/20260911083038/https://www.federalregister.gov/documents/2026/09/11/2026-18563/publication-of-global-terrorism-sanctions-regulations-and-illicit-drug-trade-sanctions-regulations"
+    "publishedAt": "2026-09-11"
   },
   {
     "kind": "evidentiary",
@@ -2559,14 +2569,14 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-18569",
     "tier": "1-primary",
+    "id": "fr-2026-18569",
     "title": "Publication of Venezuela Sanctions Regulations Web General Licenses 30B and 51.",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18569/publication-of-venezuela-sanctions-regulations-web-general-licenses-30b-and-51",
+    "archiveUrl": "https://web.archive.org/web/20260911072511/https://www.federalregister.gov/documents/2026/09/11/2026-18569/publication-of-venezuela-sanctions-regulations-web-general-licenses-30b-and-51",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-11",
-    "archiveUrl": "https://web.archive.org/web/20260911072511/https://www.federalregister.gov/documents/2026/09/11/2026-18569/publication-of-venezuela-sanctions-regulations-web-general-licenses-30b-and-51"
+    "publishedAt": "2026-09-11"
   },
   {
     "kind": "evidentiary",
@@ -2581,14 +2591,14 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-18576",
     "tier": "1-primary",
+    "id": "fr-2026-18576",
     "title": "Publication of Iran-Related Web General Licenses CC and DD.",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18576/publication-of-iran-related-web-general-licenses-cc-and-dd",
+    "archiveUrl": "https://web.archive.org/web/20260929081618/https://www.federalregister.gov/documents/2026/09/11/2026-18576/publication-of-iran-related-web-general-licenses-cc-and-dd",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-11",
-    "archiveUrl": "https://web.archive.org/web/20260929081618/https://www.federalregister.gov/documents/2026/09/11/2026-18576/publication-of-iran-related-web-general-licenses-cc-and-dd"
+    "publishedAt": "2026-09-11"
   },
   {
     "kind": "evidentiary",
@@ -2614,14 +2624,14 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-18766",
     "tier": "1-primary",
+    "id": "fr-2026-18766",
     "title": "Expanded Examination Cycle for Certain Small Insured Depository Institutions and U.S. Branches and Agencies of Foreign Banks",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18766/expanded-examination-cycle-for-certain-small-insured-depository-institutions-and-us-branches-and",
+    "archiveUrl": "https://web.archive.org/web/20261016064750/https://www.federalregister.gov/documents/2026/09/14/2026-18766/expanded-examination-cycle-for-certain-small-insured-depository-institutions-and-us-branches-and",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-14",
-    "archiveUrl": "https://web.archive.org/web/20261016064750/https://www.federalregister.gov/documents/2026/09/14/2026-18766/expanded-examination-cycle-for-certain-small-insured-depository-institutions-and-us-branches-and"
+    "publishedAt": "2026-09-14"
   },
   {
     "kind": "evidentiary",
@@ -2669,91 +2679,91 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-19678",
     "tier": "1-primary",
+    "id": "fr-2026-19678",
     "title": "Sanctions Penalties Regulations",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/25/2026-19678/sanctions-penalties-regulations",
+    "archiveUrl": "https://web.archive.org/web/20261008022154/https://www.federalregister.gov/documents/2026/09/25/2026-19678/sanctions-penalties-regulations",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-25",
-    "archiveUrl": "https://web.archive.org/web/20261008022154/https://www.federalregister.gov/documents/2026/09/25/2026-19678/sanctions-penalties-regulations"
+    "publishedAt": "2026-09-25"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-19966",
     "tier": "1-primary",
+    "id": "fr-2026-19966",
     "title": "Forms and Procedures for Review of State Certifications by the Stablecoin Certification Review Committee",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review",
+    "archiveUrl": "https://web.archive.org/web/20261022083547/https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-30",
-    "archiveUrl": "https://web.archive.org/web/20261022083547/https://www.federalregister.gov/documents/2026/09/30/2026-19966/forms-and-procedures-for-review-of-state-certifications-by-the-stablecoin-certification-review"
+    "publishedAt": "2026-09-30"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-19973",
     "tier": "1-primary",
+    "id": "fr-2026-19973",
     "title": "Cuban Assets Control Regulations",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/30/2026-19973/cuban-assets-control-regulations",
+    "archiveUrl": "https://web.archive.org/web/20261014012619/https://www.federalregister.gov/documents/2026/09/30/2026-19973/cuban-assets-control-regulations",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-30",
-    "archiveUrl": "https://web.archive.org/web/20261014012619/https://www.federalregister.gov/documents/2026/09/30/2026-19973/cuban-assets-control-regulations"
+    "publishedAt": "2026-09-30"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-19977",
     "tier": "1-primary",
+    "id": "fr-2026-19977",
     "title": "Cuba Sanctions Regulations",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/30/2026-19977/cuba-sanctions-regulations",
+    "archiveUrl": "https://web.archive.org/web/20261002010046/https://www.federalregister.gov/documents/2026/09/30/2026-19977/cuba-sanctions-regulations",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-30",
-    "archiveUrl": "https://web.archive.org/web/20261002010046/https://www.federalregister.gov/documents/2026/09/30/2026-19977/cuba-sanctions-regulations"
+    "publishedAt": "2026-09-30"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-20007",
     "tier": "1-primary",
+    "id": "fr-2026-20007",
     "title": "Removing Duplicative Penalties Information and Reorganizing Certain Parts",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20007/removing-duplicative-penalties-information-and-reorganizing-certain-parts",
+    "archiveUrl": "https://web.archive.org/web/20261008192833/https://www.federalregister.gov/documents/2026/09/30/2026-20007/removing-duplicative-penalties-information-and-reorganizing-certain-parts",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-30",
-    "archiveUrl": "https://web.archive.org/web/20261008192833/https://www.federalregister.gov/documents/2026/09/30/2026-20007/removing-duplicative-penalties-information-and-reorganizing-certain-parts"
+    "publishedAt": "2026-09-30"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-20010",
     "tier": "1-primary",
+    "id": "fr-2026-20010",
     "title": "Publication of Iran-Related Web General Licenses X and X1",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20010/publication-of-iran-related-web-general-licenses-x-and-x1",
+    "archiveUrl": "https://web.archive.org/web/20261002005932/https://www.federalregister.gov/documents/2026/09/30/2026-20010/publication-of-iran-related-web-general-licenses-x-and-x1",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-09-30",
-    "archiveUrl": "https://web.archive.org/web/20261002005932/https://www.federalregister.gov/documents/2026/09/30/2026-20010/publication-of-iran-related-web-general-licenses-x-and-x1"
+    "publishedAt": "2026-09-30"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-20246",
     "tier": "1-primary",
+    "id": "fr-2026-20246",
     "title": "Modifications to the Capital Plan Rule and Stress Capital Buffer Requirement",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20246/modifications-to-the-capital-plan-rule-and-stress-capital-buffer-requirement",
+    "archiveUrl": "https://web.archive.org/web/20261010182226/https://www.federalregister.gov/documents/2026/10/02/2026-20246/modifications-to-the-capital-plan-rule-and-stress-capital-buffer-requirement",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-10-02",
-    "archiveUrl": "https://web.archive.org/web/20261010182226/https://www.federalregister.gov/documents/2026/10/02/2026-20246/modifications-to-the-capital-plan-rule-and-stress-capital-buffer-requirement"
+    "publishedAt": "2026-10-02"
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-20247",
     "tier": "1-primary",
+    "id": "fr-2026-20247",
     "title": "Enhanced Transparency and Public Accountability of the Supervisory Stress Test Models and Scenarios; Modifications to the Capital Planning and Stress Capital Buffer Requirement Rule, Enhanced Prudential Standards Rule, and Regulation LL",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20247/enhanced-transparency-and-public-accountability-of-the-supervisory-stress-test-models-and-scenarios",
+    "archiveUrl": "https://web.archive.org/web/20261006091926/https://www.federalregister.gov/documents/2026/10/02/2026-20247/enhanced-transparency-and-public-accountability-of-the-supervisory-stress-test-models-and-scenarios",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-10-02",
-    "archiveUrl": "https://web.archive.org/web/20261006091926/https://www.federalregister.gov/documents/2026/10/02/2026-20247/enhanced-transparency-and-public-accountability-of-the-supervisory-stress-test-models-and-scenarios"
+    "publishedAt": "2026-10-02"
   },
   {
     "kind": "evidentiary",
@@ -2834,14 +2844,14 @@
   },
   {
     "kind": "evidentiary",
-    "id": "fr-2026-23197",
     "tier": "1-primary",
+    "id": "fr-2026-23197",
     "title": "Publication of Iran-Related Web General Licenses EE and FF",
     "publisher": "Office of the Federal Register (National Archives)",
     "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23197/publication-of-iran-related-web-general-licenses-ee-and-ff",
+    "archiveUrl": "https://web.archive.org/web/20261114083148/https://www.federalregister.gov/documents/2026/11/13/2026-23197/publication-of-iran-related-web-general-licenses-ee-and-ff",
     "accessedAt": "2026-11-17T07:26:54Z",
-    "publishedAt": "2026-11-13",
-    "archiveUrl": "https://web.archive.org/web/20261114083148/https://www.federalregister.gov/documents/2026/11/13/2026-23197/publication-of-iran-related-web-general-licenses-ee-and-ff"
+    "publishedAt": "2026-11-13"
   },
   {
     "kind": "evidentiary",
@@ -2853,6 +2863,3196 @@
     "archiveUrl": "https://web.archive.org/web/20260807042456/https://www.federalregister.gov/documents/2026/04/09/R1-2026-03829/continuing-the-suspension-of-duty-free-de-minimis-treatment-for-all-countries",
     "accessedAt": "2026-11-17T06:51:48Z",
     "publishedAt": "2026-04-09"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2008-0015",
+    "tier": "1-primary",
+    "title": "CVE-2008-0015 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-0015",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905212756/https://nvd.nist.gov/vuln/detail/cve-2008-0015"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2008-4128",
+    "tier": "1-primary",
+    "title": "CVE-2008-4128 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4128",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905212906/https://nvd.nist.gov/vuln/detail/cve-2008-4128"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2008-4250",
+    "tier": "1-primary",
+    "title": "CVE-2008-4250 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4250",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261007032833/https://nvd.nist.gov/vuln/detail/cve-2008-4250"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2009-0238",
+    "tier": "1-primary",
+    "title": "CVE-2009-0238 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0238",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905212928/https://nvd.nist.gov/vuln/detail/cve-2009-0238"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2009-0556",
+    "tier": "1-primary",
+    "title": "CVE-2009-0556 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0556",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905213049/https://nvd.nist.gov/vuln/detail/cve-2009-0556"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2009-1537",
+    "tier": "1-primary",
+    "title": "CVE-2009-1537 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-1537",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905213029/https://nvd.nist.gov/vuln/detail/cve-2009-1537"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2009-3459",
+    "tier": "1-primary",
+    "title": "CVE-2009-3459 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-3459",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905213059/https://nvd.nist.gov/vuln/detail/cve-2009-3459"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2010-0249",
+    "tier": "1-primary",
+    "title": "CVE-2010-0249 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-0249",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905213229/https://nvd.nist.gov/vuln/detail/cve-2010-0249"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2010-0806",
+    "tier": "1-primary",
+    "title": "CVE-2010-0806 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-0806",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905205714/https://nvd.nist.gov/vuln/detail/cve-2010-0806"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2012-1854",
+    "tier": "1-primary",
+    "title": "CVE-2012-1854 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-1854",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905213404/https://nvd.nist.gov/vuln/detail/cve-2012-1854"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2015-3246",
+    "tier": "1-primary",
+    "title": "CVE-2015-3246 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3246",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261113030917/https://nvd.nist.gov/vuln/detail/cve-2015-3246"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2015-3306",
+    "tier": "1-primary",
+    "title": "CVE-2015-3306 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3306",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261021205021/https://nvd.nist.gov/vuln/detail/cve-2015-3306"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2015-5287",
+    "tier": "1-primary",
+    "title": "CVE-2015-5287 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5287",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261107123135/https://nvd.nist.gov/vuln/detail/cve-2015-5287"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2015-5477",
+    "tier": "1-primary",
+    "title": "CVE-2015-5477 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5477",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261012135303/https://nvd.nist.gov/vuln/detail/cve-2015-5477"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2016-3081",
+    "tier": "1-primary",
+    "title": "CVE-2016-3081 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3081",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261013174743/https://nvd.nist.gov/vuln/detail/cve-2016-3081"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2017-7921",
+    "tier": "1-primary",
+    "title": "CVE-2017-7921 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-7921",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261031091925/https://nvd.nist.gov/vuln/detail/cve-2017-7921"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2018-14634",
+    "tier": "1-primary",
+    "title": "CVE-2018-14634 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14634",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065712/https://nvd.nist.gov/vuln/detail/CVE-2018-14634"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2018-4063",
+    "tier": "1-primary",
+    "title": "CVE-2018-4063 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-4063",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065734/https://nvd.nist.gov/vuln/detail/CVE-2018-4063"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2019-1068",
+    "tier": "1-primary",
+    "title": "CVE-2019-1068 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1068",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906052543/https://nvd.nist.gov/vuln/detail/cve-2019-1068"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2019-19006",
+    "tier": "1-primary",
+    "title": "CVE-2019-19006 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19006",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065708/https://nvd.nist.gov/vuln/detail/CVE-2019-19006"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2020-7796",
+    "tier": "1-primary",
+    "title": "CVE-2020-7796 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-7796",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065657/https://nvd.nist.gov/vuln/detail/CVE-2020-7796"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2020-9715",
+    "tier": "1-primary",
+    "title": "CVE-2020-9715 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-9715",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260814165818/https://nvd.nist.gov/vuln/detail/CVE-2020-9715"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-22054",
+    "tier": "1-primary",
+    "title": "CVE-2021-22054 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22054",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065636/https://nvd.nist.gov/vuln/detail/CVE-2021-22054"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-22175",
+    "tier": "1-primary",
+    "title": "CVE-2021-22175 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22175",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905214737/https://nvd.nist.gov/vuln/detail/cve-2021-22175"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-22681",
+    "tier": "1-primary",
+    "title": "CVE-2021-22681 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22681",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065640/https://nvd.nist.gov/vuln/detail/CVE-2021-22681"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-23758",
+    "tier": "1-primary",
+    "title": "CVE-2021-23758 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23758",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905214722/https://nvd.nist.gov/vuln/detail/cve-2021-23758"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-26828",
+    "tier": "1-primary",
+    "title": "CVE-2021-26828 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26828",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065739/https://nvd.nist.gov/vuln/detail/CVE-2021-26828"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-26829",
+    "tier": "1-primary",
+    "title": "CVE-2021-26829 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26829",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260810115339/https://nvd.nist.gov/vuln/detail/CVE-2021-26829"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-27137",
+    "tier": "1-primary",
+    "title": "CVE-2021-27137 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-27137",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065443/https://nvd.nist.gov/vuln/detail/CVE-2021-27137"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-30952",
+    "tier": "1-primary",
+    "title": "CVE-2021-30952 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-30952",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905214853/https://nvd.nist.gov/vuln/detail/cve-2021-30952"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-3199",
+    "tier": "1-primary",
+    "title": "CVE-2021-3199 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3199",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261012045613/https://nvd.nist.gov/vuln/detail/cve-2021-3199"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2021-39935",
+    "tier": "1-primary",
+    "title": "CVE-2021-39935 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-39935",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905215011/https://nvd.nist.gov/vuln/detail/cve-2021-39935"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2022-0492",
+    "tier": "1-primary",
+    "title": "CVE-2022-0492 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0492",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261012052518/https://nvd.nist.gov/vuln/detail/cve-2022-0492"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2022-0995",
+    "tier": "1-primary",
+    "title": "CVE-2022-0995 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0995",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261111034626/https://nvd.nist.gov/vuln/detail/cve-2022-0995"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2022-20775",
+    "tier": "1-primary",
+    "title": "CVE-2022-20775 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-20775",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210955/https://nvd.nist.gov/vuln/detail/cve-2022-20775"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2022-37055",
+    "tier": "1-primary",
+    "title": "CVE-2022-37055 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-37055",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065738/https://nvd.nist.gov/vuln/detail/CVE-2022-37055"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-21529",
+    "tier": "1-primary",
+    "title": "CVE-2023-21529 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-21529",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905215531/https://nvd.nist.gov/vuln/detail/cve-2023-21529"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-22894",
+    "tier": "1-primary",
+    "title": "CVE-2023-22894 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22894",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261012144635/https://nvd.nist.gov/vuln/detail/cve-2023-22894"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-27351",
+    "tier": "1-primary",
+    "title": "CVE-2023-27351 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27351",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906023845/https://nvd.nist.gov/vuln/detail/cve-2023-27351"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-36424",
+    "tier": "1-primary",
+    "title": "CVE-2023-36424 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-36424",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261029150118/https://nvd.nist.gov/vuln/detail/cve-2023-36424"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-41974",
+    "tier": "1-primary",
+    "title": "CVE-2023-41974 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-41974",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905220150/https://nvd.nist.gov/vuln/detail/cve-2023-41974"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-43000",
+    "tier": "1-primary",
+    "title": "CVE-2023-43000 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-43000",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905220250/https://nvd.nist.gov/vuln/detail/cve-2023-43000"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-4346",
+    "tier": "1-primary",
+    "title": "CVE-2023-4346 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4346",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065451/https://nvd.nist.gov/vuln/detail/CVE-2023-4346"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-49105",
+    "tier": "1-primary",
+    "title": "CVE-2023-49105 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905220415/https://nvd.nist.gov/vuln/detail/cve-2023-49105"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2023-52163",
+    "tier": "1-primary",
+    "title": "CVE-2023-52163 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-52163",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023160655/https://nvd.nist.gov/vuln/detail/cve-2023-52163"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-1708",
+    "tier": "1-primary",
+    "title": "CVE-2024-1708 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1708",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-21182",
+    "tier": "1-primary",
+    "title": "CVE-2024-21182 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21182",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905221156/https://nvd.nist.gov/vuln/detail/cve-2024-21182"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-27199",
+    "tier": "1-primary",
+    "title": "CVE-2024-27199 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27199",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905114812/https://nvd.nist.gov/vuln/detail/cve-2024-27199"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-27834",
+    "tier": "1-primary",
+    "title": "CVE-2024-27834 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261109123657/https://nvd.nist.gov/vuln/detail/cve-2024-27834"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-37079",
+    "tier": "1-primary",
+    "title": "CVE-2024-37079 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37079",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905222823/https://nvd.nist.gov/vuln/detail/cve-2024-37079"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-43468",
+    "tier": "1-primary",
+    "title": "CVE-2024-43468 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43468",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-57726",
+    "tier": "1-primary",
+    "title": "CVE-2024-57726 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57726",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210625/https://nvd.nist.gov/vuln/detail/cve-2024-57726"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-57728",
+    "tier": "1-primary",
+    "title": "CVE-2024-57728 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57728",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210630/https://nvd.nist.gov/vuln/detail/cve-2024-57728"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-7399",
+    "tier": "1-primary",
+    "title": "CVE-2024-7399 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7399",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260927190944/https://nvd.nist.gov/vuln/detail/cve-2024-7399"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2024-7694",
+    "tier": "1-primary",
+    "title": "CVE-2024-7694 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7694",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065658/https://nvd.nist.gov/vuln/detail/CVE-2024-7694"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-11953",
+    "tier": "1-primary",
+    "title": "CVE-2025-11953 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11953",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905181456/https://nvd.nist.gov/vuln/detail/cve-2025-11953"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-13223",
+    "tier": "1-primary",
+    "title": "CVE-2025-13223 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13223",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905225512/https://nvd.nist.gov/vuln/detail/cve-2025-13223"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-14174",
+    "tier": "1-primary",
+    "title": "CVE-2025-14174 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14174",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261101061602/https://nvd.nist.gov/vuln/detail/cve-2025-14174"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-14611",
+    "tier": "1-primary",
+    "title": "CVE-2025-14611 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14611",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065730/https://nvd.nist.gov/vuln/detail/CVE-2025-14611"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-14733",
+    "tier": "1-primary",
+    "title": "CVE-2025-14733 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14733",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065725/https://nvd.nist.gov/vuln/detail/CVE-2025-14733"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-14847",
+    "tier": "1-primary",
+    "title": "CVE-2025-14847 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14847",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261024000319/https://nvd.nist.gov/vuln/detail/cve-2025-14847"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-15556",
+    "tier": "1-primary",
+    "title": "CVE-2025-15556 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15556",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065700/https://nvd.nist.gov/vuln/detail/CVE-2025-15556"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-20393",
+    "tier": "1-primary",
+    "title": "CVE-2025-20393 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-20393",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261110174645/https://nvd.nist.gov/vuln/detail/cve-2025-20393"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-25249",
+    "tier": "1-primary",
+    "title": "CVE-2025-25249 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-25249",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260808202159/https://nvd.nist.gov/vuln/detail/CVE-2025-25249"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-26399",
+    "tier": "1-primary",
+    "title": "CVE-2025-26399 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-26399",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261103003348/https://nvd.nist.gov/vuln/detail/cve-2025-26399"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-2749",
+    "tier": "1-primary",
+    "title": "CVE-2025-2749 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-2749",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065600/https://nvd.nist.gov/vuln/detail/CVE-2025-2749"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-29635",
+    "tier": "1-primary",
+    "title": "CVE-2025-29635 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-29635",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065555/https://nvd.nist.gov/vuln/detail/CVE-2025-29635"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-31125",
+    "tier": "1-primary",
+    "title": "CVE-2025-31125 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31125",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260904153309/https://nvd.nist.gov/vuln/detail/cve-2025-31125"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-31277",
+    "tier": "1-primary",
+    "title": "CVE-2025-31277 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31277",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261030043410/https://nvd.nist.gov/vuln/detail/cve-2025-31277"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-32432",
+    "tier": "1-primary",
+    "title": "CVE-2025-32432 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32432",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260904123257/https://nvd.nist.gov/vuln/detail/cve-2025-32432"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-32975",
+    "tier": "1-primary",
+    "title": "CVE-2025-32975 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32975",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065601/https://nvd.nist.gov/vuln/detail/CVE-2025-32975"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-34026",
+    "tier": "1-primary",
+    "title": "CVE-2025-34026 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34026",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260808202612/https://nvd.nist.gov/vuln/detail/cve-2025-34026"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-34291",
+    "tier": "1-primary",
+    "title": "CVE-2025-34291 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34291",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065536/https://nvd.nist.gov/vuln/detail/CVE-2025-34291"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-37164",
+    "tier": "1-primary",
+    "title": "CVE-2025-37164 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-37164",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260904202059/https://nvd.nist.gov/vuln/detail/cve-2025-37164"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-39682",
+    "tier": "1-primary",
+    "title": "CVE-2025-39682 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-39682",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261007070453/https://nvd.nist.gov/vuln/detail/cve-2025-39682"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-39964",
+    "tier": "1-primary",
+    "title": "CVE-2025-39964 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-39964",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260921085212/https://nvd.nist.gov/vuln/detail/cve-2025-39964"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-40536",
+    "tier": "1-primary",
+    "title": "CVE-2025-40536 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40536",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261114001001/https://nvd.nist.gov/vuln/detail/cve-2025-40536"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-40551",
+    "tier": "1-primary",
+    "title": "CVE-2025-40551 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40551",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-40602",
+    "tier": "1-primary",
+    "title": "CVE-2025-40602 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40602",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065728/https://nvd.nist.gov/vuln/detail/CVE-2025-40602"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-43510",
+    "tier": "1-primary",
+    "title": "CVE-2025-43510 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43510",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905232618/https://nvd.nist.gov/vuln/detail/cve-2025-43510"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-43520",
+    "tier": "1-primary",
+    "title": "CVE-2025-43520 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43520",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905232547/https://nvd.nist.gov/vuln/detail/cve-2025-43520"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-43529",
+    "tier": "1-primary",
+    "title": "CVE-2025-43529 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43529",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261015061924/https://nvd.nist.gov/vuln/detail/cve-2025-43529"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-47813",
+    "tier": "1-primary",
+    "title": "CVE-2025-47813 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-47813",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065634/https://nvd.nist.gov/vuln/detail/CVE-2025-47813"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-48572",
+    "tier": "1-primary",
+    "title": "CVE-2025-48572 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48572",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-48595",
+    "tier": "1-primary",
+    "title": "CVE-2025-48595 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48595",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261112060538/https://nvd.nist.gov/vuln/detail/cve-2025-48595"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-48633",
+    "tier": "1-primary",
+    "title": "CVE-2025-48633 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48633",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261025175050/https://nvd.nist.gov/vuln/detail/cve-2025-48633"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-48700",
+    "tier": "1-primary",
+    "title": "CVE-2025-48700 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48700",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065602/https://nvd.nist.gov/vuln/detail/CVE-2025-48700"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-49113",
+    "tier": "1-primary",
+    "title": "CVE-2025-49113 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49113",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-52691",
+    "tier": "1-primary",
+    "title": "CVE-2025-52691 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52691",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065714/https://nvd.nist.gov/vuln/detail/CVE-2025-52691"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-53521",
+    "tier": "1-primary",
+    "title": "CVE-2025-53521 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-53521",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260913160522/https://nvd.nist.gov/vuln/detail/cve-2025-53521"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-54068",
+    "tier": "1-primary",
+    "title": "CVE-2025-54068 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54068",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906084658/https://nvd.nist.gov/vuln/detail/cve-2025-54068"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-54313",
+    "tier": "1-primary",
+    "title": "CVE-2025-54313 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54313",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261025133151/https://nvd.nist.gov/vuln/detail/cve-2025-54313"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-55182",
+    "tier": "1-primary",
+    "title": "CVE-2025-55182 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55182",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211011/https://nvd.nist.gov/vuln/detail/cve-2025-55182"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-58034",
+    "tier": "1-primary",
+    "title": "CVE-2025-58034 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58034",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905233318/https://nvd.nist.gov/vuln/detail/cve-2025-58034"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-58360",
+    "tier": "1-primary",
+    "title": "CVE-2025-58360 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58360",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023052311/https://nvd.nist.gov/vuln/detail/cve-2025-58360"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-59374",
+    "tier": "1-primary",
+    "title": "CVE-2025-59374 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59374",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065728/https://nvd.nist.gov/vuln/detail/CVE-2025-59374"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-59718",
+    "tier": "1-primary",
+    "title": "CVE-2025-59718 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59718",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905233535/https://nvd.nist.gov/vuln/detail/cve-2025-59718"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-60710",
+    "tier": "1-primary",
+    "title": "CVE-2025-60710 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-60710",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261028055341/https://nvd.nist.gov/vuln/detail/cve-2025-60710"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-61624",
+    "tier": "1-primary",
+    "title": "CVE-2025-61624 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261020022501/https://nvd.nist.gov/vuln/detail/cve-2025-61624"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-61757",
+    "tier": "1-primary",
+    "title": "CVE-2025-61757 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905233530/https://nvd.nist.gov/vuln/detail/cve-2025-61757"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-6218",
+    "tier": "1-primary",
+    "title": "CVE-2025-6218 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6218",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260926152024/https://nvd.nist.gov/vuln/detail/cve-2025-6218"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-62221",
+    "tier": "1-primary",
+    "title": "CVE-2025-62221 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62221",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261029090013/https://nvd.nist.gov/vuln/detail/cve-2025-62221"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-62593",
+    "tier": "1-primary",
+    "title": "CVE-2025-62593 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62593",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260927134750/https://nvd.nist.gov/vuln/detail/cve-2025-62593"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-64328",
+    "tier": "1-primary",
+    "title": "CVE-2025-64328 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-64328",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065711/https://nvd.nist.gov/vuln/detail/CVE-2025-64328"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-66376",
+    "tier": "1-primary",
+    "title": "CVE-2025-66376 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66376",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260916025618/https://nvd.nist.gov/vuln/detail/cve-2025-66376"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-66644",
+    "tier": "1-primary",
+    "title": "CVE-2025-66644 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66644",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261031101310/https://nvd.nist.gov/vuln/detail/cve-2025-66644"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-67038",
+    "tier": "1-primary",
+    "title": "CVE-2025-67038 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-67038",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-68461",
+    "tier": "1-primary",
+    "title": "CVE-2025-68461 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68461",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-68613",
+    "tier": "1-primary",
+    "title": "CVE-2025-68613 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68613",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261106211419/https://nvd.nist.gov/vuln/detail/cve-2025-68613"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-68645",
+    "tier": "1-primary",
+    "title": "CVE-2025-68645 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68645",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065718/https://nvd.nist.gov/vuln/detail/CVE-2025-68645"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-68686",
+    "tier": "1-primary",
+    "title": "CVE-2025-68686 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234008/https://nvd.nist.gov/vuln/detail/cve-2025-68686"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2025-8110",
+    "tier": "1-primary",
+    "title": "CVE-2025-8110 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8110",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260908181759/https://nvd.nist.gov/vuln/detail/cve-2025-8110"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-0257",
+    "tier": "1-primary",
+    "title": "CVE-2026-0257 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0257",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261027110506/https://nvd.nist.gov/vuln/detail/cve-2026-0257"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-0300",
+    "tier": "1-primary",
+    "title": "CVE-2026-0300 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0300",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261009192644/https://nvd.nist.gov/vuln/detail/cve-2026-0300"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-0322",
+    "tier": "1-primary",
+    "title": "CVE-2026-0322 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261103222407/https://nvd.nist.gov/vuln/detail/cve-2026-0322"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-0770",
+    "tier": "1-primary",
+    "title": "CVE-2026-0770 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0770",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260722191054/https://nvd.nist.gov/vuln/detail/CVE-2026-0770"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-102489",
+    "tier": "1-primary",
+    "title": "CVE-2026-102489 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261024154706/https://nvd.nist.gov/vuln/detail/cve-2026-102489"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-102490",
+    "tier": "1-primary",
+    "title": "CVE-2026-102490 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102490",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261028223828/https://nvd.nist.gov/vuln/detail/cve-2026-102490"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-102764",
+    "tier": "1-primary",
+    "title": "CVE-2026-102764 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261027025958/https://nvd.nist.gov/vuln/detail/cve-2026-102764"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-102895",
+    "tier": "1-primary",
+    "title": "CVE-2026-102895 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261111163448/https://nvd.nist.gov/vuln/detail/cve-2026-102895"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-104286",
+    "tier": "1-primary",
+    "title": "CVE-2026-104286 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002205940/https://nvd.nist.gov/vuln/detail/cve-2026-104286"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-104935",
+    "tier": "1-primary",
+    "title": "CVE-2026-104935 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261013193409/https://nvd.nist.gov/vuln/detail/cve-2026-104935"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-105133",
+    "tier": "1-primary",
+    "title": "CVE-2026-105133 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261110123747/https://nvd.nist.gov/vuln/detail/cve-2026-105133"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-105134",
+    "tier": "1-primary",
+    "title": "CVE-2026-105134 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261111002724/https://nvd.nist.gov/vuln/detail/cve-2026-105134"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-10520",
+    "tier": "1-primary",
+    "title": "CVE-2026-10520 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10520",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210329/https://nvd.nist.gov/vuln/detail/cve-2026-10520"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-106931",
+    "tier": "1-primary",
+    "title": "CVE-2026-106931 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261019171837/https://nvd.nist.gov/vuln/detail/cve-2026-106931"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-109618",
+    "tier": "1-primary",
+    "title": "CVE-2026-109618 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261104064026/https://nvd.nist.gov/vuln/detail/cve-2026-109618"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-109619",
+    "tier": "1-primary",
+    "title": "CVE-2026-109619 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261104064026/https://nvd.nist.gov/vuln/detail/cve-2026-109619"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-110447",
+    "tier": "1-primary",
+    "title": "CVE-2026-110447 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261020165227/https://nvd.nist.gov/vuln/detail/cve-2026-110447"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-110936",
+    "tier": "1-primary",
+    "title": "CVE-2026-110936 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261113012430/https://nvd.nist.gov/vuln/detail/cve-2026-110936"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-111357",
+    "tier": "1-primary",
+    "title": "CVE-2026-111357 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261106190038/https://nvd.nist.gov/vuln/detail/cve-2026-111357"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-111497",
+    "tier": "1-primary",
+    "title": "CVE-2026-111497 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261111023110/https://nvd.nist.gov/vuln/detail/cve-2026-111497"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-111560",
+    "tier": "1-primary",
+    "title": "CVE-2026-111560 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261113071029/https://nvd.nist.gov/vuln/detail/cve-2026-111560"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-111793",
+    "tier": "1-primary",
+    "title": "CVE-2026-111793 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-114625",
+    "tier": "1-primary",
+    "title": "CVE-2026-114625 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261106200055/https://nvd.nist.gov/vuln/detail/cve-2026-114625"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-114713",
+    "tier": "1-primary",
+    "title": "CVE-2026-114713 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261115105914/https://nvd.nist.gov/vuln/detail/cve-2026-114713"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-11645",
+    "tier": "1-primary",
+    "title": "CVE-2026-11645 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11645",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234210/https://nvd.nist.gov/vuln/detail/cve-2026-11645"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-116606",
+    "tier": "1-primary",
+    "title": "CVE-2026-116606 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261105031016/https://nvd.nist.gov/vuln/detail/cve-2026-116606"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-116779",
+    "tier": "1-primary",
+    "title": "CVE-2026-116779 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261110013318/https://nvd.nist.gov/vuln/detail/cve-2026-116779"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-118527",
+    "tier": "1-primary",
+    "title": "CVE-2026-118527 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261106190010/https://nvd.nist.gov/vuln/detail/cve-2026-118527"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-119977",
+    "tier": "1-primary",
+    "title": "CVE-2026-119977 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261104004147/https://nvd.nist.gov/vuln/detail/cve-2026-119977"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-123039",
+    "tier": "1-primary",
+    "title": "CVE-2026-123039 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261116174921/https://nvd.nist.gov/vuln/detail/cve-2026-123039"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-123158",
+    "tier": "1-primary",
+    "title": "CVE-2026-123158 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261108191311/https://nvd.nist.gov/vuln/detail/cve-2026-123158"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-123218",
+    "tier": "1-primary",
+    "title": "CVE-2026-123218 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261110013318/https://nvd.nist.gov/vuln/detail/cve-2026-123218"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-124194",
+    "tier": "1-primary",
+    "title": "CVE-2026-124194 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261116175024/https://nvd.nist.gov/vuln/detail/cve-2026-124194"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-125350",
+    "tier": "1-primary",
+    "title": "CVE-2026-125350 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261113001509/https://nvd.nist.gov/vuln/detail/cve-2026-125350"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-12569",
+    "tier": "1-primary",
+    "title": "CVE-2026-12569 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12569",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261027050458/https://nvd.nist.gov/vuln/detail/cve-2026-12569"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-1281",
+    "tier": "1-primary",
+    "title": "CVE-2026-1281 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1281",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234240/https://nvd.nist.gov/vuln/detail/cve-2026-1281"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-1340",
+    "tier": "1-primary",
+    "title": "CVE-2026-1340 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1340",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234311/https://nvd.nist.gov/vuln/detail/cve-2026-1340"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-15409",
+    "tier": "1-primary",
+    "title": "CVE-2026-15409 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15409",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023183611/https://nvd.nist.gov/vuln/detail/cve-2026-15409"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-15410",
+    "tier": "1-primary",
+    "title": "CVE-2026-15410 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15410",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210520/https://nvd.nist.gov/vuln/detail/cve-2026-15410"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-1603",
+    "tier": "1-primary",
+    "title": "CVE-2026-1603 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1603",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234342/https://nvd.nist.gov/vuln/detail/cve-2026-1603"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-16232",
+    "tier": "1-primary",
+    "title": "CVE-2026-16232 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16232",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211143/https://nvd.nist.gov/vuln/detail/cve-2026-16232"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-16812",
+    "tier": "1-primary",
+    "title": "CVE-2026-16812 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16812",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-1731",
+    "tier": "1-primary",
+    "title": "CVE-2026-1731 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1731",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260816002029/https://nvd.nist.gov/vuln/detail/CVE-2026-1731"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-18556",
+    "tier": "1-primary",
+    "title": "CVE-2026-18556 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18556",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260924195812/https://nvd.nist.gov/vuln/detail/cve-2026-18556"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-18577",
+    "tier": "1-primary",
+    "title": "CVE-2026-18577 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18577",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210942/https://nvd.nist.gov/vuln/detail/cve-2026-18577"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-19490",
+    "tier": "1-primary",
+    "title": "CVE-2026-19490 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19490",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-19868",
+    "tier": "1-primary",
+    "title": "CVE-2026-19868 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261112094806/https://nvd.nist.gov/vuln/detail/cve-2026-19868"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20045",
+    "tier": "1-primary",
+    "title": "CVE-2026-20045 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20045",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20079",
+    "tier": "1-primary",
+    "title": "CVE-2026-20079 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20079",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211028/https://nvd.nist.gov/vuln/detail/cve-2026-20079"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20122",
+    "tier": "1-primary",
+    "title": "CVE-2026-20122 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20122",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234443/https://nvd.nist.gov/vuln/detail/cve-2026-20122"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20127",
+    "tier": "1-primary",
+    "title": "CVE-2026-20127 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20127",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234513/https://nvd.nist.gov/vuln/detail/cve-2026-20127"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20128",
+    "tier": "1-primary",
+    "title": "CVE-2026-20128 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20128",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234544/https://nvd.nist.gov/vuln/detail/cve-2026-20128"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20131",
+    "tier": "1-primary",
+    "title": "CVE-2026-20131 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20131",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234614/https://nvd.nist.gov/vuln/detail/cve-2026-20131"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20133",
+    "tier": "1-primary",
+    "title": "CVE-2026-20133 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20133",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234726/https://nvd.nist.gov/vuln/detail/cve-2026-20133"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20182",
+    "tier": "1-primary",
+    "title": "CVE-2026-20182 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20182",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234715/https://nvd.nist.gov/vuln/detail/cve-2026-20182"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20230",
+    "tier": "1-primary",
+    "title": "CVE-2026-20230 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20230",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261112204437/https://nvd.nist.gov/vuln/detail/cve-2026-20230"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20245",
+    "tier": "1-primary",
+    "title": "CVE-2026-20245 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20245",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905234815/https://nvd.nist.gov/vuln/detail/cve-2026-20245"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20253",
+    "tier": "1-primary",
+    "title": "CVE-2026-20253 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20253",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065514/https://nvd.nist.gov/vuln/detail/CVE-2026-20253"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20262",
+    "tier": "1-primary",
+    "title": "CVE-2026-20262 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20262",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261027125410/https://nvd.nist.gov/vuln/detail/cve-2026-20262"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20316",
+    "tier": "1-primary",
+    "title": "CVE-2026-20316 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20316",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211027/https://nvd.nist.gov/vuln/detail/cve-2026-20316"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20320",
+    "tier": "1-primary",
+    "title": "CVE-2026-20320 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20349",
+    "tier": "1-primary",
+    "title": "CVE-2026-20349 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20349",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917122531/https://nvd.nist.gov/vuln/detail/cve-2026-20349"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20700",
+    "tier": "1-primary",
+    "title": "CVE-2026-20700 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20700",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235018/https://nvd.nist.gov/vuln/detail/cve-2026-20700"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20805",
+    "tier": "1-primary",
+    "title": "CVE-2026-20805 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20805",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235049/https://nvd.nist.gov/vuln/detail/cve-2026-20805"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-20963",
+    "tier": "1-primary",
+    "title": "CVE-2026-20963 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20963",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261103044005/https://nvd.nist.gov/vuln/detail/cve-2026-20963"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21385",
+    "tier": "1-primary",
+    "title": "CVE-2026-21385 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21385",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261024222118/https://nvd.nist.gov/vuln/detail/cve-2026-21385"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21509",
+    "tier": "1-primary",
+    "title": "CVE-2026-21509 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21509",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235254/https://nvd.nist.gov/vuln/detail/cve-2026-21509"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21510",
+    "tier": "1-primary",
+    "title": "CVE-2026-21510 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21510",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260814200347/https://nvd.nist.gov/vuln/detail/CVE-2026-21510"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21513",
+    "tier": "1-primary",
+    "title": "CVE-2026-21513 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21513",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235338/https://nvd.nist.gov/vuln/detail/cve-2026-21513"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21514",
+    "tier": "1-primary",
+    "title": "CVE-2026-21514 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21514",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261026022140/https://nvd.nist.gov/vuln/detail/cve-2026-21514"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21519",
+    "tier": "1-primary",
+    "title": "CVE-2026-21519 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21519",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235353/https://nvd.nist.gov/vuln/detail/cve-2026-21519"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21525",
+    "tier": "1-primary",
+    "title": "CVE-2026-21525 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21525",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023180439/https://nvd.nist.gov/vuln/detail/cve-2026-21525"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21533",
+    "tier": "1-primary",
+    "title": "CVE-2026-21533 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21533",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235455/https://nvd.nist.gov/vuln/detail/cve-2026-21533"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21589",
+    "tier": "1-primary",
+    "title": "CVE-2026-21589 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261019162616/https://nvd.nist.gov/vuln/detail/cve-2026-21589"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21643",
+    "tier": "1-primary",
+    "title": "CVE-2026-21643 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21643",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211106/https://nvd.nist.gov/vuln/detail/cve-2026-21643"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-21962",
+    "tier": "1-primary",
+    "title": "CVE-2026-21962 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21962",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261114234120/https://nvd.nist.gov/vuln/detail/cve-2026-21962"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-22719",
+    "tier": "1-primary",
+    "title": "CVE-2026-22719 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22719",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261110055250/https://nvd.nist.gov/vuln/detail/cve-2026-22719"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-22769",
+    "tier": "1-primary",
+    "title": "CVE-2026-22769 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22769",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065654/https://nvd.nist.gov/vuln/detail/CVE-2026-22769"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-23760",
+    "tier": "1-primary",
+    "title": "CVE-2026-23760 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-23760",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065714/https://nvd.nist.gov/vuln/detail/CVE-2026-23760"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-24061",
+    "tier": "1-primary",
+    "title": "CVE-2026-24061 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24061",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261003000607/https://nvd.nist.gov/vuln/detail/cve-2026-24061"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-2441",
+    "tier": "1-primary",
+    "title": "CVE-2026-2441 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2441",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235658/https://nvd.nist.gov/vuln/detail/cve-2026-2441"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-24423",
+    "tier": "1-primary",
+    "title": "CVE-2026-24423 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24423",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260904133732/https://nvd.nist.gov/vuln/detail/cve-2026-24423"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-24858",
+    "tier": "1-primary",
+    "title": "CVE-2026-24858 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24858",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235728/https://nvd.nist.gov/vuln/detail/cve-2026-24858"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-25089",
+    "tier": "1-primary",
+    "title": "CVE-2026-25089 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260905235759/https://nvd.nist.gov/vuln/detail/cve-2026-25089"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-25108",
+    "tier": "1-primary",
+    "title": "CVE-2026-25108 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25108",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065650/https://nvd.nist.gov/vuln/detail/CVE-2026-25108"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-28318",
+    "tier": "1-primary",
+    "title": "CVE-2026-28318 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28318",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261112060538/https://nvd.nist.gov/vuln/detail/cve-2026-28318"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-3055",
+    "tier": "1-primary",
+    "title": "CVE-2026-3055 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3055",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917063117/https://nvd.nist.gov/vuln/detail/cve-2026-3055"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-31431",
+    "tier": "1-primary",
+    "title": "CVE-2026-31431 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-31431",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-32201",
+    "tier": "1-primary",
+    "title": "CVE-2026-32201 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32201",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261030042313/https://nvd.nist.gov/vuln/detail/cve-2026-32201"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-32202",
+    "tier": "1-primary",
+    "title": "CVE-2026-32202 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32202",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261014025539/https://nvd.nist.gov/vuln/detail/cve-2026-32202"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-33017",
+    "tier": "1-primary",
+    "title": "CVE-2026-33017 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33017",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260915013604/https://nvd.nist.gov/vuln/detail/cve-2026-33017"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-33634",
+    "tier": "1-primary",
+    "title": "CVE-2026-33634 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33634",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261029120615/https://nvd.nist.gov/vuln/detail/cve-2026-33634"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-33824",
+    "tier": "1-primary",
+    "title": "CVE-2026-33824 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33824",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023062402/https://nvd.nist.gov/vuln/detail/cve-2026-33824"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-33825",
+    "tier": "1-primary",
+    "title": "CVE-2026-33825 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33825",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906000059/https://nvd.nist.gov/vuln/detail/cve-2026-33825"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-34197",
+    "tier": "1-primary",
+    "title": "CVE-2026-34197 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34197",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261027211939/https://nvd.nist.gov/vuln/detail/cve-2026-34197"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-34486",
+    "tier": "1-primary",
+    "title": "CVE-2026-34486 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261112081218/https://nvd.nist.gov/vuln/detail/cve-2026-34486"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-34621",
+    "tier": "1-primary",
+    "title": "CVE-2026-34621 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34621",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260921063815/https://nvd.nist.gov/vuln/detail/cve-2026-34621"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-34908",
+    "tier": "1-primary",
+    "title": "CVE-2026-34908 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065510/https://nvd.nist.gov/vuln/detail/CVE-2026-34908"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-34909",
+    "tier": "1-primary",
+    "title": "CVE-2026-34909 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34909",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260923232538/https://nvd.nist.gov/vuln/detail/cve-2026-34909"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-34910",
+    "tier": "1-primary",
+    "title": "CVE-2026-34910 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34910",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261004223030/https://nvd.nist.gov/vuln/detail/cve-2026-34910"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-34926",
+    "tier": "1-primary",
+    "title": "CVE-2026-34926 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34926",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261112060538/https://nvd.nist.gov/vuln/detail/cve-2026-34926"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-3502",
+    "tier": "1-primary",
+    "title": "CVE-2026-3502 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3502",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065615/https://nvd.nist.gov/vuln/detail/CVE-2026-3502"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-35273",
+    "tier": "1-primary",
+    "title": "CVE-2026-35273 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35273",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261101124834/https://nvd.nist.gov/vuln/detail/cve-2026-35273"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-35616",
+    "tier": "1-primary",
+    "title": "CVE-2026-35616 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35616",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023183628/https://nvd.nist.gov/vuln/detail/cve-2026-35616"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-3909",
+    "tier": "1-primary",
+    "title": "CVE-2026-3909 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3909",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906000314/https://nvd.nist.gov/vuln/detail/cve-2026-3909"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-3910",
+    "tier": "1-primary",
+    "title": "CVE-2026-3910 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3910",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260903194627/https://nvd.nist.gov/vuln/detail/cve-2026-3910"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-39808",
+    "tier": "1-primary",
+    "title": "CVE-2026-39808 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39808",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906000412/https://nvd.nist.gov/vuln/detail/cve-2026-39808"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-39987",
+    "tier": "1-primary",
+    "title": "CVE-2026-39987 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39987",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023011959/https://nvd.nist.gov/vuln/detail/cve-2026-39987"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-41091",
+    "tier": "1-primary",
+    "title": "CVE-2026-41091 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41091",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906000449/https://nvd.nist.gov/vuln/detail/cve-2026-41091"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-41709",
+    "tier": "1-primary",
+    "title": "CVE-2026-41709 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261106193031/https://nvd.nist.gov/vuln/detail/cve-2026-41709"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-41940",
+    "tier": "1-primary",
+    "title": "CVE-2026-41940 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41940",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261105222236/https://nvd.nist.gov/vuln/detail/cve-2026-41940"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-42016",
+    "tier": "1-primary",
+    "title": "CVE-2026-42016 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42016",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260916203253/https://nvd.nist.gov/vuln/detail/cve-2026-42016"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-42018",
+    "tier": "1-primary",
+    "title": "CVE-2026-42018 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42018",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261012191139/https://nvd.nist.gov/vuln/detail/cve-2026-42018"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-42208",
+    "tier": "1-primary",
+    "title": "CVE-2026-42208 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42208",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261105025722/https://nvd.nist.gov/vuln/detail/cve-2026-42208"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-42271",
+    "tier": "1-primary",
+    "title": "CVE-2026-42271 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42271",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261011013120/https://nvd.nist.gov/vuln/detail/cve-2026-42271"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-42897",
+    "tier": "1-primary",
+    "title": "CVE-2026-42897 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42897",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-45247",
+    "tier": "1-primary",
+    "title": "CVE-2026-45247 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45247",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065526/https://nvd.nist.gov/vuln/detail/CVE-2026-45247"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-45321",
+    "tier": "1-primary",
+    "title": "CVE-2026-45321 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45321",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261001040925/https://nvd.nist.gov/vuln/detail/cve-2026-45321"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-45498",
+    "tier": "1-primary",
+    "title": "CVE-2026-45498 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45498",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906000633/https://nvd.nist.gov/vuln/detail/cve-2026-45498"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-45659",
+    "tier": "1-primary",
+    "title": "CVE-2026-45659 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45659",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906000607/https://nvd.nist.gov/vuln/detail/cve-2026-45659"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-46300",
+    "tier": "1-primary",
+    "title": "CVE-2026-46300 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261104192545/https://nvd.nist.gov/vuln/detail/cve-2026-46300"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-46817",
+    "tier": "1-primary",
+    "title": "CVE-2026-46817 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46817",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210937/https://nvd.nist.gov/vuln/detail/cve-2026-46817"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48027",
+    "tier": "1-primary",
+    "title": "CVE-2026-48027 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48027",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065531/https://nvd.nist.gov/vuln/detail/CVE-2026-48027"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48172",
+    "tier": "1-primary",
+    "title": "CVE-2026-48172 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48172",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261010191357/https://nvd.nist.gov/vuln/detail/cve-2026-48172"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48282",
+    "tier": "1-primary",
+    "title": "CVE-2026-48282 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48282",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906000708/https://nvd.nist.gov/vuln/detail/cve-2026-48282"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48356",
+    "tier": "1-primary",
+    "title": "CVE-2026-48356 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261106200017/https://nvd.nist.gov/vuln/detail/cve-2026-48356"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48558",
+    "tier": "1-primary",
+    "title": "CVE-2026-48558 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211052/https://nvd.nist.gov/vuln/detail/cve-2026-48558"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48710",
+    "tier": "1-primary",
+    "title": "CVE-2026-48710 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48710",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002232952/https://nvd.nist.gov/vuln/detail/cve-2026-48710"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48907",
+    "tier": "1-primary",
+    "title": "CVE-2026-48907 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48907",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210500/https://nvd.nist.gov/vuln/detail/cve-2026-48907"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48908",
+    "tier": "1-primary",
+    "title": "CVE-2026-48908 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48908",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210438/https://nvd.nist.gov/vuln/detail/cve-2026-48908"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-48939",
+    "tier": "1-primary",
+    "title": "CVE-2026-48939 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260808173200/https://nvd.nist.gov/vuln/detail/CVE-2026-48939"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-49869",
+    "tier": "1-primary",
+    "title": "CVE-2026-49869 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49869",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261029025400/https://nvd.nist.gov/vuln/detail/cve-2026-49869"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-50522",
+    "tier": "1-primary",
+    "title": "CVE-2026-50522 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906000940/https://nvd.nist.gov/vuln/detail/cve-2026-50522"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-50751",
+    "tier": "1-primary",
+    "title": "CVE-2026-50751 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50751",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065524/https://nvd.nist.gov/vuln/detail/CVE-2026-50751"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-5281",
+    "tier": "1-primary",
+    "title": "CVE-2026-5281 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5281",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-53266",
+    "tier": "1-primary",
+    "title": "CVE-2026-53266 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53266",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261028032315/https://nvd.nist.gov/vuln/detail/cve-2026-53266"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-53362",
+    "tier": "1-primary",
+    "title": "CVE-2026-53362 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261012024140/https://nvd.nist.gov/vuln/detail/cve-2026-53362"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-5430",
+    "tier": "1-primary",
+    "title": "CVE-2026-5430 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5430",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261028223828/https://nvd.nist.gov/vuln/detail/cve-2026-5430"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-54420",
+    "tier": "1-primary",
+    "title": "CVE-2026-54420 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54420",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065516/https://nvd.nist.gov/vuln/detail/CVE-2026-54420"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-55040",
+    "tier": "1-primary",
+    "title": "CVE-2026-55040 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260927134750/https://nvd.nist.gov/vuln/detail/cve-2026-55040"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-55255",
+    "tier": "1-primary",
+    "title": "CVE-2026-55255 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55255",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261109112504/https://nvd.nist.gov/vuln/detail/cve-2026-55255"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-56155",
+    "tier": "1-primary",
+    "title": "CVE-2026-56155 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56155",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260814174511/https://nvd.nist.gov/vuln/detail/CVE-2026-56155"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-56164",
+    "tier": "1-primary",
+    "title": "CVE-2026-56164 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56164",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-56290",
+    "tier": "1-primary",
+    "title": "CVE-2026-56290 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56290",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261027145939/https://nvd.nist.gov/vuln/detail/cve-2026-56290"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-56291",
+    "tier": "1-primary",
+    "title": "CVE-2026-56291 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065459/https://nvd.nist.gov/vuln/detail/CVE-2026-56291"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-58644",
+    "tier": "1-primary",
+    "title": "CVE-2026-58644 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261010112428/https://nvd.nist.gov/vuln/detail/cve-2026-58644"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-58704",
+    "tier": "1-primary",
+    "title": "CVE-2026-58704 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261021050927/https://nvd.nist.gov/vuln/detail/cve-2026-58704"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-59310",
+    "tier": "1-primary",
+    "title": "CVE-2026-59310 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260927134750/https://nvd.nist.gov/vuln/detail/cve-2026-59310"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-59822",
+    "tier": "1-primary",
+    "title": "CVE-2026-59822 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59822",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906001330/https://nvd.nist.gov/vuln/detail/cve-2026-59822"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-60004",
+    "tier": "1-primary",
+    "title": "CVE-2026-60004 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261011234010/https://nvd.nist.gov/vuln/detail/cve-2026-60004"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-60137",
+    "tier": "1-primary",
+    "title": "CVE-2026-60137 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60137",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023003345/https://nvd.nist.gov/vuln/detail/cve-2026-60137"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-63030",
+    "tier": "1-primary",
+    "title": "CVE-2026-63030 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261023183716/https://nvd.nist.gov/vuln/detail/cve-2026-63030"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-63077",
+    "tier": "1-primary",
+    "title": "CVE-2026-63077 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63077",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260926185507/https://nvd.nist.gov/vuln/detail/cve-2026-63077"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-64849",
+    "tier": "1-primary",
+    "title": "CVE-2026-64849 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64849",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260927134750/https://nvd.nist.gov/vuln/detail/cve-2026-64849"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-65400",
+    "tier": "1-primary",
+    "title": "CVE-2026-65400 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65400",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260919121200/https://nvd.nist.gov/vuln/detail/cve-2026-65400"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-65660",
+    "tier": "1-primary",
+    "title": "CVE-2026-65660 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65660",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917122407/https://nvd.nist.gov/vuln/detail/cve-2026-65660"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-66384",
+    "tier": "1-primary",
+    "title": "CVE-2026-66384 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261017020648/https://nvd.nist.gov/vuln/detail/cve-2026-66384"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-67277",
+    "tier": "1-primary",
+    "title": "CVE-2026-67277 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67277",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917070538/https://nvd.nist.gov/vuln/detail/cve-2026-67277"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-67279",
+    "tier": "1-primary",
+    "title": "CVE-2026-67279 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67279",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-68820",
+    "tier": "1-primary",
+    "title": "CVE-2026-68820 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68820",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261115081347/https://nvd.nist.gov/vuln/detail/cve-2026-68820"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-6973",
+    "tier": "1-primary",
+    "title": "CVE-2026-6973 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6973",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210329/https://nvd.nist.gov/vuln/detail/cve-2026-6973"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-71362",
+    "tier": "1-primary",
+    "title": "CVE-2026-71362 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71362",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261024043842/https://nvd.nist.gov/vuln/detail/cve-2026-71362"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-72529",
+    "tier": "1-primary",
+    "title": "CVE-2026-72529 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72529",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917120804/https://nvd.nist.gov/vuln/detail/cve-2026-72529"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-72530",
+    "tier": "1-primary",
+    "title": "CVE-2026-72530 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72530",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917120801/https://nvd.nist.gov/vuln/detail/cve-2026-72530"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-7273",
+    "tier": "1-primary",
+    "title": "CVE-2026-7273 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7273",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260810211508/https://nvd.nist.gov/vuln/detail/cve-2026-7273"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-72898",
+    "tier": "1-primary",
+    "title": "CVE-2026-72898 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72898",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261015212221/https://nvd.nist.gov/vuln/detail/cve-2026-72898"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-73570",
+    "tier": "1-primary",
+    "title": "CVE-2026-73570 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73570",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917120755/https://nvd.nist.gov/vuln/detail/cve-2026-73570"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-7473",
+    "tier": "1-primary",
+    "title": "CVE-2026-7473 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7473",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065522/https://nvd.nist.gov/vuln/detail/CVE-2026-7473"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-75650",
+    "tier": "1-primary",
+    "title": "CVE-2026-75650 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75650",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-76418",
+    "tier": "1-primary",
+    "title": "CVE-2026-76418 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261106193012/https://nvd.nist.gov/vuln/detail/cve-2026-76418"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-76460",
+    "tier": "1-primary",
+    "title": "CVE-2026-76460 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76460",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-76461",
+    "tier": "1-primary",
+    "title": "CVE-2026-76461 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76461",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211136/https://nvd.nist.gov/vuln/detail/cve-2026-76461"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-76504",
+    "tier": "1-primary",
+    "title": "CVE-2026-76504 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76504",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210153/https://nvd.nist.gov/vuln/detail/cve-2026-76504"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-76519",
+    "tier": "1-primary",
+    "title": "CVE-2026-76519 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261103222650/https://nvd.nist.gov/vuln/detail/cve-2026-76519"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-8037",
+    "tier": "1-primary",
+    "title": "CVE-2026-8037 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8037",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261026071723/https://nvd.nist.gov/vuln/detail/cve-2026-8037"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-81578",
+    "tier": "1-primary",
+    "title": "CVE-2026-81578 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81578",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210325/https://nvd.nist.gov/vuln/detail/cve-2026-81578"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-81963",
+    "tier": "1-primary",
+    "title": "CVE-2026-81963 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81963",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917082453/https://nvd.nist.gov/vuln/detail/cve-2026-81963"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-82078",
+    "tier": "1-primary",
+    "title": "CVE-2026-82078 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82078",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210327/https://nvd.nist.gov/vuln/detail/cve-2026-82078"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-82329",
+    "tier": "1-primary",
+    "title": "CVE-2026-82329 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82329",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917100357/https://nvd.nist.gov/vuln/detail/cve-2026-82329"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-83548",
+    "tier": "1-primary",
+    "title": "CVE-2026-83548 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83548",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211039/https://nvd.nist.gov/vuln/detail/cve-2026-83548"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-83549",
+    "tier": "1-primary",
+    "title": "CVE-2026-83549 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83549",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002211039/https://nvd.nist.gov/vuln/detail/cve-2026-83549"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-8398",
+    "tier": "1-primary",
+    "title": "CVE-2026-8398 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8398",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260731065532/https://nvd.nist.gov/vuln/detail/CVE-2026-8398"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-8452",
+    "tier": "1-primary",
+    "title": "CVE-2026-8452 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8452",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260930140818/https://nvd.nist.gov/vuln/detail/cve-2026-8452"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-84869",
+    "tier": "1-primary",
+    "title": "CVE-2026-84869 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84869",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260918170835/https://nvd.nist.gov/vuln/detail/cve-2026-84869"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-85046",
+    "tier": "1-primary",
+    "title": "CVE-2026-85046 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85046",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261028170443/https://nvd.nist.gov/vuln/detail/cve-2026-85046"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-85102",
+    "tier": "1-primary",
+    "title": "CVE-2026-85102 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85102",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002210332/https://nvd.nist.gov/vuln/detail/cve-2026-85102"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-85706",
+    "tier": "1-primary",
+    "title": "CVE-2026-85706 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85706",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261029221802/https://nvd.nist.gov/vuln/detail/cve-2026-85706"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-85880",
+    "tier": "1-primary",
+    "title": "CVE-2026-85880 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85880",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917082428/https://nvd.nist.gov/vuln/detail/cve-2026-85880"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-86060",
+    "tier": "1-primary",
+    "title": "CVE-2026-86060 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86060",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260923053052/https://nvd.nist.gov/vuln/detail/cve-2026-86060"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-86218",
+    "tier": "1-primary",
+    "title": "CVE-2026-86218 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86218",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260917082414/https://nvd.nist.gov/vuln/detail/cve-2026-86218"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-86950",
+    "tier": "1-primary",
+    "title": "CVE-2026-86950 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86950",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261101140931/https://nvd.nist.gov/vuln/detail/cve-2026-86950"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-87491",
+    "tier": "1-primary",
+    "title": "CVE-2026-87491 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87491",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260922052039/https://nvd.nist.gov/vuln/detail/cve-2026-87491"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-87886",
+    "tier": "1-primary",
+    "title": "CVE-2026-87886 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87886",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261110172226/https://nvd.nist.gov/vuln/detail/cve-2026-87886"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-87902",
+    "tier": "1-primary",
+    "title": "CVE-2026-87902 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87902",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261006193905/https://nvd.nist.gov/vuln/detail/cve-2026-87902"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-88771",
+    "tier": "1-primary",
+    "title": "CVE-2026-88771 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88771",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261013064308/https://nvd.nist.gov/vuln/detail/cve-2026-88771"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-88772",
+    "tier": "1-primary",
+    "title": "CVE-2026-88772 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88772",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261002011729/https://nvd.nist.gov/vuln/detail/cve-2026-88772"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-88779",
+    "tier": "1-primary",
+    "title": "CVE-2026-88779 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261009151135/https://nvd.nist.gov/vuln/detail/cve-2026-88779"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-9082",
+    "tier": "1-primary",
+    "title": "CVE-2026-9082 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9082",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261024200014/https://nvd.nist.gov/vuln/detail/cve-2026-9082"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-9198",
+    "tier": "1-primary",
+    "title": "CVE-2026-9198 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9198",
+    "accessedAt": "2026-11-17T06:44:09Z"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-93616",
+    "tier": "1-primary",
+    "title": "CVE-2026-93616 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93616",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261011222753/https://nvd.nist.gov/vuln/detail/cve-2026-93616"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-93952",
+    "tier": "1-primary",
+    "title": "CVE-2026-93952 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93952",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260927150747/https://nvd.nist.gov/vuln/detail/cve-2026-93952"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-94127",
+    "tier": "1-primary",
+    "title": "CVE-2026-94127 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94127",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261017020516/https://nvd.nist.gov/vuln/detail/cve-2026-94127"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-9586",
+    "tier": "1-primary",
+    "title": "CVE-2026-9586 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9586",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20260906002127/https://nvd.nist.gov/vuln/detail/cve-2026-9586"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-96652",
+    "tier": "1-primary",
+    "title": "CVE-2026-96652 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261108025022/https://nvd.nist.gov/vuln/detail/cve-2026-96652"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-96654",
+    "tier": "1-primary",
+    "title": "CVE-2026-96654 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261101193106/https://nvd.nist.gov/vuln/detail/cve-2026-96654"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-96655",
+    "tier": "1-primary",
+    "title": "CVE-2026-96655 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261101193106/https://nvd.nist.gov/vuln/detail/cve-2026-96655"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-96656",
+    "tier": "1-primary",
+    "title": "CVE-2026-96656 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261110030525/https://nvd.nist.gov/vuln/detail/cve-2026-96656"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-96951",
+    "tier": "1-primary",
+    "title": "CVE-2026-96951 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261022143533/https://nvd.nist.gov/vuln/detail/cve-2026-96951"
+  },
+  {
+    "kind": "evidentiary",
+    "id": "nvd-cve-2026-97229",
+    "tier": "1-primary",
+    "title": "CVE-2026-97229 Detail",
+    "publisher": "National Vulnerability Database (NIST)",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+    "accessedAt": "2026-11-17T06:44:09Z",
+    "archiveUrl": "https://web.archive.org/web/20261113093956/https://nvd.nist.gov/vuln/detail/cve-2026-97229"
   },
   {
     "kind": "evidentiary",
