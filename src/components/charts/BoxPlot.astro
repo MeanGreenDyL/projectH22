@@ -5,7 +5,7 @@ import { fiveNumber } from '../../lib/chart-data';
 interface Group { label: string; values: number[]; color: string }
 interface Props { groups: Group[]; domain: [number, number]; ticks: number[]; unit: string }
 const { groups, domain, ticks, unit } = Astro.props;
-const W = 640, ROW = 44, PAD_L = 120, PAD_R = 16, PAD_T = 8, AXIS = 22;
+const W = 640, ROW = 56, PAD_L = 12, PAD_R = 16, PAD_T = 4, AXIS = 22, LABEL = 16;
 const H = PAD_T + groups.length * ROW + AXIS;
 const x = (v: number) => PAD_L + ((v - domain[0]) / (domain[1] - domain[0])) * (W - PAD_L - PAD_R);
 const f = (n: number) => (Math.round(n * 10) / 10).toString();
@@ -19,10 +19,10 @@ const f = (n: number) => (Math.round(n * 10) / 10).toString();
   ))}
   {groups.map((g, i) => {
     const s = fiveNumber(g.values);
-    const cy = PAD_T + i * ROW + ROW / 2;
+    const cy = PAD_T + i * ROW + LABEL + (ROW - LABEL) / 2;
     return (
       <g>
-        <text x={PAD_L - 8} y={cy + 4} text-anchor="end" style="fill:var(--h22-ink-secondary);font-size:12px">{g.label} (n={g.values.length})</text>
+        <text x={PAD_L} y={PAD_T + i * ROW + 12} style="fill:var(--h22-ink-secondary);font-size:12px">{g.label} (n={g.values.length})</text>
         {g.values.map((v, j) => <circle cx={x(v)} cy={cy + ((j % 5) - 2) * 3} r="2.5" fill={g.color} fill-opacity="0.35" />)}
         {s && (
           <g>
@@ -30,7 +30,7 @@ const f = (n: number) => (Math.round(n * 10) / 10).toString();
             <line x1={x(s.q3)} x2={x(s.max)} y1={cy} y2={cy} stroke="var(--h22-ink-secondary)" stroke-width="1.5" />
             <rect x={x(s.q1)} y={cy - 9} width={Math.max(1, x(s.q3) - x(s.q1))} height="18" rx="4" fill={g.color} fill-opacity="0.18" stroke={g.color} stroke-width="1.5" />
             <line x1={x(s.median)} x2={x(s.median)} y1={cy - 9} y2={cy + 9} stroke="var(--h22-ink)" stroke-width="2" />
-            <rect class="h22-hit" x={PAD_L} y={cy - ROW / 2} width={W - PAD_L - PAD_R} height={ROW} tabindex="0"
+            <rect class="h22-hit" x={PAD_L} y={PAD_T + i * ROW} width={W - PAD_L - PAD_R} height={ROW} tabindex="0"
               data-tip={`median ${f(s.median)} ${unit}|${g.label}: range ${f(s.min)}–${f(s.max)}, middle half ${f(s.q1)}–${f(s.q3)}, n=${s.n}`} />
           </g>
         )}

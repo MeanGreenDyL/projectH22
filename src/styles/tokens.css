@@ -146,11 +146,11 @@
 }
 
 @theme {
-  /* Candidates per spec §8; final pick and self-hosting in Phase 3. */
-  --font-heading: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
-  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-data: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-scripture: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  /* Self-hosted (Fontsource, SIL OFL 1.1). Spec §8: transitional serif headings, Inter for body and data, a distinct serif for scripture. */
+  --font-heading: 'Source Serif 4 Variable', 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-data: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-scripture: 'Newsreader Variable', 'Newsreader', 'Iowan Old Style', Georgia, serif;
 
   --text-body: 1.0625rem; /* 17px, inside the 16–18px reading band */
   --leading-body: 1.6;
