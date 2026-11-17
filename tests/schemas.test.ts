@@ -51,7 +51,7 @@ describe('VerifiedEvent', () => {
   });
   it('requires upper-case ISO country codes and real US state codes', () => {
     expect(ok(VerifiedEvent, event({ geography: { scope: 'global', countries: ['us'] } }))).toBe(false);
-    expect(ok(VerifiedEvent, event({ geography: { scope: 'us-state', countries: ['US'], usStates: ['XX'] } }))).toBe(false);
+    expect(ok(VerifiedEvent, event({ geography: { scope: 'us-state', countries: ['US'], usStates: ['XX' as never] } }))).toBe(false);
     expect(ok(VerifiedEvent, event({ geography: { scope: 'us-state', countries: ['US'], usStates: ['TX'] } }))).toBe(true);
   });
   it('checks coordinates are [lng, lat] in range', () => {
