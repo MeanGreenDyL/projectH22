@@ -1,4 +1,4 @@
-import type { ScripturalCorrelation, Scenario, Source, VerifiedEvent } from '../schemas';
+import type { ScripturalCorrelation, Scenario, Series, Source, VerifiedEvent } from '../schemas';
 
 export type Severity = 'error' | 'warning';
 
@@ -24,6 +24,7 @@ export interface RawDataset {
   events: RawFile[];
   correlations: RawFile[];
   scenarios: RawFile[];
+  series: RawFile[];
 }
 
 export interface Located<T> {
@@ -37,6 +38,7 @@ export interface ParsedDataset {
   events: Located<VerifiedEvent>[];
   correlations: Located<ScripturalCorrelation>[];
   scenarios: Located<Scenario>[];
+  series: Located<Series>[];
 }
 
 export interface GateContext {

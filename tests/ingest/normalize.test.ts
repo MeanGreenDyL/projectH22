@@ -89,6 +89,12 @@ describe('Federal Register executive orders', () => {
     expect(e.title).toMatch(/^Executive Order 99999: /);
     for (const s of sources) expect(Source.safeParse(s).success).toBe(true);
   });
+  it('folds a republished correction into the same order, dated and summarised from the original', () => {
+    const e = events[0]!;
+    expect(e.sources).toEqual(['fr-0000-00001', 'fr-r1-0000-00001']);
+    expect(e.summary).toContain('published in the Federal Register on 2026-10-03 (00 FR 00001)');
+    expect(e.summary).toContain('republished on 2026-10-20');
+  });
 });
 
 describe('archive partition', () => {
@@ -108,6 +114,7 @@ describe('archive partition', () => {
         events: ready.map((record) => ({ file: `events/${record.domain}/${record.id}.json`, record })),
         correlations: [],
         scenarios: [],
+        series: [],
       },
       { now: NOW },
     );

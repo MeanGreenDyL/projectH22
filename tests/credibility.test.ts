@@ -16,7 +16,7 @@ describe('credibility gate baseline', () => {
     expect(run(validDataset())).toEqual([]);
   });
   it('passes an empty dataset', () => {
-    expect(run({ sources: [], events: [], correlations: [], scenarios: [] })).toEqual([]);
+    expect(run({ sources: [], events: [], correlations: [], scenarios: [], series: [] })).toEqual([]);
   });
 });
 
@@ -24,6 +24,16 @@ describe('sources', () => {
   it('Tier 4/5 sources must be archived', () => {
     const d = withSources(validDataset(), evidentiary(), interpretive(), evidentiary({ id: 'press', tier: '4-quality-press', archiveUrl: undefined } as never));
     expect(rules(run(d))).toContain('SRC-ARCHIVE-TIER45');
+  });
+});
+
+describe('series', () => {
+  it('must cite a Tier 1–4 evidentiary source', () => {
+    const d = validDataset();
+    d.series[0]!.record = { ...d.series[0]!.record, sourceId: 'test-commentary' };
+    expect(rules(run(d))).toContain('SER-SOURCE');
+    const t5 = withSources(validDataset(), evidentiary({ tier: '5-specialist-press' }), interpretive());
+    expect(rules(run(t5))).toContain('SER-SOURCE');
   });
 });
 

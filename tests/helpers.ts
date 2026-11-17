@@ -8,6 +8,7 @@ import type {
   InterpretiveSource,
   ScripturalCorrelation,
   Scenario,
+  Series,
   VerifiedEvent,
 } from '../src/schemas';
 import type { ParsedDataset } from '../src/validation/types';
@@ -115,6 +116,22 @@ export function scenario(overrides: Partial<Scenario> = {}): Scenario {
 }
 
 /** A small dataset that passes every gate. Tests mutate one thing at a time. */
+export function series(over: Partial<Series> = {}): Series {
+  return {
+    id: 'test-series',
+    title: 'Synthetic test indicator',
+    domain: 'economic',
+    measure: 'measurement',
+    unit: '%',
+    frequency: 'annual',
+    countries: ['US'],
+    sourceId: 'test-primary-source',
+    asOf: '2026-11-01',
+    points: [['2024', 1]],
+    ...over,
+  };
+}
+
 export function validDataset(): ParsedDataset {
   return {
     sources: [
@@ -124,6 +141,7 @@ export function validDataset(): ParsedDataset {
     events: [{ file: 'events/cyber/test-event.json', record: event() }],
     correlations: [{ file: 'correlations/test-correlation.yaml', record: correlation() }],
     scenarios: [{ file: 'scenarios/test-scenario.yaml', record: scenario() }],
+    series: [{ file: 'series/test-series.json', record: series() }],
   };
 }
 

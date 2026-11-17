@@ -1,0 +1,9 @@
+[
+  { "page": 1, "pages": 1, "per_page": 100, "total": 4, "sourceid": "2", "lastupdated": "2026-11-11", "note": "SYNTHETIC" },
+  [
+    { "indicator": { "id": "XX.EXAMPLE.ZS", "value": "Example indicator (%)" }, "country": { "id": "US", "value": "United States" }, "countryiso3code": "USA", "date": "2025", "value": null, "unit": "", "obs_status": "", "decimal": 1 },
+    { "indicator": { "id": "XX.EXAMPLE.ZS", "value": "Example indicator (%)" }, "country": { "id": "US", "value": "United States" }, "countryiso3code": "USA", "date": "2024", "value": 2.5, "unit": "", "obs_status": "", "decimal": 1 },
+    { "indicator": { "id": "XX.EXAMPLE.ZS", "value": "Example indicator (%)" }, "country": { "id": "US", "value": "United States" }, "countryiso3code": "USA", "date": "2023", "value": 3.25, "unit": "", "obs_status": "", "decimal": 1 },
+    { "indicator": { "id": "XX.EXAMPLE.ZS", "value": "Example indicator (%)" }, "country": { "id": "US", "value": "United States" }, "countryiso3code": "USA", "date": "2021", "value": 1, "unit": "", "obs_status": "", "decimal": 1 }
+  ]
+]

@@ -1,0 +1,10 @@
+{
+  "query_details": { "title": "SYNTHETIC", "date_resolution": "day" },
+  "timeline": [
+    { "series": "Volume Intensity", "data": [
+      { "date": "20261101T000000Z", "value": 0.1201 },
+      { "date": "20261102T000000Z", "value": 0 },
+      { "date": "20261103T000000Z", "value": 0.0954 }
+    ] }
+  ]
+}

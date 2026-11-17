@@ -109,6 +109,14 @@ export function runCredibilityGate(data: ParsedDataset, ctx: GateContext): Issue
     }
   }
 
+  // ---------- Series ----------
+  for (const { file, record: s } of data.series) {
+    const src = sources.get(s.sourceId);
+    if (src && !(src.kind === 'evidentiary' && FACT_LAYER_QUALIFYING_TIERS.includes(src.tier))) {
+      push({ rule: 'SER-SOURCE', file, recordId: s.id, message: `series must cite a Tier 1–4 evidentiary source; "${s.sourceId}" is not` });
+    }
+  }
+
   // ---------- Layer B: ScripturalCorrelation ----------
   for (const { file, record: c } of data.correlations) {
     if (typeof c.counterReading !== 'string' || c.counterReading.trim().length < COUNTER_READING_MIN_CHARS) {

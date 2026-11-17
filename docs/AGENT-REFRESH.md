@@ -3,8 +3,8 @@
 How an automated agent (scheduled Claude Code run, cron job, GitHub Action) refreshes and extends
 the data layer without a human in the loop — and where a human is always required.
 
-Status: the **validation gate** below is live. The **refresh and report commands** are specified
-here and land in Phase 2; until then they do not exist.
+Status: everything below is live (Phase 2). Feeds and their refresh targets are listed once, in
+`src/lib/feeds.ts`; the runner, `/data-health`, the header indicator and the reports all read it.
 
 ## 1. Commands
 
@@ -13,10 +13,20 @@ here and land in Phase 2; until then they do not exist.
 | `pnpm validate` | live | Zod validation of every collection, id = file name, events in their domain folder, duplicate ids, referential integrity. Exit 1 on any error. |
 | `pnpm validate:credibility` | live | Runs `validate` first, then the credibility rules in §5. Exit 1 on any error; warnings print but pass. |
 | `pnpm test` | live | Unit tests for schemas, gates, policy and CLI exit codes. |
-| `pnpm refresh:all` | Phase 2 | Run every ingester. |
-| `pnpm refresh:source <source-id>` | Phase 2 | Run one ingester. |
-| `pnpm report:staleness` | Phase 2 | JSON report of records past their refresh SLA. |
-| `pnpm report:coverage` | Phase 2 | Which domains / date ranges are thin. |
+| `pnpm refresh:all` | live | Run every ingester. A failing feed records its error and the others still run; exit 1 if any failed. |
+| `pnpm refresh:source <feed-id>` | live | Run one ingester. Feed ids: `cisa-kev`, `usgs-earthquakes`, `fema-declarations`, `congress-laws`, `federal-register-eo`, `world-bank`, `coingecko`, `gdelt`. |
+| `pnpm report:staleness` | live | JSON: each feed's health against its SLA, plus events whose `lastVerified` is older than `RECORD_SLA_DAYS` (default 90). Exit 1 if a critical feed is failing or has never run. |
+| `pnpm report:coverage` | live | JSON: events per domain per month over `COVERAGE_MONTHS` (default 24), months under `THIN_THRESHOLD` (default 2), empty domains. |
+
+Ingest environment variables: `INGEST_WINDOW_DAYS` (default 365), `ARCHIVE_CAPTURE_BUDGET` (new
+Wayback captures requested per run, default 25), `NVD_API_KEY`, `CONGRESS_API_KEY` (falls back to
+`DEMO_KEY`), `OPENSTATES_API_KEY`. Keys live in GitHub Actions secrets, never in the repo.
+
+What one ingester run does: fetch → save the raw response to `src/data/ingested/<feed>/latest.json`
+→ normalize → look up a Wayback snapshot for every new source (and request up to the capture
+budget) → write events that have at least one archived source → list the rest, with a reason, in
+`pending.json` → write `status.json`. Held-back records publish on a later run once archived.
+`.github/workflows/refresh.yml` runs this daily, runs the full gate, and opens a PR.
 
 Both gates accept `--data <dir>` to validate a directory other than `src/data`.
 
@@ -28,6 +38,7 @@ Both gates accept `--data <dir>` to validate a directory other than `src/data`.
 | Events (Layer A) | `src/data/events/<domain>/<id>.json` | one record per file | `VerifiedEvent` (`src/schemas/event.ts`) |
 | Correlations (Layer B) | `src/data/correlations/<id>.yaml` | one record per file | `ScripturalCorrelation` (`src/schemas/correlation.ts`) |
 | Scenarios | `src/data/scenarios/<id>.yaml` | one record per file | `Scenario` (`src/schemas/scenario.ts`) |
+| Series | `src/data/series/<id>.json` | one record per file | `Series` (`src/schemas/series.ts`) |
 | Raw feed snapshots | `src/data/ingested/<source-id>/` | as fetched (JSON / NDJSON) | not validated as records |
 
 The Zod schemas in `src/schemas/` are the exact JSON schema of each collection. Read them; do not
@@ -39,6 +50,12 @@ work from a copy in prose. All records are strict: unknown keys fail validation.
 - Event ids: `<what>-<where-or-who>-<yyyy>[-<mm>]`, e.g. `kev-addition-<cve-id>` for feed-derived
   events. Never rename a published id; add a new record and link it from the corrections log.
 - Source ids: `<publisher>-<short-title>[-<yyyy>]`, e.g. `cisa-kev-catalog`.
+- Feed-derived ids in use: `kev-<cve>`, `usgs-<event id>`, `fema-<dr|em|fm>-<number>`,
+  `pl-<congress>-<n>` / `pvtl-<congress>-<n>`, `eo-<number>`; series `wb-<indicator>-<country>`,
+  `cg-<coin>-<measure>-usd`, `gdelt-<topic>`.
+- A series with `measure: media-attention` (GDELT) counts news coverage. It is never evidence that
+  an event happened, its title must say "coverage" or "media attention", and every chart of it
+  carries `MEDIA_ATTENTION_LABEL`.
 - Dates are `YYYY-MM-DD`; timestamps are ISO 8601 with `Z` or an offset.
 - For `month` / `quarter` / `year` precision, `date.start` is the first day of that period.
   `approximate` requires `date.end`.
@@ -98,6 +115,7 @@ out. Every `metrics[]` entry needs the `sourceId` it came from and an `asOf` dat
 | `COR-TYPOLOGICAL-COMMENTATOR` | error | `typological` without a supporting commentator (interpretive source) |
 | `PASSAGE-UNKNOWN-BOOK` | error | book name not in `src/schemas/books.ts` |
 | `PASSAGE-CANON` | error | canon badge disagrees with the book registry |
+| `SER-SOURCE` | error | a series cites a source that is not Tier 1–4 evidentiary |
 | `SCN-NO-DATES` | error | a date, year, duration, countdown or time window in a scenario (strings declared in `textualFigures` are exempt) |
 | `SCN-TEXTUAL-FIGURE` | error | a `textualFigures` entry is a calendar year or date rather than the passage's own figure |
 | `SCN-CERTAINTY-TERMS` | error | forbidden certainty language in a scenario |

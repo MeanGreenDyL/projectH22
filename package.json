@@ -19,7 +19,9 @@
     "scripture:fetch": "tsx scripts/scripture/fetch.ts",
     "scripture:ingest": "tsx scripts/scripture/ingest.ts",
     "refresh:all": "tsx scripts/ingest/run.ts all",
-    "refresh:source": "tsx scripts/ingest/run.ts source"
+    "refresh:source": "tsx scripts/ingest/run.ts source",
+    "report:staleness": "tsx scripts/report-staleness.ts",
+    "report:coverage": "tsx scripts/report-coverage.ts"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.9",

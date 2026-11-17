@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import HealthDot from '../../components/HealthDot.astro';
+import { FEEDS, feedHealth } from '../../lib/feeds';
+import { readFeedStatuses, readPending } from '../../lib/feed-status';
+import { DOMAINS } from '../../schemas';
+
+const now = new Date();
+const statuses = readFeedStatuses();
+const events = await getCollection('events');
+const series = await getCollection('series');
+const sources = await getCollection('sources');
+const archived = sources.filter((s) => s.data.archiveUrl).length;
+const byDomain = DOMAINS.map((d) => ({ d, n: events.filter((e) => e.data.domain === d).length }));
+const maxDomain = Math.max(1, ...byDomain.map((x) => x.n));
+
+const rows = FEEDS.map((f) => {
+  const s = statuses.get(f.id);
+  const pending = readPending(f.id);
+  const reasons = [...new Set(pending.map((p) => p.reason))].map((r) => ({ r, n: pending.filter((p) => p.reason === r).length }));
+  return { f, s, health: feedHealth(f, s, now), reasons };
+});
+const pendingTotal = rows.reduce((n, r) => n + r.reasons.reduce((m, x) => m + x.n, 0), 0);
+const fmt = (iso?: string) => (iso ? iso.replace('T', ' ').replace(/:\d\dZ$/, ' UTC') : 'never');
+const fmtDay = (iso?: string) => (iso ? iso.slice(0, 10) : 'never');
+const built = fmt(now.toISOString().replace(/\.\d{3}Z$/, 'Z'));
+const sla = (h: number) => (h % 24 === 0 ? `${h / 24} day${h === 24 ? '' : 's'}` : `${h} h`);
+---
+<Base title="Data health" description="Feed status, record counts and known gaps for every data source on the site.">
+  <h1 class="font-heading text-3xl">Data health</h1>
+  <p class="mt-2 max-w-[var(--measure-prose)] text-ink-secondary">
+    Every feed, when it last refreshed, and what it could not publish. Records that could not be
+    archived or completed are held back rather than shown. Status as of this build: <span class="num">{built}</span>.
+  </p>
+
+  <dl class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
+    <div class="border-t border-rule pt-2"><dt class="text-sm text-ink-muted">Verified events</dt><dd class="num text-2xl">{events.length}</dd></div>
+    <div class="border-t border-rule pt-2"><dt class="text-sm text-ink-muted">Data series</dt><dd class="num text-2xl">{series.length}</dd></div>
+    <div class="border-t border-rule pt-2"><dt class="text-sm text-ink-muted">Sources archived</dt><dd class="num text-2xl">{archived} <span class="text-base text-ink-muted">of {sources.length}</span></dd></div>
+    <div class="border-t border-rule pt-2"><dt class="text-sm text-ink-muted">Held back</dt><dd class="num text-2xl">{pendingTotal}</dd></div>
+  </dl>
+
+  <h2 class="mt-10 font-heading text-2xl">Feeds</h2>
+  <div class="mt-3 overflow-x-auto">
+    <table class="w-full border-collapse text-sm">
+      <caption class="sr-only">Status of each data feed</caption>
+      <thead>
+        <tr class="border-b border-axis text-left">
+          <th scope="col" class="py-2 pr-3">Feed</th>
+          <th scope="col" class="py-2 pr-3">Status</th>
+          <th scope="col" class="py-2 pr-3">Last success</th>
+          <th scope="col" class="py-2 pr-3 text-right">Records</th>
+          <th scope="col" class="py-2 pr-3 text-right">Held back</th>
+          <th scope="col" class="py-2 pr-3">Refresh target</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map(({ f, s, health, reasons }) => (
+          <tr class="border-b border-rule align-top">
+            <th scope="row" class="py-2 pr-3 text-left font-normal">
+              {f.name}
+              <div class="text-xs text-ink-muted">{f.publisher} · {f.license}</div>
+              {s && !s.ok && s.error && <div class="mt-1 text-xs text-ink-secondary">Last attempt {fmt(s.lastAttempt)} failed: {s.error}</div>}
+              {!s && f.keyRequired && <div class="mt-1 text-xs text-ink-secondary">Needs an API key ({f.keyEnv}) before it can run.</div>}
+              {reasons.map((x) => <div class="mt-1 text-xs text-ink-secondary">{x.n} held back: {x.r}</div>)}
+            </th>
+            <td class="py-2 pr-3"><HealthDot state={health} /></td>
+            <td class="num whitespace-nowrap py-2 pr-3" title={fmt(s?.lastSuccess)}>{fmtDay(s?.lastSuccess)}</td>
+            <td class="num py-2 pr-3 text-right">{s ? (f.produces === 'series' ? `${s.seriesWritten ?? 0} series` : s.eventsWritten) : '—'}</td>
+            <td class="num py-2 pr-3 text-right">{s ? s.eventsPending : '—'}</td>
+            <td class="whitespace-nowrap py-2 pr-3">every {sla(f.slaHours)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="mt-10 font-heading text-2xl">Events by domain</h2>
+  <table class="mt-3 w-full max-w-xl border-collapse text-sm">
+    <caption class="sr-only">Number of verified events in each domain</caption>
+    <tbody>
+      {byDomain.map(({ d, n }) => (
+        <tr class="border-b border-rule">
+          <th scope="row" class="w-36 py-1.5 pr-3 text-left font-normal">{d}</th>
+          <td class="py-1.5">
+            <div class="flex items-center gap-2">
+              <span class="inline-block h-2.5 rounded-r-[4px]" title={`${d}: ${n} events`} style={`width:${(n / maxDomain) * 80}%;min-width:${n ? 2 : 0}px;background:var(--h22-domain-${d})`} aria-hidden="true"></span>
+              <span class="num">{n}</span>
+            </div>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p class="mt-2 max-w-[var(--measure-prose)] text-sm text-ink-muted">
+    Domains with few or no events are gaps in coverage, not a sign that nothing happened.
+  </p>
+
+  <h2 class="mt-10 font-heading text-2xl">Not checked yet</h2>
+  <ul class="mt-3 list-disc pl-5 text-sm text-ink-secondary">
+    <li>Dead-link checks on cited sources are not running yet; they are scheduled with the site hardening work.</li>
+  </ul>
+</Base>

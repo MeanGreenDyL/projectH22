@@ -5,13 +5,14 @@
 import { fetchJson } from './http';
 
 interface Availability {
-  archived_snapshots?: { closest?: { available?: boolean; url?: string } };
+  archived_snapshots?: { closest?: { available?: boolean; url?: string; status?: string } };
 }
 
 export async function findSnapshot(url: string): Promise<string | undefined> {
   const r = await fetchJson<Availability>(`https://archive.org/wayback/available?url=${encodeURIComponent(url)}`, { minDelayMs: 1000 });
   const c = r.archived_snapshots?.closest;
-  return c?.available && c.url ? c.url.replace(/^http:/, 'https:') : undefined;
+  // Only a snapshot of a successful (200) page counts; a captured 404 or redirect is not an archive of the record.
+  return c?.available && c.url && c.status === '200' ? c.url.replace(/^http:/, 'https:') : undefined;
 }
 
 export async function requestCapture(url: string): Promise<string | undefined> {

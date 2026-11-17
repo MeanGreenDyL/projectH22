@@ -60,9 +60,23 @@ than shipping doubtful data.
 
 ## 3. Data sources
 
-Each ingested feed keeps its own licence. Known so far (spec §6a): CISA KEV is CC0 1.0; World Bank
-data is CC BY 4.0 (attribution required on every chart that uses it). Phase 2 adds a row per feed
-with its licence and attribution text before the feed is ingested.
+Each ingested feed keeps its own licence. The list below matches `src/lib/feeds.ts` and is shown
+on `/data-health`.
+
+| Feed | Licence | Attribution we show |
+| --- | --- | --- |
+| CISA KEV | CC0 1.0 | CISA, as source of each record |
+| NVD (CVSS scores) | US government work, public domain | NIST NVD, as the cited source of the score |
+| Federal Register | US government work | Office of the Federal Register |
+| Congress.gov | US government work | Library of Congress (Congress.gov) |
+| USGS earthquakes | US government work | U.S. Geological Survey |
+| OpenFEMA | US government work | FEMA |
+| World Bank WDI | CC BY 4.0 | "The World Bank" on every chart that uses it |
+| CoinGecko | CoinGecko API terms, attribution required | "Data provided by CoinGecko" on every chart that uses it |
+| GDELT | Free and open, attribution requested | "The GDELT Project", plus the media-attention label |
+| Open States (not yet running) | see openstates.org terms | Plural Policy / Open States |
+
+Wayback Machine snapshots are linked, not copied.
 
 ## 4. Code
 

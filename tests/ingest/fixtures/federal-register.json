@@ -1,6 +1,17 @@
 {
-  "count": 1,
+  "count": 2,
   "results": [
+    {
+      "document_number": "R1-0000-00001",
+      "title": "Synthetic Order on Example Infrastructure Resilience",
+      "type": "Presidential Document",
+      "executive_order_number": 99999,
+      "signing_date": "2026-09-30",
+      "publication_date": "2026-10-20",
+      "citation": "00 FR 00002",
+      "html_url": "https://www.federalregister.gov/documents/2026/10/20/R1-0000-00001/synthetic-order",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/pdf/R1-0000-00001.pdf"
+    },
     {
       "document_number": "0000-00001",
       "title": "Synthetic Order on Example Infrastructure Resilience",

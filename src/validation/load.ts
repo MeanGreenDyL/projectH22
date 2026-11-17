@@ -5,6 +5,7 @@
  *   src/data/events/<domain>/<id>.json        one VerifiedEvent per file
  *   src/data/correlations/<id>.yaml           one ScripturalCorrelation per file
  *   src/data/scenarios/<id>.yaml              one Scenario per file
+ *   src/data/series/<id>.json                 one Series per file (measurements over time, not events)
  *   src/data/ingested/<source-id>/            raw feed snapshots; not records, not validated here
  */
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
@@ -57,5 +58,6 @@ export function loadDataset(dataDir: string = DEFAULT_DATA_DIR, displayRoot: str
     events: readCollection(join(dataDir, 'events'), /\.json$/i, displayRoot),
     correlations: readCollection(join(dataDir, 'correlations'), /\.ya?ml$/i, displayRoot),
     scenarios: readCollection(join(dataDir, 'scenarios'), /\.ya?ml$/i, displayRoot),
+    series: readCollection(join(dataDir, 'series'), /\.json$/i, displayRoot),
   };
 }

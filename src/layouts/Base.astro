@@ -1,11 +1,15 @@
 ---
 import '../styles/tokens.css';
+import HealthDot from '../components/HealthDot.astro';
+import { FEEDS, overallIndicator } from '../lib/feeds';
+import { readFeedStatuses } from '../lib/feed-status';
 
 interface Props {
   title: string;
   description?: string;
 }
 const { title, description = 'Project H 2:2 — sourced records, made plain.' } = Astro.props;
+const freshness = overallIndicator(FEEDS, readFeedStatuses(), new Date());
 ---
 <!doctype html>
 <html lang="en">
@@ -21,6 +25,10 @@ const { title, description = 'Project H 2:2 — sourced records, made plain.' } 
       <nav class="mx-auto flex max-w-5xl items-baseline gap-6 px-4 py-3 text-sm" aria-label="Site">
         <a href="/" class="font-heading text-base text-ink no-underline">Project H 2:2</a>
         <a href="/scripture/" class="text-ink-secondary hover:text-accent">Scripture</a>
+        <a href="/sources/" class="text-ink-secondary hover:text-accent">Sources</a>
+        <a href="/data-health/" class="ml-auto text-xs text-ink-secondary no-underline hover:text-accent" title="Freshness of the critical data feeds when this page was built">
+          <HealthDot state={freshness} />
+        </a>
       </nav>
     </header>
     <main id="main" class="mx-auto max-w-5xl px-4 py-6">

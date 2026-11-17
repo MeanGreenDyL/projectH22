@@ -5,7 +5,7 @@
  */
 import { basename, dirname, extname } from 'node:path';
 import type { z } from 'zod';
-import { ScripturalCorrelation, Scenario, Source, VerifiedEvent } from '../schemas';
+import { ScripturalCorrelation, Scenario, Series, Source, VerifiedEvent } from '../schemas';
 import type { Issue, Located, ParsedDataset, RawDataset, RawFile } from './types';
 
 function formatZodError(error: z.ZodError): string {
@@ -67,7 +67,7 @@ function checkDuplicates(kind: string, records: Located<{ id: string }>[], issue
 
 export function runSchemaGate(raw: RawDataset): { issues: Issue[]; parsed: ParsedDataset } {
   const issues: Issue[] = [];
-  const parsed: ParsedDataset = { sources: [], events: [], correlations: [], scenarios: [] };
+  const parsed: ParsedDataset = { sources: [], events: [], correlations: [], scenarios: [], series: [] };
 
   // ---- source registry ----
   if (raw.sources === undefined) {
@@ -114,10 +114,18 @@ export function runSchemaGate(raw: RawDataset): { issues: Issue[]; parsed: Parse
     parsed.scenarios.push(loc);
   }
 
+  for (const f of raw.series) {
+    const loc = parseRecord(f, Series, issues);
+    if (!loc) continue;
+    checkFileName(loc, issues);
+    parsed.series.push(loc);
+  }
+
   checkDuplicates('source', parsed.sources, issues);
   checkDuplicates('event', parsed.events, issues);
   checkDuplicates('correlation', parsed.correlations, issues);
   checkDuplicates('scenario', parsed.scenarios, issues);
+  checkDuplicates('series', parsed.series, issues);
 
   // ---- referential integrity ----
   const sourceIds = new Set(parsed.sources.map((s) => s.record.id));
@@ -158,6 +166,8 @@ export function runSchemaGate(raw: RawDataset): { issues: Issue[]; parsed: Parse
       refSource(file, s.id, `majorScholarlyObjections.${i}.sourceId`, o.sourceId),
     );
   }
+
+  for (const { file, record: s } of parsed.series) refSource(file, s.id, 'sourceId', s.sourceId);
 
   return { issues, parsed };
 }

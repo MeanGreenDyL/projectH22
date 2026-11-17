@@ -1,0 +1,84 @@
+name: Data refresh
+
+# Runs every ingester, runs the full gate, and opens a pull request with the changes.
+# Nothing is merged automatically: a human reviews every data PR.
+#
+# Needs: Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+# Optional secrets: NVD_API_KEY (faster NVD lookups), CONGRESS_API_KEY (else DEMO_KEY), OPENSTATES_API_KEY.
+# Pull requests opened with GITHUB_TOKEN do not trigger CI, so the full gate runs here first.
+
+on:
+  schedule:
+    - cron: '17 6 * * *' # daily, 06:17 UTC
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'One feed id (blank = all feeds)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Refresh
+        # A failing feed records its error in status.json (shown on /data-health) and does not stop the others.
+        continue-on-error: true
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+          OPENSTATES_API_KEY: ${{ secrets.OPENSTATES_API_KEY }}
+          ARCHIVE_CAPTURE_BUDGET: '25'
+          SOURCE: ${{ inputs.source }}
+        run: |
+          if [ -n "$SOURCE" ]; then pnpm refresh:source "$SOURCE"; else pnpm refresh:all; fi
+
+      - name: Gate
+        run: |
+          pnpm check
+          pnpm test
+          pnpm validate
+          pnpm validate:credibility
+          pnpm build
+
+      - name: Reports
+        run: |
+          pnpm -s report:staleness > staleness.json || true
+          pnpm -s report:coverage > coverage.json
+          {
+            echo 'Automated refresh. Review before merging: spot-check a few new records against their cited sources.'
+            echo
+            echo '### Feeds'
+            node -e 'const r=require("./staleness.json");for(const f of r.feeds)console.log(`- ${f.id}: ${f.health}${f.error?` (${f.error})`:""}`)'
+            echo
+            echo "Events: $(node -e 'console.log(require("./coverage.json").totalEvents)'), series: $(node -e 'console.log(require("./coverage.json").totalSeries)')"
+          } > pr-body.md
+          rm staleness.json coverage.json
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/refresh
+          delete-branch: true
+          commit-message: 'data: scheduled refresh'
+          title: 'data: scheduled refresh'
+          body-path: pr-body.md
+          add-paths: |
+            src/data/**
+          labels: data-refresh

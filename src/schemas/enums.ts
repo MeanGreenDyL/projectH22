@@ -43,6 +43,22 @@ export const EVIDENTIARY_TIERS = [
 export const EvidentiaryTier = z.enum(EVIDENTIARY_TIERS);
 export type EvidentiaryTier = z.infer<typeof EvidentiaryTier>;
 
+/** Plain-language tier labels and definitions (spec §5), for legends and the /sources page. */
+export const TIER_LABELS: Record<EvidentiaryTier, string> = {
+  '1-primary': 'Tier 1 · Primary',
+  '2-peer-reviewed': 'Tier 2 · Peer-reviewed',
+  '3-institutional': 'Tier 3 · Institutional research',
+  '4-quality-press': 'Tier 4 · Quality press',
+  '5-specialist-press': 'Tier 5 · Specialist press',
+};
+export const TIER_DEFINITIONS: Record<EvidentiaryTier, string> = {
+  '1-primary': 'Government records and raw data, UN and agency data, court filings, original manuscripts and critical editions.',
+  '2-peer-reviewed': 'Journal articles with DOIs, university press books, systematic reviews, and working papers (marked as preprints).',
+  '3-institutional': 'Research institutions and international bodies such as the World Bank, IMF, RAND or Pew, and professional bodies.',
+  '4-quality-press': 'News organisations with institutional editorial standards, such as Reuters, AP or the Financial Times. Always archived.',
+  '5-specialist-press': 'Trade and specialist press. Credible in its field, but never the only source for a headline claim. Always archived.',
+};
+
 /**
  * Tiers that qualify a record for the fact layer. Spec §1 asked for Tier 1/2 only; the owner
  * decided on 2026-11-17 to admit Tier 3/4-sourced events, which then carry the SINGLE-SOURCE
