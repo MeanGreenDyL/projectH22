@@ -33,6 +33,7 @@ const freshness = overallIndicator(FEEDS, readFeedStatuses(), new Date());
         <a href="/domains/us-law/" class="hidden text-ink-secondary hover:text-accent sm:inline">US law</a>
         <a href="/domains/global/" class="hidden text-ink-secondary hover:text-accent sm:inline">Global</a>
         <a href="/correlations/" class="text-ink-secondary hover:text-accent">Correlations</a>
+        <a href="/scenarios/" class="hidden text-ink-secondary hover:text-accent md:inline">Scenarios</a>
         <a href="/scripture/" class="text-ink-secondary hover:text-accent">Scripture</a>
         <a href="/sources/" class="hidden text-ink-secondary hover:text-accent md:inline">Sources</a>
         <a href="/data-health/" class="ml-auto text-xs text-ink-secondary no-underline hover:text-accent" title="Freshness of the critical data feeds when this page was built">
@@ -44,9 +45,9 @@ const freshness = overallIndicator(FEEDS, readFeedStatuses(), new Date());
       <slot />
     </main>
     <footer class="mx-auto mt-12 max-w-6xl border-t border-rule px-4 py-6 text-xs text-ink-muted">
-      <nav class="flex flex-wrap gap-x-4 gap-y-1" aria-label="Footer">
+      <nav class="flex flex-wrap gap-x-4 gap-y-2 [&>a]:inline-flex [&>a]:min-h-6 [&>a]:items-center" aria-label="Footer">
         <a href="/domains/cyber/">Cyber</a><a href="/domains/crypto/">Crypto</a><a href="/domains/us-law/">US law</a><a href="/domains/global/">Global</a>
-        <a href="/sources/">Sources</a><a href="/data-health/">Data health</a><a href="/methodology/">Methodology</a>
+        <a href="/sources/">Sources</a><a href="/data-health/">Data health</a><a href="/scenarios/">Scenarios</a><a href="/methodology/">Methodology</a>
       </nav>
       <p class="mt-2">Facts and interpretation are kept apart: every event cites its sources; every correlation is labelled as a reading, with its counter-reading.</p>
     </footer>

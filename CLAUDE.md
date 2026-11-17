@@ -7,8 +7,9 @@ spec is `PROJECT-H22-BUILD-PROMPT.md`; this file is the short version. Refresh/i
 
 ## Current phase
 
-Phases 0 and 1 are approved. Phase 2 (fact-layer ingestion, `docs/PHASE-2-REPORT.md`) and Phase 3
-(visual system, `docs/PHASE-3-REPORT.md`) are built; the owner asked on 2026-11-17 to carry on
+Phases 0 and 1 are approved. Phase 2 (fact-layer ingestion, `docs/PHASE-2-REPORT.md`), Phase 3
+(visual system, `docs/PHASE-3-REPORT.md`) and Phase 5 (scenarios and methodology,
+`docs/PHASE-5-REPORT.md`) are built; Phase 4 content waits on reference sites being reachable; the owner asked on 2026-11-17 to carry on
 through the phases and receive each phase report.
 **Do not start a later phase without the owner's explicit go-ahead.** Phases are gated (spec §11).
 Owner decisions that changed the spec are recorded in `docs/PHASE-0-PLAN.md` §2.

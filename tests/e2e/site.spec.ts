@@ -1,7 +1,8 @@
+import { temporalHitsInPageText } from '../../src/lib/scenario-layout';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-const PAGES = ['/', '/timeline/', '/correlations/', '/domains/cyber/', '/domains/crypto/', '/domains/us-law/', '/domains/global/', '/sources/', '/data-health/', '/scripture/', '/methodology/'];
+const PAGES = ['/', '/timeline/', '/correlations/', '/domains/cyber/', '/domains/crypto/', '/domains/us-law/', '/domains/global/', '/sources/', '/data-health/', '/scripture/', '/methodology/', '/scenarios/'];
 
 for (const path of PAGES) {
   test.describe(path, () => {
@@ -51,3 +52,17 @@ test('timeline zooms with the keyboard toolbar', async ({ page }) => {
   await expect(label).not.toHaveText(before ?? '');
   await expect(label).toContainText('days');
 });
+
+test('no date, year, countdown or time window anywhere under /scenarios (spec §1)', async ({ page }) => {
+  await page.goto('/scenarios/');
+  const details = await page.$$eval('main a[href^="/scenarios/"]', (as) => [...new Set(as.map((a) => a.getAttribute('href')!))].filter((h) => h !== '/scenarios/'));
+  for (const path of ['/scenarios/', ...details]) {
+    await page.goto(path);
+    const { body, figures } = await page.evaluate(() => ({
+      body: document.querySelector('main')!.innerText,
+      figures: [...document.querySelectorAll('main [data-textual-figure]')].map((e) => e.textContent ?? ''),
+    }));
+    expect(temporalHitsInPageText(body, figures), path).toEqual([]);
+  }
+});
+

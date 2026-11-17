@@ -15,7 +15,7 @@ import {
 export const DEFAULT_EXCLUDED_STRENGTHS: readonly CorrelationStrength[] = ['numerical-symbolic', 'speculative'];
 
 /** Only human-approved interpretation is ever rendered (spec §6b). */
-export function isPublished(c: ScripturalCorrelation): boolean {
+export function isPublished(c: { review: { status: string } }): boolean {
   return c.review.status === 'approved';
 }
 
