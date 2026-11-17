@@ -1,0 +1,47 @@
+{
+  "title": "CISA Catalog of Known Exploited Vulnerabilities",
+  "catalogVersion": "2026.11.16",
+  "dateReleased": "2026-11-16T14:00:00.000Z",
+  "count": 3,
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-0000-0001",
+      "vendorProject": "Example",
+      "product": "Gateway",
+      "vulnerabilityName": "Example Gateway Remote Code Execution Vulnerability",
+      "dateAdded": "2026-10-01",
+      "shortDescription": "Example Gateway contains a synthetic flaw used only for tests.",
+      "requiredAction": "Apply mitigations per vendor instructions.",
+      "dueDate": "2026-10-22",
+      "knownRansomwareCampaignUse": "Known",
+      "notes": "",
+      "cwes": ["CWE-94"]
+    },
+    {
+      "cveID": "CVE-0000-0002",
+      "vendorProject": "Example",
+      "product": "Mail Server",
+      "vulnerabilityName": "Example Mail Server Authentication Bypass",
+      "dateAdded": "2026-09-15",
+      "shortDescription": "Synthetic authentication bypass.",
+      "requiredAction": "Apply updates.",
+      "dueDate": "2026-10-06",
+      "knownRansomwareCampaignUse": "Unknown",
+      "notes": "",
+      "cwes": []
+    },
+    {
+      "cveID": "CVE-0000-0003",
+      "vendorProject": "Example",
+      "product": "Old Router",
+      "vulnerabilityName": "Example Old Router Command Injection",
+      "dateAdded": "2024-01-10",
+      "shortDescription": "Synthetic, outside the ingest window.",
+      "requiredAction": "Discontinue use.",
+      "dueDate": "2024-01-31",
+      "knownRansomwareCampaignUse": "Unknown",
+      "notes": "",
+      "cwes": []
+    }
+  ]
+}

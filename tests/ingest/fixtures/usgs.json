@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "metadata": { "generated": 1794873600000, "title": "SYNTHETIC" },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "xx0000abcd",
+      "properties": { "mag": 6.4, "magType": "mww", "place": "10 km SSW of Exampletown, CA", "time": 1790000000000, "updated": 1790100000000, "url": "https://earthquake.usgs.gov/earthquakes/eventpage/xx0000abcd", "title": "M 6.4 - 10 km SSW of Exampletown, CA", "type": "earthquake", "tsunami": 0 },
+      "geometry": { "type": "Point", "coordinates": [-117.6, 35.7, 12.3] }
+    },
+    {
+      "type": "Feature",
+      "id": "xx0000efgh",
+      "properties": { "mag": 7.1, "magType": "mww", "place": "120 km E of Example Island", "time": 1791000000000, "updated": 1791200000000, "url": "https://earthquake.usgs.gov/earthquakes/eventpage/xx0000efgh", "title": "M 7.1 - 120 km E of Example Island", "type": "earthquake", "tsunami": 1 },
+      "geometry": { "type": "Point", "coordinates": [150.2, -5.5, 35] }
+    },
+    {
+      "type": "Feature",
+      "id": "xx0000small",
+      "properties": { "mag": 4.2, "magType": "ml", "place": "5 km N of Nowhere, Alaska", "time": 1791500000000, "updated": 1791600000000, "url": "https://earthquake.usgs.gov/earthquakes/eventpage/xx0000small", "title": "M 4.2 - 5 km N of Nowhere, Alaska", "type": "earthquake", "tsunami": 0 },
+      "geometry": { "type": "Point", "coordinates": [-150, 61, 10] }
+    }
+  ]
+}
