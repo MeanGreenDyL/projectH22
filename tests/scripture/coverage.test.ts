@@ -54,7 +54,7 @@ describe.each(TRANSLATION_IDS)('%s', (id) => {
     expect([...books.keys()].sort()).toEqual([...exp.books].sort());
   });
 
-  it.each([...exp.books])('%s has the expected chapters, each with verses numbered from 1 without gaps or repeats', (code) => {
+  it.each([...exp.books])('%s has the expected chapters, with verses in order and none repeated', (code) => {
     const book = books.get(code);
     expect(book, `${code} missing`).toBeDefined();
     const [first, last] = exp.chapterOverrides?.[code] ?? BOOK_BY_CODE.get(code)!.chapters;

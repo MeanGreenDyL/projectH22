@@ -15,7 +15,9 @@
     "test:watch": "vitest",
     "validate": "tsx scripts/validate.ts",
     "validate:credibility": "tsx scripts/validate-credibility.ts",
-    "gate": "pnpm validate && pnpm validate:credibility && pnpm test"
+    "gate": "pnpm validate && pnpm validate:credibility && pnpm test",
+    "scripture:fetch": "tsx scripts/scripture/fetch.ts",
+    "scripture:ingest": "tsx scripts/scripture/ingest.ts"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.9",
