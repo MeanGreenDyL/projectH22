@@ -103,7 +103,7 @@ export default function MasterTimeline({ events, markers, domains, colors }: Pro
         <button type="button" className="rounded border border-rule px-2 py-0.5 hover:border-accent" onClick={() => pan(0.3)} aria-label="Later">→</button>
         <span className="num text-xs text-ink-muted" aria-live="polite">Showing {new Date(view[0]).toISOString().slice(0, 10)} to {new Date(view[1]).toISOString().slice(0, 10)} ({spanDays} days)</span>
       </div>
-      <svg ref={svgRef} className="h22-chart w-full touch-pan-y select-none" viewBox={`0 0 ${W} ${H}`} role="img" tabIndex={0}
+      <svg ref={svgRef} className="h22-chart w-full touch-pan-y select-none" viewBox={`0 0 ${W} ${H}`} role="group" tabIndex={0}
         aria-label={`Timeline of ${events.length} events by domain. Use plus and minus to zoom, arrow keys to move.`}
         onWheel={onWheel} onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerLeave={() => { onUp(); setTip(null); }} onKeyDown={onKey}>
         <defs><clipPath id="tl-plot"><rect x={PAD_L} y={0} width={W - PAD_L - PAD_R} height={H} /></clipPath></defs>

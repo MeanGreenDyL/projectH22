@@ -25,12 +25,12 @@ const more = sourceIds.length - shown.length;
     {note && <span class="block">{note}</span>}
     {asOf !== null && <span>As of <span class="num">{asOf ?? 'not available'}</span>.</span>}
     {sourceIds.length > 0 && (
-      <span> Sources: {shown.map((id, i) => (<>{i > 0 && ', '}<a class="text-accent" href={`/sources/#${id}`}>{id}</a></>))}{more > 0 && <> and {more} more (<a class="text-accent" href="/sources/">all sources</a>)</>}.</span>
+      <span> Sources: {shown.map((id, i) => (<>{i > 0 && ', '}<a class="text-accent underline" href={`/sources/#${id}`}>{id}</a></>))}{more > 0 && <> and {more} more (<a class="text-accent underline" href="/sources/">all sources</a>)</>}.</span>
     )}
   </figcaption>
   {Astro.slots.has('table') && (
     <details class="mt-1 text-xs">
-      <summary class="cursor-pointer text-ink-muted">Show data table</summary>
+      <summary class="inline-flex min-h-6 cursor-pointer items-center text-ink-muted">Show data table</summary>
       <div class="mt-2 max-h-80 overflow-auto"><slot name="table" /></div>
     </details>
   )}

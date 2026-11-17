@@ -25,3 +25,25 @@ jobs:
       - run: pnpm validate
       - run: pnpm validate:credibility
       - run: pnpm build
+
+  browser:
+    name: Accessibility, layout and visual baselines
+    needs: gates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm build
+      - name: Accessibility (axe, WCAG 2.2 AA), no horizontal scroll, 60-word rule, timeline controls
+        run: pnpm e2e --grep-invert "layout baseline"
+      - name: Visual baselines
+        # Baselines were recorded outside GitHub's runner image; font rendering can differ there.
+        # Reported, not blocking, until baselines are re-recorded on the runner.
+        continue-on-error: true
+        run: pnpm e2e --grep "layout baseline"

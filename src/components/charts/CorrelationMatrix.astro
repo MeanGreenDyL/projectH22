@@ -22,7 +22,7 @@ const at = (d: string, b: string) => cells.find((c) => c.domain === d && c.book 
     <p class="mt-1">The matrix fills in as reviewed correlations are approved. Drafts, numerical-symbolic and speculative readings are never counted here.</p>
   </div>
 ) : (
-  <div class="overflow-x-auto">
+  <div class="overflow-x-auto" tabindex="0" role="region" aria-label="Scrollable chart">
     <svg class="h22-chart" width={W} height={H} viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Correlation counts by event domain and scripture book">
       {books.map((b, j) => <text transform={`translate(${PAD_L + j * CELL + CELL / 2},${PAD_T - 6}) rotate(-55)`}>{b}</text>)}
       {DOMAINS.map((d, i) => (

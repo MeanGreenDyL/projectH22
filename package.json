@@ -21,7 +21,8 @@
     "refresh:all": "tsx scripts/ingest/run.ts all",
     "refresh:source": "tsx scripts/ingest/run.ts source",
     "report:staleness": "tsx scripts/report-staleness.ts",
-    "report:coverage": "tsx scripts/report-coverage.ts"
+    "report:coverage": "tsx scripts/report-coverage.ts",
+    "e2e": "playwright test --trace off"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.9",
@@ -41,6 +42,8 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.63.0",
     "@types/d3-array": "^3.2.2",
     "@types/d3-scale": "^4.0.9",
     "@types/d3-shape": "^3.2.0",

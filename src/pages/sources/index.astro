@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { barPath } from '../../components/charts/colpath';
 import { EVIDENTIARY_TIERS, TIER_DEFINITIONS, TIER_LABELS, type Source } from '../../schemas';
 
 const sources = (await getCollection('sources')).map((s) => s.data as Source);
@@ -13,6 +14,8 @@ for (const s of series) citedBy.set(s.data.sourceId, (citedBy.get(s.data.sourceI
 const tierOf = (s: Source) => (s.kind === 'evidentiary' ? s.tier : undefined);
 const tierCounts = EVIDENTIARY_TIERS.map((t) => ({ t, n: sources.filter((s) => tierOf(s) === t).length }));
 const interpretiveCount = sources.filter((s) => s.kind === 'interpretive').length;
+const tierBars = [...tierCounts.map(({ t, n }) => ({ label: TIER_LABELS[t], n })), { label: 'Interpretive', n: interpretiveCount }];
+const maxTier = Math.max(1, ...tierBars.map((b) => b.n));
 
 const publishers = [...new Set(sources.map((s) => s.publisher))]
   .map((p) => ({ p, items: sources.filter((s) => s.publisher === p).sort((a, b) => (b.publishedAt ?? b.accessedAt).localeCompare(a.publishedAt ?? a.accessedAt)) }))
@@ -25,6 +28,18 @@ const day = (iso: string) => iso.slice(0, 10);
     Every citation on this site points to an entry here. Each entry carries an evidence tier and,
     where one exists, an archived copy so the citation survives if the original page changes.
   </p>
+
+  <figure class="h22-chart mt-6 max-w-2xl" aria-label="Sources by evidence tier">
+    <svg class="w-full" viewBox={`0 0 600 ${tierBars.length * 26 + 4}`} role="img" aria-label={tierBars.map((b) => `${b.label}: ${b.n}`).join(', ')}>
+      {tierBars.map((b, i) => (
+        <g>
+          <text x="188" y={i * 26 + 17} text-anchor="end" style="fill:var(--h22-ink-secondary);font-size:12px">{b.label}</text>
+          {b.n > 0 && <path d={barPath(196, i * 26 + 6, (b.n / maxTier) * 360, 14)} fill="var(--h22-accent)" />}
+          <text x={200 + (b.n / maxTier) * 360} y={i * 26 + 17}>{b.n}</text>
+        </g>
+      ))}
+    </svg>
+  </figure>
 
   <h2 class="mt-8 font-heading text-2xl">Evidence tiers</h2>
   <dl class="mt-3 grid gap-3 sm:grid-cols-2">
