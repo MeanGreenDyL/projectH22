@@ -9,3 +9,4 @@ export * from './scenario';
 export * from './books';
 export * from './scripture';
 export * from './series';
+export * from './correction';

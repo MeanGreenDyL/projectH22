@@ -1,0 +1,140 @@
+---
+import { readFileSync } from 'node:fs';
+import Base from '../../layouts/Base.astro';
+import StrengthLegend from '../../components/interp/StrengthLegend';
+import { CORRELATION_STRENGTHS, CorrectionsLog, EVIDENTIARY_TIERS, HERMENEUTIC_TRADITIONS, HERMENEUTIC_TRADITION_DEFINITIONS, TIER_DEFINITIONS, TIER_LABELS } from '../../schemas';
+import { FORBIDDEN_CERTAINTY_TERMS } from '../../validation/credibility/terms';
+import { STRENGTH_LABEL } from '../../components/interp/CorrelationView';
+
+const corrections = CorrectionsLog.parse(JSON.parse(readFileSync('src/data/corrections.json', 'utf8')));
+const REPO = 'https://github.com/MeanGreenDyL/projectH22';
+const rungs = [...CORRELATION_STRENGTHS];
+const forbidden = ['fulfilled', 'proves', 'confirms', 'exactly as predicted'].filter((t) => (FORBIDDEN_CERTAINTY_TERMS as readonly string[]).includes(t));
+---
+<Base title="Methodology" description="What this project claims and does not claim, how readings are classified, and its known limits.">
+  <h1 class="font-heading text-3xl">Methodology</h1>
+  <p class="mt-1 max-w-[var(--measure-prose)] text-ink-secondary">How to read this site, and where it can be wrong.</p>
+
+  <section class="mt-6">
+    <h2 class="font-heading text-2xl">Two layers that never mix</h2>
+    <figure class="mt-3">
+      <svg class="h22-chart w-full max-w-3xl" viewBox="0 0 720 150" role="img" aria-label="Facts on top, interpretation below, separated by a seam. Interpretation can point at facts; facts never depend on interpretation.">
+        <rect x="0" y="0" width="720" height="56" rx="6" fill="var(--h22-surface-raised)" stroke="var(--h22-rule)" />
+        <text x="16" y="24" style="fill:var(--h22-ink);font-size:14px;font-weight:600">Layer A · Verified events</text>
+        <text x="16" y="44" style="fill:var(--h22-ink-secondary);font-size:12px">Tier 1–4 sources, archived citations, neutral language, bounded dates</text>
+        <line x1="0" x2="720" y1="75" y2="75" stroke="var(--h22-interp-rule)" stroke-dasharray="4 3" />
+        <rect x="0" y="94" width="720" height="56" rx="6" fill="var(--h22-interp-surface)" />
+        <rect x="0" y="94" width="4" height="56" fill="var(--h22-interp-rule)" />
+        <text x="16" y="118" style="fill:var(--h22-interp-chip-ink);font-size:14px;font-weight:600">Layer B · Interpretation</text>
+        <text x="16" y="138" style="fill:var(--h22-ink-secondary);font-size:12px">Declared strength, reading tradition, required counter-reading, human review before publishing</text>
+      </svg>
+      <figcaption class="mt-1 text-xs text-ink-muted">Separate data models, validators and visual treatment. Interpretation can point at an event; an event never depends on an interpretation.</figcaption>
+    </figure>
+  </section>
+
+  <section class="mt-6 grid gap-4 md:grid-cols-2" aria-label="Claims">
+    <div class="rounded-md border border-rule p-4">
+      <h2 class="text-sm font-semibold">This site claims</h2>
+      <ul class="mt-2 list-disc pl-5 text-sm text-ink-secondary">
+        <li>Each event happened as its cited, archived sources describe.</li>
+        <li>Each correlation is a reading some interpreters could make, rated for strength, with the strongest case against it shown.</li>
+        <li>Each scenario describes what a passage says under one reading tradition.</li>
+      </ul>
+    </div>
+    <div class="rounded-md border border-rule p-4">
+      <h2 class="text-sm font-semibold">This site does not claim</h2>
+      <ul class="mt-2 list-disc pl-5 text-sm text-ink-secondary">
+        <li>That any event fulfils, proves or confirms any passage.</li>
+        <li>That any scenario will happen, or when.</li>
+        <li>That one reading tradition is right. It does not decide between them.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="mt-10">
+    <h2 class="font-heading text-2xl">The strength taxonomy</h2>
+    <figure class="mt-3">
+      <svg class="h22-chart w-full max-w-3xl" viewBox={`0 0 720 ${rungs.length * 30 + 10}`} role="img" aria-label="Strength classes from strongest to weakest">
+        {rungs.map((s, i) => (
+          <g>
+            <rect x={0} y={i * 30 + 4} width={720 - i * 110} height="22" rx="4" fill="var(--h22-interp-rule)" fill-opacity={0.85 - i * 0.15} />
+            <text x="10" y={i * 30 + 19} style={`fill:${i < 3 ? 'var(--h22-interp-surface)' : 'var(--h22-interp-chip-ink)'};font-size:12px;font-weight:600`}>{STRENGTH_LABEL[s]}</text>
+          </g>
+        ))}
+      </svg>
+      <figcaption class="mt-1 text-xs text-ink-muted">Strongest at the top. The bottom two are hidden by default and never counted in totals.</figcaption>
+    </figure>
+    <div class="mt-4"><StrengthLegend /></div>
+
+    <h3 class="mt-6 text-lg font-semibold">Worked examples</h3>
+    <p class="mt-1 text-sm text-ink-muted">Illustrations of each class, not records on this site.</p>
+    <table class="mt-2 w-full text-left text-sm">
+      <thead><tr class="border-b border-axis"><th scope="col" class="py-2 pr-3">Class</th><th scope="col" class="py-2 pr-3">What it looks like</th><th scope="col" class="py-2">Why it is rated so</th></tr></thead>
+      <tbody>
+        <tr class="border-b border-rule align-top"><td class="py-2 pr-3">Direct textual</td><td class="py-2 pr-3">A passage that names a city, read against an event in that same city.</td><td class="py-2">Needs at least two Tier 1 or Tier 2 citations agreeing on what the name refers to. Rare.</td></tr>
+        <tr class="border-b border-rule align-top"><td class="py-2 pr-3">Thematic parallel</td><td class="py-2 pr-3">Proverbs 11:1 condemns a false balance; an event involves falsified financial records.</td><td class="py-2">The event belongs to a category the passage describes. It says nothing about the passage being about this event.</td></tr>
+        <tr class="border-b border-rule align-top"><td class="py-2 pr-3">Typological</td><td class="py-2 pr-3">A pattern a named historical commentator applied, such as a type and its later counterpart.</td><td class="py-2">Valid only with that commentator cited. The pattern is theirs, not this site's.</td></tr>
+        <tr class="border-b border-rule align-top"><td class="py-2 pr-3">Numerical-symbolic <span class="text-ink-muted">(weak)</span></td><td class="py-2 pr-3">A count of days in a passage matched to a count between two events.</td><td class="py-2">Any two dates can be joined by some arithmetic. The method and arithmetic are shown so readers can see how much choice went into it.</td></tr>
+        <tr class="align-top"><td class="py-2 pr-3">Speculative <span class="text-ink-muted">(weakest)</span></td><td class="py-2 pr-3">"Could an outage of this size be read alongside a passage about darkness?"</td><td class="py-2">Asked as a question because it is one. No claim is made.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="font-heading text-2xl">Selection bias, stated plainly</h2>
+    <div class="mt-3 max-w-[var(--measure-prose)] space-y-3">
+      <p>A project that looks for scriptural parallels will find them. Scripture covers war, famine, disease, fraud, power and disaster, so almost any event can be paired with some passage. Finding a parallel is therefore weak evidence of anything. That is why every correlation declares its strength, and why every one must carry the strongest argument against it.</p>
+    </div>
+    <dl class="mt-4 grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-md border border-rule p-3"><dt class="font-semibold">Confirmation bias</dt><dd class="mt-1 text-ink-secondary">Noticing the events that fit a reading and not the ones that do not.</dd></div>
+      <div class="rounded-md border border-rule p-3"><dt class="font-semibold">Apophenia</dt><dd class="mt-1 text-ink-secondary">Seeing meaningful patterns in unrelated things.</dd></div>
+      <div class="rounded-md border border-rule p-3"><dt class="font-semibold">Texas sharpshooter fallacy</dt><dd class="mt-1 text-ink-secondary">Drawing the target around the bullet holes: choosing the passage after the event.</dd></div>
+      <div class="rounded-md border border-rule p-3"><dt class="font-semibold">Post-hoc narrative fitting</dt><dd class="mt-1 text-ink-secondary">Building a story after the fact that makes the match look inevitable.</dd></div>
+      <div class="rounded-md border border-rule p-3"><dt class="font-semibold">Survivorship in what gets recorded</dt><dd class="mt-1 text-ink-secondary">Readings that failed are forgotten; the ones that seemed to fit are kept and repeated.</dd></div>
+    </dl>
+    <p class="mt-4 max-w-[var(--measure-prose)] text-sm text-ink-secondary">What the site does about it: the fact layer is built first and stands on its own; correlations are drafted, then approved by a named human reviewer; the weakest classes are hidden by default and excluded from every count; and the words {forbidden.map((t, i) => <>{i > 0 && ', '}"{t}"</>)} fail the build in any correlation.</p>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="font-heading text-2xl">Why scenarios carry no dates</h2>
+    <div class="mt-3 rounded-md border-l-4 border-interp-rule bg-interp-surface p-4 text-sm">
+      <p class="font-semibold text-interp-chip-ink">Derived from scripture text only. Not a forecast. No dates are assigned.</p>
+    </div>
+    <p class="mt-3 max-w-[var(--measure-prose)] text-sm text-ink-secondary">A scenario describes the sequence a passage itself sets out, under one named reading tradition. A date would turn that description into a forecast, and dated predictive claims have a long record of failing and of harming people who acted on them. So the rule is enforced in code: any date, year, duration, countdown or time window in a scenario fails the build. The passage's own figures, such as a number of days stated in the text, are declared and shown as the text's figures, never converted to calendar time. A sourced history of dated predictions will be added here when the reference works can be cited.</p>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="font-heading text-2xl">Four reading traditions</h2>
+    <p class="mt-1 text-sm text-ink-secondary">The same passage reads differently in each. The site labels which tradition a reading belongs to and does not decide between them.</p>
+    <dl class="mt-3 grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-4">
+      {HERMENEUTIC_TRADITIONS.map((t) => <div class="rounded-md bg-interp-surface p-3"><dt class="font-semibold capitalize text-interp-chip-ink">{t}</dt><dd class="mt-1 text-ink-secondary">{HERMENEUTIC_TRADITION_DEFINITIONS[t]}</dd></div>)}
+    </dl>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="font-heading text-2xl">Source tiers</h2>
+    <table class="mt-3 w-full text-left text-sm">
+      <tbody>
+        {EVIDENTIARY_TIERS.map((t) => <tr class="border-b border-rule align-top"><th scope="row" class="whitespace-nowrap py-2 pr-4 font-semibold">{TIER_LABELS[t]}</th><td class="py-2 text-ink-secondary">{TIER_DEFINITIONS[t]}</td></tr>)}
+        <tr class="align-top"><th scope="row" class="whitespace-nowrap py-2 pr-4 font-semibold">Interpretive</th><td class="py-2 text-ink-secondary">Commentaries, theology, reference works and lexicons. Tiered separately because they argue for readings; they are never evidence that an event happened.</td></tr>
+      </tbody>
+    </table>
+    <p class="mt-2 text-sm text-ink-secondary">An event with no Tier 1 or Tier 2 source shows a SINGLE-SOURCE marker. Tier 5 is never the only source. Full list: <a class="text-accent underline" href="/sources/">sources</a>.</p>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="font-heading text-2xl">Known gaps and corrections</h2>
+    <p class="mt-1 text-sm text-ink-secondary">Live feed status and held-back records are on <a class="text-accent underline" href="/data-health/">data health</a>. Corrections are published here with their date and never silently edited; the log is append-only and checked in code.</p>
+    {corrections.length === 0 ? <p class="mt-3 rounded-md border border-dashed border-rule p-4 text-sm text-ink-muted">No corrections yet.</p> : (
+      <table class="mt-3 w-full text-left text-sm"><thead><tr class="border-b border-axis"><th scope="col" class="py-2 pr-3">Date</th><th scope="col" class="py-2 pr-3">Record</th><th scope="col" class="py-2 pr-3">What changed</th><th scope="col" class="py-2">Why</th></tr></thead>
+        <tbody>{corrections.map((c) => <tr class="border-b border-rule align-top"><td class="num py-2 pr-3">{c.date}</td><td class="py-2 pr-3">{c.recordId}</td><td class="py-2 pr-3">{c.what}</td><td class="py-2">{c.why}</td></tr>)}</tbody>
+      </table>
+    )}
+  </section>
+
+  <section class="mt-10">
+    <h2 class="font-heading text-2xl">Challenge a record</h2>
+    <p class="mt-1 max-w-[var(--measure-prose)] text-sm text-ink-secondary">If an event is wrong, a source is mis-tiered, or a reading has a better counter-argument, <a class="text-accent underline" href={`${REPO}/issues/new?template=challenge-a-record.yml`}>open a challenge</a> (a GitHub account is needed). Substantive challenges are published alongside the record they challenge, and any resulting change is logged above.</p>
+  </section>
+</Base>
